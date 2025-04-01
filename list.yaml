@@ -26,11 +26,26 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
+  name: 美国-2
+  network: ws
+  port: 443
+  server: dnschecker.org
+  servername: ml.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: ml.ylkszy.eu.org
+    path: /?ed=2560
+- alterId: 0
   cipher: aes-256-cfb
   name: 日本-1
   password: amazonskr05
   port: 443
-  server: 43.207.203.164
+  server: 43.207.157.253
   type: ss
   udp: true
 - alterId: 0
@@ -43,27 +58,74 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-256-cfb
-  name: 美国-3
-  password: amazonskr05
-  port: 443
-  server: 47.128.245.70
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   name: 韩国-1
-  password: amazonskr05
-  port: 443
-  server: 43.203.206.73
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
   type: ss
+  udp: true
 - alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-2
-  password: amazonskr05
+  name: 荷兰-8
+  network: ws
+  port: 80
+  server: 45.131.4.228
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
+- alterId: 0
+  name: 美国-1
+  network: ws
   port: 443
-  server: 43.201.54.89
-  type: ss
+  server: 135.84.76.115
+  servername: ml.ylkszy.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: ml.ylkszy.eu.org
+    path: /?ed=2560
+- alterId: 0
+  name: 荷兰-1
+  network: ws
+  port: 80
+  server: 45.131.5.145
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
 - alterId: 0
   name: 荷兰-4
+  network: ws
+  port: 80
+  server: 45.131.5.151
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
+- alterId: 0
+  name: 荷兰-5
   network: ws
   port: 80
   server: 45.131.4.210
@@ -78,38 +140,7 @@ proxies:
       Host: gozargah.validbv7996.ir
     path: /
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 英国-2
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.193
-  type: ss
-- alterId: 0
-  name: 美国-2
-  password: oIwjHDXpKePvYIg8
-  port: 443
-  server: 43.162.127.44
-  skip-cert-verify: false
-  sni: myvps.cfd
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 荷兰-2
-  network: ws
-  port: 80
-  server: 45.131.4.214
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2
-- alterId: 0
-  name: 荷兰-1
+  name: 荷兰-6
   network: ws
   port: 80
   server: 45.131.5.27
@@ -123,32 +154,6 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /Telegram🇨🇳@WangCai2
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-4
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 34.217.15.41
-  type: ssr
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 54.69.221.160
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-5
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 54.202.0.97
-  type: ssr
 - alterId: 0
   name: 荷兰-3
   network: ws
@@ -165,11 +170,76 @@ proxies:
       Host: gozargah.validbv7996.ir
     path: /Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 英国-1
-  password: shadowsocks
+  name: 荷兰-9
+  network: ws
+  port: 80
+  server: 45.131.4.113
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
+- alterId: 0
+  name: 荷兰-7
+  network: ws
+  port: 80
+  server: 45.131.5.182
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
+- alterId: 0
+  cipher: 2022-blake3-aes-256-gcm
+  name: 美国-3
+  password: YjI3YzdmM2NlNWQyZDI1NzlmNTczMWM1MmRmMjdkMTU=:YTA4NzRlYzYtNTg3NC00YjIwLWIwOTktZjExZmZlZWI=
+  port: 21980
+  server: yige-us.sanguayun.com
+  type: ss
+- alterId: 0
+  name: 荷兰-2
+  network: ws
+  port: 80
+  server: 45.131.4.126
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
+- alpn:
+  - h3
+  alterId: 0
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 加拿大-1
+  port: 11512
+  protocol: udp
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-4
+  password: amazonskr05
   port: 443
-  server: 212.102.53.195
+  server: 52.40.170.193
   type: ss
 proxy-groups:
 - name: 漏网之鱼
@@ -192,29 +262,31 @@ proxy-groups:
   proxies:
   - 荷兰
   - 美国
-  - 英国
-  - 韩国
-  - 日本
   - 新加坡
+  - 日本
+  - 韩国
+  - 加拿大
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
+  - 美国-2
   - 日本-1
   - 新加坡-1
-  - 美国-3
   - 韩国-1
-  - 韩国-2
-  - 荷兰-4
-  - 英国-2
-  - 美国-2
-  - 荷兰-2
-  - 荷兰-1
-  - 美国-4
+  - 荷兰-8
   - 美国-1
-  - 美国-5
+  - 荷兰-1
+  - 荷兰-4
+  - 荷兰-5
+  - 荷兰-6
   - 荷兰-3
-  - 英国-1
+  - 荷兰-9
+  - 荷兰-7
+  - 美国-3
+  - 荷兰-2
+  - 加拿大-1
+  - 美国-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -237,6 +309,11 @@ proxy-groups:
   - 荷兰-2
   - 荷兰-3
   - 荷兰-4
+  - 荷兰-5
+  - 荷兰-6
+  - 荷兰-7
+  - 荷兰-8
+  - 荷兰-9
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -246,21 +323,12 @@ proxy-groups:
   - 美国-2
   - 美国-3
   - 美国-4
-  - 美国-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 英国
+  name: 新加坡
   proxies:
-  - 英国-1
-  - 英国-2
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
+  - 新加坡-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -270,9 +338,15 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 新加坡
+  name: 韩国
   proxies:
-  - 新加坡-1
+  - 韩国-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 加拿大
+  proxies:
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
