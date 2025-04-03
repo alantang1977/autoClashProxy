@@ -27,94 +27,52 @@ profile:
 proxies:
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 52.195.209.247
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   name: 新加坡-1
-  password: amazonskr05
-  port: 443
-  server: 13.250.55.223
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-2
-  password: amazonskr05
-  port: 443
-  server: 13.250.61.152
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-3
   password: amazonskr05
   port: 443
   server: 54.179.52.175
   type: ss
 - alterId: 0
-  name: 美国-5
-  network: ws
+  cipher: aes-256-cfb
+  name: 美国-1
+  password: amazonskr05
   port: 443
-  server: 206.237.31.47
-  servername: edccw.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
+  server: 13.212.77.19
+  type: ss
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccw.aimercc.filegear-sg.me
-    path: /?ed=2560
 - alterId: 0
-  name: 美国-4
-  network: ws
-  port: 443
-  server: 152.69.209.132
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
+  cipher: aes-256-cfb
   name: 美国-3
-  network: ws
+  password: amazonskr05
   port: 443
-  server: iplocation.io
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
+  server: 47.129.230.32
+  type: ss
 - alterId: 0
   name: 美国-2
-  network: ws
-  port: 443
-  server: whatismyipaddress.com
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
+  port: 21918
+  server: 47.129.119.183
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: e8c06684-7fb7-4448-dcd7-468ef40a36f3
+- alterId: 0
+  name: 荷兰-5
+  network: ws
+  port: 80
+  server: 45.131.4.126
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
   ws-opts:
     headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
 - alterId: 0
-  name: 荷兰-1
+  name: 荷兰-4
   network: ws
   port: 80
   server: 45.131.4.228
@@ -129,187 +87,7 @@ proxies:
       Host: gozargah.validbv7996.ir
     path: /Telegram🇨🇳@WangCai2
 - alterId: 0
-  name: 美国-1
-  network: ws
-  port: 443
-  server: 63.141.128.218
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 荷兰-2
-  network: ws
-  port: 80
-  server: 45.131.5.27
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2
-- alterId: 0
-  name: 美国-6
-  network: ws
-  port: 443
-  server: 198.62.62.156
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-7
-  network: ws
-  port: 443
-  server: moura.ns.cloudflare.com
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 荷兰-3
-  network: ws
-  port: 80
-  server: 45.131.5.182
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 443
-  server: 192.0.54.18
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-9
-  network: ws
-  port: 443
-  server: craig.ns.cloudflare.com
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 荷兰-4
-  network: ws
-  port: 80
-  server: 45.131.5.179
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2
-- alterId: 0
-  name: 美国-12
-  network: ws
-  port: 443
-  server: 160.79.105.99
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-10
-  network: ws
-  port: 443
-  server: 135.84.76.105
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-11
-  network: ws
-  port: 8080
-  server: 45.39.198.43
-  servername: edccw.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccw.aimercc.filegear-sg.me
-    path: /?ed=2560
-- alterId: 0
-  name: 荷兰-5
-  network: ws
-  port: 80
-  server: 45.131.4.131
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  name: 荷兰-6
+  name: 荷兰-7
   network: ws
   port: 80
   server: 45.131.4.254
@@ -324,50 +102,123 @@ proxies:
       Host: gozargah.validbv7996.ir
     path: /Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
-  name: 美国-14
+  name: 荷兰-1
   network: ws
-  port: 443
-  server: 192.200.160.99
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 45.131.5.182
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
   ws-opts:
     headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
 - alterId: 0
-  name: 美国-15
+  name: 荷兰-3
   network: ws
-  port: 443
-  server: 63.141.128.96
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 45.131.5.145
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
   ws-opts:
     headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
 - alterId: 0
-  name: 美国-13
+  name: 荷兰-8
   network: ws
-  port: 443
-  server: 135.84.76.115
-  servername: cv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 45.131.5.151
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
   ws-opts:
     headers:
-      host: cv.dong2025.cfd
-    path: /?ed=2560
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
+- alterId: 0
+  name: 荷兰-6
+  network: ws
+  port: 80
+  server: 45.131.5.35
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  name: 荷兰-2
+  network: ws
+  port: 80
+  server: 45.131.5.99
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  name: 美国-4
+  network: ws
+  port: 80
+  server: 172.64.152.226
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram@sinavm/?ed=2550
+- alterId: 0
+  name: 荷兰-9
+  network: ws
+  port: 80
+  server: 45.131.4.131
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- alpn:
+  - h3
+  alterId: 0
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 加拿大-1
+  port: 11512
+  protocol: udp
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -387,39 +238,29 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
   - 新加坡
+  - 美国
   - 荷兰
-  - 日本
+  - 加拿大
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
   - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
-  - 美国-5
-  - 美国-4
+  - 美国-1
   - 美国-3
   - 美国-2
-  - 荷兰-1
-  - 美国-1
-  - 荷兰-2
-  - 美国-6
-  - 美国-7
-  - 荷兰-3
-  - 美国-8
-  - 美国-9
-  - 荷兰-4
-  - 美国-12
-  - 美国-10
-  - 美国-11
   - 荷兰-5
+  - 荷兰-4
+  - 荷兰-7
+  - 荷兰-1
+  - 荷兰-3
+  - 荷兰-8
   - 荷兰-6
-  - 美国-14
-  - 美国-15
-  - 美国-13
+  - 荷兰-2
+  - 美国-4
+  - 荷兰-9
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -436,31 +277,18 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 新加坡
+  proxies:
+  - 新加坡-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
   name: 美国
   proxies:
   - 美国-1
   - 美国-2
   - 美国-3
   - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  - 新加坡-2
-  - 新加坡-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -472,12 +300,15 @@ proxy-groups:
   - 荷兰-4
   - 荷兰-5
   - 荷兰-6
+  - 荷兰-7
+  - 荷兰-8
+  - 荷兰-9
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 日本
+  name: 加拿大
   proxies:
-  - 日本-1
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
