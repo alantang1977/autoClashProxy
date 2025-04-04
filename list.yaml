@@ -26,73 +26,7 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  cipher: aes-256-cfb
-  name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 52.197.57.24
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-1
-  password: amazonskr05
-  port: 443
-  server: 47.129.51.201
-  type: ss
-- alterId: 0
-  name: 新加坡-10
-  network: ws
-  port: 443
-  server: 8.219.53.107
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 新加坡-3
-  network: ws
-  port: 443
-  server: 8.219.65.202
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 新加坡-9
-  network: ws
-  port: 443
-  server: 8.222.181.182
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 52.195.212.217
-  type: ss
-- alterId: 0
-  name: 新加坡-4
+  name: 新加坡-1
   network: ws
   port: 443
   server: 8.219.62.245
@@ -107,7 +41,7 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 新加坡-1
+  name: 新加坡-6
   network: ws
   port: 443
   server: 8.219.67.51
@@ -122,10 +56,161 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 新加坡-11
+  name: 新加坡-9
   network: ws
   port: 443
   server: 8.222.185.203
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 新加坡-4
+  network: ws
+  port: 443
+  server: 8.219.65.202
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 新加坡-2
+  network: ws
+  port: 443
+  server: 8.219.205.151
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 新加坡-3
+  network: ws
+  port: 6666
+  server: 150.109.24.233
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-1
+  network: ws
+  port: 443
+  server: 152.69.216.119
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 新加坡-8
+  password: amazonskr05
+  port: 443
+  server: 52.76.47.112
+  tfo: false
+  type: ss
+- alterId: 0
+  name: 新加坡-7
+  network: ws
+  port: 443
+  server: 8.222.157.20
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-4
+  password: amazonskr05
+  port: 443
+  server: 43.207.204.100
+  type: ss
+- alterId: 0
+  name: 日本-1
+  network: ws
+  port: 443
+  server: 141.147.184.160
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 日本-2
+  network: ws
+  port: 443
+  server: 132.145.116.185
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 日本-3
+  network: ws
+  port: 2053
+  server: 140.238.58.181
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 韩国-2
+  network: ws
+  port: 11211
+  server: 121.177.205.241
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -152,10 +237,10 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 新加坡-7
+  name: 韩国-1
   network: ws
-  port: 443
-  server: 8.219.68.154
+  port: 30012
+  server: 211.218.223.130
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -167,10 +252,10 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 新加坡-12
+  name: 美国-4
   network: ws
   port: 443
-  server: 8.222.195.48
+  server: 192.9.227.116
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -182,10 +267,10 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 新加坡-6
+  name: 美国-5
   network: ws
-  port: 443
-  server: 8.219.183.106
+  port: 8443
+  server: 138.2.235.224
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -197,32 +282,10 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-13
-  password: amazonskr05
-  port: 443
-  server: 54.169.64.13
-  type: ss
-- alterId: 0
-  name: 新加坡-8
+  name: 美国-3
   network: ws
   port: 443
-  server: 8.222.132.0
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 新加坡-2
-  network: ws
-  port: 443
-  server: 8.222.157.20
+  server: 192.18.143.57
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -236,8 +299,21 @@ proxies:
 - alterId: 0
   name: 美国-2
   network: ws
+  port: 80
+  server: 104.16.178.238
+  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
+  tls: false
+  type: vless
+  uuid: d4eddaf9-a660-4905-b835-cad98677b380
+  ws-opts:
+    headers:
+      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-6
+  network: ws
   port: 443
-  server: 152.69.216.119
+  server: 152.70.57.182
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -249,10 +325,10 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 新加坡-14
+  name: 美国-7
   network: ws
   port: 443
-  server: 8.219.76.176
+  server: trevor.ns.cloudflare.com
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -264,17 +340,10 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 43.207.204.100
-  type: ss
-- alterId: 0
-  name: 新加坡-15
+  name: 美国-9
   network: ws
   port: 443
-  server: 8.219.205.151
+  server: otto.ns.cloudflare.com
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -286,10 +355,10 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 新加坡-16
+  name: 美国-8
   network: ws
-  port: 6666
-  server: 150.109.24.233
+  port: 443
+  server: tasteatlas.com
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -301,39 +370,10 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 韩国-1
+  name: 日本-5
   network: ws
-  port: 11211
-  server: 121.177.205.241
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-17
-  password: amazonskr05
   port: 443
-  server: 13.250.55.223
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 日本-4
-  password: amazonskr05
-  port: 443
-  server: 43.206.220.47
-  type: ss
-- alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 50001
-  server: 119.205.6.124
+  server: 47.91.18.127
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -363,39 +403,39 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
-  - 日本
   - 美国
+  - 日本
+  - 新加坡
   - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
-  - 美国-1
-  - 新加坡-10
-  - 新加坡-3
-  - 新加坡-9
-  - 日本-3
-  - 新加坡-4
   - 新加坡-1
-  - 新加坡-11
-  - 新加坡-5
-  - 新加坡-7
-  - 新加坡-12
   - 新加坡-6
-  - 新加坡-13
-  - 新加坡-8
+  - 新加坡-9
+  - 新加坡-4
   - 新加坡-2
-  - 美国-2
-  - 新加坡-14
-  - 日本-2
-  - 新加坡-15
-  - 新加坡-16
-  - 韩国-1
-  - 新加坡-17
+  - 新加坡-3
+  - 美国-1
+  - 新加坡-8
+  - 新加坡-7
   - 日本-4
+  - 日本-1
+  - 日本-2
+  - 日本-3
   - 韩国-2
+  - 新加坡-5
+  - 韩国-1
+  - 美国-4
+  - 美国-5
+  - 美国-3
+  - 美国-2
+  - 美国-6
+  - 美国-7
+  - 美国-9
+  - 美国-8
+  - 日本-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -412,6 +452,30 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
+  name: 美国
+  proxies:
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 美国-8
+  - 美国-9
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  - 日本-4
+  - 日本-5
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
@@ -423,30 +487,6 @@ proxy-groups:
   - 新加坡-7
   - 新加坡-8
   - 新加坡-9
-  - 新加坡-10
-  - 新加坡-11
-  - 新加坡-12
-  - 新加坡-13
-  - 新加坡-14
-  - 新加坡-15
-  - 新加坡-16
-  - 新加坡-17
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  - 日本-4
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  - 美国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
