@@ -7,7 +7,7 @@
 
 该clash配置文件中所有节点均来源于GitHub。所采集的仓库可以从文件[**source.url**](https://raw.githubusercontent.com/qianlima8888/autoClashProxy/refs/heads/main/source.url)中查看。
 
-该clash配置文件所有使用的客户端为：[**clash-verge-rev**](https://github.com/clash-verge-rev/clash-verge-rev)
+该clash配置文件所使用的客户端为：[**clash-verge-rev**](https://github.com/clash-verge-rev/clash-verge-rev)
 
 ## 📊 项目统计
 
