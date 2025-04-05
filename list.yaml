@@ -27,51 +27,31 @@ profile:
 proxies:
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-1
+  name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 18.181.170.89
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-4
+  password: amazonskr05
+  port: 443
+  server: 54.238.109.190
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-5
   password: amazonskr05
   port: 443
   server: 52.195.212.217
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-6
-  password: amazonskr05
-  port: 443
-  server: 54.238.109.190
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-3
-  password: amazonskr05
-  port: 443
-  server: 13.229.210.217
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 新加坡-4
-  password: amazonskr05
-  port: 443
-  server: 54.179.52.175
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-3
-  password: amazonskr05
-  port: 443
-  server: 54.199.167.92
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  country: 🇸🇬SG
-  delay: 557
   name: 新加坡-1
   password: amazonskr05
   port: 443
-  server: 13.229.48.116
+  server: 54.179.52.175
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
@@ -83,39 +63,50 @@ proxies:
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
-  name: 日本-5
+  name: 新加坡-3
   password: amazonskr05
   port: 443
-  server: 18.181.170.89
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 日本-2
-  password: amazonskr05
-  port: 443
-  server: 52.197.57.24
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 日本-4
-  password: amazonskr05
-  port: 443
-  server: 52.199.237.27
-  type: ss
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 英国-1
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
+  server: 13.250.61.152
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
   name: 新加坡-5
   password: amazonskr05
   port: 443
-  server: 54.254.9.107
+  server: 13.229.210.217
   type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-1
+  password: amazonskr05
+  port: 443
+  server: 52.197.57.24
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  delay: 557
+  name: 新加坡-4
+  password: amazonskr05
+  port: 443
+  server: 13.229.48.116
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-2
+  password: amazonskr05
+  port: 443
+  server: 52.199.237.27
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-1
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 52.40.170.193
+  type: ssr
 - alpn:
   - h3
   alterId: 0
@@ -148,26 +139,25 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 加拿大
-  - 新加坡
   - 日本
-  - 英国
+  - 新加坡
+  - 加拿大
+  - 美国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 日本-1
-  - 日本-6
-  - 新加坡-3
-  - 新加坡-4
   - 日本-3
+  - 日本-4
+  - 日本-5
   - 新加坡-1
   - 新加坡-2
-  - 日本-5
-  - 日本-2
-  - 日本-4
-  - 英国-1
+  - 新加坡-3
   - 新加坡-5
+  - 日本-1
+  - 新加坡-4
+  - 日本-2
+  - 美国-1
   - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
@@ -185,9 +175,13 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 加拿大
+  name: 日本
   proxies:
-  - 加拿大-1
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  - 日本-4
+  - 日本-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -201,20 +195,15 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 日本
+  name: 加拿大
   proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  - 日本-4
-  - 日本-5
-  - 日本-6
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 英国
+  name: 美国
   proxies:
-  - 英国-1
+  - 美国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
