@@ -26,169 +26,96 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  name: 美国-2
-  network: ws
-  port: 443
-  server: 138.2.107.107
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 新加坡-3
-  network: ws
-  port: 443
-  server: 168.138.165.174
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
   cipher: aes-256-cfb
-  name: 日本-4
+  name: 日本-1
   password: amazonskr05
   port: 443
-  server: 54.238.109.190
+  server: 52.195.212.217
   type: ss
 - alterId: 0
   cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 日本-6
+  password: amazonskr05
+  port: 443
+  server: 54.238.109.190
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-3
+  password: amazonskr05
+  port: 443
+  server: 13.229.210.217
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-4
+  password: amazonskr05
+  port: 443
+  server: 54.179.52.175
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
   name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 54.199.167.92
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  country: 🇸🇬SG
+  delay: 557
+  name: 新加坡-1
+  password: amazonskr05
+  port: 443
+  server: 13.229.48.116
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 新加坡-2
+  password: amazonskr05
+  port: 443
+  server: 3.0.50.161
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-5
+  password: amazonskr05
+  port: 443
+  server: 18.181.170.89
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 日本-2
   password: amazonskr05
   port: 443
   server: 52.197.57.24
   type: ss
 - alterId: 0
-  name: 新加坡-1
-  network: ws
+  cipher: aes-256-cfb
+  name: 日本-4
+  password: amazonskr05
   port: 443
-  server: 8.219.75.2
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
+  server: 52.199.237.27
+  type: ss
 - alterId: 0
-  name: 新加坡-2
-  network: ws
-  port: 6666
-  server: 150.109.24.233
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-1
-  network: ws
-  port: 30012
-  server: 220.118.248.123
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-3
-  network: ws
-  port: 18888
-  server: 183.106.162.127
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 日本-2
-  network: ws
-  port: 2053
-  server: 132.145.127.203
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 日本-1
-  network: ws
+  cipher: aes-128-gcm
+  name: 英国-1
+  password: shadowsocks
   port: 443
-  server: 141.147.185.63
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
+  server: 212.102.53.197
+  type: ss
 - alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 30050
-  server: 125.137.50.78
-  servername: edccw.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccw.ambercc.filegear-sg.me
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-1
-  network: ws
+  cipher: aes-256-cfb
+  name: 新加坡-5
+  password: amazonskr05
   port: 443
-  server: 63.141.128.140
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
+  server: 54.254.9.107
+  type: ss
 - alpn:
   - h3
   alterId: 0
@@ -222,26 +149,25 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 加拿大
-  - 韩国
   - 新加坡
-  - 美国
   - 日本
+  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-2
+  - 日本-1
+  - 日本-6
   - 新加坡-3
-  - 日本-4
+  - 新加坡-4
   - 日本-3
   - 新加坡-1
   - 新加坡-2
-  - 韩国-1
-  - 韩国-3
+  - 日本-5
   - 日本-2
-  - 日本-1
-  - 韩国-2
-  - 美国-1
+  - 日本-4
+  - 英国-1
+  - 新加坡-5
   - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
@@ -265,26 +191,13 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 新加坡
   proxies:
   - 新加坡-1
   - 新加坡-2
   - 新加坡-3
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  - 美国-2
+  - 新加坡-4
+  - 新加坡-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -294,6 +207,14 @@ proxy-groups:
   - 日本-2
   - 日本-3
   - 日本-4
+  - 日本-5
+  - 日本-6
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
