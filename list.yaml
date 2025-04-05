@@ -26,7 +26,7 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  name: 美国-3
+  name: 美国-2
   network: ws
   port: 443
   server: 138.2.107.107
@@ -41,17 +41,69 @@ proxies:
       host: zs.vs2025.cfd
     path: /?ed=2560
 - alterId: 0
+  name: 新加坡-3
+  network: ws
+  port: 443
+  server: 168.138.165.174
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-1
+  name: 日本-4
   password: amazonskr05
   port: 443
-  server: 13.250.61.152
+  server: 54.238.109.190
   type: ss
 - alterId: 0
+  cipher: aes-256-cfb
   name: 日本-3
+  password: amazonskr05
+  port: 443
+  server: 52.197.57.24
+  type: ss
+- alterId: 0
+  name: 新加坡-1
   network: ws
-  port: 2053
-  server: 140.238.58.181
+  port: 443
+  server: 8.219.75.2
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- alterId: 0
+  name: 新加坡-2
+  network: ws
+  port: 6666
+  server: 150.109.24.233
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
+- alterId: 0
+  name: 韩国-1
+  network: ws
+  port: 30012
+  server: 220.118.248.123
   servername: zs.vs2025.cfd
   skip-cert-verify: true
   tls: true
@@ -80,8 +132,8 @@ proxies:
 - alterId: 0
   name: 日本-2
   network: ws
-  port: 443
-  server: 140.238.50.112
+  port: 2053
+  server: 132.145.127.203
   servername: zs.vs2025.cfd
   skip-cert-verify: true
   tls: true
@@ -93,19 +145,20 @@ proxies:
       host: zs.vs2025.cfd
     path: /?ed=2560
 - alterId: 0
-  cipher: aes-256-cfb
   name: 日本-1
-  password: amazonskr05
+  network: ws
   port: 443
-  server: 52.197.57.24
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-2
-  password: amazonskr05
-  port: 443
-  server: 47.129.157.77
-  type: ss
+  server: 141.147.185.63
+  servername: zs.vs2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: zs.vs2025.cfd
+    path: /?ed=2560
 - alterId: 0
   name: 韩国-2
   network: ws
@@ -136,58 +189,6 @@ proxies:
     headers:
       host: zs.vs2025.cfd
     path: /?ed=2560
-- alterId: 0
-  name: 英国-1
-  network: ws
-  port: 443
-  server: 217.163.76.97
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-1
-  network: ws
-  port: 30012
-  server: 211.218.223.130
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 英国-2
-  password: shadowsocks
-  port: 443
-  server: uk-dc1.yangon.club
-  type: ss
-- alterId: 0
-  name: 美国-4
-  network: ws
-  port: 443
-  server: 135.84.76.110
-  servername: zs.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zs.vs2025.cfd
-    path: /?ed=2560
 - alpn:
   - h3
   alterId: 0
@@ -201,13 +202,6 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 11 Mbps
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 英国-3
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
-  type: ss
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -227,31 +221,28 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 新加坡
-  - 日本
-  - 美国
-  - 韩国
-  - 英国
   - 加拿大
+  - 韩国
+  - 新加坡
+  - 美国
+  - 日本
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-3
-  - 新加坡-1
+  - 美国-2
+  - 新加坡-3
+  - 日本-4
   - 日本-3
+  - 新加坡-1
+  - 新加坡-2
+  - 韩国-1
   - 韩国-3
   - 日本-2
   - 日本-1
-  - 美国-2
   - 韩国-2
   - 美国-1
-  - 英国-1
-  - 韩国-1
-  - 英国-2
-  - 美国-4
   - 加拿大-1
-  - 英国-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -268,26 +259,9 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 新加坡
+  name: 加拿大
   proxies:
-  - 新加坡-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  - 日本-3
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -299,17 +273,27 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 英国
+  name: 新加坡
   proxies:
-  - 英国-1
-  - 英国-2
-  - 英国-3
+  - 新加坡-1
+  - 新加坡-2
+  - 新加坡-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 加拿大
+  name: 美国
   proxies:
-  - 加拿大-1
+  - 美国-1
+  - 美国-2
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  - 日本-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
