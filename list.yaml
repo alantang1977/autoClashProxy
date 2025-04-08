@@ -26,62 +26,19 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  name: 美国-5
-  network: ws
-  port: 443
-  server: 47.76.218.163
-  servername: edcct.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcct.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 30012
-  server: 211.218.223.130
-  servername: zn.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zn.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
   cipher: aes-256-cfb
-  name: 新加坡-1
-  password: wiaimihu22
+  client-fingerprint: chrome
+  name: 日本-2
+  password: thisgou
   port: 80
-  server: 54.255.184.248
+  server: 13.230.226.50
+  tfo: false
   type: ss
 - alterId: 0
-  name: 韩国-1
+  name: 日本-1
   network: ws
-  port: 50001
-  server: 175.203.30.93
-  servername: edcct.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcct.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 韩国-4
-  network: ws
-  port: 30012
-  server: 220.118.248.123
+  port: 443
+  server: 140.238.50.112
   servername: zn.vs2025.cfd
   skip-cert-verify: true
   tls: true
@@ -93,7 +50,7 @@ proxies:
       host: zn.vs2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 韩国-3
+  name: 韩国-1
   network: ws
   port: 18888
   server: 183.106.162.127
@@ -108,78 +65,35 @@ proxies:
       host: zn.vs2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-2
+  name: 韩国-2
   network: ws
-  port: 80
-  server: 172.67.168.60
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5335d16e-7e42-4c9b-93a3-9e83bfd3073d
-  ws-opts:
-    headers:
-      Host: workerr.johnstoner.workers.dev
-    path: /?ed=2048
-- alterId: 0
-  name: 美国-3
-  network: ws
-  port: 443
-  server: 152.70.57.182
-  servername: zn.vs2025.cfd
+  port: 50001
+  server: 175.203.30.93
+  servername: edcct.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: zn.vs2025.cfd
-    path: /?ed=2560
+      host: edcct.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  name: 美国-6
-  network: ws
-  port: 443
-  server: 192.18.134.22
-  servername: zn.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zn.vs2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
   name: 美国-4
   network: ws
   port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 荷兰-1
-  network: ws
-  port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
+  server: 104.16.171.121
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
+  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
   ws-opts:
     headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
+      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
+    path: /?ed=2560
 - alterId: 0
-  name: 美国-1
+  name: 美国-3
   network: ws
   port: 80
   server: 104.18.30.60
@@ -194,7 +108,7 @@ proxies:
       Host: gozargah.validbv7996.ir
     path: /
 - alterId: 0
-  name: 美国-9
+  name: 美国-1
   network: ws
   port: 443
   server: 135.84.76.110
@@ -209,20 +123,15 @@ proxies:
       host: zn.vs2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-8
-  network: ws
-  port: 443
-  server: 63.141.128.140
-  servername: zn.vs2025.cfd
+  name: 英国-2
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.44.194.36
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: zn.vs2025.cfd
-    path: /?ed=2560
 - alterId: 0
   cipher: aes-256-cfb
   name: 英国-1
@@ -233,27 +142,19 @@ proxies:
   server: 62.100.205.48
   type: ssr
 - alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-7
-  obfs: plain
-  password: 463qwerty
-  port: 463
-  protocol: origin
-  server: 35.93.139.175
-  type: ssr
-- alpn:
-  - h3
-  alterId: 0
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 加拿大-1
-  port: 11512
-  protocol: udp
-  server: 108.181.24.77
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
+  client-fingerprint: chrome
+  name: 美国-2
+  network: ws
+  port: 80
+  server: 104.16.1.47
+  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+  tls: false
+  type: vless
+  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
+  ws-opts:
+    headers:
+      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+    path: /?ed=2560
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -274,32 +175,23 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 韩国
-  - 荷兰
-  - 新加坡
   - 英国
-  - 加拿大
+  - 日本
+  - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-5
-  - 韩国-2
-  - 新加坡-1
+  - 日本-2
+  - 日本-1
   - 韩国-1
-  - 韩国-4
-  - 韩国-3
-  - 美国-2
-  - 美国-3
-  - 美国-6
+  - 韩国-2
   - 美国-4
-  - 荷兰-1
+  - 美国-3
   - 美国-1
-  - 美国-9
-  - 美国-8
+  - 英国-2
   - 英国-1
-  - 美国-7
-  - 加拿大-1
+  - 美国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -322,11 +214,20 @@ proxy-groups:
   - 美国-2
   - 美国-3
   - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
+  - 英国-2
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -334,32 +235,6 @@ proxy-groups:
   proxies:
   - 韩国-1
   - 韩国-2
-  - 韩国-3
-  - 韩国-4
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 加拿大
-  proxies:
-  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
