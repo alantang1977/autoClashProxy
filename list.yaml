@@ -26,34 +26,16 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
+  cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 美国-7
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
+  name: 新加坡-1
+  password: 1203poiuy
+  port: 1203
+  server: 54.251.134.94
+  tfo: false
+  type: ss
 - alterId: 0
-  name: 美国-8
-  network: ws
-  port: 80
-  server: 104.16.76.55
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5d8bc42a-d345-4bd3-a844-4b90afc44670
-  ws-opts:
-    headers:
-      Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-3
+  name: 美国-1
   network: ws
   port: 80
   server: 172.67.189.174
@@ -66,15 +48,7 @@ proxies:
       Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
     path: /
 - alterId: 0
-  name: 美国-9
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.170.108.52
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
-- alterId: 0
-  name: 美国-5
+  name: 美国-2
   network: ws
   port: 8880
   server: 66.235.200.94
@@ -87,33 +61,21 @@ proxies:
       Host: channel-falcunargo.efa180b5d7.workers.Dev
     path: /✦❰+𝗝𝗼𝗶𝗻+➪+
 - alterId: 0
-  name: 美国-2
+  client-fingerprint: chrome
+  name: 美国-3
   network: ws
   port: 80
-  server: 104.24.147.64
-  servername: ppal03-ppal03.letiwe3303.workers.dev
-  tls: false
-  type: vless
-  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
-  ws-opts:
-    headers:
-      Host: ppal03-ppal03.letiwe3303.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-6
-  network: ws
-  port: 80
-  server: 104.24.37.192
+  server: 104.24.186.156
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
+  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
   ws-opts:
     headers:
-      Host: ppal03.dolobe7975.workers.dev
+      Host: red-math-7092-ppal03.mewoco2522.workers.dev
     path: /?ed=2560
 - alterId: 0
-  name: 美国-4
+  name: 美国-5
   network: ws
   port: 2052
   server: 172.67.135.195
@@ -129,18 +91,54 @@ proxies:
     path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
   xudp: true
 - alterId: 0
-  cipher: auto
-  name: 美国-1
-  network: ws
-  port: 42360
-  server: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
+  name: 英国-1
+  password: telegram-id-directvpn
+  port: 22222
+  server: 3.9.150.91
   skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  name: 荷兰-1
+  network: ws
+  port: 80
+  server: 45.131.5.111
+  servername: feng4.l1ut8bi9.workers.dev
+  skip-cert-verify: false
   tls: false
-  type: vmess
-  uuid: 3519dfc0-fa27-41cc-8c19-981818f9f6d5
-  ws-headers:
-    Host: 0000000000000000000000000080.cgroup-node-for-bigairport.sbs
-  ws-path: /
+  type: vless
+  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
+  ws-opts:
+    headers:
+      Host: feng4.l1ut8bi9.workers.dev
+    path: /Telegram
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-6
+  network: ws
+  port: 8080
+  server: 104.18.56.155
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
+  ws-opts:
+    headers:
+      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
+    path: /
+- alterId: 0
+  name: 美国-7
+  network: ws
+  port: 80
+  server: 104.24.37.192
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
+  ws-opts:
+    headers:
+      Host: ppal03.dolobe7975.workers.dev
+    path: /?ed=2560
 - alpn:
   - h3
   alterId: 0
@@ -155,20 +153,13 @@ proxies:
   type: hysteria
   up: 11 Mbps
 - alterId: 0
-  cipher: aes-256-cfb
-  name: 英国-2
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 62.100.205.48
-  type: ssr
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 英国-1
-  password: shadowsocks
-  port: 443
-  server: 212.102.53.197
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 美国-4
+  password: RUY3XI1UMNR1BDVL
+  port: 19008
+  server: 206.245.211.18
+  tfo: false
   type: ss
 proxy-groups:
 - name: 漏网之鱼
@@ -190,24 +181,25 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 英国
+  - 新加坡
   - 加拿大
+  - 荷兰
+  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-7
-  - 美国-8
-  - 美国-3
-  - 美国-9
-  - 美国-5
-  - 美国-2
-  - 美国-6
-  - 美国-4
+  - 新加坡-1
   - 美国-1
-  - 加拿大-1
-  - 英国-2
+  - 美国-2
+  - 美国-3
+  - 美国-5
   - 英国-1
+  - 荷兰-1
+  - 美国-6
+  - 美国-7
+  - 加拿大-1
+  - 美国-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -233,21 +225,30 @@ proxy-groups:
   - 美国-5
   - 美国-6
   - 美国-7
-  - 美国-8
-  - 美国-9
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 英国
+  name: 新加坡
   proxies:
-  - 英国-1
-  - 英国-2
+  - 新加坡-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 加拿大
   proxies:
   - 加拿大-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 荷兰
+  proxies:
+  - 荷兰-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
