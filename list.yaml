@@ -26,14 +26,19 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 新加坡-1
-  password: 1203poiuy
-  port: 1203
-  server: 54.251.134.94
-  tfo: false
-  type: ss
+  name: 美国-5
+  network: ws
+  port: 80
+  server: 104.16.1.47
+  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+  tls: false
+  type: vless
+  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
+  ws-opts:
+    headers:
+      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+    path: /?ed=2560
 - alterId: 0
   name: 美国-1
   network: ws
@@ -61,43 +66,18 @@ proxies:
       Host: channel-falcunargo.efa180b5d7.workers.Dev
     path: /✦❰+𝗝𝗼𝗶𝗻+➪+
 - alterId: 0
-  client-fingerprint: chrome
   name: 美国-3
   network: ws
   port: 80
-  server: 104.24.186.156
+  server: 104.24.9.204
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
+  uuid: ca68a029-971c-4ea4-8c1d-411cb7adc474
   ws-opts:
     headers:
-      Host: red-math-7092-ppal03.mewoco2522.workers.dev
+      Host: patient-sunset-f000-ppal03.cijej53213.workers.dev
     path: /?ed=2560
-- alterId: 0
-  name: 美国-5
-  network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
-  ws-opts:
-    headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
-- alterId: 0
-  name: 英国-1
-  password: telegram-id-directvpn
-  port: 22222
-  server: 3.9.150.91
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
 - alterId: 0
   name: 荷兰-1
   network: ws
@@ -113,31 +93,56 @@ proxies:
       Host: feng4.l1ut8bi9.workers.dev
     path: /Telegram
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-6
+  name: 美国-4
   network: ws
-  port: 8080
-  server: 104.18.56.155
+  port: 2087
+  server: 162.159.10.162
+  servername: 5-55sfjslf.ifenxiang.cfd
   skip-cert-verify: false
-  tls: false
+  tfo: false
+  tls: true
   type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
   ws-opts:
     headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /
+      Host: 5-55sfjslf.ifenxiang.cfd
+    path: /net.net?ed=2560
 - alterId: 0
   name: 美国-7
   network: ws
-  port: 80
-  server: 104.24.37.192
-  skip-cert-verify: false
-  tls: false
+  port: 2052
+  server: 172.67.135.195
+  skip-cert-verify: true
   type: vless
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
+  udp: true
+  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
   ws-opts:
     headers:
-      Host: ppal03.dolobe7975.workers.dev
+      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
+  xudp: true
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 英国-1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
+- alterId: 0
+  name: 美国-6
+  network: ws
+  port: 80
+  server: 104.24.147.64
+  servername: ppal03-ppal03.letiwe3303.workers.dev
+  tls: false
+  type: vless
+  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
+  ws-opts:
+    headers:
+      Host: ppal03-ppal03.letiwe3303.workers.dev
     path: /?ed=2560
 - alpn:
   - h3
@@ -152,15 +157,6 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 11 Mbps
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 美国-4
-  password: RUY3XI1UMNR1BDVL
-  port: 19008
-  server: 206.245.211.18
-  tfo: false
-  type: ss
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -181,25 +177,23 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 新加坡
-  - 加拿大
   - 荷兰
+  - 加拿大
   - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-1
+  - 美国-5
   - 美国-1
   - 美国-2
   - 美国-3
-  - 美国-5
-  - 英国-1
   - 荷兰-1
-  - 美国-6
-  - 美国-7
-  - 加拿大-1
   - 美国-4
+  - 美国-7
+  - 英国-1
+  - 美国-6
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -228,21 +222,15 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 新加坡
+  name: 荷兰
   proxies:
-  - 新加坡-1
+  - 荷兰-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 加拿大
   proxies:
   - 加拿大-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
