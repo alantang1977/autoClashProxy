@@ -26,7 +26,7 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  name: 美国-4
+  name: 美国-8
   network: ws
   port: 443
   server: 128.1.18.29
@@ -41,61 +41,7 @@ proxies:
       host: edccr.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  name: 美国-7
-  network: ws
-  port: 443
-  server: iplocation.io
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-5
-  network: ws
-  port: 443
-  server: 152.69.209.132
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-3
-  network: ws
-  port: 443
-  server: tasteatlas.com
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 英国-2
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 62.100.205.48
-  type: ssr
-- alterId: 0
-  name: 美国-2
+  name: 美国-9
   network: ws
   port: 443
   server: 192.0.54.18
@@ -110,7 +56,35 @@ proxies:
       host: vb.dong2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-8
+  name: 荷兰-1
+  network: ws
+  port: 443
+  server: 185.133.35.242
+  servername: vb.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vb.dong2025.cfd
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-3
+  network: ws
+  port: 8880
+  server: 66.235.200.94
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
+  ws-opts:
+    headers:
+      Host: channel-falcunargo.efa180b5d7.workers.Dev
+    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
+- alterId: 0
+  name: 美国-6
   network: ws
   port: 443
   server: 135.84.76.115
@@ -125,10 +99,10 @@ proxies:
       host: vb.dong2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-9
+  name: 美国-7
   network: ws
   port: 443
-  server: steamdb.info
+  server: 63.141.128.94
   servername: vb.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -140,67 +114,7 @@ proxies:
       host: vb.dong2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-6
-  network: ws
-  port: 443
-  server: 135.84.76.105
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-1
-  network: ws
-  port: 443
-  server: www.wto.org
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 英国-1
-  network: ws
-  port: 443
-  server: 217.163.76.102
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-10
-  network: ws
-  port: 443
-  server: 170.39.66.154
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-11
+  name: 美国-4
   network: ws
   port: 443
   server: 160.79.105.99
@@ -215,10 +129,10 @@ proxies:
       host: vb.dong2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-13
+  name: 美国-10
   network: ws
   port: 443
-  server: rustam.ns.cloudflare.com
+  server: 192.200.160.99
   servername: vb.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -230,10 +144,25 @@ proxies:
       host: vb.dong2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-12
+  name: 美国-2
+  network: ws
+  port: 8443
+  server: 91.217.139.121
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 美国-5
   network: ws
   port: 443
-  server: benedict.ns.cloudflare.com
+  server: 170.39.66.154
   servername: vb.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -245,141 +174,10 @@ proxies:
       host: vb.dong2025.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-14
+  name: 美国-1
   network: ws
   port: 443
-  server: trevor.ns.cloudflare.com
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-15
-  network: ws
-  port: 443
-  server: lewis.ns.cloudflare.com
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-16
-  network: ws
-  port: 8880
-  server: 66.235.200.94
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
-- alterId: 0
-  name: 美国-17
-  network: ws
-  port: 443
-  server: julio.ns.cloudflare.com
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 英国-3
-  network: ws
-  port: 443
-  server: 217.163.76.97
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-18
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-19
-  network: ws
-  port: 443
-  server: cris.ns.cloudflare.com
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 荷兰-1
-  network: ws
-  port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
-  ws-opts:
-    headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
-- alterId: 0
-  name: 美国-21
-  network: ws
-  port: 443
-  server: icook.tw
-  servername: vb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.dong2025.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-20
-  network: ws
-  port: 443
-  server: 63.141.128.94
+  server: 135.84.76.105
   servername: vb.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -410,37 +208,22 @@ proxy-groups:
 - name: 选择地区
   proxies:
   - 美国
-  - 英国
   - 荷兰
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 美国-4
-  - 美国-7
-  - 美国-5
-  - 美国-3
-  - 英国-2
-  - 美国-2
   - 美国-8
   - 美国-9
-  - 美国-6
-  - 美国-1
-  - 英国-1
-  - 美国-10
-  - 美国-11
-  - 美国-13
-  - 美国-12
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 英国-3
-  - 美国-18
-  - 美国-19
   - 荷兰-1
-  - 美国-21
-  - 美国-20
+  - 美国-3
+  - 美国-6
+  - 美国-7
+  - 美国-4
+  - 美国-10
+  - 美国-2
+  - 美国-5
+  - 美国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -469,25 +252,6 @@ proxy-groups:
   - 美国-8
   - 美国-9
   - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 英国
-  proxies:
-  - 英国-1
-  - 英国-2
-  - 英国-3
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
