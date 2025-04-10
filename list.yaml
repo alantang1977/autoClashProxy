@@ -28,30 +28,67 @@ proxies:
 - alterId: 0
   cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 韩国-2
-  password: amazonskr05
-  port: 443
-  server: 52.78.247.197
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
   name: 韩国-1
   password: amazonskr05
   port: 443
-  server: 3.39.252.80
+  server: 52.79.172.127
   tfo: false
   type: ss
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 美国-1
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 162.251.63.124
+  name: 英国-1
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.24.42.128
   skip-cert-verify: true
-  tls: true
-  type: ss
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  name: 美国-6
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 63.177.116.21
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 美国-7
+  network: ws
+  port: 80
+  server: 6fe34a9c-suk9s0-sve5if-z93q.lza.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 美国-3
+  port: 1069
+  server: 152.69.197.60
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+- alterId: 0
+  name: 美国-5
+  network: ws
+  port: 8880
+  server: 66.235.200.94
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
+  ws-opts:
+    headers:
+      Host: channel-falcunargo.efa180b5d7.workers.Dev
+    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
 - alterId: 0
   name: 荷兰-1
   network: ws
@@ -68,47 +105,7 @@ proxies:
     path: /Telegram
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 104.24.248.204
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 2370f4d8-6694-4e51-8c72-b2782ae96a59
-  ws-opts:
-    headers:
-      Host: withered-wave-ee0b-ppal03.faxip46069.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-4
-  network: ws
-  port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 80
-  server: 104.24.37.192
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
-  ws-opts:
-    headers:
-      Host: ppal03.dolobe7975.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-7
+  name: 美国-11
   network: ws
   port: 8080
   server: 104.18.56.155
@@ -120,22 +117,21 @@ proxies:
     headers:
       Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
     path: /
+- alpn:
+  - h3
+  alterId: 0
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 加拿大-1
+  port: 11512
+  protocol: udp
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-6
-  network: ws
-  port: 80
-  server: 104.24.186.156
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 6ff4726f-3650-4803-95eb-50b240f6ac75
-  ws-opts:
-    headers:
-      Host: red-math-7092-ppal03.mewoco2522.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-3
+  name: 美国-4
   network: ws
   port: 2052
   server: 172.67.135.195
@@ -151,40 +147,90 @@ proxies:
     path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
   xudp: true
 - alterId: 0
+  name: 美国-2
+  network: ws
+  port: 80
+  server: 104.24.37.192
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
+  ws-opts:
+    headers:
+      Host: ppal03.dolobe7975.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-8
+  network: ws
+  port: 80
+  server: 172.67.189.174
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 19b3cbba-e6ac-485a-9481-926a0415eab2
+  ws-opts:
+    headers:
+      Host: sHrill-tErm-639b.TageLIT414.workeRs.dEv
+    path: /
+- alterId: 0
   cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 美国-9
+  name: 美国-1
+  obfs: plain
   password: amazonskr05
   port: 443
+  protocol: origin
   server: 52.13.121.24
-  tfo: false
-  type: ss
+  type: ssr
+- alterId: 0
+  name: 美国-10
+  network: ws
+  port: 80
+  server: 104.16.171.121
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
+  ws-opts:
+    headers:
+      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 美国-5
-  network: tcp
+  name: 美国-9
   port: 22324
-  raw:
-    add: 186.190.215.193
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: 04621bae-ab36-11ec-b909-0242ac120002
-    net: tcp
-    path: /
-    port: 22324
-    ps: 🇵🇦 PA_213
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
   server: 186.190.215.193
-  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
+  udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  name: 美国-13
+  network: ws
+  port: 80
+  server: 104.16.178.238
+  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
+  tls: false
+  type: vless
+  uuid: d4eddaf9-a660-4905-b835-cad98677b380
+  ws-opts:
+    headers:
+      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-12
+  network: ws
+  port: 80
+  server: 104.16.86.2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
+  ws-opts:
+    headers:
+      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
+    path: /?ed=2560
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -204,25 +250,32 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 荷兰
   - 美国
+  - 加拿大
+  - 荷兰
+  - 英国
   - 韩国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 韩国-2
   - 韩国-1
-  - 美国-1
-  - 荷兰-1
-  - 美国-2
-  - 美国-4
-  - 美国-8
-  - 美国-7
+  - 英国-1
   - 美国-6
+  - 美国-7
   - 美国-3
-  - 美国-9
   - 美国-5
+  - 荷兰-1
+  - 美国-11
+  - 加拿大-1
+  - 美国-4
+  - 美国-2
+  - 美国-8
+  - 美国-1
+  - 美国-10
+  - 美国-9
+  - 美国-13
+  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -239,12 +292,6 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
   name: 美国
   proxies:
   - 美国-1
@@ -256,13 +303,34 @@ proxy-groups:
   - 美国-7
   - 美国-8
   - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 加拿大
+  proxies:
+  - 加拿大-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 荷兰
+  proxies:
+  - 荷兰-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 300
+  name: 英国
+  proxies:
+  - 英国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
   name: 韩国
   proxies:
   - 韩国-1
-  - 韩国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
