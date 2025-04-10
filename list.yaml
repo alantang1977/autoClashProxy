@@ -1,16 +1,51 @@
 allow-lan: false
 dns:
+  default-nameserver:
+  - 223.6.6.6
+  - 8.8.8.8
+  direct-nameserver: []
+  direct-nameserver-follow-policy: false
   enable: true
   enhanced-mode: fake-ip
-  fake-ip-filter: []
-  fake-ip-range: 172.29.0.1/16
-  fallback: []
-  ipv6: false
+  fake-ip-filter:
+  - '*.lan'
+  - '*.local'
+  - '*.arpa'
+  - time.*.com
+  - ntp.*.com
+  - time.*.com
+  - +.market.xiaomi.com
+  - localhost.ptlogin2.qq.com
+  - '*.msftncsi.com'
+  - www.msftconnecttest.com
+  fake-ip-filter-mode: blacklist
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - https://dns.alidns.com/dns-query
+  - https://dns.google/dns-query
+  - https://cloudflare-dns.com/dns-query
+  fallback-filter:
+    domain:
+    - +.google.com
+    - +.facebook.com
+    - +.youtube.com
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+  listen: :53
   nameserver:
-  - 114.114.114.114
-  - 223.5.5.5
   - 8.8.8.8
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
   nameserver-policy: {}
+  prefer-h3: false
+  proxy-server-nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  respect-rules: false
+  use-hosts: false
   use-system-hosts: false
 external-controller: 127.0.0.1:34885
 external-controller-cors:
@@ -18,18 +53,17 @@ external-controller-cors:
   - '*'
   allow-private-network: true
 ipv6: false
-log-level: info
-mixed-port: 7897
+log-level: debug
+mixed-port: 7890
 mode: rule
-port: 7890
 profile:
   store-selected: true
 proxies:
 - alterId: 0
-  name: 新加坡-1
+  name: 未知地区-1
   network: ws
   port: 443
-  server: 8.222.165.104
+  server: 168.138.165.174
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -41,7 +75,22 @@ proxies:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 日本-1
+  name: 未知地区-4
+  network: ws
+  port: 443
+  server: 138.2.107.107
+  servername: nx.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nx.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 未知地区-2
   network: ws
   port: 19999
   server: 202.84.53.85
@@ -56,16 +105,22 @@ proxies:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-4
-  password: amazonskr05
-  port: 443
-  server: 52.79.172.127
-  tfo: false
-  type: ss
+  name: 未知地区-3
+  network: ws
+  port: 6666
+  server: 150.109.24.233
+  servername: nx.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nx.ylka.dpdns.org
+    path: /?ed=2560
 - alterId: 0
-  name: 韩国-1
+  name: 未知地区-8
   network: ws
   port: 30012
   server: 211.218.223.130
@@ -80,37 +135,7 @@ proxies:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 50000
-  server: 59.2.75.64
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-3
-  network: ws
-  port: 50001
-  server: 119.205.6.124
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-4
+  name: 未知地区-5
   network: ws
   port: 18446
   server: 154.17.21.134
@@ -125,10 +150,10 @@ proxies:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-1
+  name: 未知地区-6
   network: ws
   port: 443
-  server: 192.9.180.162
+  server: 160.79.105.155
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -140,66 +165,7 @@ proxies:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-6
-  network: ws
-  port: 443
-  server: whatismyipaddress.com
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 日本-2
-  network: ws
-  port: 10099
-  server: 146.56.136.39
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-2
-  network: ws
-  port: 443
-  server: 192.0.54.74
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 荷兰-1
-  network: ws
-  port: 80
-  server: 45.131.5.111
-  servername: feng4.l1ut8bi9.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466
-  ws-opts:
-    headers:
-      Host: feng4.l1ut8bi9.workers.dev
-    path: /Telegram
-- alterId: 0
-  name: 美国-5
+  name: 未知地区-9
   network: ws
   port: 443
   server: 198.62.62.4
@@ -214,10 +180,10 @@ proxies:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-11
+  name: 未知地区-7
   network: ws
   port: 443
-  server: steamdb.info
+  server: 8.222.165.104
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -228,169 +194,6 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- alterId: 0
-  name: 美国-3
-  network: ws
-  port: 443
-  server: 192.9.139.160
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-9
-  network: ws
-  port: 443
-  server: huxley.ns.cloudflare.com
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-7
-  network: ws
-  port: 443
-  server: 69.84.182.141
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 443
-  server: ashton.ns.cloudflare.com
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-10
-  network: ws
-  port: 443
-  server: 160.79.104.199
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-12
-  network: ws
-  port: 443
-  server: lewis.ns.cloudflare.com
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-14
-  network: ws
-  port: 443
-  server: 160.79.104.195
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-15
-  network: ws
-  port: 443
-  server: decker.ns.cloudflare.com
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 荷兰-2
-  network: ws
-  port: 443
-  server: 185.133.35.162
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-13
-  network: ws
-  port: 443
-  server: 160.79.104.55
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-16
-  network: ws
-  port: 8880
-  server: 66.235.200.94
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -410,40 +213,20 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 韩国
-  - 日本
-  - 美国
-  - 新加坡
-  - 荷兰
+  - 未知地区
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
-  - 新加坡-1
-  - 日本-1
-  - 韩国-4
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  - 美国-4
-  - 美国-1
-  - 美国-6
-  - 日本-2
-  - 美国-2
-  - 荷兰-1
-  - 美国-5
-  - 美国-11
-  - 美国-3
-  - 美国-9
-  - 美国-7
-  - 美国-8
-  - 美国-10
-  - 美国-12
-  - 美国-14
-  - 美国-15
-  - 荷兰-2
-  - 美国-13
-  - 美国-16
+  - 未知地区-1
+  - 未知地区-4
+  - 未知地区-2
+  - 未知地区-3
+  - 未知地区-8
+  - 未知地区-5
+  - 未知地区-6
+  - 未知地区-9
+  - 未知地区-7
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -460,53 +243,17 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 300
-  name: 韩国
+  name: 未知地区
   proxies:
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  - 韩国-4
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 日本
-  proxies:
-  - 日本-1
-  - 日本-2
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 美国
-  proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 新加坡
-  proxies:
-  - 新加坡-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 荷兰
-  proxies:
-  - 荷兰-1
-  - 荷兰-2
+  - 未知地区-1
+  - 未知地区-2
+  - 未知地区-3
+  - 未知地区-4
+  - 未知地区-5
+  - 未知地区-6
+  - 未知地区-7
+  - 未知地区-8
+  - 未知地区-9
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
@@ -594,6 +341,6 @@ tun:
   - any:53
   enable: true
   mtu: 1500
-  stack: gvisor
+  stack: system
   strict-route: false
 unified-delay: true
