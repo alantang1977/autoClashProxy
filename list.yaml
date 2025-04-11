@@ -1,52 +1,38 @@
 allow-lan: false
 dns:
-  default-nameserver:
-  - 223.6.6.6
-  - 8.8.8.8
-  direct-nameserver: []
-  direct-nameserver-follow-policy: false
   enable: true
-  enhanced-mode: fake-ip
-  fake-ip-filter:
-  - '*.lan'
-  - '*.local'
-  - '*.arpa'
-  - time.*.com
-  - ntp.*.com
-  - time.*.com
-  - +.market.xiaomi.com
-  - localhost.ptlogin2.qq.com
-  - '*.msftncsi.com'
-  - www.msftconnecttest.com
-  fake-ip-filter-mode: blacklist
-  fake-ip-range: 198.18.0.1/16
   fallback:
-  - https://dns.alidns.com/dns-query
-  - https://dns.google/dns-query
+  - 8.8.8.8
+  - tls://dns.rubyfish.cn:853
+  - tls://1.0.0.1:853
+  - tls://dns.google:853
+  - https://dns.rubyfish.cn/dns-query
   - https://cloudflare-dns.com/dns-query
+  - https://dns.google/dns-query
   fallback-filter:
     domain:
     - +.google.com
     - +.facebook.com
     - +.youtube.com
+    - +.xn--ngstr-lra8j.com
+    - +.google.cn
+    - +.googleapis.cn
+    - +.gvt1.com
     geoip: true
-    geoip-code: CN
     ipcidr:
     - 240.0.0.0/4
     - 0.0.0.0/32
-  listen: :53
+    - 127.0.0.1/32
+  ipv6: false
   nameserver:
-  - 8.8.8.8
-  - https://doh.pub/dns-query
+  - 223.5.5.5
+  - 180.76.76.76
+  - 119.29.29.29
+  - 117.50.11.11
+  - 117.50.10.10
+  - 114.114.114.114
   - https://dns.alidns.com/dns-query
-  nameserver-policy: {}
-  prefer-h3: false
-  proxy-server-nameserver:
-  - https://doh.pub/dns-query
-  - https://dns.alidns.com/dns-query
-  respect-rules: false
-  use-hosts: false
-  use-system-hosts: false
+  - https://doh.360.cn/dns-query
 external-controller: 127.0.0.1:34885
 external-controller-cors:
   allow-origins:
@@ -75,7 +61,7 @@ proxies:
       host: edccr.aimercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  name: 韩国-1
+  name: 韩国-5
   network: ws
   port: 12336
   server: 125.141.54.180
@@ -90,34 +76,90 @@ proxies:
       host: edccr.aimercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-2
+  name: 韩国-3
   network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-3
-  network: ws
-  port: 8443
-  server: 104.129.166.131
+  port: 12434
+  server: 121.144.201.72
   servername: edccr.aimercc.filegear-sg.me
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: edccr.aimercc.filegear-sg.me
+      host: edccr.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 韩国-8
+  network: ws
+  port: 12527
+  server: 221.144.200.91
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
     path: /?ed=2560
+- alterId: 0
+  name: 韩国-10
+  network: ws
+  port: 22022
+  server: 220.117.126.46
+  servername: edccr.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccr.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 英国-1
+  password: telegram-id-directvpn
+  port: 22222
+  server: 51.44.59.45
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tfo: false
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 韩国-1
+  network: ws
+  port: 12514
+  server: 210.123.143.214
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 韩国-6
+  network: ws
+  port: 50000
+  server: 121.163.248.127
+  servername: edccr.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccr.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   name: 日本-1
   network: ws
@@ -134,7 +176,7 @@ proxies:
       Host: edccr.aimercc.filegear-sg.me
     path: /?ed=2560
 - alterId: 0
-  name: 韩国-2
+  name: 韩国-7
   network: ws
   port: 10046
   server: 121.140.60.17
@@ -149,10 +191,25 @@ proxies:
       host: edccy.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  name: 美国-8
+  name: 美国-3
   network: ws
-  port: 443
-  server: kip.ns.cloudflare.com
+  port: 8443
+  server: 104.129.166.131
+  servername: edccr.aimercc.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccr.aimercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
+  name: 韩国-2
+  network: ws
+  port: 50000
+  server: 211.217.223.187
   servername: edccy.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
@@ -164,24 +221,46 @@ proxies:
       host: edccy.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  client-fingerprint: random
-  name: 美国-5
+  name: 韩国-4
   network: ws
-  port: 443
-  server: 104.18.27.94
-  servername: 5-55sfjslf.ifenxiang.cfd
-  skip-cert-verify: false
-  tfo: false
+  port: 50001
+  server: 175.203.30.93
+  servername: edccr.aimercc.filegear-sg.me
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: 5-55sfjslf.ifenxiang.cfd
-    path: /?ed=2560
+      host: edccr.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 美国-2
+  password: kDWvXYZoTBcGkC4
+  port: 8881
+  server: 162.251.63.124
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   name: 美国-4
+  network: ws
+  port: 443
+  server: 108.165.152.207
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-5
   network: ws
   port: 8443
   server: 160.79.105.133
@@ -194,6 +273,21 @@ proxies:
   ws-opts:
     headers:
       host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 韩国-9
+  network: ws
+  port: 10533
+  server: 211.114.180.156
+  servername: edccr.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccr.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   name: 美国-6
@@ -210,28 +304,6 @@ proxies:
     headers:
       Host: edccr.aimercc.filegear-sg.me
     path: /?ed=2560
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 美国-7
-  password: kDWvXYZoTBcGkC4
-  port: 8881
-  server: 162.251.63.124
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alpn:
-  - h3
-  alterId: 0
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 加拿大-1
-  port: 11512
-  protocol: udp
-  server: 108.181.24.77
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -251,34 +323,40 @@ proxy-groups:
   type: select
 - name: 选择地区
   proxies:
-  - 美国
   - 韩国
+  - 美国
   - 日本
-  - 加拿大
+  - 英国
   type: select
-- interval: 300
+- interval: 120
   name: 延迟最低
   proxies: &id001
   - 美国-1
+  - 韩国-5
+  - 韩国-3
+  - 韩国-8
+  - 韩国-10
+  - 英国-1
   - 韩国-1
-  - 美国-2
-  - 美国-3
+  - 韩国-6
   - 日本-1
+  - 韩国-7
+  - 美国-3
   - 韩国-2
-  - 美国-8
-  - 美国-5
+  - 韩国-4
+  - 美国-2
   - 美国-4
+  - 美国-5
+  - 韩国-9
   - 美国-6
-  - 美国-7
-  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
-- interval: 300
+- interval: 120
   name: 故障转移
   proxies: *id001
   type: fallback
   url: https://i.ytimg.com/generate_204
-- interval: 300
+- interval: 120
   name: 负载均衡
   proxies: *id001
   type: load-balance
@@ -286,7 +364,22 @@ proxy-groups:
 - name: 手动选择
   proxies: *id001
   type: select
-- interval: 300
+- interval: 120
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
+  - 韩国-5
+  - 韩国-6
+  - 韩国-7
+  - 韩国-8
+  - 韩国-9
+  - 韩国-10
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 120
   name: 美国
   proxies:
   - 美国-1
@@ -295,27 +388,18 @@ proxy-groups:
   - 美国-4
   - 美国-5
   - 美国-6
-  - 美国-7
-  - 美国-8
   type: url-test
   url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 300
+- interval: 120
   name: 日本
   proxies:
   - 日本-1
   type: url-test
   url: https://i.ytimg.com/generate_204
-- interval: 300
-  name: 加拿大
+- interval: 120
+  name: 英国
   proxies:
-  - 加拿大-1
+  - 英国-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
