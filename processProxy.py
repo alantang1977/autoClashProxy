@@ -147,6 +147,7 @@ def downloadProxy(url, requestsProxy):
     if (download != None):
         #下载的内容中可能会包含一些html标签等无关内容，需要删除这些多余的内容。
         download = download.replace("!<str> ", "")
+        download = download.replace("!&lt;str&gt;", "")
         html = re.compile('<.*?>')
         download = re.sub(html, "", download)
         try:

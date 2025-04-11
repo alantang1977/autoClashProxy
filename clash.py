@@ -13,7 +13,7 @@ class clashAPI:
         self.controllerPort = 34885 #登录clash web ui的端口
         self.mixedPort = 7890 #http代理端口
 
-        self.timeout = 1000 #延迟测试超时时间
+        self.timeout = 1200 #延迟测试超时时间
         self.delayUrl = "https://i.ytimg.com/generate_204" #延迟测试需要的url
 
         self.secret = "d53df256-8f1b-4f9b-b730-6a4e947104b6" #登录clash web ui所需要的秘钥
@@ -118,7 +118,7 @@ class clashConfig:
         self.file = "list.yaml" #最终生成的配置文件
         self.requestsProxy = {'http':  self.clash.httpProxy, 'https': self.clash.httpsProxy} #进行网络请求时设置的代理
         self.minInConfig = 10 #生成配置文件需要的最少的节点数量
-        self.maxInConfig = 2000 #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
+        self.maxInConfig = 3000 #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
         self.maxAfterDelay = 25 #经过延迟测试后，允许输出的最大节点数量
 
         if (self.minInConfig > self.maxAfterDelay):
@@ -160,7 +160,7 @@ class clashConfig:
 
         if(groupType != "select"):
             group['url'] = self.clash.delayUrl
-            group["interval"] = 300
+            group["interval"] = 120
 
         return group
 
