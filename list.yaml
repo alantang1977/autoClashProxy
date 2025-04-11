@@ -60,16 +60,40 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  cipher: aes-256-cfb
+  cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 日本-1
-  password: amazonskr05
-  port: 443
-  server: 43.207.139.21
+  password: 1234
+  port: 1234
+  server: 54.199.242.76
   tfo: false
   type: ss
 - alterId: 0
-  name: 韩国-5
+  name: 韩国-1
+  network: ws
+  port: 22022
+  server: 220.117.126.46
+  servername: edccr.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccr.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-2
+  password: 1601e3c29c8db1a88942cf0cad731bf3
+  port: 3306
+  server: 43.131.255.175
+  tfo: false
+  type: ss
+- alterId: 0
+  name: 韩国-3
   network: ws
   port: 12514
   server: 210.123.143.214
@@ -84,11 +108,11 @@ proxies:
       host: edccy.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  name: 韩国-2
+  name: 韩国-5
   network: ws
-  port: 10533
-  server: 211.114.180.156
-  servername: edccr.ambercc.filegear-sg.me
+  port: 12527
+  server: 221.144.200.91
+  servername: edccy.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -96,25 +120,10 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edccr.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560
 - alterId: 0
-  name: 韩国-6
-  network: ws
-  port: 12336
-  server: 125.141.54.180
-  servername: edccr.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccr.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 韩国-1
+  name: 韩国-7
   network: ws
   port: 10046
   server: 121.140.60.17
@@ -131,9 +140,9 @@ proxies:
 - alterId: 0
   name: 韩国-4
   network: ws
-  port: 50000
-  server: 211.217.223.187
-  servername: edccy.ambercc.filegear-sg.me
+  port: 10533
+  server: 211.114.180.156
+  servername: edccr.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -141,48 +150,37 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edccy.ambercc.filegear-sg.me
+      host: edccr.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  name: 英国-1
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 35.177.61.168
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
+  client-fingerprint: chrome
   name: 美国-2
   network: ws
-  port: 443
-  server: 128.1.18.29
-  servername: edccr.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.16.1.47
+  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+  tls: false
   type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
   ws-opts:
     headers:
-      host: edccr.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+    path: /?ed=2560
 - alterId: 0
-  name: 韩国-3
+  name: 美国-1
   network: ws
-  port: 50000
-  server: 121.163.248.127
-  servername: edccr.ambercc.filegear-sg.me
-  skip-cert-verify: true
+  port: 443
+  server: 108.165.152.207
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edccr.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560
 - alterId: 0
   name: 荷兰-1
   network: ws
@@ -198,6 +196,19 @@ proxies:
       Host: feng4.l1ut8bi9.workers.dev
     path: /Telegram
 - alterId: 0
+  name: 美国-5
+  network: ws
+  port: 80
+  server: 104.16.171.121
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
+  ws-opts:
+    headers:
+      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
+    path: /?ed=2560
+- alterId: 0
   name: 日本-2
   network: ws
   port: 2083
@@ -212,6 +223,35 @@ proxies:
     headers:
       Host: edccr.aimercc.filegear-sg.me
     path: /?ed=2560
+- alterId: 2
+  cipher: auto
+  name: 美国-8
+  network: ws
+  port: 1280
+  server: 5fd93da9-sutj40-sydwhg-1s2ks.sv.plebai.net
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a664d16a-4e47-11ef-9d7e-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  name: 美国-7
+  network: ws
+  port: 8880
+  server: 66.235.200.94
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
+  ws-opts:
+    headers:
+      Host: channel-falcunargo.efa180b5d7.workers.Dev
+    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
 - alterId: 0
   name: 美国-4
   network: ws
@@ -228,11 +268,52 @@ proxies:
       Host: edccr.aimercc.filegear-sg.me
     path: /?ed=2560
 - alterId: 0
+  name: 美国-6
+  network: ws
+  port: 2083
+  server: 161.145.150.29
+  servername: edccr.aimercc.filegear-sg.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccr.aimercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
   name: 美国-3
   network: ws
-  port: 8443
-  server: 160.79.105.133
-  servername: edccy.ambercc.filegear-sg.me
+  port: 80
+  server: 104.16.76.55
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5d8bc42a-d345-4bd3-a844-4b90afc44670
+  ws-opts:
+    headers:
+      Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
+    path: /?ed=2560
+- alpn:
+  - h3
+  alterId: 0
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: 加拿大-1
+  port: 11512
+  protocol: udp
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
+- alterId: 0
+  name: 韩国-6
+  network: ws
+  port: 12336
+  server: 125.141.54.180
+  servername: edccr.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
@@ -240,20 +321,8 @@ proxies:
   uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      host: edccy.ambercc.filegear-sg.me
+      host: edccr.aimercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- alpn:
-  - h3
-  alterId: 0
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 美国-1
-  port: 17549
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -276,26 +345,31 @@ proxy-groups:
   - 美国
   - 韩国
   - 日本
+  - 加拿大
   - 荷兰
-  - 英国
   type: select
 - interval: 300
   name: 延迟最低
   proxies: &id001
   - 日本-1
-  - 韩国-5
-  - 韩国-2
-  - 韩国-6
   - 韩国-1
-  - 韩国-4
-  - 英国-1
-  - 美国-2
+  - 韩国-2
   - 韩国-3
-  - 荷兰-1
-  - 日本-2
-  - 美国-4
-  - 美国-3
+  - 韩国-5
+  - 韩国-7
+  - 韩国-4
+  - 美国-2
   - 美国-1
+  - 荷兰-1
+  - 美国-5
+  - 日本-2
+  - 美国-8
+  - 美国-7
+  - 美国-4
+  - 美国-6
+  - 美国-3
+  - 加拿大-1
+  - 韩国-6
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -318,6 +392,10 @@ proxy-groups:
   - 美国-2
   - 美国-3
   - 美国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 美国-8
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -329,6 +407,7 @@ proxy-groups:
   - 韩国-4
   - 韩国-5
   - 韩国-6
+  - 韩国-7
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
@@ -339,15 +418,15 @@ proxy-groups:
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 荷兰
+  name: 加拿大
   proxies:
-  - 荷兰-1
+  - 加拿大-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 300
-  name: 英国
+  name: 荷兰
   proxies:
-  - 英国-1
+  - 荷兰-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
