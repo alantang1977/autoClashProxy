@@ -139,6 +139,10 @@ class clashConfig:
             data = requests.get(f"http://ip.plyz.net/ip.ashx?ip={ip}", proxies=self.requestsProxy).text
             if (len(data) != 0):
                 country = data.split("|")[1].split()[0]
+                if (country == "中国"):
+                    province = data.split("|")[1].split()[1]
+                    if ("香港" in province or "台湾" in province):
+                        country = country + province
         except Exception as e:
             print(e)
 
