@@ -13,7 +13,7 @@ class clashAPI:
         self.controllerPort = 34885 #登录clash web ui的端口
         self.mixedPort = 7890 #http代理端口
 
-        self.timeout = 1200 #延迟测试超时时间
+        self.timeout = 3000 #延迟测试超时时间
         self.delayUrl = "https://i.ytimg.com/generate_204" #延迟测试需要的url
 
         self.secret = "d53df256-8f1b-4f9b-b730-6a4e947104b6" #登录clash web ui所需要的秘钥
