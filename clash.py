@@ -141,8 +141,10 @@ class clashConfig:
                 country = data.split("|")[1].split()[0]
                 if (country == "中国"):
                     province = data.split("|")[1].split()[1]
-                    if ("香港" in province or "台湾" in province):
+                    if ("香港" in province or "台湾" in province or "澳门" in province):
                         country = country + province
+                    else:
+                        country = "中国大陆"
         except Exception as e:
             print(e)
 
@@ -209,8 +211,16 @@ class clashConfig:
         config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
 
         config['proxy-groups'] = []
+
         config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
         config['proxy-groups'].append(self.createGroup("国外媒体", "select", ["选择地区", "延迟最低", "故障转移", "负载均衡", "手动选择"]))
+
+        tiktokProxies = [proxy for proxy in proxiesNames if "中国" not in proxy]
+        if (len(tiktokProxies) > 0):
+            config['proxy-groups'].append(self.createGroup("TIKTOK", "url-test", tiktokProxies))
+        else:
+            print("没有包含非中国节点，不满足条件")
+            return False
 
         selectCountry = self.createGroup("选择地区", "select", [])
         allCountry = []
