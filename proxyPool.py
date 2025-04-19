@@ -59,7 +59,7 @@ parser.add_argument("--defaultFile", type=str, default="default.config", help="�
 parser.add_argument("--configFile", type=str, default="list.yaml", help="最终生成的clash配置文件名称")
 parser.add_argument("--minProxyInConfig", type=int, default=10, help="生成配置文件所需要的最小节点数量")
 parser.add_argument("--maxProxyInConfig", type=int, default=2000, help="生成配置文件所允许的最大节点数量")
-parser.add_argument("--maxProxyAfterDelay", type=int, default=34885, help="经过延迟测试后，允许输出的最大节点数量")
+parser.add_argument("--maxProxyAfterDelay", type=int, default=36, help="经过延迟测试后，允许输出的最大节点数量")
 parser.add_argument("--interval", type=int, default=360, help="clash代理组节点检测时间间隔")
 
 createClash = parser.add_mutually_exclusive_group(required=True)
