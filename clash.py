@@ -8,15 +8,15 @@ import random
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class clashAPI:
-    def __init__(self):
-        self.baseUrl = "http://127.0.0.1"
-        self.controllerPort = 34885 #登录clash web ui的端口
-        self.mixedPort = 7890 #http代理端口
+    def __init__(self, args):
+        self.baseUrl = args.uiUrl
+        self.controllerPort = args.uiPort #登录clash web ui的端口
+        self.mixedPort = args.mixedPort #http代理端口
 
-        self.timeout = 3000 #延迟测试超时时间
-        self.delayUrl = "https://i.ytimg.com/generate_204" #延迟测试需要的url
+        self.timeout = args.timeout #延迟测试超时时间
+        self.delayUrl = args.delayUrl #延迟测试需要的url
 
-        self.secret = "d53df256-8f1b-4f9b-b730-6a4e947104b6" #登录clash web ui所需要的秘钥
+        self.secret = args.secret #登录clash web ui所需要的秘钥
         self.authorization = {"Authorization": f"Bearer {self.secret}"}
 
         #self.testUrl = "https://www.youtube.com/s/desktop/c01ea7e3/img/logos/favicon.ico" #生成proxy group设置里所需要的url
@@ -112,14 +112,15 @@ class clashAPI:
         return json.loads(message.text)
 
 class clashConfig:
-    def __init__(self):
-        self.clash = clashAPI()
-        self.defaultFile = "default.config" #生成配置文件所需要的模板文件，里面会设置好ruler、dns和tun等clash配置
-        self.file = "list.yaml" #最终生成的配置文件
+    def __init__(self, args):
+        self.clash = clashAPI(args)
+        self.defaultFile = args.defaultFile #生成配置文件所需要的模板文件，里面会设置好ruler、dns和tun等clash配置
+        self.file = args.configFile #最终生成的配置文件
         self.requestsProxy = {'http':  self.clash.httpProxy, 'https': self.clash.httpsProxy} #进行网络请求时设置的代理
-        self.minInConfig = 10 #生成配置文件需要的最少的节点数量
-        self.maxInConfig = 2000 #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
-        self.maxAfterDelay = 36 #经过延迟测试后，允许输出的最大节点数量
+        self.minInConfig = args.minProxyInConfig #生成配置文件需要的最少的节点数量
+        self.maxInConfig = args.maxProxyInConfig #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
+        self.maxAfterDelay = args.maxProxyAfterDelay #经过延迟测试后，允许输出的最大节点数量
+        self.interval = args.interval #clash代理组节点检测时间间隔
 
         if (self.minInConfig > self.maxAfterDelay):
             print(f"延迟测试输出的节点数量:{self.maxAfterDelay} 小于 配置文件所需要的最小节点数量:{self.minInConfig}。请检查相关设置")
@@ -166,7 +167,7 @@ class clashConfig:
 
         if(groupType != "select"):
             group['url'] = self.clash.delayUrl
-            group["interval"] = 360
+            group["interval"] = self.interval
 
         return group
 
