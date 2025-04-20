@@ -75,450 +75,21 @@ mode: rule
 profile:
   store-selected: true
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 中国香港-5
-  network: ws
-  port: 80
-  server: 370a808c-sv2sg0-sw4w3a-1pbfz.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3f03b164-86a9-11ee-ba78-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-4
-  network: ws
-  port: 80
-  server: 31cca5fa-sv2sg0-t4v3jz-1k8ga.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-15
-  network: ws
-  port: 80
-  server: 5739d496-sv2sg0-t917sa-12ach.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: fc5ba91a-acd7-11ef-97e0-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-7
-  network: ws
-  port: 80
-  server: fc2281fc-sv2sg0-swskl4-1rh01.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4c0ba4a2-1510-11ef-ba65-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-3
-  network: ws
-  port: 80
-  server: b4e27ff3-sv2sg0-t6yomk-1hfac.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 17049fe0-a04e-11ec-a8bf-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-6
-  network: ws
-  port: 80
-  server: 7aafedff-sva740-t6k7h7-1rcxl.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9141f048-0b70-11ef-9eb1-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
+- alterId: 0
   cipher: auto
   name: 中国香港-1
   network: ws
-  port: 80
-  server: 02ab2b12-sv2sg0-syfj90-1r9dt.hgc1.tcpbbr.net
+  port: 10807
+  server: cnhka.kia-ai.com
   skip-cert-verify: true
-  tls: false
+  tls: true
   type: vmess
-  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
+  uuid: c36fc804-7fc7-4fea-b1d7-cc1e334b1c56
   ws-headers:
-    Host: broadcastlv.chat.bilibili.com
+    Host: cnhka.kia-ai.com
   ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-17
-  network: ws
-  port: 80
-  server: 72b845c3-sv2sg0-t5hlsw-1b3xq.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b297d1ea-976f-11eb-8673-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-8
-  network: ws
-  port: 80
-  server: 0342aafc-sv2sg0-sw26q2-php4.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c648ecc0-838a-11ed-bd81-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
+- alterId: 0
   name: 中国香港-2
-  network: ws
-  port: 80
-  server: 6af43927-sv2sg0-tbnucr-1thfv.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-12
-  network: ws
-  port: 80
-  server: 81b7ce66-sv2sg0-sywxsy-e54r.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c4f3a1ca-8d10-11eb-a8bf-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-9
-  network: ws
-  port: 80
-  server: ba674421-sv2sg0-tdh9w7-ahsb.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-13
-  network: ws
-  port: 80
-  server: b4f9666d-sv2sg0-tbfsbm-nde6.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b19e8df4-fba9-11ea-9777-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-19
-  network: ws
-  port: 80
-  server: 98f8bda7-sv2sg0-t51upj-ochh.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cf89e064-5c77-11eb-bd3a-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-10
-  network: ws
-  port: 80
-  server: c120577e-sv2sg0-t51bp0-1nyy5.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-11
-  network: ws
-  port: 80
-  server: 00eb2fae-sv2sg0-swos8d-1te2a.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 574db4bc-ef5e-11ef-bd1a-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 0
-  name: 日本-1
-  port: 16725
-  server: 54.168.120.254
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fcc420da-544b-422a-944f-0ccb2b35acb2
-- alterId: 2
-  cipher: auto
-  name: 中国香港-18
-  network: ws
-  port: 80
-  server: d04dec85-sv2sg0-svak69-1f9n2.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0770871c-2e28-11ec-9ee8-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-14
-  network: ws
-  port: 80
-  server: 5d976cff-sva740-t9uin7-19ord.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-16
-  network: ws
-  port: 80
-  server: 835e88cc-sv2sg0-t15jkc-eyem.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 64617ed2-4823-11ef-9f2d-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-21
-  network: ws
-  port: 80
-  server: 946683c5-sv2sg0-swfla6-1rdqg.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-20
-  network: ws
-  port: 80
-  server: 96250bee-sva740-t4ib2y-1kdw3.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e39687a8-3350-11ed-8110-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-28
-  network: ws
-  port: 80
-  server: 880d4708-sva740-szegoe-12hj8.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-23
-  network: ws
-  port: 80
-  server: fd10dcb4-sv2sg0-tcjq63-18xa0.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1789a3ae-f017-11ef-8eaf-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-22
-  network: ws
-  port: 80
-  server: 1f62b878-sv2sg0-svc6zc-tf26.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: baefe2f4-b41a-11ee-91e9-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-24
-  network: ws
-  port: 80
-  server: 4468da4d-sv2sg0-t12exk-hbo5.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8908ad78-b402-11ef-bdb9-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-27
-  network: ws
-  port: 80
-  server: 0d206ba8-sv2sg0-swjbgr-1kcpe.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-26
-  network: ws
-  port: 80
-  server: 55f066af-sv2sg0-t2ke0u-1tif6.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3ec273e4-0087-11f0-ab20-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-32
-  network: ws
-  port: 80
-  server: add87f1a-sv2sg0-t3ktps-1s9oo.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 6a0ceea6-6372-11ef-8da2-f23c91cfbbc9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-30
-  network: ws
-  port: 80
-  server: e476d200-sv2sg0-t9lb8r-ptn8.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ca76ebf2-7312-11ea-82ef-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 0
-  name: 美国-1
-  port: 43664
-  server: 47.129.186.64
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 567eb2e2-42f9-4d42-f032-899ee9e2bce3
-- alterId: 2
-  cipher: auto
-  name: 中国香港-29
-  network: ws
-  port: 80
-  server: 45031825-sv2sg0-t6i794-dr6f.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9238c12a-0aa2-11eb-ad8c-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-33
-  network: ws
-  port: 80
-  server: 48cfdb26-sv2sg0-svim0o-1slop.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 520b9126-9870-11ef-81b0-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 中国香港-31
-  network: ws
-  port: 80
-  server: d0650d0a-sv2sg0-sx91qv-12ncy.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ea89ce9a-25e1-11ec-a0fc-f23c913c8d2b
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: '0'
-  cipher: auto
-  name: 中国大陆-1
-  network: tcp
-  port: '44491'
-  server: 120.232.153.41
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 中国香港-25
   network: ws
   port: 443
   server: 162.247.5.91
@@ -532,6 +103,443 @@ proxies:
     headers:
       Host: tw.qhahd.shop
     path: /bing
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-5
+  port: 11555
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-3
+  port: 47531
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: gateway.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-4
+  port: 13263
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-1
+  port: 13989
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-7
+  network: tcp
+  port: 15228
+  server: 1e843891-sva740-t6k7h7-1rcxl.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9141f048-0b70-11ef-9eb1-f23c91cfbbc9
+  ws-headers:
+    Host: 1e843891-sva740-t6k7h7-1rcxl.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-2
+  network: tcp
+  port: 50082
+  server: 120.198.71.216
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.71.216
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-11
+  network: tcp
+  port: 15229
+  server: 19c5d8c7-sva740-t4cl3u-1mpen.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: da1c411e-479f-11ee-9749-f23c9164ca5d
+  ws-headers:
+    Host: 19c5d8c7-sva740-t4cl3u-1mpen.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-9
+  network: tcp
+  port: 15229
+  server: 60a411de-sva740-t7uinf-i8ie.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 990e8f34-bd4f-11ef-bdb9-f23c91cfbbc9
+  ws-headers:
+    Host: 60a411de-sva740-t7uinf-i8ie.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-8
+  network: tcp
+  port: 15229
+  server: 3e7c7177-sv8cg0-sveyey-44k4.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c5eb2c2c-bc1d-11ed-a8bf-f23c91cfbbc9
+  ws-headers:
+    Host: 3e7c7177-sv8cg0-sveyey-44k4.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-10
+  network: tcp
+  port: 15229
+  server: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
+  ws-headers:
+    Host: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-18
+  network: tcp
+  port: 15229
+  server: 6aceadab-sv0xs0-sv1gez-1tk5u.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e3217bc2-061f-11f0-90e2-f23c913c8d2b
+  ws-headers:
+    Host: 6aceadab-sv0xs0-sv1gez-1tk5u.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-6
+  network: tcp
+  port: 37805
+  server: 120.232.153.63
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.63
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-14
+  port: 14100
+  server: 144.255.36.254
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- alterId: 64
+  cipher: auto
+  name: 中国大陆-13
+  port: 32980
+  server: 120.198.71.214
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-16
+  network: tcp
+  port: 14100
+  server: dxv4.pai50288.uk
+  type: vmess
+  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-17
+  network: tcp
+  port: 5228
+  server: 000611b6-sva740-t4ib2y-1kdw3.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e39687a8-3350-11ed-8110-f23c91cfbbc9
+  ws-headers:
+    Host: 000611b6-sva740-t4ib2y-1kdw3.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-12
+  network: tcp
+  port: 5228
+  server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
+  type: vmess
+  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-15
+  network: tcp
+  port: 5228
+  server: fea38a5e-sum4g0-sv6oiy-1p1b.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+  ws-headers:
+    Host: fea38a5e-sum4g0-sv6oiy-1p1b.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-19
+  network: tcp
+  port: 5228
+  server: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
+  type: vmess
+  uuid: 2b634c80-fd7e-11ef-9f25-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-21
+  network: tcp
+  port: 5229
+  server: e27ff635-sva740-t4cl3u-1mpen.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: da1c411e-479f-11ee-9749-f23c9164ca5d
+  ws-headers:
+    Host: e27ff635-sva740-t4cl3u-1mpen.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-23
+  network: tcp
+  port: 5229
+  server: 06a379c7-sva740-taksay-1tcuf.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3952a514-eaa7-11ef-97da-f23c91cfbbc9
+  ws-headers:
+    Host: 06a379c7-sva740-taksay-1tcuf.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-20
+  network: tcp
+  port: 5228
+  server: f754a7a3-sv8cg0-t4ib2y-1kdw3.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e39687a8-3350-11ed-8110-f23c91cfbbc9
+  ws-headers:
+    Host: f754a7a3-sv8cg0-t4ib2y-1kdw3.cu.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-22
+  network: tcp
+  port: 15228
+  server: 1e223a1b-sva740-tbcu1p-1qlnk.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4d77fb5e-f68f-11ef-80e5-f23c9164ca5d
+  ws-headers:
+    Host: 1e223a1b-sva740-tbcu1p-1qlnk.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-24
+  port: 29877
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  name: 美国-2
+  network: ws
+  port: 443
+  server: 23.106.155.110
+  servername: usa.cayuo.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 788f5357-228e-44ed-b5bc-f7f07701de9b
+  ws-opts:
+    headers:
+      Host: usa.cayuo.me
+    path: /bing
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-28
+  network: tcp
+  port: 15228
+  server: f44c5fff-sv4n40-t9c951-1t1s5.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4cee4858-bb77-11ef-a46e-f23c913c8d2b
+  ws-headers:
+    Host: f44c5fff-sv4n40-t9c951-1t1s5.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-25
+  network: tcp
+  port: 15228
+  server: 67f33583-sv8cg0-sve1ir-zfm.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 88711fa6-2958-11ef-abff-f23c913c8d2b
+  ws-headers:
+    Host: 67f33583-sv8cg0-sve1ir-zfm.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-1
+  network: ws
+  port: 443
+  server: 104.18.20.20
+  servername: us5.globals-download.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
+  ws-opts:
+    headers:
+      Host: us5.globals-download.com
+    path: /pq/us5
+- alterId: 0
+  name: 美国-3
+  network: ws
+  port: 443
+  server: 172.236.150.194
+  servername: sgp.cayuo.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: e82d795d-9848-40f4-a3ac-aa3da140794a
+  ws-opts:
+    headers:
+      Host: sgp.cayuo.me
+    path: /bing
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-27
+  port: 37809
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  name: 中国香港-3
+  network: ws
+  port: 443
+  server: 162.247.5.96
+  servername: hk.qhahd.shop
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: adad57ce-8a4d-4272-bb71-b297ca370165
+  ws-opts:
+    headers:
+      Host: hk.qhahd.shop
+    path: /bing
+- alterId: 0
+  name: 美国-4
+  network: ws
+  port: 80
+  server: 151.101.2.228
+  servername: v2riran.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5db0cbbd-e015-4005-b1b3-82f2081e9384
+  ws-opts:
+    headers:
+      Host: v2riran.com
+    path: /telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN?ed=2056
+- alterId: 0
+  cipher: rc4-md5
+  name: 中国大陆-26
+  obfs: plain
+  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40208
+  protocol: auth_aes128_md5
+  protocol-param: 92902:pFWGOQ
+  server: 2.linkhub.support
+  type: ssr
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 中国香港-4
+  network: ws
+  port: 80
+  server: 72d025e2-sv0xs0-sy652a-ey46.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 1f86686c-b6bf-11ef-8e74-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -552,56 +560,57 @@ proxy-groups:
 - interval: 360
   name: TIKTOK
   proxies:
-  - 日本-1
+  - 美国-2
   - 美国-1
+  - 美国-3
+  - 美国-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - name: 选择地区
   proxies:
-  - 中国香港
-  - 日本
-  - 美国
   - 中国大陆
+  - 中国香港
+  - 美国
   type: select
 - interval: 360
   name: 延迟最低
   proxies: &id001
-  - 中国香港-5
-  - 中国香港-4
-  - 中国香港-15
-  - 中国香港-7
-  - 中国香港-3
-  - 中国香港-6
   - 中国香港-1
-  - 中国香港-17
-  - 中国香港-8
   - 中国香港-2
-  - 中国香港-12
-  - 中国香港-9
-  - 中国香港-13
-  - 中国香港-19
-  - 中国香港-10
-  - 中国香港-11
-  - 日本-1
-  - 中国香港-18
-  - 中国香港-14
-  - 中国香港-16
-  - 中国香港-21
-  - 中国香港-20
-  - 中国香港-28
-  - 中国香港-23
-  - 中国香港-22
-  - 中国香港-24
-  - 中国香港-27
-  - 中国香港-26
-  - 中国香港-32
-  - 中国香港-30
-  - 美国-1
-  - 中国香港-29
-  - 中国香港-33
-  - 中国香港-31
+  - 中国大陆-5
+  - 中国大陆-3
+  - 中国大陆-4
   - 中国大陆-1
-  - 中国香港-25
+  - 中国大陆-7
+  - 中国大陆-2
+  - 中国大陆-11
+  - 中国大陆-9
+  - 中国大陆-8
+  - 中国大陆-10
+  - 中国大陆-18
+  - 中国大陆-6
+  - 中国大陆-14
+  - 中国大陆-13
+  - 中国大陆-16
+  - 中国大陆-17
+  - 中国大陆-12
+  - 中国大陆-15
+  - 中国大陆-19
+  - 中国大陆-21
+  - 中国大陆-23
+  - 中国大陆-20
+  - 中国大陆-22
+  - 中国大陆-24
+  - 美国-2
+  - 中国大陆-28
+  - 中国大陆-25
+  - 美国-1
+  - 美国-3
+  - 中国大陆-27
+  - 中国香港-3
+  - 美国-4
+  - 中国大陆-26
+  - 中国香港-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -618,59 +627,54 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 360
+  name: 中国大陆
+  proxies:
+  - 中国大陆-1
+  - 中国大陆-2
+  - 中国大陆-3
+  - 中国大陆-4
+  - 中国大陆-5
+  - 中国大陆-6
+  - 中国大陆-7
+  - 中国大陆-8
+  - 中国大陆-9
+  - 中国大陆-10
+  - 中国大陆-11
+  - 中国大陆-12
+  - 中国大陆-13
+  - 中国大陆-14
+  - 中国大陆-15
+  - 中国大陆-16
+  - 中国大陆-17
+  - 中国大陆-18
+  - 中国大陆-19
+  - 中国大陆-20
+  - 中国大陆-21
+  - 中国大陆-22
+  - 中国大陆-23
+  - 中国大陆-24
+  - 中国大陆-25
+  - 中国大陆-26
+  - 中国大陆-27
+  - 中国大陆-28
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 360
   name: 中国香港
   proxies:
   - 中国香港-1
   - 中国香港-2
   - 中国香港-3
   - 中国香港-4
-  - 中国香港-5
-  - 中国香港-6
-  - 中国香港-7
-  - 中国香港-8
-  - 中国香港-9
-  - 中国香港-10
-  - 中国香港-11
-  - 中国香港-12
-  - 中国香港-13
-  - 中国香港-14
-  - 中国香港-15
-  - 中国香港-16
-  - 中国香港-17
-  - 中国香港-18
-  - 中国香港-19
-  - 中国香港-20
-  - 中国香港-21
-  - 中国香港-22
-  - 中国香港-23
-  - 中国香港-24
-  - 中国香港-25
-  - 中国香港-26
-  - 中国香港-27
-  - 中国香港-28
-  - 中国香港-29
-  - 中国香港-30
-  - 中国香港-31
-  - 中国香港-32
-  - 中国香港-33
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 360
-  name: 日本
-  proxies:
-  - 日本-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
   name: 美国
   proxies:
   - 美国-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 360
-  name: 中国大陆
-  proxies:
-  - 中国大陆-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
