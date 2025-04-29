@@ -77,48 +77,39 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  name: 中国香港-2
-  network: ws
-  port: 43866
-  server: 8.210.192.136
-  servername: edcca.aimercc.filegear-sg.me
+  cipher: auto
+  name: 中国大陆-1
+  port: 41902
+  server: 183.236.51.38
   skip-cert-verify: true
-  tls: true
-  type: vless
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcca.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 新加坡-1
-  password: '74260678056890000'
-  port: 443
-  server: grown-doberman.shiner427.skin
+  cipher: auto
+  name: 中国大陆-2
+  port: 57852
+  server: 120.232.153.40
   skip-cert-verify: false
-  sni: grown-doberman.shiner427.skin
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 中国香港-1
-  network: ws
-  port: 448
-  server: 43.155.71.120
-  servername: edcca.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcca.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-2
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  tfo: false
+  type: ss
 - alterId: 0
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 中国大陆-3
+  name: 中国大陆-8
   port: 31735
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
@@ -130,40 +121,19 @@ proxies:
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国大陆-1
-  port: 31800
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: '0'
-  cipher: auto
-  name: 中国大陆-2
-  network: tcp
-  port: '51095'
-  server: 120.198.71.219
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 美国-1
-  password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-  port: 443
-  server: c2284d70-svhls0-t28b6o-ef48.sj.gotochinatown.net
-  tls: true
-  type: http
-  udp: true
-  username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 中国大陆-4
+  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
+  port: 21170
+  server: 125.94.40.162
+  skip-cert-verify: true
+  sni: k39.tudou211.com
+  tfo: false
+  type: trojan
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 中国大陆-3
   port: 15842
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
@@ -175,220 +145,219 @@ proxies:
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
+  cipher: aes-256-gcm
+  name: 日本-1
+  password: nHUXPsJ6
+  port: 30323
+  server: 13.113.80.125
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  name: 中国大陆-5
+  password: f57f01e6-9bb1-4277-a5cb-75ad0ce1fa11
+  port: 32702
+  server: xd-sh.timiwc.com
+  skip-cert-verify: true
+  sni: k36.tudou211.com
+  type: trojan
+- alterId: 0
+  name: 中国台湾-1
+  password: 20cc1a99-a26e-4c6b-b0be-1ed331b0c271
+  port: 28507
+  server: 220.130.58.136
+  skip-cert-verify: true
+  tfo: false
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 韩国-1
+  network: ws
+  port: 30012
+  server: 220.118.248.123
+  servername: vx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: vx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 韩国-3
+  password: gJg1TyUQ
+  port: 30976
+  server: 13.125.168.176
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 64
   cipher: auto
   name: 中国大陆-6
-  port: 42259
-  server: 120.198.71.216
+  network: tcp
+  port: 47883
+  server: 120.198.44.126
   skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.44.126
+  ws-path: /
+- alterId: 0
+  name: 韩国-4
+  network: ws
+  port: 18888
+  server: 183.106.162.127
+  servername: vx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: vx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 美国-2
+  password: LEFqixTd
+  port: 21072
+  server: 16.170.101.150
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-7
+  port: 44015
+  server: 120.198.71.219
+  skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 美国-2
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: redfree8mahsang6.redfree8.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redfree8mahsang6.redfree8.ir
-    path: /vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl?ed=2560
+  cipher: aes-256-gcm
+  name: 美国-3
+  password: EY21ohqh
+  port: 17155
+  server: 44.247.201.109
+  type: ss
 - alterId: 0
   name: 美国-4
-  network: ws
-  port: 443
-  server: bestcf.030101.xyz
-  servername: edccs.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccs.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-9
-  network: ws
-  port: 19678
-  server: 23.95.61.191
-  servername: cx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cx.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-3
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 443
-  server: db402f78-svfr40-t1bnjq-1krtb.los.gotochinatown.net
-  tls: true
-  type: http
-  udp: true
-  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- alterId: 0
-  name: 美国-5
-  network: ws
-  port: 443
-  server: theo.ns.cloudflare.com
-  servername: edccs.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccs.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-6
   password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
   port: 443
-  server: f130abb9-svfr40-t28b6o-ef48.los.gotochinatown.net
+  server: c2284d70-svhls0-t28b6o-ef48.sj.gotochinatown.net
   tls: true
   type: http
   udp: true
   username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
 - alterId: 0
-  cipher: auto
-  name: 中国大陆-5
-  port: 57852
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 美国-12
+  name: 美国-1
   network: ws
-  port: 443
-  server: 192.0.63.89
-  servername: cx.ylks0033.dpdns.org
+  password: Aimer
+  port: 8443
+  server: 104.129.167.255
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: cx.ylks0033.dpdns.org
+      Host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560
+- alterId: 0
+  name: 美国-5
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 198.62.62.61
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epcca.ambercc.filegear-sg.me
+    path: ''
+- alterId: 0
+  name: 美国-6
+  password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  port: 443
+  server: 88316701-svhls0-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: http
+  udp: true
+  username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 日本-2
+  password: 59224ed0f0e4
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp06v1.3ci.xyz
+    mode: websocket
+    mux: true
+    path: /zwqdkxwkk
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 103.140.136.242
+  tfo: false
+  type: ss
+- alterId: 0
+  name: 美国-8
+  password: DJfG07YMR4
+  port: 36735
+  server: 45.62.119.227
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   name: 美国-7
   network: ws
-  port: 443
-  server: 160.79.104.108
-  servername: cx.ylks0033.dpdns.org
+  port: 2052
+  server: 172.67.135.195
   skip-cert-verify: true
-  tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
   ws-opts:
     headers:
-      host: cx.ylks0033.dpdns.org
-    path: /?ed=2560
+      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
+  xudp: true
 - alterId: 0
-  name: 美国-8
-  network: ws
-  port: 443
-  server: 192.0.54.146
-  servername: cx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cx.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
+  cipher: ''
+  flow: ''
   name: 美国-10
   network: ws
-  port: 443
-  server: 170.106.152.78
-  servername: edcca.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
+  port: 2052
+  server: www.udemy.com
   type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      host: edcca.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-11
-  network: ws
-  port: 443
-  server: thaddeus.ns.cloudflare.com
-  servername: edcca.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edcca.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-14
-  network: ws
-  port: 443
-  server: lynn.ns.cloudflare.com
-  servername: edccs.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccs.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-16
-  network: ws
-  port: 443
-  server: sage.ns.cloudflare.com
-  servername: edccs.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccs.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: huajuan.yzcjd.workers.dev
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 中国大陆-8
-  port: 46597
-  server: 120.232.153.41
+  name: 中国大陆-12
+  port: 5229
+  server: 6faf81e8-svdwg0-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - alterId: 0
   name: 美国-15
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
@@ -399,140 +368,139 @@ proxies:
   udp: true
   username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - alterId: 0
-  cipher: auto
-  name: 美国-13
+  cipher: ''
+  flow: ''
+  name: 美国-9
   network: ws
-  port: 11611
-  server: 174.136.204.209
+  port: 2052
+  server: 172.67.6.3
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: huajuan.yzcjd.workers.dev
+    path: /?ed=2048
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 443
+  server: 192.0.54.0
+  servername: vx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: vx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-13
+  port: 5229
+  server: e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: baec9adb-d6b9-465a-f531-d0a38144cf6c
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-11
+  network: ws
+  port: 22643
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
   ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
     path: /
 - alterId: 0
-  name: 美国-21
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 443
-  server: 07f52356-svfr40-swy6li-tni2.sj.gotochinatown.net
-  tls: true
-  type: http
-  udp: true
-  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- alterId: 0
-  name: 美国-17
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 443
-  server: 5e26927f-svfr40-swy6li-tni2.los.gotochinatown.net
-  tls: true
-  type: http
-  udp: true
-  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- alterId: 0
-  name: 美国-22
-  password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-  port: 443
-  server: 88316701-svhls0-t28b6o-ef48.los.gotochinatown.net
-  tls: true
-  type: http
-  udp: true
-  username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-- alterId: 0
-  name: 美国-23
+  name: 美国-11
   network: ws
   port: 443
-  server: arvind.ns.cloudflare.com
-  servername: edccs.ambercc.filegear-sg.me
+  server: 63.141.128.163
+  servername: vx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: edccs.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      host: vx.bgm2024.dpdns.org
+    path: /ss.vs2024.us.kg
 - alterId: 0
-  name: 韩国-1
-  network: ws
-  port: 12434
-  server: 222.107.236.137
-  servername: edccs.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccs.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+  cipher: aes-256-gcm
+  name: 美国-14
+  password: VUWK9NyG
+  port: 23478
+  server: 34.234.217.178
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 中国大陆-7
-  port: 59554
-  server: 183.236.51.38
+  name: 中国大陆-10
+  network: tcp
+  port: 5229
+  server: fb79be22-svfr40-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: fb79be22-svfr40-t1bnjq-1krtb.cu.plebai.net
+  ws-path: /
 - alterId: 0
-  name: 美国-18
+  name: 中国香港-1
   network: ws
-  port: 443
-  server: 160.79.105.134
-  servername: cx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cx.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-20
-  password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-  port: 443
-  server: e0616d84-svfr40-t28b6o-ef48.sj.gotochinatown.net
-  tls: true
-  type: http
-  udp: true
-  username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-- alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 30012
-  server: 118.47.65.248
-  servername: cx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cx.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-19
-  network: ws
-  password: tg-fq521free
-  port: 443
-  server: 216.24.57.30
-  skip-cert-verify: true
-  sni: torjan.xn--xhq44j.eu.org
-  tfo: false
+  password: Aimer
+  port: 2053
+  server: 154.197.64.166
+  skip-cert-verify: false
+  sni: epcca.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: torjan.xn--xhq44j.eu.org
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-13
+  network: ws
+  port: 2095
+  server: 162.159.20.34
+  servername: 5-55sfjslf.ifenxiang.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 5-55sfjslf.ifenxiang.cfd
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-9
+  network: ws
+  port: 22642
+  server: 120.233.154.82
+  servername: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
     path: /
 proxy-groups:
 - name: 漏网之鱼
@@ -554,81 +522,77 @@ proxy-groups:
 - interval: 360
   name: TIKTOK
   proxies:
-  - 新加坡-1
-  - 美国-1
+  - 韩国-2
+  - 日本-1
+  - 韩国-1
+  - 韩国-3
+  - 韩国-4
   - 美国-2
-  - 美国-4
-  - 美国-9
   - 美国-3
+  - 美国-4
+  - 美国-1
   - 美国-5
   - 美国-6
-  - 美国-12
-  - 美国-7
+  - 日本-2
   - 美国-8
+  - 美国-7
   - 美国-10
+  - 美国-15
+  - 美国-9
+  - 美国-12
   - 美国-11
   - 美国-14
-  - 美国-16
-  - 美国-15
   - 美国-13
-  - 美国-21
-  - 美国-17
-  - 美国-22
-  - 美国-23
-  - 韩国-1
-  - 美国-18
-  - 美国-20
-  - 韩国-2
-  - 美国-19
   type: url-test
   url: https://i.ytimg.com/generate_204
 - name: 选择地区
   proxies:
   - 中国大陆
-  - 中国香港
-  - 美国
-  - 新加坡
+  - 中国台湾
   - 韩国
+  - 日本
+  - 美国
+  - 中国香港
   type: select
 - interval: 360
   name: 延迟最低
   proxies: &id001
-  - 中国香港-2
-  - 新加坡-1
-  - 中国香港-1
-  - 中国大陆-3
   - 中国大陆-1
   - 中国大陆-2
-  - 美国-1
+  - 韩国-2
+  - 中国大陆-8
   - 中国大陆-4
+  - 中国大陆-3
+  - 日本-1
+  - 中国大陆-5
+  - 中国台湾-1
+  - 韩国-1
+  - 韩国-3
   - 中国大陆-6
+  - 韩国-4
   - 美国-2
-  - 美国-4
-  - 美国-9
+  - 中国大陆-7
   - 美国-3
+  - 美国-4
+  - 美国-1
   - 美国-5
   - 美国-6
-  - 中国大陆-5
-  - 美国-12
-  - 美国-7
+  - 日本-2
   - 美国-8
+  - 美国-7
   - 美国-10
+  - 中国大陆-12
+  - 美国-15
+  - 美国-9
+  - 美国-12
+  - 中国大陆-13
+  - 中国大陆-11
   - 美国-11
   - 美国-14
-  - 美国-16
-  - 中国大陆-8
-  - 美国-15
+  - 中国大陆-10
+  - 中国香港-1
   - 美国-13
-  - 美国-21
-  - 美国-17
-  - 美国-22
-  - 美国-23
-  - 韩国-1
-  - 中国大陆-7
-  - 美国-18
-  - 美国-20
-  - 韩国-2
-  - 美国-19
+  - 中国大陆-9
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -655,13 +619,33 @@ proxy-groups:
   - 中国大陆-6
   - 中国大陆-7
   - 中国大陆-8
+  - 中国大陆-9
+  - 中国大陆-10
+  - 中国大陆-11
+  - 中国大陆-12
+  - 中国大陆-13
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
-  name: 中国香港
+  name: 中国台湾
   proxies:
-  - 中国香港-1
-  - 中国香港-2
+  - 中国台湾-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 360
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  - 韩国-3
+  - 韩国-4
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 360
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -682,27 +666,12 @@ proxy-groups:
   - 美国-13
   - 美国-14
   - 美国-15
-  - 美国-16
-  - 美国-17
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
-  name: 新加坡
+  name: 中国香港
   proxies:
-  - 新加坡-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 360
-  name: 韩国
-  proxies:
-  - 韩国-1
-  - 韩国-2
+  - 中国香港-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
@@ -774,7 +743,6 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Twitter/Twitter.yaml
 rules:
 - GEOIP,CN,DIRECT
-- GEOIP,private,DIRECT,no-resolve
 - GEOSITE,cn,DIRECT
 - GEOSITE,apple-cn,DIRECT
 - RULE-SET,china,DIRECT
