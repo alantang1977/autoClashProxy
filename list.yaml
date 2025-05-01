@@ -76,52 +76,6 @@ mode: rule
 profile:
   store-selected: true
 proxies:
-- alterId: 1
-  cipher: auto
-  name: 中国香港-4
-  network: ws
-  port: 8080
-  server: 1a6d92f5-svc1s0-t4cy3j-1qkeg.hk3.p5pv.com
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: a305ac08-d136-11ee-b6db-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  name: 中国香港-2
-  network: ws
-  port: 55055
-  server: 47.243.172.103
-  servername: edccf.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccf.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-1
-  network: ws
-  port: 443
-  server: 47.76.218.163
-  servername: edccf.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccf.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   name: 中国香港-1
   network: ws
@@ -138,34 +92,25 @@ proxies:
       host: cz.ylks0033.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 中国大陆-3
-  password: 796EA43C-1A63-8C50-3745-FD3946149E4F
-  port: 21202
-  server: 910281.chasel.sbs
-  tfo: false
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 中国香港-3
+  name: 新加坡-4
   network: ws
-  port: 80
-  server: hkt.gotochinatown.net
+  port: 443
+  server: 13.228.155.72
+  servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
+  tls: true
+  type: vless
   udp: true
-  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
   ws-opts:
     headers:
-      Host: hkt.gotochinatown.net
-    path: /
+      host: miku.mikuru.ip-ddns.com
+    path: /?ed=2560
 - alterId: 0
   name: 新加坡-1
   network: ws
-  port: 587
-  server: 8.222.213.91
+  port: 20001
+  server: 52.76.110.129
   servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
   tls: true
@@ -179,8 +124,23 @@ proxies:
 - alterId: 0
   name: 新加坡-2
   network: ws
-  port: 20001
-  server: 52.76.110.129
+  port: 443
+  server: 54.169.229.188
+  servername: miku.mikuru.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
+  ws-opts:
+    headers:
+      host: miku.mikuru.ip-ddns.com
+    path: /?ed=2560
+- alterId: 0
+  name: 新加坡-5
+  network: ws
+  port: 587
+  server: 8.222.213.91
   servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
   tls: true
@@ -207,42 +167,135 @@ proxies:
       host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
 - alterId: 0
-  cipher: ''
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
+  cipher: auto
+  name: 中国大陆-1
+  network: tcp
+  port: 4137
+  server: a38c20dc-sudhc0-svm3vt-czv5.c.volczijie.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 82efba2c-f420-11ef-9529-f23c93141fad
+  ws-headers:
+    Host: a38c20dc-sudhc0-svm3vt-czv5.c.volczijie.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-6
+  port: 4137
+  server: 120.233.64.140
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 03010754-faf0-11ef-a7c4-f23c9313b177
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-9
+  network: tcp
+  port: 4135
+  server: db462a5d-sudhc0-syoixd-bm0y.d.volczijie.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: fb8812ae-dcb5-11ef-a57d-f23c9313b177
+  ws-headers:
+    Host: db462a5d-sudhc0-syoixd-bm0y.d.volczijie.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-11
+  network: tcp
+  port: 4135
+  server: 180e94b7-sv59c0-t6vkd1-6tmd.d.volczijie.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d385d6b2-cc15-11ee-89bc-f23c93141fad
+  ws-headers:
+    Host: 180e94b7-sv59c0-t6vkd1-6tmd.d.volczijie.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
   name: 中国大陆-2
   network: tcp
-  port: 31800
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-    short-id: ''
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.nvidia.com
-  skip-cert-verify: null
-  sni: www.nvidia.com
-  tls: true
-  type: vless
+  port: 4151
+  server: d0f55eaf-submo0-t0t1z3-1qgn.c.volczijie.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 564b440a-700f-11ee-a90c-f23c9313b177
+  ws-headers:
+    Host: d0f55eaf-submo0-t0t1z3-1qgn.c.volczijie.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-12
+  port: 4137
+  server: 1e34b97e-submo0-sv7alj-ctxx.c.volczijie.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  uuid: 4e84400e-f4bc-11ef-81b7-f23c932f2c32
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-3
+  port: 3684
+  server: 3370784f-submo0-sv7alj-ctxx.d.volczijie.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 4e84400e-f4bc-11ef-81b7-f23c932f2c32
 - alterId: 0
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 中国大陆-4
-  port: 45883
+  name: 中国大陆-8
+  port: 56127
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenyang001.dynu.net
-  servername: www.nvidia.com
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
-  name: 新加坡-4
+  cipher: auto
+  name: 中国大陆-5
+  network: tcp
+  port: 3684
+  server: a29b45ed-submo0-syap8d-dbk8.d.volczijie.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 45845d5e-0605-11f0-8cf9-f23c93136cb3
+  ws-headers:
+    Host: a29b45ed-submo0-syap8d-dbk8.d.volczijie.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-4
+  network: tcp
+  port: 3683
+  server: fc1bb096-suh6o0-svqrrs-4cwg.b.fosant.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 03c1d503-4803-11ef-8f3d-f23c9313b177
+  ws-headers:
+    Host: fc1bb096-suh6o0-svqrrs-4cwg.b.fosant.com
+  ws-path: /
+- alterId: 0
+  name: 韩国-1
   network: ws
-  port: 443
-  server: 54.169.229.188
+  port: 50008
+  server: 59.25.160.141
   servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
   tls: true
@@ -254,92 +307,10 @@ proxies:
       host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
 - alterId: 0
-  cipher: auto
-  name: 中国大陆-1
-  port: 36609
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 美国-2
-  network: ws
-  port: 449
-  server: 206.237.22.91
-  servername: edccf.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccf.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-3
-  password: qwerREWQ@@
-  port: 63648
-  server: 125.141.26.15
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 中国大陆-8
-  password: 21e251c3-139c-4b81-b352-3b60734029e9
-  port: 35501
-  server: gw.liangyuandianwan.com
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 11389
-  server: 221.150.109.89
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
   name: 韩国-2
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: 中国大陆-6
-  password: 796EA43C-1A63-8C50-3745-FD3946149E4F
-  port: 21154
-  server: 510613.frederica.xyz
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-5
-  port: 15228
-  server: 2a646fc6-sv0xs0-tevzxo-3e5b.cm.plebai.net
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b70f5316-cc87-11ed-ab19-f23c91cfbbc9
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-4
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
-  udp: true
-- alterId: 0
-  name: 韩国-5
   network: ws
-  port: 12456
-  server: 121.129.91.180
+  port: 30111
+  server: 222.102.166.18
   servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
   tls: true
@@ -353,41 +324,45 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 中国大陆-7
-  port: 15229
-  server: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
-  skip-cert-verify: false
+  network: tcp
+  port: 4136
+  server: 8020e29c-submo0-t0t1z3-1qgn.d.volczijie.com
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
-- alterId: 0
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 中国大陆-9
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202504301450290-B3cnEnRz1z.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
+  uuid: 564b440a-700f-11ee-a90c-f23c9313b177
+  ws-headers:
+    Host: 8020e29c-submo0-t0t1z3-1qgn.d.volczijie.com
+  ws-path: /
 - alterId: 0
   cipher: auto
   name: 中国大陆-10
-  port: 15229
-  server: 614ea2b0-sux8g0-td95qh-1isea.cm.plebai.net
-  skip-cert-verify: false
+  port: 3690
+  server: 3ffa084b-sukw00-sw1e10-7yd9.b.fosant.com
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
-  uuid: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
+  uuid: 7f84fa90-9f44-11ef-ae1e-f23c93141fad
 - alterId: 0
-  name: 韩国-6
+  cipher: auto
+  name: 中国大陆-14
+  network: tcp
+  port: 3684
+  server: 884b8b44-sudhc0-svm3vt-czv5.d.volczijie.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 82efba2c-f420-11ef-9529-f23c93141fad
+  ws-headers:
+    Host: 884b8b44-sudhc0-svm3vt-czv5.d.volczijie.com
+  ws-path: /
+- alterId: 0
+  name: 韩国-4
   network: ws
-  port: 16058
-  server: 59.26.208.19
+  port: 14896
+  server: 222.117.231.32
   servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
   tls: true
@@ -399,10 +374,21 @@ proxies:
       host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
 - alterId: 0
-  name: 韩国-7
+  cipher: auto
+  name: 中国大陆-13
+  port: 3683
+  server: 0a0ca27f-su7b40-tf38me-cum1.b.fosant.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 03010754-faf0-11ef-a7c4-f23c9313b177
+- alterId: 0
+  name: 美国-2
   network: ws
-  port: 30012
-  server: 118.47.65.248
+  port: 18446
+  server: 154.17.21.134
   servername: cz.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -414,37 +400,7 @@ proxies:
       host: cz.ylks0033.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国大陆-12
-  port: 25768
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  client-fingerprint: random
-  name: 美国-6
-  network: ws
-  port: 443
-  server: 104.16.131.9
-  servername: worker.nexvivagroup.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7f3776d8-65bd-4767-a995-34fb4e0937e2
-  ws-opts:
-    headers:
-      Host: worker.nexvivagroup.com
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-9
+  name: 韩国-3
   network: ws
   port: 10943
   server: 14.39.43.121
@@ -459,85 +415,174 @@ proxies:
       host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
 - alterId: 0
-  client-fingerprint: random
-  name: 美国-4
+  name: 美国-1
   network: ws
   port: 443
-  server: 190.93.244.103
-  servername: mylearn-8zx.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d4661d12-d6f7-4ff2-bd1e-fc9cdc2c9cc1
-  ws-opts:
-    headers:
-      Host: mylearn-8zx.pages.dev
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-11
-  password: e31da126-e127-46a1-abc2-9db20eea3f5d
-  port: 27202
-  server: 58.254.186.231
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  name: 韩国-8
-  network: ws
-  port: 12202
-  server: 14.56.226.68
-  servername: miku.mikuru.ip-ddns.com
+  server: 63.141.128.193
+  servername: cz.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: miku.mikuru.ip-ddns.com
+      host: cz.ylks0033.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  client-fingerprint: random
   name: 美国-5
   network: ws
   port: 443
-  server: 104.16.157.153
-  servername: zlgmz.top
-  skip-cert-verify: false
+  server: 192.0.54.46
+  servername: cz.ylks0033.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: bde95043-c1da-4177-90b5-101d64cbfd94
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: zlgmz.top
+      host: cz.ylks0033.dpdns.org
     path: /?ed=2560
 - alterId: 0
   client-fingerprint: random
-  name: 美国-3
+  name: 美国-8
   network: ws
   port: 443
-  server: 104.16.172.248
-  servername: duohereshui.pages.dev
+  server: 104.24.236.108
+  servername: 520588.xyz
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 6aec167a-236f-4cb2-aa32-56efd7036be7
+  uuid: da5d2d40-df2c-49fb-a3be-77f0f0299d23
   ws-opts:
     headers:
-      Host: duohereshui.pages.dev
+      Host: 520588.xyz
     path: /?ed=2560
 - alterId: 0
-  cipher: auto
-  name: 中国大陆-13
-  port: 15228
-  server: 92d4ab34-sv0xs0-tcmtfl-1qudp.cm.plebai.net
-  tls: false
-  type: vmess
-  uuid: 99129cef-f705-11ee-ada6-f23c91cfbbc9
+  client-fingerprint: random
+  name: 美国-7
+  network: ws
+  port: 2087
+  server: 104.16.54.173
+  servername: agstick.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: fe75b904-7a0c-4a1c-b22a-e5f1399fe7be
+  ws-opts:
+    headers:
+      Host: agstick.eu.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-6
+  network: ws
+  port: 443
+  server: 160.79.105.106
+  servername: cz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-3
+  network: ws
+  port: 443
+  server: 63.141.128.67
+  servername: cz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  client-fingerprint: random
+  name: 美国-10
+  network: ws
+  port: 2096
+  server: 104.16.143.139
+  servername: ghh.wsthh.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4527ff0c-8ac2-452a-95cb-c2d29e5a8421
+  ws-opts:
+    headers:
+      Host: ghh.wsthh.site
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-9
+  network: ws
+  port: 443
+  server: 192.0.54.146
+  servername: cz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-4
+  network: ws
+  port: 443
+  server: 192.0.63.211
+  servername: cz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  client-fingerprint: random
+  name: 美国-11
+  network: ws
+  port: 443
+  server: 103.21.244.173
+  servername: zeyichen.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a268ce39-7687-4817-aa5f-def4f653fb88
+  ws-opts:
+    headers:
+      Host: zeyichen.sbs
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 443
+  server: 162.159.152.80
+  servername: 6606.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c007ac90-afe3-4c10-8f99-d5a6507326e3
+  ws-opts:
+    headers:
+      Host: 6606.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -558,74 +603,76 @@ proxy-groups:
 - interval: 360
   name: TIKTOK
   proxies:
-  - 美国-1
+  - 新加坡-4
   - 新加坡-1
   - 新加坡-2
+  - 新加坡-5
   - 新加坡-3
-  - 新加坡-4
-  - 美国-2
-  - 韩国-3
   - 韩国-1
   - 韩国-2
   - 韩国-4
-  - 韩国-5
-  - 韩国-6
-  - 韩国-7
-  - 美国-6
-  - 韩国-9
-  - 美国-4
-  - 韩国-8
+  - 美国-2
+  - 韩国-3
+  - 美国-1
   - 美国-5
+  - 美国-8
+  - 美国-7
+  - 美国-6
   - 美国-3
+  - 美国-10
+  - 美国-9
+  - 美国-4
+  - 美国-11
+  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - name: 选择地区
   proxies:
   - 新加坡
-  - 中国香港
-  - 美国
   - 中国大陆
   - 韩国
+  - 中国香港
+  - 美国
   type: select
 - interval: 360
   name: 延迟最低
   proxies: &id001
-  - 中国香港-4
-  - 中国香港-2
-  - 美国-1
   - 中国香港-1
-  - 中国大陆-3
-  - 中国香港-3
+  - 新加坡-4
   - 新加坡-1
   - 新加坡-2
+  - 新加坡-5
   - 新加坡-3
-  - 中国大陆-2
-  - 中国大陆-4
-  - 新加坡-4
   - 中国大陆-1
-  - 美国-2
-  - 韩国-3
+  - 中国大陆-6
+  - 中国大陆-9
+  - 中国大陆-11
+  - 中国大陆-2
+  - 中国大陆-12
+  - 中国大陆-3
   - 中国大陆-8
+  - 中国大陆-5
+  - 中国大陆-4
   - 韩国-1
   - 韩国-2
-  - 中国大陆-6
-  - 中国大陆-5
-  - 韩国-4
-  - 韩国-5
   - 中国大陆-7
-  - 中国大陆-9
   - 中国大陆-10
-  - 韩国-6
-  - 韩国-7
-  - 中国大陆-12
-  - 美国-6
-  - 韩国-9
-  - 美国-4
-  - 中国大陆-11
-  - 韩国-8
-  - 美国-5
-  - 美国-3
+  - 中国大陆-14
+  - 韩国-4
   - 中国大陆-13
+  - 美国-2
+  - 韩国-3
+  - 美国-1
+  - 美国-5
+  - 美国-8
+  - 美国-7
+  - 美国-6
+  - 美国-3
+  - 美国-10
+  - 美国-9
+  - 美国-4
+  - 美国-11
+  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -648,26 +695,7 @@ proxy-groups:
   - 新加坡-2
   - 新加坡-3
   - 新加坡-4
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 360
-  name: 中国香港
-  proxies:
-  - 中国香港-1
-  - 中国香港-2
-  - 中国香港-3
-  - 中国香港-4
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 360
-  name: 美国
-  proxies:
-  - 美国-1
-  - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
+  - 新加坡-5
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -686,6 +714,7 @@ proxy-groups:
   - 中国大陆-11
   - 中国大陆-12
   - 中国大陆-13
+  - 中国大陆-14
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -695,11 +724,29 @@ proxy-groups:
   - 韩国-2
   - 韩国-3
   - 韩国-4
-  - 韩国-5
-  - 韩国-6
-  - 韩国-7
-  - 韩国-8
-  - 韩国-9
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 360
+  name: 中国香港
+  proxies:
+  - 中国香港-1
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 360
+  name: 美国
+  proxies:
+  - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 美国-8
+  - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
