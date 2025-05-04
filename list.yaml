@@ -77,427 +77,480 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  cipher: auto
-  name: 美国-1
-  network: tcp
-  port: 57888
-  server: 47.83.137.220
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b68f8c35-935e-444f-8944-291bf15a56a5
-  ws-headers:
-    Host: 47.83.137.220
-  ws-path: /
-- alterId: 0
   name: 中国大陆-3
   password: b6200af42ccadea353f5b5856dd20d70
   port: 39001
   server: 120.233.128.68
   skip-cert-verify: true
   sni: 120.233.128.68
-  type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 中国香港-1
-  password: 91a41f4e02dc
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hkkh11v1.xpmc.cc
-    mode: websocket
-    mux: true
-    path: /utvbnrzejpmt
-    skip-cert-verify: false
-    tls: true
-  port: 55649
-  server: hkkh11v1.xpmc.cc
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-1
-  port: 46597
-  server: 120.232.153.41
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-6
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-2
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-3
-  password: qwerREWQ@@
-  port: 11389
-  server: 221.150.109.89
-  type: ss
-- alterId: 0
-  name: 中国大陆-7
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
-- alterId: 0
-  name: 中国大陆-5
-  password: 7825219e-38a1-45d6-bfdc-9e4bba7db55d
-  port: 22269
-  server: 183.2.150.64
-  skip-cert-verify: true
+  tls: true
   type: trojan
   udp: true
-- alterId: 0
+- alterId: '0'
   cipher: auto
   name: 中国大陆-2
-  port: 32919
-  server: 183.236.51.38
+  network: tcp
+  port: '15229'
+  server: ad5fa6b1-sux8g0-sy6f3m-1os43.cm.plebai.net
+  type: vmess
+  uuid: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
+- alterId: 2
+  cipher: auto
+  name: 中国香港-5
+  network: ws
+  port: 80
+  server: 183dfe95-sv2sg0-taj9mo-1tco3.hk.p5pv.com
   skip-cert-verify: true
   tls: false
   type: vmess
+  uuid: e29de954-ea01-11ef-a271-f23c91cfbbc9
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 日本-1
+  network: ws
+  password: ouo
+  port: 443
+  server: 18.183.158.211
+  skip-cert-verify: false
+  sni: tr.koxok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: /?ed=2560
+- alterId: 0
+  name: 新加坡-1
+  network: ws
+  port: 40029
+  server: 43.128.95.110
+  servername: 111.workerscf.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 6dfdd5a6-4e19-461c-84d3-81cbbdee179b
+  ws-opts:
+    headers:
+      Host: 111.workerscf.dpdns.org
+    path: /?ed=2560
+- alterId: 2
+  cipher: auto
+  name: 中国香港-4
+  network: ws
+  port: 80
+  server: 2c655502-sv0xs0-t4qa9y-g43g.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-6578 | 2.663MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+  ws-opts:
+    headers:
+      Host: 2c655502-sv0xs0-t4qa9y-g43g.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-1
+  network: ws
+  port: 80
+  server: dcf99c60-sv0xs0-tasors-1tdqt.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 0
+  name: 中国香港-3
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: hkre1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- alterId: 2
+  cipher: auto
+  name: 中国香港-2
+  network: ws
+  port: 80
+  server: d271ef67-sv2sg0-t6oj1r-1pv16.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 541259a8-8df6-11ee-ace4-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-1
+  network: ws
+  port: 35246
+  server: jp6.vip2.g2.moonbase.life
+  servername: web.xcjs.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
 - alterId: 0
   name: 韩国-1
   network: ws
-  port: 30012
-  server: 220.118.248.123
-  servername: v0.bgm2024.dpdns.org
+  port: 14896
+  server: 222.117.231.32
+  servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
   ws-opts:
     headers:
-      host: v0.bgm2024.dpdns.org
+      Host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
-- alterId: 64
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-6
+  network: ws
+  port: 35216
+  server: jp6.g2.moonbase.life
+  servername: web.xcjs.info
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
+- alterId: 0
   cipher: auto
   name: 中国大陆-4
-  port: 36609
+  port: 57852
   server: 120.232.153.40
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-4
-  password: qwerREWQ@@
-  port: 4857
-  server: p227.panda004.net
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-5
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  type: ss
-- alterId: 0
-  client-fingerprint: random
-  name: 美国-3
-  network: ws
-  port: 2053
-  server: 104.16.30.244
-  servername: ezdriv-server.help
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: af84b164-93b2-4658-89d3-ef9ec44c0d69
-  ws-opts:
-    headers:
-      Host: ezdriv-server.help
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: random
-  name: 美国-2
-  network: ws
-  port: 443
-  server: 103.21.244.166
-  servername: cf.zhaoyin.wang
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 29ef9a31-f8d9-4476-88b4-6aec61ada992
-  ws-opts:
-    headers:
-      Host: cf.zhaoyin.wang
-    path: /?ed=2560
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 中国大陆-8
-  port: 37805
-  server: 120.232.153.63
+  name: 中国香港-7
+  network: ws
+  port: 80
+  server: 09d8162a-sv6hs0-t5963m-1ex5a.hk.p5pv.com
   skip-cert-verify: true
   tls: false
   type: vmess
+  uuid: 98d2b660-7218-11ec-bd7c-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 0
+  name: 中国大陆-5
+  network: tcp
+  password: b6200af42ccadea353f5b5856dd20d70
+  port: 39001
+  server: 183.240.196.93
+  skip-cert-verify: true
+  sni: 183.240.196.93
+  type: trojan
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 2
   cipher: auto
-  client-fingerprint: chrome
-  name: 中国大陆-10
-  port: 42375
-  server: 120.198.71.214
+  name: 中国香港-6
+  network: ws
+  port: 80
+  server: 142a53ea-sv6hs0-t4v3jz-1k8ga.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-6516 | 3.733MB
   skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 142a53ea-sv6hs0-t4v3jz-1k8ga.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-8
+  network: ws
+  port: 80
+  server: de6912f3-sv2sg0-t5qfe2-1khwf.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-6515 | 4.707MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: de6912f3-sv2sg0-t5qfe2-1khwf.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-9
+  network: ws
+  port: 80
+  server: 23ccfab1-sv2sg0-t6ebrn-1f8zp.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: dd321b8e-a890-11ed-a8bf-f23c91cfbbc9
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
 - alterId: 0
+  client-fingerprint: random
+  name: 中国台湾-1
+  network: ws
+  port: 81
+  server: 210.61.97.241
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-7
+  network: ws
+  port: 35111
+  server: sg1.g2.moonbase.life
+  servername: sg1.g2.moonbase.life
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
+  ws-opts:
+    headers:
+      Host: web.xcjs.info
+    path: /home
+- alterId: 0
+  name: 中国大陆-8
+  password: b6200af42ccadea353f5b5856dd20d70
+  port: 39001
+  server: 113.99.140.184
+  skip-cert-verify: true
+  sni: 113.99.140.184
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 中国香港-10
+  network: ws
+  port: 80
+  server: 3ab9dc0e-sub0g0-tax87j-fxtw.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-6589 | 2.849MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c5437726-aa85-3ab0-f5ed-a62156a904f9
+  ws-opts:
+    headers:
+      Host: 3ab9dc0e-sub0g0-tax87j-fxtw.hk.p5pv.com
+    path: /
+- alterId: 0
+  name: 日本-3
+  password: '74260671232757400'
+  port: 443
+  server: correct-sheepdog.shiner427.skin
+  skip-cert-verify: false
+  sni: correct-sheepdog.shiner427.skin
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 中国香港-12
+  network: ws
+  port: 80
+  server: 58a3879a-sv2sg0-sywxsy-e54r.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c4f3a1ca-8d10-11eb-a8bf-f23c91cfbbc9
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-15
+  network: ws
+  port: 80
+  server: 581be42d-sv2sg0-swotpn-1nn0k.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-6530 | 3.292MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f9c35596-f323-11ed-8ccd-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 581be42d-sv2sg0-swotpn-1nn0k.hk.p5pv.com
+    path: /
+- alterId: 0
+  name: 日本-2
+  password: 74260671232757400
+  port: 443
+  server: 52.197.101.132
+  skip-cert-verify: true
+  sni: correct-sheepdog.shiner427.skin
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 中国香港-13
+  network: ws
+  port: 80
+  server: 8d4ff1b9-sv0xs0-t30eih-jm0w.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-6597 | 3.471MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e3004917-ad9d-b8a2-a2ee-65a54830e020
+  ws-opts:
+    headers:
+      Host: 8d4ff1b9-sv0xs0-t30eih-jm0w.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-17
+  network: ws
+  port: 80
+  server: 999a67b5-sv2sg0-syxyhi-12kzu.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-6533 | 3.721MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7b72cc10-0b3f-11ee-a91f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 999a67b5-sv2sg0-syxyhi-12kzu.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-14
+  network: ws
+  port: 80
+  server: d5542df0-sv0xs0-sw2c3o-1thts.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-6544 | 3.746MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cb96c846-fd6d-11ef-a910-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: d5542df0-sv0xs0-sw2c3o-1thts.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-16
+  network: ws
+  port: 80
+  server: 9246740e-sv0xs0-t8dih2-9kd8.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-1150 | 3.504MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8bd4eef0-e4ad-11ef-b717-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 9246740e-sv0xs0-t8dih2-9kd8.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-11
+  network: ws
+  port: 80
+  server: bed31eab-sv0xs0-t2hqlr-1s3mx.hk.p5pv.com
+  servername: 🇭🇰HK-1.65.216.213-6548 | 3.643MB
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: bed31eab-sv0xs0-t2hqlr-1s3mx.hk.p5pv.com
+    path: /
+- alterId: '0'
   cipher: auto
   name: 中国大陆-9
   network: tcp
-  port: 3687
-  server: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-  ws-headers:
-    Host: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-11
-  network: tcp
-  port: 5229
-  server: 3009e36d-svn5s0-t1bnjq-1krtb.cu.plebai.net
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- alterId: 0
-  name: 美国-5
-  network: ws
-  port: 443
-  server: 63.141.128.140
-  servername: v0.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: v0.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-4
-  network: ws
-  port: 443
-  server: 192.0.54.0
-  servername: v0.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: v0.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-15
-  network: tcp
-  port: 5229
-  server: fb79be22-svfr40-t1bnjq-1krtb.cu.plebai.net
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国大陆-12
-  port: 44015
-  server: 120.198.71.219
-  skip-cert-verify: false
-  tfo: false
-  tls: false
+  port: '41291'
+  server: 183.236.51.38
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 美国-7
+  name: 韩国-2
   network: ws
-  port: 443
-  server: 63.141.128.209
-  servername: v0.bgm2024.dpdns.org
+  port: 10943
+  server: 14.39.43.121
+  servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
   ws-opts:
     headers:
-      host: v0.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
-- alterId: 0
+      Host: miku.mikuru.ip-ddns.com
+    path: /?ed=2560
+- alterId: '0'
   cipher: auto
-  name: 中国大陆-14
-  network: tcp
-  port: 5229
-  server: 73618903-svhls0-t1bnjq-1krtb.cu.plebai.net
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-13
-  network: tcp
-  port: 5229
-  server: b3e1a577-svjgg0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  ws-headers:
-    Host: b3e1a577-svjgg0-t1bnjq-1krtb.cu.plebai.net
-  ws-path: /
-- alterId: 0
-  name: 美国-6
+  name: 中国大陆-10
   network: ws
-  port: 443
-  server: 135.84.76.110
-  servername: v0.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  port: '8004'
+  server: 59.42.247.189
+  type: vmess
+  uuid: 5989bf45-a99c-4754-8ff1-7c115d98d293
   ws-opts:
     headers:
-      host: v0.bgm2024.dpdns.org
+      host: www.bing.com
+    path: /nmkj
+- alterId: 0
+  name: 美国-1
+  network: ws
+  password: Ng35283528
+  port: 443
+  server: 104.16.83.176
+  skip-cert-verify: false
+  sni: c2.validbv3528.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: c2.validbv3528.eu.org
     path: /?ed=2560
 - alterId: 0
-  cipher: auto
-  name: 中国大陆-17
-  network: tcp
-  port: 5229
-  server: 3bb8aaa7-suk9s0-swtza9-1q91p.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  ws-headers:
-    Host: 3bb8aaa7-suk9s0-swtza9-1q91p.cu.plebai.net
-  ws-path: /
-- alpn:
-  - h3
-  alterId: 0
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 美国-9
-  port: 17549
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-16
-  network: tcp
-  port: 5229
-  server: 0fad9e0f-svlb40-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  ws-headers:
-    Host: 0fad9e0f-svlb40-t1bnjq-1krtb.cu.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 美国-11
-  network: ws
-  port: 80
-  server: www.wn03.cc
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  ws-opts:
-    headers:
-      Host: us.freeyyds.dpdns.org
-    path: /rongseven?ed=2048
-- alterId: 0
-  name: 美国-12
+  name: 美国-2
   network: ws
   port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: v0.bgm2024.dpdns.org
-  skip-cert-verify: true
+  server: 104.16.95.143
+  servername: bitget1.asdasd.click
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
   ws-opts:
     headers:
-      host: v0.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 443
-  server: 63.141.128.102
-  servername: v0.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: v0.bgm2024.dpdns.org
+      Host: bitget1.asdasd.click
     path: /?ed=2560
-- alterId: 0
-  name: 美国-10
-  network: ws
-  port: 443
-  server: 63.141.128.193
-  servername: v0.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: v0.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-18
-  network: tcp
-  port: 5229
-  server: 6faf81e8-svdwg0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  ws-headers:
-    Host: 6faf81e8-svdwg0-t1bnjq-1krtb.cu.plebai.net
-  ws-path: /
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -518,71 +571,65 @@ proxy-groups:
 - interval: 360
   name: TIKTOK
   proxies:
-  - 美国-1
-  - 韩国-2
-  - 韩国-3
+  - 日本-1
+  - 新加坡-1
   - 韩国-1
-  - 韩国-4
-  - 韩国-5
-  - 美国-3
+  - 日本-3
+  - 日本-2
+  - 韩国-2
+  - 美国-1
   - 美国-2
-  - 美国-5
-  - 美国-4
-  - 美国-7
-  - 美国-6
-  - 美国-9
-  - 美国-11
-  - 美国-12
-  - 美国-8
-  - 美国-10
   type: url-test
   url: https://i.ytimg.com/generate_204
 - name: 选择地区
   proxies:
-  - 韩国
-  - 中国大陆
-  - 美国
   - 中国香港
+  - 新加坡
+  - 中国大陆
+  - 日本
+  - 韩国
+  - 中国台湾
+  - 美国
   type: select
 - interval: 360
   name: 延迟最低
   proxies: &id001
-  - 美国-1
   - 中国大陆-3
-  - 中国香港-1
-  - 中国大陆-1
-  - 中国大陆-6
-  - 韩国-2
-  - 韩国-3
-  - 中国大陆-7
-  - 中国大陆-5
   - 中国大陆-2
+  - 中国香港-5
+  - 日本-1
+  - 新加坡-1
+  - 中国香港-4
+  - 中国香港-1
+  - 中国香港-3
+  - 中国香港-2
+  - 中国大陆-1
   - 韩国-1
+  - 中国大陆-6
   - 中国大陆-4
-  - 韩国-4
-  - 韩国-5
-  - 美国-3
-  - 美国-2
+  - 中国香港-7
+  - 中国大陆-5
+  - 中国香港-6
+  - 中国香港-8
+  - 中国香港-9
+  - 中国台湾-1
+  - 中国大陆-7
   - 中国大陆-8
-  - 中国大陆-10
+  - 中国香港-10
+  - 日本-3
+  - 中国香港-12
+  - 中国香港-15
+  - 日本-2
+  - 中国香港-13
+  - 中国香港-17
+  - 中国香港-14
+  - 中国香港-16
+  - 中国香港-11
   - 中国大陆-9
-  - 中国大陆-11
-  - 美国-5
-  - 美国-4
-  - 中国大陆-15
-  - 中国大陆-12
-  - 美国-7
-  - 中国大陆-14
-  - 中国大陆-13
-  - 美国-6
-  - 中国大陆-17
-  - 美国-9
-  - 中国大陆-16
-  - 美国-11
-  - 美国-12
-  - 美国-8
-  - 美国-10
-  - 中国大陆-18
+  - 韩国-2
+  - 中国大陆-10
+  - 美国-1
+  - 美国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -599,13 +646,31 @@ proxy-groups:
   proxies: *id001
   type: select
 - interval: 360
-  name: 韩国
+  name: 中国香港
   proxies:
-  - 韩国-1
-  - 韩国-2
-  - 韩国-3
-  - 韩国-4
-  - 韩国-5
+  - 中国香港-1
+  - 中国香港-2
+  - 中国香港-3
+  - 中国香港-4
+  - 中国香港-5
+  - 中国香港-6
+  - 中国香港-7
+  - 中国香港-8
+  - 中国香港-9
+  - 中国香港-10
+  - 中国香港-11
+  - 中国香港-12
+  - 中国香港-13
+  - 中国香港-14
+  - 中国香港-15
+  - 中国香港-16
+  - 中国香港-17
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 360
+  name: 新加坡
+  proxies:
+  - 新加坡-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -621,14 +686,27 @@ proxy-groups:
   - 中国大陆-8
   - 中国大陆-9
   - 中国大陆-10
-  - 中国大陆-11
-  - 中国大陆-12
-  - 中国大陆-13
-  - 中国大陆-14
-  - 中国大陆-15
-  - 中国大陆-16
-  - 中国大陆-17
-  - 中国大陆-18
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 360
+  name: 日本
+  proxies:
+  - 日本-1
+  - 日本-2
+  - 日本-3
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 360
+  name: 韩国
+  proxies:
+  - 韩国-1
+  - 韩国-2
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+- interval: 360
+  name: 中国台湾
+  proxies:
+  - 中国台湾-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -636,22 +714,6 @@ proxy-groups:
   proxies:
   - 美国-1
   - 美国-2
-  - 美国-3
-  - 美国-4
-  - 美国-5
-  - 美国-6
-  - 美国-7
-  - 美国-8
-  - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 360
-  name: 中国香港
-  proxies:
-  - 中国香港-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
