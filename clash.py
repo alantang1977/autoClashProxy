@@ -96,6 +96,15 @@ class clashAPI:
             print(message.text)
             print("发送重启内核命令失败")
 
+    def flushFakeIp(self):
+        url = f"{self.baseUrl}:{self.controllerPort}/cache/fakeip/flush"
+        message = requests.post(url, headers=self.authorization)
+        if (message.status_code == 204):
+            print("成功执行flush fakeip命令")
+        else:
+            print(message)
+            print("执行flush fakeip命令失败")
+
     def groupDelay(self, groupName):
         url = f"{self.baseUrl}:{self.controllerPort}/group/{groupName}/delay"
         params = {"timeout": self.timeout, "url": self.delayUrl}

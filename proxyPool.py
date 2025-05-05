@@ -66,9 +66,14 @@ createClash = parser.add_mutually_exclusive_group(required=True)
 createClash.add_argument("--local", action='store_true', help="处理本地配置文件，生成clash配置文件。")
 createClash.add_argument("--download", action='store_true', help="下载公开的订阅文件，生成clash配置文件。")
 createClash.add_argument("--update", action='store_true', help="对所有节点进行延迟测试后，生成配置文件。")
+createClash.add_argument("--flushFakeip", action='store_true', help="删除fakeip缓存")
 
 args = parser.parse_args()
 profile = clashConfig(args)
+
+if(args.flushFakeip):
+    profile.clash.flushFakeIp()
+    sys.exit(0)
 
 if(args.noDownload and args.local):
     print("error: argument --noDownload: not allowed with argument --local")
