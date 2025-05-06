@@ -87,196 +87,221 @@ mode: rule
 profile:
   store-selected: true
 proxies:
-- alterId: '2'
-  cipher: auto
-  name: 中国香港-2
-  network: ws
-  port: '8080'
-  server: 5baf2986-svc1s0-swjbgr-1kcpe.hk3.p5pv.com
-  type: vmess
-  uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: '2'
-  cipher: auto
-  name: 中国香港-1
-  network: ws
-  port: '8080'
-  server: e7503ea3-svdwg0-swod2a-1qudz.hk3.p5pv.com
-  type: vmess
-  uuid: a63b0d44-e290-11ee-91f6-f23c91cfbbc9
-  ws-opts:
-    headers:
-      host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
-  name: 中国大陆-1
-  password: b6200af42ccadea353f5b5856dd20d70
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
-- alterId: '0'
-  cipher: auto
   name: 中国大陆-2
-  network: tcp
-  port: '15229'
-  server: 6ebfa9c9-svfr40-tbmeud-1th9y.cm.plebai.net
-  type: vmess
-  uuid: 12a81f5a-fa9e-11ef-8400-f23c9164ca5d
-- alterId: 0
-  client-fingerprint: random
-  name: 中国台湾-1
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: 0229.patterdeng.pp.ua
+  password: f161873e-2a28-4c97-a99d-4ea61e9c2d85
+  port: 10465
+  server: 183.2.150.90
   skip-cert-verify: false
-  tls: true
-  type: vless
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
   udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-1
-  network: ws
-  port: 12416
-  server: 121.174.200.92
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      Host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-4
-  network: tcp
-  port: 3687
-  server: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-  ws-headers:
-    Host: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
-  ws-path: /
-- alterId: '0'
+- alterId: 64
   cipher: auto
   name: 中国大陆-3
-  network: tcp
-  port: '54652'
+  port: 30052
   server: 183.236.51.38
+  skip-cert-verify: false
+  tls: false
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-1
-  network: ws
-  port: 80
-  server: 104.16.86.2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /?ed=2560
+  name: 中国大陆-4
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 8444
+  server: singapore02.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
 - alterId: 0
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- alterId: 0
+  client-fingerprint: ios
+  flow: xtls-rprx-vision
   name: 美国-3
-  network: ws
-  port: 80
-  server: 104.16.76.55
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5d8bc42a-d345-4bd3-a844-4b90afc44670
-  ws-opts:
-    headers:
-      Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-9
-  network: ws
   port: 443
-  server: 104.19.160.0
-  servername: lrnz.xyz
+  reality-opts:
+    public-key: Rwqxz0M2DjcW39poMFeZzfjlYZf2PwxxQ0UEI4CSZik
+    short-id: 6891d99c
+  server: pq.aws14.yydjc.top
+  servername: www.mi.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 97f26790-6e5a-4adc-83a8-5b17d873a4f0
-  ws-opts:
-    headers:
-      Host: lrnz.xyz
-    path: /?ed=2560
+  uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
 - alterId: 0
   name: 美国-5
   network: ws
   port: 443
-  server: 104.16.95.143
-  servername: bitget1.asdasd.click
-  skip-cert-verify: false
+  server: dnschecker.org
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: bitget1.asdasd.click
+      host: h0.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
   name: 美国-4
   network: ws
   port: 443
-  server: a0.nttkk.com
-  servername: ss-c6o.pages.dev
+  server: toy-people.com
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 新加坡-1
+  port: 443
+  reality-opts:
+    public-key: USd1Iznfu9nwnvIfz5CPcrnhXoQX1e1C1fCPNB9mbAk
+    short-id: 36fb8090
+  server: pq.aws56.yydjc.top
+  servername: iosapps.itunes.apple.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: b0286bc2-e17c-4c17-b0e6-d39c93f74937
-  ws-opts:
-    headers:
-      Host: ss-c6o.pages.dev
-    path: /tg@myFreeNodeChat/?ed=2048
+  uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
 - alterId: 0
-  name: 美国-6
-  network: ws
-  password: auto
-  port: 443
-  server: 172.66.45.2
+  name: 中国大陆-1
+  password: b6200af42ccadea353f5b5856dd20d70
+  port: 39001
+  server: 113.99.140.184
   skip-cert-verify: true
-  sni: dcf741e8.epeius-2gy.pages.dev
-  tls: true
+  sni: 113.99.140.184
   type: trojan
   udp: true
 - alterId: 0
+  name: 美国-7
+  network: ws
+  port: 443
+  server: 104.24.188.214
+  servername: planetzh.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: af713c0c-a79e-464b-b08e-831ce00fe235
+  ws-opts:
+    headers:
+      Host: planetzh.xyz
+    path: /
+- alterId: 0
+  name: 美国-1
+  network: ws
+  port: 443
+  server: 192.18.143.57
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-6
+  network: ws
+  port: 443
+  server: www.wto.org
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-2
+  network: ws
+  port: 443
+  server: 160.79.105.77
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
   name: 美国-11
+  network: ws
+  port: 443
+  server: decker.ns.cloudflare.com
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  client-fingerprint: random
+  name: 美国-10
+  network: ws
+  port: 443
+  server: 104.24.152.190
+  servername: what.zhonghuoxing.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f055d270-0e76-4a41-a53f-871bbb51b003
+  ws-opts:
+    headers:
+      Host: what.zhonghuoxing.top
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-13
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 443
+  server: 0e16aa8a-svukg0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: http
+  udp: true
+  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 443
+  server: otto.ns.cloudflare.com
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-21
   network: ws
   port: 80
   server: www.speedtest.net
@@ -291,48 +316,68 @@ proxies:
       Host: redfree8mahsang6.redfree8.ir
     path: /TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
 - alterId: 0
-  name: 美国-8
-  network: ws
-  port: 80
-  server: 104.24.37.192
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
-  ws-opts:
-    headers:
-      Host: ppal03.dolobe7975.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-7
-  network: ws
-  port: 80
-  server: 104.16.178.238
-  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
-  tls: false
-  type: vless
-  uuid: d4eddaf9-a660-4905-b835-cad98677b380
-  ws-opts:
-    headers:
-      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-10
+  name: 美国-24
   network: ws
   port: 443
-  server: 190.93.245.90
-  servername: cf.501508.xyz
-  skip-cert-verify: false
+  server: www.pcmag.com
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: a268ce39-7687-4817-aa5f-def4f653fb88
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: cf.501508.xyz
+      host: h0.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-12
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 日本-1
+  password: c3e9c4af3090
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.8vote.cn
+    mode: websocket
+    mux: true
+    path: /pnkedddxby
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 137.220.142.145
+  tfo: false
+  type: ss
+- alterId: 0
+  name: 美国-8
+  network: ws
+  password: redfree8
+  port: 443
+  server: 104.17.147.22
+  skip-cert-verify: false
+  sni: ipsychO.SUEx12.Ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ipsychO.SUEx12.Ir
+    path: /trre5IzbZ9IZZMddtw?ed=2560
+- alterId: 0
+  name: 美国-22
+  network: ws
+  port: 443
+  server: braden.ns.cloudflare.com
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-9
   network: ws
   port: 443
   server: 160.79.104.113
@@ -347,185 +392,139 @@ proxies:
       Host: 0229.patterdeng.pp.ua
     path: /
 - alterId: 0
-  name: 美国-13
+  name: 美国-16
   network: ws
-  port: 2052
-  server: 172.67.135.195
+  port: 443
+  server: 192.0.63.29
+  servername: h0.ylka.dpdns.org
   skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
-- alterId: '2'
-  cipher: auto
-  name: 中国香港-3
-  network: ws
-  port: '8080'
-  server: 8e1113bf-svc1s0-t9hghw-1sdoq.hk3.p5pv.com
-  type: vmess
-  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
-  ws-opts:
-    headers:
-      host: broadcastlv.chat.bilibili.com
-    path: /
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   name: 美国-14
   network: ws
-  port: 8443
-  server: 172.64.157.123
-  servername: 1.659118019.uk
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6965e558-73a4-4808-a778-67e8a82d15aa
-  ws-opts:
-    headers:
-      Host: 1.659118019.uk
-    path: /?ed=2560
-- alpn:
-  - h3
-  alterId: 0
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 加拿大-1
-  port: 11512
-  protocol: udp
-  server: 108.181.24.77
+  port: 443
+  server: 160.79.104.233
+  servername: h0.ylka.dpdns.org
   skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
-- alterId: 0
-  name: 美国-16
-  network: ws
-  port: 2083
-  server: 162.159.153.28
-  servername: 1.659118019.uk
-  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 6965e558-73a4-4808-a778-67e8a82d15aa
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: 1.659118019.uk
+      host: h0.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
   name: 美国-15
   network: ws
-  port: 8443
-  server: 104.24.40.146
-  servername: bitget1.asdasd.click
-  skip-cert-verify: false
+  port: 443
+  server: 192.0.54.25
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: bitget1.asdasd.click
-    path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 中国大陆-5
-  network: tcp
-  port: '44015'
-  server: 120.198.71.219
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 美国-18
-  network: ws
-  port: 2053
-  server: 104.24.240.115
-  servername: xpvip168.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 39a2588a-2980-4ae6-a32e-63fb3456daef
-  ws-opts:
-    headers:
-      Host: xpvip168.eu.org
+      host: h0.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
   name: 美国-17
   network: ws
-  port: 8443
-  server: 162.159.152.81
-  servername: txmt.conetcdata.dpdns.org
+  port: 443
+  server: www.udemy.com
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-29
+  network: ws
+  port: 443
+  server: rustam.ns.cloudflare.com
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-18
+  network: ws
+  port: 443
+  server: 104.16.83.224
+  servername: taoj.eu.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b
+  uuid: 1c4c856f-6ef1-4d32-a556-068d948a2158
   ws-opts:
     headers:
-      Host: txmt.conetcdata.dpdns.org
+      Host: taoj.eu.org
     path: /?ed=2560
+- alterId: 0
+  name: 美国-26
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 443
+  server: c23319fc-svukg0-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: http
+  udp: true
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
 - alterId: 0
   name: 美国-19
   network: ws
   port: 443
-  server: 103.21.244.17
-  servername: what.zhonghuoxing.top
+  server: 160.79.105.76
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-20
+  network: ws
+  port: 443
+  server: 190.93.245.90
+  servername: cf.501508.xyz
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: f055d270-0e76-4a41-a53f-871bbb51b003
+  uuid: a268ce39-7687-4817-aa5f-def4f653fb88
   ws-opts:
     headers:
-      Host: what.zhonghuoxing.top
+      Host: cf.501508.xyz
     path: /?ed=2560
 - alterId: 0
   name: 美国-23
   network: ws
-  port: 443
-  server: 104.24.83.107
-  servername: wk.625229.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2fd18148-ef55-461c-bd5d-c9f5c851d467
-  ws-opts:
-    headers:
-      Host: wk.625229.xyz
-    path: /?ed=2560
-- alterId: '0'
-  cipher: auto
-  name: 美国-21
-  network: tcp
-  port: '13644'
-  server: 49.51.200.120
-  type: vmess
-  uuid: ce85f24c-c34d-4dc2-ae2a-c585f7b8c4d2
-- alterId: 0
-  name: 美国-20
-  network: ws
-  port: 8880
-  server: 66.235.200.94
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
-- alterId: 0
-  name: 美国-22
-  network: ws
-  port: 2053
-  server: 104.16.12.247
+  port: 8443
+  server: 199.34.228.66
   servername: txmt.conetcdata.dpdns.org
   skip-cert-verify: false
   tls: true
@@ -535,34 +534,61 @@ proxies:
   ws-opts:
     headers:
       Host: txmt.conetcdata.dpdns.org
-    path: /?ed=2560
+    path: /
 - alterId: 0
-  cipher: auto
-  name: 中国大陆-6
-  port: 46597
-  server: 120.232.153.41
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 美国-24
+  name: 美国-30
   network: ws
   port: 443
-  server: xc133.meiziba5566.com
-  servername: xc133.meiziba5566.com
+  server: 160.79.105.72
+  servername: h0.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 268f7e36-625d-4fba-dc73-fb87cf90a104
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      HOST: xc133.meiziba5566.com
-    path: /268f7e36
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-27
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 443
+  server: e6c022e2-svwf40-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: http
+  udp: true
+  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+- alterId: 0
+  name: 美国-28
+  network: ws
+  port: 443
+  server: 69.84.182.141
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-25
+  network: ws
+  port: 443
+  server: 160.79.105.203
+  servername: h0.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: h0.ylka.dpdns.org
+    path: /?ed=2560
 proxy-groups:
 - name: 漏网之鱼
   proxies:
@@ -583,82 +609,86 @@ proxy-groups:
 - interval: 360
   name: TIKTOK
   proxies:
-  - 韩国-1
-  - 美国-1
-  - 美国-2
   - 美国-3
-  - 美国-9
   - 美国-5
   - 美国-4
-  - 美国-6
-  - 美国-11
-  - 美国-8
+  - 新加坡-1
   - 美国-7
+  - 美国-1
+  - 美国-6
+  - 美国-2
+  - 美国-11
   - 美国-10
-  - 美国-12
   - 美国-13
-  - 美国-14
-  - 加拿大-1
-  - 美国-16
-  - 美国-15
-  - 美国-18
-  - 美国-17
-  - 美国-19
-  - 美国-23
+  - 美国-12
   - 美国-21
-  - 美国-20
-  - 美国-22
   - 美国-24
+  - 日本-1
+  - 美国-8
+  - 美国-22
+  - 美国-9
+  - 美国-16
+  - 美国-14
+  - 美国-15
+  - 美国-17
+  - 美国-29
+  - 美国-18
+  - 美国-26
+  - 美国-19
+  - 美国-20
+  - 美国-23
+  - 美国-30
+  - 美国-27
+  - 美国-28
+  - 美国-25
   type: url-test
   url: https://i.ytimg.com/generate_204
 - name: 选择地区
   proxies:
-  - 美国
   - 中国大陆
-  - 中国香港
-  - 韩国
-  - 中国台湾
-  - 加拿大
+  - 美国
+  - 新加坡
+  - 日本
   type: select
 - interval: 360
   name: 延迟最低
   proxies: &id001
-  - 中国香港-2
-  - 中国香港-1
-  - 中国大陆-1
   - 中国大陆-2
-  - 中国台湾-1
-  - 韩国-1
-  - 中国大陆-4
   - 中国大陆-3
-  - 美国-1
-  - 美国-2
+  - 中国大陆-4
   - 美国-3
-  - 美国-9
   - 美国-5
   - 美国-4
-  - 美国-6
-  - 美国-11
-  - 美国-8
+  - 新加坡-1
+  - 中国大陆-1
   - 美国-7
+  - 美国-1
+  - 美国-6
+  - 美国-2
+  - 美国-11
   - 美国-10
-  - 美国-12
   - 美国-13
-  - 中国香港-3
-  - 美国-14
-  - 加拿大-1
-  - 美国-16
-  - 美国-15
-  - 中国大陆-5
-  - 美国-18
-  - 美国-17
-  - 美国-19
-  - 美国-23
+  - 美国-12
   - 美国-21
-  - 美国-20
-  - 美国-22
-  - 中国大陆-6
   - 美国-24
+  - 日本-1
+  - 美国-8
+  - 美国-22
+  - 美国-9
+  - 美国-16
+  - 美国-14
+  - 美国-15
+  - 美国-17
+  - 美国-29
+  - 美国-18
+  - 美国-26
+  - 美国-19
+  - 美国-20
+  - 美国-23
+  - 美国-30
+  - 美国-27
+  - 美国-28
+  - 美国-25
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -674,6 +704,15 @@ proxy-groups:
 - name: 手动选择
   proxies: *id001
   type: select
+- interval: 360
+  name: 中国大陆
+  proxies:
+  - 中国大陆-1
+  - 中国大陆-2
+  - 中国大陆-3
+  - 中国大陆-4
+  type: url-test
+  url: https://i.ytimg.com/generate_204
 - interval: 360
   name: 美国
   proxies:
@@ -701,43 +740,24 @@ proxy-groups:
   - 美国-22
   - 美国-23
   - 美国-24
+  - 美国-25
+  - 美国-26
+  - 美国-27
+  - 美国-28
+  - 美国-29
+  - 美国-30
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
-  name: 中国大陆
+  name: 新加坡
   proxies:
-  - 中国大陆-1
-  - 中国大陆-2
-  - 中国大陆-3
-  - 中国大陆-4
-  - 中国大陆-5
-  - 中国大陆-6
+  - 新加坡-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
-  name: 中国香港
+  name: 日本
   proxies:
-  - 中国香港-1
-  - 中国香港-2
-  - 中国香港-3
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 360
-  name: 韩国
-  proxies:
-  - 韩国-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 360
-  name: 中国台湾
-  proxies:
-  - 中国台湾-1
-  type: url-test
-  url: https://i.ytimg.com/generate_204
-- interval: 360
-  name: 加拿大
-  proxies:
-  - 加拿大-1
+  - 日本-1
   type: url-test
   url: https://i.ytimg.com/generate_204
 rule-providers:
@@ -792,17 +812,18 @@ rules:
 - GEOSITE,tld-cn,DIRECT
 - GEOSITE,category-games@cn,DIRECT
 - GEOIP,private,DIRECT,no-resolve
-- RULE-SET,china,DIRECT
-- RULE-SET,binance,DIRECT
-- RULE-SET,direct,DIRECT
-- RULE-SET,tiktok,TIKTOK
-- RULE-SET,globalMedia,国外媒体
-- RULE-SET,twitter,国外媒体
+- GEOSITE,binance,DIRECT
+- GEOSITE,tiktok,TIKTOK
+- GEOSITE,twitter,国外媒体
+- GEOSITE,category-media,国外媒体
+- GEOSITE,category-entertainment,国外媒体
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
 - DOMAIN,yacd.metacubex.one,DIRECT
 - RULE-SET,reject,REJECT
 - GEOSITE,category-ads-all,REJECT
+- RULE-SET,direct,DIRECT
+- RULE-SET,china,DIRECT
 - GEOIP,CN,DIRECT
 - MATCH,漏网之鱼
 secret: d53df256-8f1b-4f9b-b730-6a4e947104b6
