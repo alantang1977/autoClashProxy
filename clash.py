@@ -222,7 +222,7 @@ class clashConfig:
 
         config['proxy-groups'] = []
 
-        config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低-all", "故障转移-all", "负载均衡-all", "手动选择-all", "DIRECT"]))
+        config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低-all", "故障转移-all", "负载均衡-all", "手动选择-all", "延迟最低-excludeChina", "故障转移-excludeChina", "负载均衡-excludeChina", "手动选择-excludeChina", "DIRECT"]))
         config['proxy-groups'].append(self.createGroup("国外媒体影音", "select", ["延迟最低-excludeChina", "故障转移-excludeChina", "负载均衡-excludeChina", "手动选择-excludeChina", "DIRECT"]))
 
         excludeChinaProxies = [proxy for proxy in proxiesNames if "中国" not in proxy]
