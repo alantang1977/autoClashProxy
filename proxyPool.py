@@ -29,7 +29,7 @@ def checkNeedUpdate(profile):
     print("开始检测是否需要更新节点：")
     clash = profile.clash
 
-    checkGroupName = "手动选择-excludeChina"
+    checkGroupName = "手动选择"
     allProxy = clash.groupProxy(checkGroupName)
 
     if ("all" in allProxy):
@@ -37,7 +37,7 @@ def checkNeedUpdate(profile):
         if (len(valid) / len(allProxy['all']) < 0.5):
             print("有效节点数量不足一半，需要更新")
             return True
-        elif (len(allProxy['all']) < profile.maxAfterDelay * 0.6):
+        elif (len(allProxy['all']) < profile.maxAfterDelay * 0.8):
             print("总节点数过少，需要更新")
             return True
         else:

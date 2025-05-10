@@ -120,7 +120,7 @@ def removeTimeoutProxy(proxies, profile, maxProxy):
                     continue
                 if ("中国" in proxyCountry):
                     chinaProxyCount += 1
-                if (chinaProxyCount / maxProxy > 0.3):
+                if (chinaProxyCount / maxProxy > 0.8):
                     print("中国节点数量超过限额，不再添加")
                     continue
 

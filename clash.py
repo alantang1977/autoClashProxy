@@ -222,17 +222,18 @@ class clashConfig:
 
         config['proxy-groups'] = []
 
-        config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低-all", "故障转移-all", "负载均衡-all", "手动选择-all", "延迟最低-excludeChina", "故障转移-excludeChina", "负载均衡-excludeChina", "手动选择-excludeChina", "DIRECT"]))
-        config['proxy-groups'].append(self.createGroup("国外媒体影音", "select", ["延迟最低-excludeChina", "故障转移-excludeChina", "负载均衡-excludeChina", "手动选择-excludeChina", "DIRECT"]))
+        config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
+        config['proxy-groups'].append(self.createGroup("媒体影音", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
+        config['proxy-groups'].append(self.createGroup("TIKTOK", "select", ["延迟最低-TIKTOK", "故障转移-TIKTOK", "负载均衡-TIKTOK", "手动选择-TIKTOK", "DIRECT"]))
 
-        excludeChinaProxies = [proxy for proxy in proxiesNames if "中国" not in proxy]
-        if (len(excludeChinaProxies) > 10):
-            config['proxy-groups'].append(self.createGroup("延迟最低-excludeChina", "url-test", excludeChinaProxies))
-            config['proxy-groups'].append(self.createGroup("故障转移-excludeChina", "fallback", excludeChinaProxies))
-            config['proxy-groups'].append(self.createGroup("负载均衡-excludeChina", "load-balance", excludeChinaProxies))
-            config['proxy-groups'].append(self.createGroup("手动选择-excludeChina", "select", excludeChinaProxies))
+        tiktokProxies = [proxy for proxy in proxiesNames if  proxy not in ["中国香港", "中国大陆"]] #目前发现这两个地址下的节点无法播放tiktok
+        if (len(tiktokProxies) >= 4):
+            config['proxy-groups'].append(self.createGroup("延迟最低-TIKTOK", "url-test", tiktokProxies))
+            config['proxy-groups'].append(self.createGroup("故障转移-TIKTOK", "fallback", tiktokProxies))
+            config['proxy-groups'].append(self.createGroup("负载均衡-TIKTOK", "load-balance", tiktokProxies))
+            config['proxy-groups'].append(self.createGroup("手动选择-TIKTOK", "select", tiktokProxies))
         else:
-            print("包含非中国节点数量过少，不满足条件")
+            print("包含节点数量过少，不满足条件")
             return False
 
         # selectCountry = self.createGroup("选择地区", "select", [])
@@ -242,10 +243,10 @@ class clashConfig:
         #     allCountry.append(countryGroup[country])
 
         # config['proxy-groups'].append(selectCountry)
-        config['proxy-groups'].append(self.createGroup("延迟最低-all", "url-test", proxiesNames))
-        config['proxy-groups'].append(self.createGroup("故障转移-all", "fallback", proxiesNames))
-        config['proxy-groups'].append(self.createGroup("负载均衡-all", "load-balance", proxiesNames))
-        config['proxy-groups'].append(self.createGroup("手动选择-all", "select", proxiesNames))
+        config['proxy-groups'].append(self.createGroup("延迟最低", "url-test", proxiesNames))
+        config['proxy-groups'].append(self.createGroup("故障转移", "fallback", proxiesNames))
+        config['proxy-groups'].append(self.createGroup("负载均衡", "load-balance", proxiesNames))
+        config['proxy-groups'].append(self.createGroup("手动选择", "select", proxiesNames))
 
         # config['proxy-groups'] += allCountry
         with open(self.file, 'w', encoding='utf-8') as file:
