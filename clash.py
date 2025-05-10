@@ -225,16 +225,7 @@ class clashConfig:
         config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
         config['proxy-groups'].append(self.createGroup("媒体影音", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
         config['proxy-groups'].append(self.createGroup("TIKTOK", "select", ["延迟最低-TIKTOK", "故障转移-TIKTOK", "负载均衡-TIKTOK", "手动选择-TIKTOK", "DIRECT"]))
-
-        tiktokProxies = [proxy for proxy in proxiesNames if  proxy not in ["中国香港", "中国大陆"]] #目前发现这两个地址下的节点无法播放tiktok
-        if (len(tiktokProxies) >= 4):
-            config['proxy-groups'].append(self.createGroup("延迟最低-TIKTOK", "url-test", tiktokProxies))
-            config['proxy-groups'].append(self.createGroup("故障转移-TIKTOK", "fallback", tiktokProxies))
-            config['proxy-groups'].append(self.createGroup("负载均衡-TIKTOK", "load-balance", tiktokProxies))
-            config['proxy-groups'].append(self.createGroup("手动选择-TIKTOK", "select", tiktokProxies))
-        else:
-            print("包含节点数量过少，不满足条件")
-            return False
+        config['proxy-groups'].append(self.createGroup("OPENAI", "select", ["延迟最低-OPENAI", "故障转移-OPENAI", "负载均衡-OPENAI", "手动选择-OPENAI", "DIRECT"]))
 
         # selectCountry = self.createGroup("选择地区", "select", [])
         # allCountry = []
@@ -247,6 +238,26 @@ class clashConfig:
         config['proxy-groups'].append(self.createGroup("故障转移", "fallback", proxiesNames))
         config['proxy-groups'].append(self.createGroup("负载均衡", "load-balance", proxiesNames))
         config['proxy-groups'].append(self.createGroup("手动选择", "select", proxiesNames))
+
+        tiktokProxies = [proxy for proxy in proxiesNames if  proxy not in ["中国香港", "中国大陆"]] #目前发现这两个地址下的节点无法播放tiktok
+        if (len(tiktokProxies) >= 4):
+            config['proxy-groups'].append(self.createGroup("延迟最低-TIKTOK", "url-test", tiktokProxies))
+            config['proxy-groups'].append(self.createGroup("故障转移-TIKTOK", "fallback", tiktokProxies))
+            config['proxy-groups'].append(self.createGroup("负载均衡-TIKTOK", "load-balance", tiktokProxies))
+            config['proxy-groups'].append(self.createGroup("手动选择-TIKTOK", "select", tiktokProxies))
+        else:
+            print("包含节点数量过少，不满足条件")
+            return False
+
+        openaiProxies = [proxy for proxy in proxiesNames if  proxy not in ["中国香港", "中国大陆"]] #目前发现这两个地址下的节点无法使用openai
+        if (len(openaiProxies) >= 4):
+            config['proxy-groups'].append(self.createGroup("延迟最低-OPENAI", "url-test", openaiProxies))
+            config['proxy-groups'].append(self.createGroup("故障转移-OPENAI", "fallback", openaiProxies))
+            config['proxy-groups'].append(self.createGroup("负载均衡-OPENAI", "load-balance", openaiProxies))
+            config['proxy-groups'].append(self.createGroup("手动选择-OPENAI", "select", openaiProxies))
+        else:
+            print("包含节点数量过少，不满足条件")
+            return False
 
         # config['proxy-groups'] += allCountry
         with open(self.file, 'w', encoding='utf-8') as file:
