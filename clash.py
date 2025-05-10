@@ -222,29 +222,32 @@ class clashConfig:
 
         config['proxy-groups'] = []
 
-        config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
-        config['proxy-groups'].append(self.createGroup("国外媒体", "select", ["选择地区", "延迟最低", "故障转移", "负载均衡", "手动选择"]))
+        config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低-all", "故障转移-all", "负载均衡-all", "手动选择-all", "DIRECT"]))
+        config['proxy-groups'].append(self.createGroup("国外媒体影音", "select", ["延迟最低-excludeChina", "故障转移-excludeChina", "负载均衡-excludeChina", "手动选择-excludeChina", "DIRECT"]))
 
-        tiktokProxies = [proxy for proxy in proxiesNames if "中国" not in proxy]
-        if (len(tiktokProxies) > 0):
-            config['proxy-groups'].append(self.createGroup("TIKTOK", "url-test", tiktokProxies))
+        excludeChinaProxies = [proxy for proxy in proxiesNames if "中国" not in proxy]
+        if (len(excludeChinaProxies) > 10):
+            config['proxy-groups'].append(self.createGroup("延迟最低-excludeChina", "url-test", excludeChinaProxies))
+            config['proxy-groups'].append(self.createGroup("故障转移-excludeChina", "fallback", excludeChinaProxies))
+            config['proxy-groups'].append(self.createGroup("负载均衡-excludeChina", "load-balance", excludeChinaProxies))
+            config['proxy-groups'].append(self.createGroup("手动选择-excludeChina", "select", excludeChinaProxies))
         else:
-            print("没有包含非中国节点，不满足条件")
+            print("包含非中国节点数量过少，不满足条件")
             return False
 
-        selectCountry = self.createGroup("选择地区", "select", [])
-        allCountry = []
-        for country in countryGroup:
-            selectCountry['proxies'].append(country)
-            allCountry.append(countryGroup[country])
+        # selectCountry = self.createGroup("选择地区", "select", [])
+        # allCountry = []
+        # for country in countryGroup:
+        #     selectCountry['proxies'].append(country)
+        #     allCountry.append(countryGroup[country])
 
-        config['proxy-groups'].append(selectCountry)
-        config['proxy-groups'].append(self.createGroup("延迟最低", "url-test", proxiesNames))
-        config['proxy-groups'].append(self.createGroup("故障转移", "fallback", proxiesNames))
-        config['proxy-groups'].append(self.createGroup("负载均衡", "load-balance", proxiesNames))
-        config['proxy-groups'].append(self.createGroup("手动选择", "select", proxiesNames))
+        # config['proxy-groups'].append(selectCountry)
+        config['proxy-groups'].append(self.createGroup("延迟最低-all", "url-test", proxiesNames))
+        config['proxy-groups'].append(self.createGroup("故障转移-all", "fallback", proxiesNames))
+        config['proxy-groups'].append(self.createGroup("负载均衡-all", "load-balance", proxiesNames))
+        config['proxy-groups'].append(self.createGroup("手动选择-all", "select", proxiesNames))
 
-        config['proxy-groups'] += allCountry
+        # config['proxy-groups'] += allCountry
         with open(self.file, 'w', encoding='utf-8') as file:
             yaml.dump(config, file, allow_unicode=True)
 

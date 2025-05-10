@@ -111,10 +111,17 @@ def removeTimeoutProxy(proxies, profile, maxProxy):
             print(f"测试正常节点: {len(results)}/{len(proxies)}")
 
             country = ["美国", "韩国", "日本", "新加坡", "加拿大", "中国大陆", "中国香港", "中国台湾", "中国澳门"]
+            chinaProxyCount = 0
             results = sorted(results, key=itemgetter(1)) #对节点按照延迟时间进行排序
             for result in results: #按照排序结果取相应数量的节点
-                if (result[0]['name'].split('-')[0] not in country):
+                proxyCountry = result[0]['name'].split('-')[0]
+                if (proxyCountry not in country):
                     print(result[0]['name'], "国家不符合要求，不添加至最终的配置文件中")
+                    continue
+                if ("中国" in proxyCountry):
+                    chinaProxyCount += 1
+                if (chinaProxyCount / maxProxy > 0.3):
+                    print("中国节点数量超过限额，不再添加")
                     continue
 
                 print(f"{result[0]['name']}: {result[1]}ms")
