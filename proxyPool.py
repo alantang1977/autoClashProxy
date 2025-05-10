@@ -26,15 +26,19 @@ def parserSourceUrl(sourceFile):
     return allUrl
 
 def checkNeedUpdate(profile):
+    print("开始检测是否需要更新节点：")
     clash = profile.clash
-    allProxy = clash.groupProxy("手动选择")
+
+    checkGroupName = "手动选择-excludeChina"
+    allProxy = clash.groupProxy(checkGroupName)
 
     if ("all" in allProxy):
-        valid = clash.groupDelay("手动选择")
+        valid = clash.groupDelay(checkGroupName)
         if (len(valid) / len(allProxy['all']) < 0.5):
-            print("有效节点数量不足配置文件中节点数量一半")
+            print("有效节点数量不足一半，需要更新")
             return True
-        elif (len(allProxy['all']) < profile.maxAfterDelay):
+        elif (len(allProxy['all']) < profile.maxAfterDelay * 0.6):
+            print("总节点数过少，需要更新")
             return True
         else:
             return False
