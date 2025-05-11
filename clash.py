@@ -240,7 +240,7 @@ class clashConfig:
         config['proxy-groups'].append(self.createGroup("负载均衡", "load-balance", proxiesNames))
         config['proxy-groups'].append(self.createGroup("手动选择", "select", proxiesNames))
 
-        tiktokProxies = [proxy for proxy in proxiesNames if  proxy not in ["中国香港", "中国大陆"]] #目前发现这两个地址下的节点无法播放tiktok
+        tiktokProxies = [proxy for proxy in proxiesNames if proxy.split('-')[0] not in ["中国香港", "中国大陆"]] #目前发现这两个地址下的节点无法播放tiktok
         if (len(tiktokProxies) >= 4):
             config['proxy-groups'].append(self.createGroup("延迟最低-TIKTOK", "url-test", tiktokProxies))
             config['proxy-groups'].append(self.createGroup("故障转移-TIKTOK", "fallback", tiktokProxies))
@@ -250,7 +250,7 @@ class clashConfig:
             print("包含节点数量过少，不满足条件")
             return False
 
-        openaiProxies = [proxy for proxy in proxiesNames if  proxy not in ["中国香港", "中国大陆"]] #目前发现这两个地址下的节点无法使用openai
+        openaiProxies = [proxy for proxy in proxiesNames if proxy.split('-')[0] not in ["中国香港", "中国大陆"]] #目前发现这两个地址下的节点无法使用openai
         if (len(openaiProxies) >= 4):
             config['proxy-groups'].append(self.createGroup("延迟最低-OPENAI", "url-test", openaiProxies))
             config['proxy-groups'].append(self.createGroup("故障转移-OPENAI", "fallback", openaiProxies))
