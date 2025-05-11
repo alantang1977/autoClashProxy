@@ -222,6 +222,7 @@ class clashConfig:
 
         config['proxy-groups'] = []
 
+        config['proxy-groups'].append(self.createGroup("PROXY", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
         config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
         config['proxy-groups'].append(self.createGroup("媒体影音", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
         config['proxy-groups'].append(self.createGroup("TIKTOK", "select", ["延迟最低-TIKTOK", "故障转移-TIKTOK", "负载均衡-TIKTOK", "手动选择-TIKTOK", "DIRECT"]))
