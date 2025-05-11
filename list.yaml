@@ -76,18 +76,21 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  cipher: auto
-  name: 中国大陆-1
-  network: tcp
-  port: 40392
-  server: 120.232.153.123
+  name: 中国大陆-2
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.123
-  ws-path: /
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 中国大陆-11
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11508
+  server: cdn-p1-sg.weibo-dns.com
+  type: ss
+  udp: true
 - alterId: 0
   name: 中国台湾-1
   network: ws
@@ -103,97 +106,42 @@ proxies:
       Host: skwygx.top
     path: /tr?ed=2560
 - alterId: 0
-  name: 韩国-4
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: kr01.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
+  cipher: aes-256-gcm
+  name: 中国大陆-15
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11504
+  server: cdn-p1-jp.weibo-dns.com
+  type: ss
   udp: true
-  username: dmpyoary@mayorlogistic.com
-- alterId: 0
-  name: 中国香港-1
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: tky03.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
 - alterId: 0
   cipher: aes-256-gcm
-  name: 中国大陆-9
+  name: 中国大陆-13
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11525
+  server: cdn-p1-lm.youku-dns.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 中国大陆-12
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11501
   server: cdn-p1-hk.weibo-dns.com
   type: ss
-- alterId: 0
-  name: 韩国-1
-  network: ws
-  port: 14220
-  server: 218.51.125.182
-  servername: mikuyo.bpd67081tsq.ddns-ip.net
-  skip-cert-verify: true
-  tls: true
-  type: vless
   udp: true
-  uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
-  ws-opts:
-    headers:
-      host: mikuyo.bpd67081tsq.ddns-ip.net
-    path: /?ed=2560
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 日本-1
-  password: e03b35b40a25
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp06v1.3ci.xyz
-    mode: websocket
-    mux: true
-    path: /ymfvpytvkdp
-    skip-cert-verify: false
-    tls: true
-  port: 20621
-  server: 103.140.136.242
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-3
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
 - alterId: 64
   cipher: auto
   name: 中国大陆-4
-  port: 56152
-  server: 120.232.153.40
-  skip-cert-verify: false
+  port: 43302
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 韩国-2
-  network: ws
-  password: Aimer
-  port: 50000
-  server: 211.251.7.76
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epccj.ambercc.filegear-sg.me
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-2
+  name: 美国-7
   network: ws
   port: 80
   server: 135.84.72.84
@@ -210,18 +158,31 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 中国大陆-3
-  network: tcp
-  port: 41766
-  server: 183.238.90.8
+  port: 47883
+  server: 120.198.44.126
   skip-cert-verify: true
+  tfo: false
   tls: false
   type: vmess
+  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.238.90.8
-  ws-path: /
 - alterId: 0
   name: 美国-1
+  network: ws
+  port: 80
+  server: 135.84.72.88
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+- alterId: 0
+  name: 美国-2
   network: ws
   port: 8880
   server: 135.84.76.75
@@ -236,7 +197,7 @@ proxies:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /?ed=2560
 - alterId: 0
-  name: 美国-7
+  name: 美国-9
   network: ws
   port: 8880
   server: 135.84.75.75
@@ -254,61 +215,6 @@ proxies:
   name: 美国-3
   network: ws
   port: 80
-  server: 135.84.64.80
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /TelegramU0001F1E8U0001F1F3@@pgkj666/?ed=2560
-- alterId: 64
-  cipher: auto
-  name: 中国大陆-2
-  port: 43302
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 美国-6
-  network: ws
-  port: 443
-  server: 160.79.104.113
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 80
-  server: 135.84.72.88
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- alterId: 0
-  name: 美国-5
-  network: ws
-  port: 80
   server: 66.81.247.175
   servername: ipsycho.suex12.ir
   skip-cert-verify: true
@@ -320,6 +226,13 @@ proxies:
     headers:
       Host: ipsycho.suex12.ir
     path: /re5IzbZ9IZZMddtw?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
 - alterId: 0
   name: 美国-4
   network: ws
@@ -336,7 +249,46 @@ proxies:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
 - alterId: 0
-  name: 美国-9
+  name: 美国-8
+  network: ws
+  port: 80
+  server: 135.84.67.33
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 中国大陆-1
+  password: 5899ad6a-0284-4a85-9005-62c297a873dc
+  port: 10999
+  server: 123.207.48.187
+  tfo: false
+  type: ss
+- alterId: 0
+  name: 美国-6
+  network: ws
+  port: 80
+  server: 135.84.64.80
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /TelegramU0001F1E8U0001F1F3@@pgkj666/?ed=2560
+- alterId: 0
+  name: 美国-10
   network: ws
   port: 80
   server: 66.81.247.95
@@ -351,7 +303,22 @@ proxies:
       Host: ipsycho.suex12.ir
     path: /re5IzbZ9IZZMddtw?ed=2560
 - alterId: 0
-  name: 美国-13
+  name: 美国-5
+  network: ws
+  port: 80
+  server: 135.84.64.239
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /TelegramU0001F1E8U0001F1F3@@pgkj666/?ed=2560
+- alterId: 0
+  name: 美国-11
   network: ws
   port: 80
   server: 135.84.65.11
@@ -366,7 +333,52 @@ proxies:
       Host: reedfree8mahsang2.redorg.ir
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
-  name: 美国-17
+  name: 美国-15
+  network: ws
+  port: 8880
+  server: 135.84.74.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 80
+  server: 135.84.72.44
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+- alterId: 0
+  name: 美国-14
+  network: ws
+  port: 80
+  server: 23.134.82.2
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  name: 美国-13
   network: ws
   port: 80
   server: 135.84.72.14
@@ -383,8 +395,40 @@ proxies:
 - alterId: 0
   name: 美国-16
   network: ws
+  port: 443
+  server: 160.79.104.113
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-7
+  port: 35921
+  server: 120.198.71.216
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 中国大陆-10
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: fc32160e-sw5og0-swy6li-tni2.cu.plebai.net
+  type: trojan
+- alterId: 0
+  name: 美国-17
+  network: ws
   port: 80
-  server: 135.84.72.44
+  server: 135.84.72.87
   servername: 23-lsjfjwiposkfls.hc2021.cfd
   skip-cert-verify: false
   tls: false
@@ -396,37 +440,24 @@ proxies:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
 - alterId: 0
-  name: 美国-11
-  network: ws
-  port: 80
-  server: 23.134.82.2
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-12
-  network: ws
-  port: 8880
-  server: 135.84.74.75
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  name: 中国大陆-9
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: 15606cc9-sw3ts0-t1bnjq-1krtb.cu.plebai.net
+  type: trojan
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-5
+  port: 55002
+  server: 183.237.84.53
   skip-cert-verify: false
+  tfo: false
   tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /?ed=2560
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 美国-10
+  name: 美国-18
   network: ws
   password: Aimer
   port: 2096
@@ -440,114 +471,52 @@ proxies:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
 - alterId: 0
-  name: 美国-14
-  network: ws
-  port: 80
-  server: 135.84.64.239
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  name: 中国大陆-8
+  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
+  port: 35000
+  server: gzyd.cg.xxality.cn
   skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /TelegramU0001F1E8U0001F1F3@@pgkj666/?ed=2560
-- alterId: 0
-  name: 美国-15
-  network: ws
-  port: 80
-  server: 135.84.67.33
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- alpn:
-  - h3
-  alterId: 0
-  auth-str: dongtaiwang.com
-  down: 55 Mbps
-  name: 加拿大-1
-  port: 11512
-  protocol: udp
-  server: 108.181.24.77
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 11 Mbps
-- alterId: 64
-  cipher: auto
-  name: 中国大陆-6
-  port: 44015
-  server: 120.198.71.219
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-5
-  network: tcp
-  port: 37805
-  server: 120.232.153.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.63
-  ws-path: /
-- alterId: 0
-  name: 中国大陆-7
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: fc32160e-sw5og0-swy6li-tni2.cu.plebai.net
+  sni: cgsg2.hysality.com
   type: trojan
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 中国大陆-10
+  name: 中国大陆-14
   network: ws
-  port: 22642
-  server: 52.80.27.229
-  servername: zxjp-b.tkong.cc
-  skip-cert-verify: false
+  port: 22643
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vmess
   udp: true
   uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
   ws-opts:
     headers:
-      Host: zxjp-b.tkong.cc
+      Host: zxjp-c.tkong.cc
     path: /
-- alpn:
-  - h3
-  alterId: 0
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 美国-18
-  port: 17549
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
 - alterId: 0
-  cipher: auto
-  name: 中国大陆-8
-  network: tcp
-  port: 14100
-  server: dxv4.pai50288.uk
-  type: vmess
-  uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
+  name: 韩国-2
+  network: ws
+  port: 50000
+  server: 112.164.234.135
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- alterId: 0
+  name: 中国大陆-6
+  password: RlzoEILU
+  port: 7815
+  server: 36.151.251.59
+  skip-cert-verify: true
+  type: trojan
 proxy-groups:
 - name: PROXY
   proxies:
@@ -592,42 +561,42 @@ proxy-groups:
 - interval: 360
   name: 延迟最低
   proxies: &id001
-  - 中国大陆-1
+  - 中国大陆-2
+  - 中国大陆-11
   - 中国台湾-1
-  - 韩国-4
-  - 中国香港-1
-  - 中国大陆-9
-  - 韩国-1
-  - 日本-1
-  - 韩国-3
+  - 中国大陆-15
+  - 中国大陆-13
+  - 中国大陆-12
   - 中国大陆-4
-  - 韩国-2
-  - 美国-2
+  - 美国-7
   - 中国大陆-3
   - 美国-1
-  - 美国-7
-  - 美国-3
-  - 中国大陆-2
-  - 美国-6
-  - 美国-8
-  - 美国-5
-  - 美国-4
+  - 美国-2
   - 美国-9
-  - 美国-13
-  - 美国-17
-  - 美国-16
-  - 美国-11
-  - 美国-12
+  - 美国-3
+  - 韩国-1
+  - 美国-4
+  - 美国-8
+  - 中国大陆-1
+  - 美国-6
   - 美国-10
-  - 美国-14
+  - 美国-5
+  - 美国-11
   - 美国-15
-  - 加拿大-1
-  - 中国大陆-6
-  - 中国大陆-5
+  - 美国-12
+  - 美国-14
+  - 美国-13
+  - 美国-16
   - 中国大陆-7
   - 中国大陆-10
+  - 美国-17
+  - 中国大陆-9
+  - 中国大陆-5
   - 美国-18
   - 中国大陆-8
+  - 中国大陆-14
+  - 韩国-2
+  - 中国大陆-6
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -647,30 +616,26 @@ proxy-groups:
   name: 延迟最低-TIKTOK
   proxies: &id002
   - 中国台湾-1
-  - 韩国-4
-  - 韩国-1
-  - 日本-1
-  - 韩国-3
-  - 韩国-2
-  - 美国-2
-  - 美国-1
   - 美国-7
-  - 美国-3
-  - 美国-6
-  - 美国-8
-  - 美国-5
-  - 美国-4
+  - 美国-1
+  - 美国-2
   - 美国-9
-  - 美国-13
-  - 美国-17
-  - 美国-16
-  - 美国-11
-  - 美国-12
+  - 美国-3
+  - 韩国-1
+  - 美国-4
+  - 美国-8
+  - 美国-6
   - 美国-10
-  - 美国-14
+  - 美国-5
+  - 美国-11
   - 美国-15
-  - 加拿大-1
+  - 美国-12
+  - 美国-14
+  - 美国-13
+  - 美国-16
+  - 美国-17
   - 美国-18
+  - 韩国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -690,30 +655,26 @@ proxy-groups:
   name: 延迟最低-OPENAI
   proxies: &id003
   - 中国台湾-1
-  - 韩国-4
-  - 韩国-1
-  - 日本-1
-  - 韩国-3
-  - 韩国-2
-  - 美国-2
-  - 美国-1
   - 美国-7
-  - 美国-3
-  - 美国-6
-  - 美国-8
-  - 美国-5
-  - 美国-4
+  - 美国-1
+  - 美国-2
   - 美国-9
-  - 美国-13
-  - 美国-17
-  - 美国-16
-  - 美国-11
-  - 美国-12
+  - 美国-3
+  - 韩国-1
+  - 美国-4
+  - 美国-8
+  - 美国-6
   - 美国-10
-  - 美国-14
+  - 美国-5
+  - 美国-11
   - 美国-15
-  - 加拿大-1
+  - 美国-12
+  - 美国-14
+  - 美国-13
+  - 美国-16
+  - 美国-17
   - 美国-18
+  - 韩国-2
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
