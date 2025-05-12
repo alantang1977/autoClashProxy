@@ -75,42 +75,64 @@ mode: rule
 profile:
   store-selected: true
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 中国大陆-1
-  port: 43302
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: aes-256-gcm
-  name: 中国大陆-11
+  name: 中国大陆-7
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11501
   server: cdn-p1-hk.weibo-dns.com
   type: ss
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 中国大陆-7
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11508
-  server: cdn-p1-sg.weibo-dns.com
-  type: ss
-  udp: true
+  name: 新加坡-1
+  password: 05f1368b-1743-48a3-b2a5-56343e64e7be
+  port: 443
+  server: sg.lyyyds.club
+  skip-cert-verify: true
+  sni: sg.lyyyds.club
+  type: trojan
 - alterId: 0
-  name: 中国大陆-3
-  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
-  port: 35000
-  server: gzyd.cg.xxality.cn
-  skip-cert-verify: false
-  sni: cgsg2.hysality.com
+  delay: 922
+  name: 美国-1
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: sg.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
+- alterId: 0
+  name: 中国香港-1
+  network: ws
+  password: Aimer
+  port: 443
+  server: 219.76.13.177
+  skip-cert-verify: false
+  sni: tyep.esslh.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tyep.esslh.filegear-sg.me
+    path: /?ed=2560
+- alterId: 2
+  cipher: auto
+  name: 中国香港-3
+  network: ws
+  port: 80
+  server: 581be42d-sv2sg0-swotpn-1nn0k.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f9c35596-f323-11ed-8ccd-f23c91cfbbc9
+  ws-headers:
+    Host: 581be42d-sv2sg0-swotpn-1nn0k.hk.p5pv.com
+  ws-path: /
 - alterId: 0
   name: 中国台湾-1
   network: ws
@@ -125,16 +147,266 @@ proxies:
     headers:
       Host: skwygx.top
     path: /tr?ed=2560
+- alterId: 2
+  cipher: auto
+  name: 中国香港-2
+  network: ws
+  port: 80
+  server: 687032bd-sucv40-sxlqds-1qs82.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9c6d1142-dc2b-11ee-88c7-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 中国大陆-2
+  port: 56152
+  server: 120.232.153.40
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: aes-256-gcm
-  name: 中国大陆-8
+  name: 中国大陆-10
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11533
+  server: ieplqz.youku-dns.com
+  type: ss
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: 新加坡-2
+  password: 54231b3d-a39d-4769-a511-2a1c663a62b1
+  port: 443
+  server: sg02.trojanyyds.xyz
+  skip-cert-verify: false
+  sni: sg02.trojanyyds.xyz
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 中国香港-5
+  network: ws
+  port: 80
+  server: 0c445917-sv2sg0-t66wbo-160fj.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e7eb17a0-257a-11ec-a8bf-f23c91cfbbc9
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-4
+  network: ws
+  port: 80
+  server: bae28021-sv2sg0-t04f46-1hvn1.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8d05476e-ae88-11ed-8543-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 中国大陆-9
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11504
   server: cdn-p1-jp.weibo-dns.com
   type: ss
   udp: true
 - alterId: 0
+  name: 中国大陆-1
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 中国大陆-8
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11508
+  server: cdn-p1-sg.weibo-dns.com
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 中国香港-6
+  network: ws
+  port: 80
+  server: 13fb1c14-sv2sg0-sw0aec-1t3oz.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b3370cdc-c26e-11ef-bd97-f23c9164ca5d
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-7
+  network: ws
+  port: 80
+  server: 5c4c4152-sv2sg0-sy8f4e-ukt4.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
+- alterId: 0
+  name: 韩国-2
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: kr01.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 中国大陆-3
+  password: 5899ad6a-0284-4a85-9005-62c297a873dc
+  port: 10999
+  server: 123.207.48.187
+  tfo: false
+  type: ss
+- alterId: 0
+  name: 韩国-1
+  network: ws
+  password: Aimer
+  port: 50000
+  server: 211.251.7.76
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epccj.ambercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
+  name: 韩国-3
+  network: ws
+  port: 50000
+  server: 112.164.234.135
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 美国-3
+  network: tcp
+  port: 50009
+  server: 142.4.116.177
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 142.4.116.177
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  name: 中国大陆-4
+  port: 43302
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 中国香港-8
+  network: ws
+  password: trojan
+  port: 8443
+  server: 45.192.222.112
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-2
+  network: ws
+  port: 80
+  server: 104.16.76.55
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5d8bc42a-d345-4bd3-a844-4b90afc44670
+  ws-opts:
+    headers:
+      Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-6
+  network: ws
+  port: 2052
+  server: 172.67.135.195
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
+  ws-opts:
+    headers:
+      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
+  xudp: true
+- alterId: 0
   name: 美国-5
+  network: ws
+  port: 80
+  server: 104.16.178.238
+  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
+  tls: false
+  type: vless
+  uuid: d4eddaf9-a660-4905-b835-cad98677b380
+  ws-opts:
+    headers:
+      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-4
+  network: ws
+  port: 80
+  server: 135.84.72.84
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+- alterId: 0
+  name: 美国-10
   network: ws
   port: 80
   server: 135.84.72.14
@@ -149,50 +421,18 @@ proxies:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
 - alterId: 0
-  name: 美国-3
-  network: ws
-  port: 8880
-  server: 135.84.76.75
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-11
-  network: ws
-  port: 8880
-  server: 135.84.75.75
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /?ed=2560
-- alterId: 0
   name: 美国-8
   network: ws
-  port: 80
-  server: 135.84.72.87
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  port: 8880
+  server: 66.235.200.94
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
   ws-opts:
     headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+      Host: channel-falcunargo.efa180b5d7.workers.Dev
+    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
 - alterId: 0
   name: 美国-7
   network: ws
@@ -209,22 +449,7 @@ proxies:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
 - alterId: 0
-  name: 美国-1
-  network: ws
-  port: 80
-  server: 66.81.247.95
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /re5IzbZ9IZZMddtw?ed=2560
-- alterId: 0
-  name: 美国-12
+  name: 美国-9
   network: ws
   port: 80
   server: 135.84.65.11
@@ -238,138 +463,24 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-6
-  network: ws
-  port: 80
-  server: 66.81.247.175
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /re5IzbZ9IZZMddtw?ed=2560
-- alterId: 0
-  name: 美国-4
-  network: ws
-  port: 80
-  server: 135.84.64.80
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /TelegramU0001F1E8U0001F1F3@@pgkj666/?ed=2560
-- alterId: 0
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 23.134.82.2
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-10
-  network: ws
-  port: 8880
-  server: 135.84.74.75
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-13
-  network: ws
-  port: 80
-  server: 135.84.64.239
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /TelegramU0001F1E8U0001F1F3@@pgkj666/?ed=2560
-- alterId: 0
-  name: 美国-9
-  network: ws
-  port: 80
-  server: 135.84.72.44
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 中国大陆-2
-  port: 47883
-  server: 120.198.44.126
+  name: 中国大陆-5
+  port: 42375
+  server: 120.198.71.214
   skip-cert-verify: true
-  tfo: false
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 美国-14
-  network: ws
-  port: 80
-  server: 135.84.67.100
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- alterId: 0
-  name: 美国-16
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 167.68.4.10
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
+  name: 中国大陆-6
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: fc32160e-sw5og0-swy6li-tni2.cu.plebai.net
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: epccj.ambercc.filegear-sg.me
-    path: /?ed=2560
 - alterId: 0
-  name: 美国-15
+  name: 美国-11
   network: ws
   port: 443
   server: 160.79.104.113
@@ -383,69 +494,19 @@ proxies:
     headers:
       Host: 0229.patterdeng.pp.ua
     path: /
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-10
+- alterId: 0
+  name: 美国-12
   network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-c.tkong.cc
-    path: /
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国大陆-4
-  port: 35921
-  server: 120.198.71.216
-  skip-cert-verify: false
-  tfo: false
+  port: 80
+  server: 104.24.147.64
+  servername: ppal03-ppal03.letiwe3303.workers.dev
   tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 中国大陆-9
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: fc32160e-sw5og0-swy6li-tni2.cu.plebai.net
-  type: trojan
-- alterId: 0
-  name: 韩国-1
-  network: ws
-  port: 50000
-  server: 112.164.234.135
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
-  tls: true
   type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
   ws-opts:
     headers:
-      Host: 0229.patterdeng.pp.ua
+      Host: ppal03-ppal03.letiwe3303.workers.dev
     path: /?ed=2560
-- alterId: 0
-  name: 中国大陆-6
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: 15606cc9-sw3ts0-t1bnjq-1krtb.cu.plebai.net
-  type: trojan
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 中国大陆-5
-  password: 5899ad6a-0284-4a85-9005-62c297a873dc
-  port: 10999
-  server: 123.207.48.187
-  tfo: false
-  type: ss
 proxy-groups:
 - name: PROXY
   proxies:
@@ -490,35 +551,42 @@ proxy-groups:
 - interval: 360
   name: 延迟最低
   proxies: &id001
-  - 中国大陆-1
-  - 中国大陆-11
   - 中国大陆-7
-  - 中国大陆-3
+  - 新加坡-1
+  - 美国-1
+  - 中国香港-1
+  - 中国香港-3
   - 中国台湾-1
+  - 中国香港-2
+  - 中国大陆-2
+  - 中国大陆-10
+  - 新加坡-2
+  - 中国香港-5
+  - 中国香港-4
+  - 中国大陆-9
+  - 中国大陆-1
   - 中国大陆-8
-  - 美国-5
+  - 中国香港-6
+  - 中国香港-7
+  - 韩国-2
+  - 中国大陆-3
+  - 韩国-1
+  - 韩国-3
   - 美国-3
-  - 美国-11
+  - 中国大陆-4
+  - 中国香港-8
+  - 美国-2
+  - 美国-6
+  - 美国-5
+  - 美国-4
+  - 美国-10
   - 美国-8
   - 美国-7
-  - 美国-1
-  - 美国-12
-  - 美国-6
-  - 美国-4
-  - 美国-2
-  - 美国-10
-  - 美国-13
   - 美国-9
-  - 中国大陆-2
-  - 美国-14
-  - 美国-16
-  - 美国-15
-  - 中国大陆-10
-  - 中国大陆-4
-  - 中国大陆-9
-  - 韩国-1
-  - 中国大陆-6
   - 中国大陆-5
+  - 中国大陆-6
+  - 美国-11
+  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -537,24 +605,24 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-TIKTOK
   proxies: &id002
+  - 新加坡-1
+  - 美国-1
   - 中国台湾-1
-  - 美国-5
+  - 新加坡-2
+  - 韩国-2
+  - 韩国-1
+  - 韩国-3
   - 美国-3
-  - 美国-11
+  - 美国-2
+  - 美国-6
+  - 美国-5
+  - 美国-4
+  - 美国-10
   - 美国-8
   - 美国-7
-  - 美国-1
-  - 美国-12
-  - 美国-6
-  - 美国-4
-  - 美国-2
-  - 美国-10
-  - 美国-13
   - 美国-9
-  - 美国-14
-  - 美国-16
-  - 美国-15
-  - 韩国-1
+  - 美国-11
+  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -573,24 +641,24 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-OPENAI
   proxies: &id003
+  - 新加坡-1
+  - 美国-1
   - 中国台湾-1
-  - 美国-5
+  - 新加坡-2
+  - 韩国-2
+  - 韩国-1
+  - 韩国-3
   - 美国-3
-  - 美国-11
+  - 美国-2
+  - 美国-6
+  - 美国-5
+  - 美国-4
+  - 美国-10
   - 美国-8
   - 美国-7
-  - 美国-1
-  - 美国-12
-  - 美国-6
-  - 美国-4
-  - 美国-2
-  - 美国-10
-  - 美国-13
   - 美国-9
-  - 美国-14
-  - 美国-16
-  - 美国-15
-  - 韩国-1
+  - 美国-11
+  - 美国-12
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
