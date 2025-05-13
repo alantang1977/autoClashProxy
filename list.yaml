@@ -24,12 +24,6 @@ dns:
   ipv6: false
   listen: 0.0.0.0:53
   nameserver:
-  - 1.1.1.1
-  - 8.8.8.8
-  - 8.26.56.26
-  - 9.9.9.9
-  - 84.200.69.80
-  - 208.67.222.222
   - https://1.1.1.1/dns-query#PROXY
   - https://dns.google/dns-query#PROXY
   - https://doh.opendns.com/dns-query#PROXY
@@ -44,9 +38,6 @@ dns:
     - 180.184.1.1
     - 180.76.76.7
     - 223.5.5.5
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-    - https://223.5.5.5/dns-query
   prefer-h3: false
   proxy-server-nameserver:
   - 119.29.29.29
@@ -75,6 +66,14 @@ mode: rule
 profile:
   store-selected: true
 proxies:
+- alterId: 0
+  name: 中国大陆-1
+  password: b6200af42ccadea353f5b5856dd20d70
+  port: 39001
+  server: 120.233.128.68
+  skip-cert-verify: true
+  sni: 120.233.128.68
+  type: trojan
 - alterId: 64
   cipher: auto
   name: 中国大陆-3
@@ -88,41 +87,59 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 中国大陆-1
-  port: 39076
+  name: 中国香港-2
+  network: ws
+  port: 8080
+  server: 77becdb4-sw7j40-t94bdb-mrtr.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-5
+  network: ws
+  port: 8004
+  server: 59.42.247.189
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ebb3b22f-1485-40a3-aa37-ea7e444c2327
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /nmkj
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-4
+  port: 41766
   server: 183.238.90.8
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-2
+  port: 55002
+  server: 183.237.84.53
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 中国大陆-6
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11504
-  server: cdn-p1-jp.weibo-dns.com
-  type: ss
-  udp: true
-- alterId: 0
-  delay: 653
-  name: 中国大陆-2
-  password: RlzoEILU
-  port: 49893
-  server: 36.151.251.57
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 美国-3
-  password: a5DnyYNIexIzS2Xg3YYlg9Ol0SgEpyCj5ZCSBanD88eOpwOC4aEzDyTjY0nxBDjzSaACSTqSE223C83
-  port: 28332
-  server: 154.17.30.58
-  skip-cert-verify: true
-  sni: phooey.starspace.link
-  type: trojan
-- alterId: 0
-  name: 美国-13
+  name: 美国-11
   network: ws
   port: 443
   server: 192.0.54.174
@@ -137,47 +154,96 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 中国大陆-4
-  password: 5899ad6a-0284-4a85-9005-62c297a873dc
-  port: 10999
-  server: 123.207.48.187
-  tfo: false
-  type: ss
-- alterId: 0
-  name: 韩国-1
+  name: 美国-9
   network: ws
-  port: 11223
-  server: 218.38.33.77
-  servername: mikuyo.bpd67081tsq.ddns-ip.net
+  port: 80
+  server: 104.16.171.121
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
-  udp: true
-  uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
+  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
   ws-opts:
     headers:
-      Host: mikuyo.bpd67081tsq.ddns-ip.net
-    path: /
+      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-6
+  network: ws
+  port: 80
+  server: 104.16.178.238
+  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
+  tls: false
+  type: vless
+  uuid: d4eddaf9-a660-4905-b835-cad98677b380
+  ws-opts:
+    headers:
+      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-5
+  network: ws
+  port: 80
+  server: 104.16.1.47
+  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+  tls: false
+  type: vless
+  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
+  ws-opts:
+    headers:
+      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+    path: /?ed=2560
 - alterId: 0
   name: 美国-7
   network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
+  port: 8880
+  server: 66.235.200.94
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
+  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
   ws-opts:
     headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
+      Host: channel-falcunargo.efa180b5d7.workers.Dev
+    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
+- alterId: 0
+  name: 美国-1
+  password: telegram-id-directvpn
+  port: 22223
+  server: 56.228.73.107
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  name: 美国-3
+  network: ws
+  port: 80
+  server: 104.24.147.64
+  servername: ppal03-ppal03.letiwe3303.workers.dev
+  tls: false
+  type: vless
+  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
+  ws-opts:
+    headers:
+      Host: ppal03-ppal03.letiwe3303.workers.dev
+    path: /?ed=2560
 - alterId: 0
   name: 美国-2
+  network: ws
+  port: 443
+  server: 160.79.104.164
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-12
   network: ws
   port: 443
   server: 192.0.63.29
@@ -192,55 +258,24 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-9
-  network: ws
-  port: 443
-  server: 198.62.62.156
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-1
-  network: ws
-  port: 80
-  server: 23.134.82.2
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
+  client-fingerprint: chrome
   name: 美国-4
   network: ws
-  port: 443
-  server: 160.79.104.113
-  servername: 0229.patterdeng.pp.ua
+  port: 8080
+  server: 104.18.56.155
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
   ws-opts:
     headers:
-      Host: 0229.patterdeng.pp.ua
+      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
     path: /
 - alterId: 0
   name: 美国-10
   network: ws
   port: 443
-  server: 192.0.54.74
+  server: 63.141.128.136
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -252,7 +287,18 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-5
+  name: 中国香港-1
+  network: ws
+  password: trojan
+  port: 8443
+  server: 45.192.222.112
+  skip-cert-verify: true
+  sni: store.timimi.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 美国-8
   network: ws
   port: 443
   server: 160.79.104.55
@@ -267,10 +313,25 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
+  name: 美国-13
+  network: ws
+  port: 443
+  server: 160.79.104.165
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
   name: 美国-14
   network: ws
   port: 443
-  server: 158.224.83.27
+  server: 216.24.57.118
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -282,100 +343,17 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-8
-  network: ws
-  port: 80
-  server: 135.84.65.11
-  servername: reedfree8mahsang2.redorg.ir
+  name: 中国大陆-7
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: 4cd97367-sw7j40-swy6li-tni2.cu.plebai.net
   skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-11
-  network: ws
-  port: 80
-  server: 66.81.247.95
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /re5IzbZ9IZZMddtw?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国-12
-  port: 7885
-  reality-opts:
-    public-key: cauu7I7nFMqzwMDdULVRJam0T04U4knX8koK0OG5dC8
-    short-id: 40cb281a
-  server: 45.150.165.121
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 82f6a148-5c4a-48f9-931a-e3b26777ffa2
-- alterId: 0
-  name: 美国-6
-  network: ws
-  port: 443
-  server: 160.79.105.190
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
+  type: trojan
 - alterId: 0
   name: 美国-15
   network: ws
   port: 443
-  server: 198.62.62.209
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-17
-  network: ws
-  port: 443
-  server: 160.79.104.33
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-20
-  network: ws
-  port: 443
-  server: 160.79.104.195
+  server: 192.9.139.160
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -388,7 +366,7 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 中国大陆-5
+  name: 中国大陆-6
   port: 47883
   server: 120.198.44.126
   skip-cert-verify: true
@@ -397,35 +375,36 @@ proxies:
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
+  cipher: auto
+  name: 美国-26
+  network: ws
+  port: 80
+  server: www.wn03.cc
+  skip-cert-verify: true
+  tfo: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: us.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
+- alterId: 0
   name: 美国-18
   network: ws
   port: 443
-  server: 192.0.54.111
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
+  server: 160.79.104.113
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
   ws-opts:
     headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-25
-  network: ws
-  port: 443
-  server: 69.84.182.141
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
+      Host: 0229.patterdeng.pp.ua
+    path: /
 - alterId: 0
   name: 美国-16
   network: ws
@@ -442,112 +421,7 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-24
-  network: ws
-  port: 443
-  server: 160.79.105.109
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-19
-  network: ws
-  port: 443
-  server: 63.141.128.93
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-29
-  network: ws
-  port: 443
-  server: 198.62.62.4
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-23
-  network: ws
-  port: 80
-  server: 66.81.247.175
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /re5IzbZ9IZZMddtw?ed=2560
-- alterId: 0
-  name: 美国-26
-  network: ws
-  port: 443
-  server: 160.79.104.240
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
   name: 美国-22
-  network: ws
-  port: 443
-  server: 63.141.128.136
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-27
-  network: ws
-  port: 443
-  server: 160.79.105.66
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-21
   network: ws
   port: 443
   server: 160.79.105.142
@@ -562,10 +436,24 @@ proxies:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-28
+  client-fingerprint: chrome
+  name: 美国-25
   network: ws
-  port: 2002
-  server: 45.154.98.100
+  port: 80
+  server: 104.16.86.2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
+  ws-opts:
+    headers:
+      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-24
+  network: ws
+  port: 443
+  server: 160.79.104.195
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -576,6 +464,96 @@ proxies:
     headers:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
+- alterId: 0
+  name: 韩国-1
+  network: ws
+  port: 50000
+  server: 112.164.234.135
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-21
+  network: ws
+  port: 443
+  server: 198.62.62.209
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-19
+  network: ws
+  port: 443
+  server: 192.0.54.74
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-20
+  network: ws
+  port: 443
+  server: 160.79.104.33
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nl.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-17
+  network: ws
+  port: 80
+  server: 135.84.65.11
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  name: 美国-23
+  network: ws
+  port: 80
+  server: 66.81.247.95
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+    path: /re5IzbZ9IZZMddtw?ed=2560
 proxy-groups:
 - name: PROXY
   proxies:
@@ -620,42 +598,42 @@ proxy-groups:
 - interval: 360
   name: 延迟最低
   proxies: &id001
-  - 中国大陆-3
   - 中国大陆-1
-  - 中国大陆-6
-  - 中国大陆-2
-  - 美国-3
-  - 美国-13
+  - 中国大陆-3
+  - 中国香港-2
+  - 中国大陆-5
   - 中国大陆-4
-  - 韩国-1
-  - 美国-7
-  - 美国-2
+  - 中国大陆-2
+  - 美国-11
   - 美国-9
+  - 美国-6
+  - 美国-5
+  - 美国-7
   - 美国-1
+  - 美国-3
+  - 美国-2
+  - 美国-12
   - 美国-4
   - 美国-10
-  - 美国-5
-  - 美国-14
+  - 中国香港-1
   - 美国-8
-  - 美国-11
-  - 美国-12
-  - 美国-6
+  - 美国-13
+  - 美国-14
+  - 中国大陆-7
   - 美国-15
-  - 美国-17
-  - 美国-20
-  - 中国大陆-5
-  - 美国-18
-  - 美国-25
-  - 美国-16
-  - 美国-24
-  - 美国-19
-  - 美国-29
-  - 美国-23
+  - 中国大陆-6
   - 美国-26
+  - 美国-18
+  - 美国-16
   - 美国-22
-  - 美国-27
+  - 美国-25
+  - 美国-24
+  - 韩国-1
   - 美国-21
-  - 美国-28
+  - 美国-19
+  - 美国-20
+  - 美国-17
+  - 美国-23
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -674,36 +652,33 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-TIKTOK
   proxies: &id002
-  - 美国-3
-  - 美国-13
-  - 韩国-1
-  - 美国-7
-  - 美国-2
+  - 美国-11
   - 美国-9
+  - 美国-6
+  - 美国-5
+  - 美国-7
   - 美国-1
+  - 美国-3
+  - 美国-2
+  - 美国-12
   - 美国-4
   - 美国-10
-  - 美国-5
-  - 美国-14
   - 美国-8
-  - 美国-11
-  - 美国-12
-  - 美国-6
+  - 美国-13
+  - 美国-14
   - 美国-15
-  - 美国-17
-  - 美国-20
-  - 美国-18
-  - 美国-25
-  - 美国-16
-  - 美国-24
-  - 美国-19
-  - 美国-29
-  - 美国-23
   - 美国-26
+  - 美国-18
+  - 美国-16
   - 美国-22
-  - 美国-27
+  - 美国-25
+  - 美国-24
+  - 韩国-1
   - 美国-21
-  - 美国-28
+  - 美国-19
+  - 美国-20
+  - 美国-17
+  - 美国-23
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -722,36 +697,33 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-OPENAI
   proxies: &id003
-  - 美国-3
-  - 美国-13
-  - 韩国-1
-  - 美国-7
-  - 美国-2
+  - 美国-11
   - 美国-9
+  - 美国-6
+  - 美国-5
+  - 美国-7
   - 美国-1
+  - 美国-3
+  - 美国-2
+  - 美国-12
   - 美国-4
   - 美国-10
-  - 美国-5
-  - 美国-14
   - 美国-8
-  - 美国-11
-  - 美国-12
-  - 美国-6
+  - 美国-13
+  - 美国-14
   - 美国-15
-  - 美国-17
-  - 美国-20
-  - 美国-18
-  - 美国-25
-  - 美国-16
-  - 美国-24
-  - 美国-19
-  - 美国-29
-  - 美国-23
   - 美国-26
+  - 美国-18
+  - 美国-16
   - 美国-22
-  - 美国-27
+  - 美国-25
+  - 美国-24
+  - 韩国-1
   - 美国-21
-  - 美国-28
+  - 美国-19
+  - 美国-20
+  - 美国-17
+  - 美国-23
   type: url-test
   url: https://i.ytimg.com/generate_204
 - interval: 360
@@ -787,6 +759,8 @@ rule-providers:
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
 rules:
+- GEOIP,twitter,媒体影音,no-resolve
+- GEOIP,telegram,PROXY,no-resolve
 - GEOSITE,apple-cn,DIRECT
 - GEOSITE,google-cn,DIRECT
 - GEOSITE,china-list,DIRECT
