@@ -261,6 +261,11 @@ class clashConfig:
         return True
 
 if __name__ == "__main__":
-    clash = clashAPI()
+    import sys
+    sys.path.append('.')
+    from processArgument import *
+
+    args = processArgs(False)
+    clash = clashAPI(args)
     clash.groupProxy("手动选择")
     clash.groupDelay("手动选择")
