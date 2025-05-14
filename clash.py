@@ -151,7 +151,7 @@ class clashConfig:
                 country = data.split("|")[1].split()[0]
                 if (country == "中国"):
                     province = data.split("|")[1].split()[1]
-                    if ("香港" in province or "台湾" in province or "澳门" in province):
+                    if (province in ["香港", "台湾", "澳门"]):
                         country = country + province
                     else:
                         country = "中国大陆"
@@ -193,23 +193,29 @@ class clashConfig:
             print("包含节点数量过少，不满足条件")
             return False
 
-    def createLocationProxyGroup(self, proxies):
+    def createLocationProxyGroup(self, proxyPool):
         print("按照ip地址查询节点所属地区")
-        print("利用查询获得的地址给节点重新命名")
+        print("利用查询获得的地址给节点重新命名，同时删除不符合要求的节点")
 
-        location = dict()
         with ThreadPoolExecutor(max_workers=20) as threadPool:
-            allTask = [threadPool.submit(self.getPorxyCountry, proxy) for proxy in proxies]
+            allTask = [threadPool.submit(self.getPorxyCountry, proxy) for proxy in proxyPool]
 
+            proxies = []
+            countryProxyCount = dict()
+            allowCountry = ["美国", "韩国", "日本", "新加坡", "加拿大", "中国大陆", "中国香港", "中国台湾", "中国澳门"] #只保留这些地方的节点
             for index, future in enumerate(as_completed(allTask)):
                 proxy, country, message = future.result()
-                print(f"节点{index + 1}: {message}")
-                countryGroup = location[country] if (country in location) else self.createGroup(country, "url-test", [])
-                proxy['name'] = f"{country}-{len(countryGroup['proxies']) + 1}"
-                countryGroup['proxies'].append(proxy['name'])
-                location[country] = countryGroup
+                print(f"节点{index + 1}: {message}", end=" ")
+                if (country in allowCountry):
+                    print("归属地符合要求")
+                    countryProxyCount[country] = 1 if country not in countryProxyCount.keys() else countryProxyCount[country] + 1
+                    proxy['name'] = f"{country}-{countryProxyCount[country]}"
+                    proxies.append(proxy)
+                else:
+                    print("归属地不符合要求，删除")
 
-        return location
+        print(f"after createLocationProxyGroup, 剩余节点数量{len(proxies)}")
+        return proxies
 
     def creatConfig(self, proxies):
         print("开始生成配置文件")
@@ -227,7 +233,7 @@ class clashConfig:
         defaultConfig = open(self.defaultFile, encoding='utf8').read()
         config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
 
-        self.createLocationProxyGroup(proxies)
+        proxies = self.createLocationProxyGroup(proxies)
 
         proxiesNames = [proxy['name'] for proxy in proxies]
 
@@ -252,7 +258,6 @@ class clashConfig:
         if (not bCreateSuccess):
             return False
 
-        # config['proxy-groups'] += allCountry
         with open(self.file, 'w', encoding='utf-8') as file:
             yaml.dump(config, file, allow_unicode=True)
 

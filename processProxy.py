@@ -99,8 +99,7 @@ def removeTimeoutProxy(proxies, profile, maxProxy):
     print(f"测试节点总数为：{len(proxies)}")
     try:
         with ThreadPoolExecutor(max_workers=30) as threadPool:
-            country = ["美国", "韩国", "日本", "新加坡", "加拿大", "中国大陆", "中国香港", "中国台湾", "中国澳门"]
-            allTask = [threadPool.submit(profile.clash.queryProxyDelay, proxy) for proxy in proxies if proxy['name'].split("-")[0] in country]
+            allTask = [threadPool.submit(profile.clash.queryProxyDelay, proxy) for proxy in proxies]
 
             for index, future in enumerate(as_completed(allTask)):
                 proxy, message, delay = future.result()
