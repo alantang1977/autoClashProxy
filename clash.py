@@ -227,6 +227,8 @@ class clashConfig:
         defaultConfig = open(self.defaultFile, encoding='utf8').read()
         config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
 
+        self.createLocationProxyGroup(proxies)
+
         proxiesNames = [proxy['name'] for proxy in proxies]
 
         config['proxies'] = proxies if config['proxies'] == None else config['proxies'] + proxies
