@@ -147,7 +147,9 @@ def downloadProxy(url, requestsProxy):
         print(f"{url}：{e}")
 
     proxies = []
-    if (download != None):
+    if (download == ""):
+        print(f"{url}: 内容为空")
+    elif (download != None):
         #下载的内容中可能会包含一些html标签等无关内容，需要删除这些多余的内容。
         download = download.replace("!<str> ", "")
         download = download.replace("!&lt;str&gt;", "")
@@ -170,7 +172,7 @@ def getProxyFromSource(sources, requestsProxy):
         for index, future in enumerate(as_completed(allTask)):
             proxies, url = future.result()
             proxyPool += proxies
-            print(f"{index + 1}、{url} 处理完成")
+            print(f"{index + 1}/{len(sources)}、{url} 处理完成")
 
     print("全部链接下载完成")
     print("获取节点数量:", len(proxyPool))
