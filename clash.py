@@ -181,13 +181,13 @@ class clashConfig:
         return group
 
     def createSpecialGroup(self, proxiesNames, excludeLocation, config, groupName):
-        tiktokProxies = [proxy for proxy in proxiesNames if proxy.split('-')[0] not in excludeLocation]
-        if (len(tiktokProxies) >= 4):
+        proxies = [proxy for proxy in proxiesNames if proxy.split('-')[0] not in excludeLocation]
+        if (len(proxies) >= 8):
             config['proxy-groups'].append(self.createGroup(groupName, "select", [f"延迟最低-{groupName}", f"故障转移-{groupName}", f"负载均衡-{groupName}", f"手动选择-{groupName}", "DIRECT"]))
-            config['proxy-groups'].append(self.createGroup(f"延迟最低-{groupName}", "url-test", tiktokProxies))
-            config['proxy-groups'].append(self.createGroup(f"故障转移-{groupName}", "fallback", tiktokProxies))
-            config['proxy-groups'].append(self.createGroup(f"负载均衡-{groupName}", "load-balance", tiktokProxies))
-            config['proxy-groups'].append(self.createGroup(f"手动选择-{groupName}", "select", tiktokProxies))
+            config['proxy-groups'].append(self.createGroup(f"延迟最低-{groupName}", "url-test", proxies))
+            config['proxy-groups'].append(self.createGroup(f"故障转移-{groupName}", "fallback", proxies))
+            config['proxy-groups'].append(self.createGroup(f"负载均衡-{groupName}", "load-balance", proxies))
+            config['proxy-groups'].append(self.createGroup(f"手动选择-{groupName}", "select", proxies))
             return True
         else:
             print("包含节点数量过少，不满足条件")
