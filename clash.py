@@ -264,7 +264,6 @@ class clashConfig:
         bCreateSuccess = True
         bCreateSuccess |= self.createSpecialGroup(proxiesNames, ["中国香港", "中国大陆"], config, "TIKTOK")
         bCreateSuccess |= self.createSpecialGroup(proxiesNames, ["中国香港", "中国大陆"], config, "OPENAI")
-        bCreateSuccess |= self.createSpecialGroup(proxiesNames, [], config, "DNS")
 
         if (not bCreateSuccess):
             return False
