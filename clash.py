@@ -127,7 +127,7 @@ class clashAPI:
         print("[{}] {}: {}".format(currentTTime, message["type"], message["payload"]))
 
     def recivelogs(self):
-        url = f"{self.baseUrl}:{self.controllerPort}/logs?token={self.secret}"
+        url = f"{self.baseUrl}:{self.controllerPort}/logs?token={self.secret}&level=debug"
         logs = websocket.WebSocketApp(url, on_data=self.printLogs)
         logs.run_forever()
 
