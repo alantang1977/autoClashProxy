@@ -1,5 +1,6 @@
 import sys
 import requests
+import websocket
 import time
 import json
 import yaml
@@ -119,6 +120,16 @@ class clashAPI:
         print(message.text)
 
         return json.loads(message.text)
+
+    def printLogs(self, ws, string, type, continue_flag):
+        message = json.loads(string)
+        currentTTime = time.ctime()
+        print("[{}] {}: {}".format(currentTTime, message["type"], message["payload"]))
+
+    def recivelogs(self):
+        url = f"{self.baseUrl}:{self.controllerPort}/logs?token={self.secret}"
+        logs = websocket.WebSocketApp(url, on_data=self.printLogs)
+        logs.run_forever()
 
 class clashConfig:
     def __init__(self, args):
@@ -272,5 +283,6 @@ if __name__ == "__main__":
 
     args = processArgs(False)
     clash = clashAPI(args)
-    clash.groupProxy("手动选择")
-    clash.groupDelay("手动选择")
+    #clash.groupProxy("手动选择")
+    #clash.groupDelay("手动选择")
+    clash.recivelogs()
