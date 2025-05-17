@@ -191,9 +191,9 @@ class clashConfig:
 
         return group
 
-    def createSpecialGroup(self, proxiesNames, excludeLocation, config, groupName):
+    def createSpecialGroup(self, proxiesNames, excludeLocation, config, groupName, minProxy = 8):
         proxies = [proxy for proxy in proxiesNames if proxy.split('-')[0] not in excludeLocation]
-        if (len(proxies) >= 8):
+        if (len(proxies) >= minProxy):
             config['proxy-groups'].append(self.createGroup(groupName, "select", [f"延迟最低-{groupName}", f"故障转移-{groupName}", f"负载均衡-{groupName}", f"手动选择-{groupName}", "DIRECT"]))
             config['proxy-groups'].append(self.createGroup(f"延迟最低-{groupName}", "url-test", proxies))
             config['proxy-groups'].append(self.createGroup(f"故障转移-{groupName}", "fallback", proxies))
@@ -264,6 +264,7 @@ class clashConfig:
         bCreateSuccess = True
         bCreateSuccess |= self.createSpecialGroup(proxiesNames, ["中国香港", "中国大陆"], config, "TIKTOK")
         bCreateSuccess |= self.createSpecialGroup(proxiesNames, ["中国香港", "中国大陆"], config, "OPENAI")
+        bCreateSuccess |= self.createSpecialGroup(proxiesNames, [ "中国大陆", "美国", "新加坡"], config, "BINANCE", 3)
 
         if (not bCreateSuccess):
             return False
