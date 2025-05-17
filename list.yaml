@@ -60,53 +60,57 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  name: 美国-1
-  network: ws
-  port: 80
-  server: 104.24.147.64
-  servername: ppal03-ppal03.letiwe3303.workers.dev
-  tls: false
-  type: vless
-  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
-  ws-opts:
-    headers:
-      Host: ppal03-ppal03.letiwe3303.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: '4857'
-  server: 125.141.26.12
-  type: ss
-  udp: true
-- alterId: 0
-  name: 美国-2
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 162.159.153.217
+  name: 中国大陆-1
+  password: b6200af42ccadea353f5b5856dd20d70
+  port: 39001
+  server: 120.233.128.68
   skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=162.159.153.217:443&proxyIP=null
-- alterId: 0
-  name: 美国-3
-  network: ws
-  password: trojan
-  port: 8443
-  server: 47.236.181.185
-  skip-cert-verify: true
-  sni: store.timimi.dpdns.org
-  tls: true
+  sni: 120.233.128.68
   type: trojan
   udp: true
 - alterId: 0
   name: 日本-1
+  network: ws
+  port: 8880
+  server: 91.193.58.59
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-2
+  network: ws
+  port: 8880
+  server: 91.193.58.83
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-2
+  port: 37805
+  server: 120.232.153.63
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 日本-3
   network: ws
   port: 8880
   server: 91.193.58.205
@@ -121,72 +125,10 @@ proxies:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  delay: 2905
-  name: 美国-4
-  network: ws
-  port: 2052
-  server: 104.26.12.101
-  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
-  ws-opts:
-    headers:
-      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    path: /?ed=1080/telegram
-- alterId: 0
-  name: 美国-5
-  network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
-  ws-opts:
-    headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
-- alterId: 0
-  name: 日本-2
-  network: ws
-  port: 8880
-  server: 91.193.58.198
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-3
-  network: ws
-  port: 8880
-  server: 91.193.58.156
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
   name: 日本-4
   network: ws
   port: 8880
-  server: 91.193.58.215
+  server: 91.193.58.214
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -213,69 +155,23 @@ proxies:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-6
-  network: ws
-  port: 2083
-  server: 104.18.2.26
-  servername: ex.sue.x10.mx
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-7
-  network: ws
-  port: 80
-  server: 104.16.178.238
-  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
-  tls: false
-  type: vless
-  uuid: d4eddaf9-a660-4905-b835-cad98677b380
-  ws-opts:
-    headers:
-      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 中国香港-1
+  name: 美国-1
   network: ws
   port: 8880
-  server: 156.238.18.45
-  servername: us.laoyoutiao.link
+  server: 66.235.200.94
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
   ws-opts:
     headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 443
-  server: 216.24.57.202
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /?ed=2560
+      Host: channel-falcunargo.efa180b5d7.workers.Dev
+    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
 - alterId: 0
   name: 日本-6
   network: ws
   port: 8880
-  server: 91.193.58.83
+  server: 91.193.58.84
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -286,38 +182,11 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-1
-  network: tcp
-  port: 47883
-  server: 120.198.44.126
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.198.44.126
-  ws-path: /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 8080
-  server: 104.18.56.155
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /
 - alterId: 0
   name: 日本-7
   network: ws
   port: 8880
-  server: 91.193.58.59
+  server: 91.193.58.170
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -329,150 +198,7 @@ proxies:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-10
-  network: ws
-  port: 80
-  server: 104.16.86.2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-11
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 162.159.153.209
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=162.159.153.209:443&proxyIP=null
-- alterId: 0
-  client-fingerprint: random
-  name: 美国-12
-  network: ws
-  port: 2096
-  server: 104.24.137.227
-  servername: 4534295.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 708b4ccb-96cc-4726-b9ae-f43d243c82b2
-  ws-opts:
-    headers:
-      Host: 4534295.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 中国香港-2
-  network: ws
-  port: 2087
-  server: 27.50.48.18
-  servername: edccx.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccx.aimercc.filegear-sg.me
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-13
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 443
-  server: 192.0.54.194
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=192.0.54.194:443&proxyIP=null
-- alterId: 0
-  name: 美国-14
-  network: ws
-  port: 443
-  server: 103.21.244.17
-  servername: what.zhonghuoxing.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f055d270-0e76-4a41-a53f-871bbb51b003
-  ws-opts:
-    headers:
-      Host: what.zhonghuoxing.top
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-15
-  network: ws
-  port: 80
-  server: 141.193.213.135
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare+@WangCai2+/?ed=2560
-- alterId: 0
-  client-fingerprint: random
-  name: 美国-16
-  network: ws
-  port: 443
-  server: 160.79.104.113
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-17
-  network: ws
-  port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国大陆-2
-  port: 37805
-  server: 120.232.153.63
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 美国-18
+  name: 美国-2
   network: ws
   port: 8880
   server: 104.129.166.20
@@ -490,7 +216,7 @@ proxies:
   name: 日本-8
   network: ws
   port: 8880
-  server: 91.193.58.170
+  server: 91.193.58.198
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -502,11 +228,61 @@ proxies:
       Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  name: 美国-19
+  name: 日本-9
+  network: ws
+  port: 8880
+  server: 91.193.58.44
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-3
+  port: 46920
+  server: 183.238.90.8
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 美国-3
+  network: ws
+  port: 443
+  server: 216.24.57.202
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国大陆-4
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: false
+  sni: hk-13-568.flztjc.net
+  type: trojan
+- alterId: 0
+  name: 美国-4
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 162.159.152.205
+  server: 160.79.105.81
   skip-cert-verify: true
   sni: icecream.955850.xyz
   type: trojan
@@ -514,7 +290,221 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-    path: /proxyip=162.159.152.205:443&proxyIP=null
+    path: /proxyip=160.79.105.81:443&proxyIP=null
+- alterId: 0
+  client-fingerprint: random
+  name: 美国-5
+  network: ws
+  port: 443
+  server: 160.79.104.113
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-6
+  network: ws
+  password: trojan
+  port: 8443
+  server: 47.236.181.185
+  skip-cert-verify: true
+  sni: store.timimi.dpdns.org
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 日本-10
+  network: ws
+  port: 8880
+  server: 91.193.58.213
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  name: 美国-7
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.61.166.141
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- alterId: 0
+  name: 美国-8
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 192.0.54.194
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=192.0.54.194:443&proxyIP=null
+- alterId: 0
+  name: 美国-9
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 192.0.54.184
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=192.0.54.184:443&proxyIP=null
+- alterId: 0
+  name: 中国大陆-5
+  password: RlzoEILU
+  port: 7815
+  server: 36.151.251.59
+  skip-cert-verify: true
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-6
+  network: ws
+  port: 22643
+  server: 54.223.46.105
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+- alterId: 0
+  name: 美国-10
+  network: tcp
+  port: 53221
+  server: 94.131.108.195
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 90efad13-d266-4d10-a914-bc40028ec469
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-7
+  network: tcp
+  port: 47883
+  server: 120.198.44.126
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.44.126
+  ws-path: /
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-8
+  port: 35921
+  server: 120.198.71.216
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 美国-11
+  password: vvip-periantara
+  port: 443
+  server: 38.9.140.66
+  skip-cert-verify: true
+  sni: id3tr.jagoan.vip
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-9
+  network: ws
+  port: 22643
+  server: 54.223.154.91
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 8080
+  server: 170.114.46.6
+  servername: xrr.rtxconfigz.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+    path: /
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-10
+  network: ws
+  port: 30828
+  server: 111.26.109.79
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-11
+  port: 43302
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 中国香港-1
+  network: ws
+  port: 2087
+  server: 27.50.48.18
+  servername: edccx.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccx.aimercc.filegear-sg.me
+    path: /?ed=2560
 proxy-groups:
 - name: PROXY
   proxies:
@@ -543,38 +533,40 @@ proxy-groups:
 - interval: 360
   name: 延迟最低
   proxies: &id001
-  - 美国-1
-  - 韩国-1
-  - 美国-2
-  - 美国-3
+  - 中国大陆-1
   - 日本-1
-  - 美国-4
-  - 美国-5
   - 日本-2
+  - 中国大陆-2
   - 日本-3
   - 日本-4
   - 日本-5
-  - 美国-6
-  - 美国-7
-  - 中国香港-1
-  - 美国-8
+  - 美国-1
   - 日本-6
-  - 中国大陆-1
-  - 美国-9
   - 日本-7
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 中国香港-2
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 中国大陆-2
-  - 美国-18
+  - 美国-2
   - 日本-8
-  - 美国-19
+  - 日本-9
+  - 中国大陆-3
+  - 美国-3
+  - 中国大陆-4
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  - 日本-10
+  - 美国-7
+  - 美国-8
+  - 美国-9
+  - 中国大陆-5
+  - 中国大陆-6
+  - 美国-10
+  - 中国大陆-7
+  - 中国大陆-8
+  - 美国-11
+  - 中国大陆-9
+  - 美国-12
+  - 中国大陆-10
+  - 中国大陆-11
+  - 中国香港-1
   type: url-test
   url: http://www.youtube.com/generate_204
 - interval: 360
@@ -601,34 +593,28 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-TIKTOK
   proxies: &id002
-  - 美国-1
-  - 韩国-1
-  - 美国-2
-  - 美国-3
   - 日本-1
-  - 美国-4
-  - 美国-5
   - 日本-2
   - 日本-3
   - 日本-4
   - 日本-5
+  - 美国-1
+  - 日本-6
+  - 日本-7
+  - 美国-2
+  - 日本-8
+  - 日本-9
+  - 美国-3
+  - 美国-4
+  - 美国-5
   - 美国-6
+  - 日本-10
   - 美国-7
   - 美国-8
-  - 日本-6
   - 美国-9
-  - 日本-7
   - 美国-10
   - 美国-11
   - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 美国-18
-  - 日本-8
-  - 美国-19
   type: url-test
   url: http://www.youtube.com/generate_204
 - interval: 360
@@ -655,34 +641,28 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-OPENAI
   proxies: &id003
-  - 美国-1
-  - 韩国-1
-  - 美国-2
-  - 美国-3
   - 日本-1
-  - 美国-4
-  - 美国-5
   - 日本-2
   - 日本-3
   - 日本-4
   - 日本-5
+  - 美国-1
+  - 日本-6
+  - 日本-7
+  - 美国-2
+  - 日本-8
+  - 日本-9
+  - 美国-3
+  - 美国-4
+  - 美国-5
   - 美国-6
+  - 日本-10
   - 美国-7
   - 美国-8
-  - 日本-6
   - 美国-9
-  - 日本-7
   - 美国-10
   - 美国-11
   - 美国-12
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 美国-18
-  - 日本-8
-  - 美国-19
   type: url-test
   url: http://www.youtube.com/generate_204
 - interval: 360
