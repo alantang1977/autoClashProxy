@@ -191,18 +191,19 @@ class clashConfig:
 
         return group
 
-    def createSpecialGroup(self, proxiesNames, excludeLocation, config, groupName, minProxy = 8):
+    def createSpecialGroup(self, proxiesNames, groupName, excludeLocation, minProxy = 8):
+        group = []
         proxies = [proxy for proxy in proxiesNames if proxy.split('-')[0] not in excludeLocation]
         if (len(proxies) >= minProxy):
-            config['proxy-groups'].append(self.createGroup(groupName, "select", [f"延迟最低-{groupName}", f"故障转移-{groupName}", f"负载均衡-{groupName}", f"手动选择-{groupName}", "DIRECT"]))
-            config['proxy-groups'].append(self.createGroup(f"延迟最低-{groupName}", "url-test", proxies))
-            config['proxy-groups'].append(self.createGroup(f"故障转移-{groupName}", "fallback", proxies))
-            config['proxy-groups'].append(self.createGroup(f"负载均衡-{groupName}", "load-balance", proxies))
-            config['proxy-groups'].append(self.createGroup(f"手动选择-{groupName}", "select", proxies))
-            return True
+            select = self.createGroup(groupName, "select", [f"延迟最低-{groupName}", f"故障转移-{groupName}", f"负载均衡-{groupName}", f"手动选择-{groupName}", "DIRECT"])
+            group.append(self.createGroup(f"延迟最低-{groupName}", "url-test", proxies))
+            group.append(self.createGroup(f"故障转移-{groupName}", "fallback", proxies))
+            group.append(self.createGroup(f"负载均衡-{groupName}", "load-balance", proxies))
+            group.append(self.createGroup(f"手动选择-{groupName}", "select", proxies))
+            return True, select, group
         else:
             print("包含节点数量过少，不满足条件")
-            return False
+            return False, None, None
 
     def createLocationProxyGroup(self, proxyPool):
         print("按照ip地址查询节点所属地区")
@@ -252,22 +253,26 @@ class clashConfig:
 
         config['proxy-groups'] = []
 
-        config['proxy-groups'].append(self.createGroup("PROXY", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
-        config['proxy-groups'].append(self.createGroup("漏网之鱼", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
-        config['proxy-groups'].append(self.createGroup("媒体影音", "select", ["延迟最低", "故障转移", "负载均衡", "手动选择", "DIRECT"]))
-
-        config['proxy-groups'].append(self.createGroup("延迟最低", "url-test", proxiesNames))
-        config['proxy-groups'].append(self.createGroup("故障转移", "fallback", proxiesNames))
-        config['proxy-groups'].append(self.createGroup("负载均衡", "load-balance", proxiesNames))
-        config['proxy-groups'].append(self.createGroup("手动选择", "select", proxiesNames))
+        needGroups =[
+            ["PROXY",   [], 30],
+            ["媒体影音", [], 30],
+            ["漏网之鱼", [], 30],
+            ["TIKTOK",  ["中国香港", "中国大陆"], 12],
+            ["OPENAI",  ["中国香港", "中国大陆"], 12],
+            ["BINANCE", ["中国大陆"], 15],
+        ]
 
         bCreateSuccess = True
-        bCreateSuccess |= self.createSpecialGroup(proxiesNames, ["中国香港", "中国大陆"], config, "TIKTOK")
-        bCreateSuccess |= self.createSpecialGroup(proxiesNames, ["中国香港", "中国大陆"], config, "OPENAI")
-        bCreateSuccess |= self.createSpecialGroup(proxiesNames, [ "中国大陆", "美国", "新加坡"], config, "BINANCE", 3)
+        allGroup = []
+        for i in needGroups:
+            bCreateSuccess, select, group = self.createSpecialGroup(proxiesNames, i[0], i[1], i[2])
+            if (not bCreateSuccess):
+                return False
+            config['proxy-groups'].append(select)
+            allGroup += group
+        config['proxy-groups'] += allGroup
 
-        if (not bCreateSuccess):
-            return False
+
 
         with open(self.file, 'w', encoding='utf-8') as file:
             yaml.dump(config, file, allow_unicode=True)
