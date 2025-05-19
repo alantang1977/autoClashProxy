@@ -272,8 +272,6 @@ class clashConfig:
             allGroup += group
         config['proxy-groups'] += allGroup
 
-
-
         with open(self.file, 'w', encoding='utf-8') as file:
             yaml.dump(config, file, allow_unicode=True)
 
@@ -290,4 +288,5 @@ if __name__ == "__main__":
     clash = clashAPI(args)
     #clash.groupProxy("手动选择")
     #clash.groupDelay("手动选择")
-    clash.recivelogs()
+    if (args.log):
+        clash.recivelogs(args.log)

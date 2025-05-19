@@ -22,6 +22,7 @@ def processArgs(bRequiredExclusive=True):
     parser.add_argument("--maxProxyAfterDelay", type=int, default=36, help="经过延迟测试后，允许输出的最大节点数量")
     parser.add_argument("--interval", type=int, default=360, help="clash代理组节点检测时间间隔")
     parser.add_argument("--flushFakeip", action='store_true', help="删除fakeip缓存")
+    parser.add_argument("--log", type=str, default="", choices=["debug", "info", "warning", "error", "silent"])
 
     createClash = parser.add_mutually_exclusive_group(required=bRequiredExclusive)
     createClash.add_argument("--local", action='store_true', help="处理本地配置文件，生成clash配置文件。")
