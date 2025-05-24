@@ -13,7 +13,7 @@ def processArgs(bRequiredExclusive=True):
     parser.add_argument("--secret", type=str, default="d53df256-8f1b-4f9b-b730-6a4e947104b6", help="登录clah ui所需的密钥")
     parser.add_argument("--mixedPort", type=int, default=7890, help="clash的http代理端口")
     parser.add_argument("--timeout", type=int, default=3000, help="clash对节点进行延迟测试的超时时间")
-    parser.add_argument("--delayUrl", type=str, default="https://i.ytimg.com/generate_204", help="clash进行延迟测试的url")
+    parser.add_argument("--delayUrl", type=str, default="https://www.youtube.com/generate_204", help="clash进行延迟测试的url")
 
     parser.add_argument("--defaultFile", type=str, default="default.config", help="生成配置文件所需要的模板文件")
     parser.add_argument("--configFile", type=str, default="list.yaml", help="最终生成的clash配置文件名称")

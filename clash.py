@@ -62,7 +62,7 @@ class clashAPI:
         return ip
 
     def loadConfig(self, configPath, retry):
-        print(f"开始加载配置文件{configPath}。")
+        print(f"开始加载配置文件：{configPath}")
         url = f"{self.baseUrl}:{self.controllerPort}/configs"
 
         param = {"force": "true"}
@@ -244,6 +244,9 @@ class clashConfig:
 
         defaultConfig = open(self.defaultFile, encoding='utf8').read()
         config = yaml.load(defaultConfig, Loader=yaml.FullLoader)
+
+        #config["external-controller"] = f"{self.clash.baseUrl}:{self.clash.controllerPort}"
+        #config["secret"] = self.clash.secret
 
         proxies = self.createLocationProxyGroup(proxies)
 

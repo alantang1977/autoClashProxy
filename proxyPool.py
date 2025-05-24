@@ -1,5 +1,6 @@
 import yaml
 import os
+import shutil
 
 import sys
 sys.path.append('.')
@@ -45,7 +46,27 @@ def checkNeedUpdate(profile):
 
     return True
 
+def getPortAndSecret(args, safePath):
+    clashVergeConfig = yaml.load(open(os.path.join(safePath, "config.yaml"), encoding='utf8').read(), Loader=yaml.FullLoader)
+    return clashVergeConfig["external-controller"].split(":")[1], clashVergeConfig["secret"]
+
+safePath = os.environ.get('SAFE_PATH')
+if (safePath == None):
+    print("未设置safePath，请设置该环境变量")
+    sys.exit(0)
+
 args = processArgs()
+
+#clash-verge-rev更新至v2.2.4-alpha后，这两项设置会随机设置。
+#因此通过读取clash-verge-rev配置目录下的config.yaml文件来获取最新的port和secret
+#需要设置环境变量SAFE_PATH值为clash-verge-rev的配置目录
+print("ignore argument：uiPort and secret")
+safePath = os.environ.get('SAFE_PATH')
+if (safePath == None):
+    print("未设置safePath，请设置该环境变量")
+    sys.exit(0)
+args.uiPort, args.secret = getPortAndSecret(args, safePath)
+
 profile = clashConfig(args)
 
 if (args.flushFakeip):
@@ -62,7 +83,7 @@ if (args.noDownload and args.download):
 
 bNoDownload = args.noDownload
 proxies = None
-configPath = f"{profile.file}"
+configPath = f"{safePath}/{profile.file}"
 
 if (args.update and (not args.noCheck) and (not checkNeedUpdate(profile))):
     print("当前配置文件中存在足够多的有效节点，无需更新")
@@ -87,6 +108,7 @@ if (len(proxies) < profile.minInConfig):
 
 proxies = processNodes(proxies)
 bSuccess = profile.creatConfig(proxies)
+shutil.copy(profile.file, configPath)
 
 if (args.update):
     if (bSuccess and profile.clash.loadConfig(configPath, args.retry)): #成功生成配置文件后，在clash中加载生成的配置文件，准备对所有节点进行延迟测试。
@@ -94,15 +116,17 @@ if (args.update):
         proxies = yaml.load(open(profile.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
         proxies = removeTimeoutProxy(proxies, profile, profile.maxAfterDelay) #对配置文件中的所有节点进行延迟测试，删除延迟时间不符合要求的节点。
         bSuccess = profile.creatConfig(proxies)
+        shutil.copy(profile.file, configPath)
         if (not bSuccess):
             checkoutFile(profile.file) #经过延迟测试后，可能会出现节点数量少于最低要求的情况，这样就需要回退配置文件。
         profile.clash.loadConfig(configPath, args.retry) #延迟测试结束，加载配置文件。
-        #profile.clash.restart()
     else:
         bSuccess = False
 
     if (not bSuccess):
         print("配置文件更新失败")
+
+os.remove(configPath)
 
 if (bSuccess and args.push):
     pushFile(profile.file, args.retry)
