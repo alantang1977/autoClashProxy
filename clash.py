@@ -141,6 +141,7 @@ class clashConfig:
         self.maxInConfig = args.maxProxyInConfig #生成配置文件中所允许的最大节点数量。如果数量过多，后续将需要较多时间来查询节点归属地和延迟测试
         self.maxAfterDelay = args.maxProxyAfterDelay #经过延迟测试后，允许输出的最大节点数量
         self.interval = args.interval #clash代理组节点检测时间间隔
+        self.tunStack = args.tunStack #tun模式堆栈，可用值： system/gvisor/mixed
 
         if (self.minInConfig > self.maxAfterDelay):
             print(f"延迟测试输出的节点数量:{self.maxAfterDelay} 小于 配置文件所需要的最小节点数量:{self.minInConfig}。请检查相关设置")
@@ -247,6 +248,7 @@ class clashConfig:
 
         #config["external-controller"] = f"{self.clash.baseUrl}:{self.clash.controllerPort}"
         #config["secret"] = self.clash.secret
+        config['tun']['stack'] = self.tunStack
 
         proxies = self.createLocationProxyGroup(proxies)
 
