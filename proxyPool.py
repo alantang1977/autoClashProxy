@@ -62,7 +62,7 @@ if (args.noDownload and args.download):
 
 bNoDownload = args.noDownload
 proxies = None
-configPath = f"{os.getcwd()}/{profile.file}"
+configPath = f"{profile.file}"
 
 if (args.update and (not args.noCheck) and (not checkNeedUpdate(profile))):
     print("当前配置文件中存在足够多的有效节点，无需更新")
