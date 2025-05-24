@@ -50,22 +50,15 @@ def getPortAndSecret(args, safePath):
     clashVergeConfig = yaml.load(open(os.path.join(safePath, "config.yaml"), encoding='utf8').read(), Loader=yaml.FullLoader)
     return clashVergeConfig["external-controller"].split(":")[1], clashVergeConfig["secret"]
 
-safePath = os.environ.get('SAFE_PATH')
-if (safePath == None):
-    print("未设置safePath，请设置该环境变量")
-    sys.exit(0)
-
 args = processArgs()
 
 #clash-verge-rev更新至v2.2.4-alpha后，这两项设置会随机设置。
+#同时clash-verge-rev将mihomo更新至v1.19.6后，只允许加载SAFE_PATHS中的配置文件
+#在clash-verge-rev中SAFE_PATHS值为clash-verge-rev的配置
 #因此通过读取clash-verge-rev配置目录下的config.yaml文件来获取最新的port和secret
-#需要设置环境变量SAFE_PATH值为clash-verge-rev的配置目录
-print("ignore argument：uiPort and secret")
-safePath = os.environ.get('SAFE_PATH')
-if (safePath == None):
-    print("未设置safePath，请设置该环境变量")
-    sys.exit(0)
-args.uiPort, args.secret = getPortAndSecret(args, safePath)
+if (args.safePath):
+    print("ignore argument：uiPort and secret")
+    args.uiPort, args.secret = getPortAndSecret(args, args.safePath)
 
 profile = clashConfig(args)
 
@@ -83,7 +76,7 @@ if (args.noDownload and args.download):
 
 bNoDownload = args.noDownload
 proxies = None
-configPath = f"{safePath}/{profile.file}"
+configPath = f"{args.safePath}/{profile.file}"
 
 if (args.update and (not args.noCheck) and (not checkNeedUpdate(profile))):
     print("当前配置文件中存在足够多的有效节点，无需更新")
