@@ -9,8 +9,8 @@ def processArgs(bRequiredExclusive=True):
     parser.add_argument("--noCheck", action='store_true', help="不检查当前配置文件中节点数量是否满足要求")
 
     parser.add_argument("--uiUrl", type=str, default="http://127.0.0.1", help="登录clah ui的地址")
-    parser.add_argument("--uiPort", type=int, default=34885, help="登录clah ui的端口")
-    parser.add_argument("--secret", type=str, default="d53df256-8f1b-4f9b-b730-6a4e947104b6", help="登录clah ui所需的密钥")
+    parser.add_argument("--uiPort", type=int, help="登录clah ui的端口")
+    parser.add_argument("--secret", type=str, help="登录clah ui所需的密钥")
     parser.add_argument("--mixedPort", type=int, default=7890, help="clash的http代理端口")
     parser.add_argument("--timeout", type=int, default=3000, help="clash对节点进行延迟测试的超时时间")
     parser.add_argument("--delayUrl", type=str, default="https://www.youtube.com/generate_204", help="clash进行延迟测试的url")
