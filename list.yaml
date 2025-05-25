@@ -72,14 +72,48 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
+  cipher: auto
   name: 中国大陆-1
-  password: RlzoEILU
-  port: 28296
-  server: 36.151.251.60
+  network: tcp
+  port: 31209
+  server: 120.232.153.40
   skip-cert-verify: true
-  sni: cdn.egvra.cn
-  type: trojan
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.40
+  ws-path: /
+- alterId: 0
+  name: 中国香港-1
+  network: ws
+  port: 55055
+  server: 47.243.172.103
+  servername: edccn.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccn.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 韩国-1
+  network: ws
+  port: 11481
+  server: 119.197.201.29
+  servername: xz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: xz.ylks0033.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
   delay: 2905
@@ -103,18 +137,99 @@ proxies:
   server: 36.156.102.124
   skip-cert-verify: true
   sni: 36.156.102.124
+  tfo: false
   type: trojan
   udp: true
-- alterId: 64
-  cipher: auto
+- alterId: 0
+  name: 美国-2
+  network: ws
+  port: 443
+  server: 69.84.182.53
+  servername: xz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: xz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 韩国-2
+  network: ws
+  port: 18888
+  server: 183.106.162.127
+  servername: xz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: xz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
   name: 中国大陆-3
-  port: 44915
-  server: 120.198.71.219
+  network: ws
+  port: 443
+  server: 103.44.255.81
+  servername: xz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: xz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 日本-1
+  network: ws
+  port: 8880
+  server: 91.193.58.81
+  servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
-  type: vmess
+  type: vless
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  name: 美国-3
+  network: ws
+  port: 18446
+  server: 154.17.21.134
+  servername: xz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: xz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 韩国-3
+  network: ws
+  port: 30012
+  server: 220.118.248.123
+  servername: xz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: xz.ylks0033.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   name: 新加坡-1
   network: ws
@@ -131,65 +246,56 @@ proxies:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  name: 美国-2
+  name: 中国大陆-4
+  password: RlzoEILU
+  port: 28296
+  server: 36.151.251.60
+  skip-cert-verify: true
+  sni: cdn.egvra.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 中国香港-2
   network: ws
-  port: 80
-  server: 104.16.178.238
-  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
-  tls: false
-  type: vless
-  uuid: d4eddaf9-a660-4905-b835-cad98677b380
-  ws-opts:
-    headers:
-      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 日本-1
-  password: 6ffc1414974e
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp1v9.8vote.cn
-    mode: websocket
-    mux: true
-    path: /kafgphgtf
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 103.140.136.76
-  tfo: false
-  type: ss
-- alterId: 0
-  client-fingerprint: randomized
-  name: 美国-3
-  network: ws
-  port: 443
-  server: 104.17.142.12
-  servername: vle.amclubsapp.dpdns.org
+  port: 21698
+  server: 156.251.180.181
+  servername: edccn.ambercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: vle.amclubsapp.dpdns.org
-    path: /?ed=2560
+      host: edccn.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 日本-2
+  network: ws
+  port: 8880
+  server: 91.193.58.85
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-4
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
 - alterId: 0
   name: 美国-4
   network: ws
   port: 8880
-  server: 104.129.165.29
+  server: 155.46.167.29
   servername: hk.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -201,11 +307,11 @@ proxies:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  name: 加拿大-1
+  name: 日本-3
   network: ws
   port: 8880
-  server: 74.49.214.29
-  servername: hk.laoyoutiao.link
+  server: 91.193.58.57
+  servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
   type: vless
@@ -213,22 +319,28 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
+      Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 中国大陆-4
-  password: ENYGONDU94UW1G6X
-  port: 15010
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
+  name: 日本-4
+  network: ws
+  port: 8880
+  server: 91.193.58.69
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
   name: 美国-5
   network: ws
   port: 8880
-  server: 199.34.230.29
+  server: 170.114.46.29
   servername: hk.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -255,11 +367,11 @@ proxies:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - alterId: 0
-  name: 美国-7
+  name: 日本-5
   network: ws
   port: 8880
-  server: 199.34.229.29
-  servername: hk.laoyoutiao.link
+  server: 91.193.58.101
+  servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
   type: vless
@@ -267,14 +379,14 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
+      Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  name: 美国-8
+  name: 日本-6
   network: ws
   port: 8880
-  server: 135.84.75.29
-  servername: hk.laoyoutiao.link
+  server: 91.193.58.64
+  servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
   type: vless
@@ -282,28 +394,14 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
+      Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 80
-  server: 104.16.86.2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-10
+  name: 日本-7
   network: ws
   port: 8880
-  server: 130.250.137.29
-  servername: hk.laoyoutiao.link
+  server: 91.193.58.18
+  servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
   type: vless
@@ -311,177 +409,14 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 中国香港-1
-  network: ws
-  port: 8880
-  server: 45.194.53.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-2
-  network: ws
-  port: 8880
-  server: 103.245.229.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-11
-  network: ws
-  port: 80
-  server: 104.24.37.192
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
-  ws-opts:
-    headers:
-      Host: ppal03.dolobe7975.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 中国香港-2
-  network: ws
-  port: 8880
-  server: 154.218.15.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-12
-  network: ws
-  port: 80
-  server: 141.193.213.158
-  servername: cs.laoyoutiao.link
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: cs.laoyoutiao.link
-    path: /Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560
-- alterId: 0
-  name: 美国-13
-  network: ws
-  port: 8880
-  server: 135.84.73.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-14
-  network: ws
-  port: 8880
-  server: 135.84.67.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-15
-  network: ws
-  port: 8880
-  server: 209.46.30.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-16
-  network: ws
-  port: 8880
-  server: 45.67.214.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-3
-  network: ws
-  port: 8880
-  server: 103.245.228.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-17
-  network: ws
-  port: 8880
-  server: 66.225.252.29
-  servername: hk.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: hk.laoyoutiao.link
+      Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
   name: 中国香港-3
   network: ws
   port: 8880
-  server: 154.194.12.29
-  servername: hk.laoyoutiao.link
+  server: 154.211.8.20
+  servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
   type: vless
@@ -489,25 +424,10 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: hk.laoyoutiao.link
+      Host: us.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  name: 美国-18
-  network: ws
-  port: 8880
-  server: 31.12.75.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-19
+  name: 美国-7
   network: ws
   port: 8880
   server: 104.129.166.29
@@ -522,10 +442,70 @@ proxies:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  name: 美国-20
+  name: 日本-8
   network: ws
   port: 8880
-  server: 108.165.152.29
+  server: 91.193.58.108
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  name: 美国-8
+  network: ws
+  port: 8880
+  server: 155.46.213.20
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-9
+  network: ws
+  port: 8880
+  server: 103.245.228.0
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 美国-9
+  network: ws
+  port: 80
+  server: 141.193.213.158
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: cs.laoyoutiao.link
+    path: /Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560
+- alterId: 0
+  name: 美国-10
+  network: ws
+  port: 8880
+  server: 135.84.75.29
   servername: hk.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -537,44 +517,80 @@ proxies:
       Host: hk.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  name: 美国-21
+  name: 日本-10
   network: ws
   port: 8880
-  server: 154.83.2.20
-  servername: reedfree8mahsang2.redorg.ir
+  server: 91.193.58.149
+  servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 美国-22
-  port: 8443
-  reality-opts:
-    public-key: 4Qekb9y1dqO8hvRzVSGeSRNyhko_gqpeWD94zrLCvjs
-    short-id: 5488b0e7
-  server: sj-arm.nfsn666.gq
-  servername: www.yahoo.com
-  skip-cert-verify: true
-  tls: true
+  name: 日本-11
+  network: ws
+  port: 8880
+  server: 91.193.58.184
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 06121b89-607b-44c9-9c01-cc2fc6a7321d
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 - alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 韩国-2
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  tfo: false
-  type: ss
+  name: 美国-11
+  network: ws
+  port: 8880
+  server: 192.200.160.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: hk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 8880
+  server: 199.181.197.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: hk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  name: 美国-13
+  network: ws
+  port: 8880
+  server: 135.84.74.29
+  servername: hk.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: hk.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
 proxy-groups:
 - name: PROXY
   proxies:
@@ -628,41 +644,41 @@ proxy-groups:
   name: 延迟最低-PROXY
   proxies: &id001
   - 中国大陆-1
+  - 中国香港-1
+  - 韩国-1
   - 美国-1
   - 中国大陆-2
-  - 中国大陆-3
-  - 新加坡-1
   - 美国-2
-  - 韩国-1
+  - 韩国-2
+  - 中国大陆-3
   - 日本-1
   - 美国-3
-  - 美国-4
-  - 加拿大-1
+  - 韩国-3
+  - 新加坡-1
   - 中国大陆-4
+  - 中国香港-2
+  - 日本-2
+  - 韩国-4
+  - 美国-4
+  - 日本-3
+  - 日本-4
   - 美国-5
   - 美国-6
+  - 日本-5
+  - 日本-6
+  - 日本-7
+  - 中国香港-3
   - 美国-7
+  - 日本-8
   - 美国-8
+  - 日本-9
   - 美国-9
   - 美国-10
-  - 中国香港-1
-  - 日本-2
+  - 日本-10
+  - 日本-11
   - 美国-11
-  - 中国香港-2
   - 美国-12
   - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 日本-3
-  - 美国-17
-  - 中国香港-3
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 韩国-2
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -682,41 +698,41 @@ proxy-groups:
   name: 延迟最低-媒体影音
   proxies: &id002
   - 中国大陆-1
+  - 中国香港-1
+  - 韩国-1
   - 美国-1
   - 中国大陆-2
-  - 中国大陆-3
-  - 新加坡-1
   - 美国-2
-  - 韩国-1
+  - 韩国-2
+  - 中国大陆-3
   - 日本-1
   - 美国-3
-  - 美国-4
-  - 加拿大-1
+  - 韩国-3
+  - 新加坡-1
   - 中国大陆-4
+  - 中国香港-2
+  - 日本-2
+  - 韩国-4
+  - 美国-4
+  - 日本-3
+  - 日本-4
   - 美国-5
   - 美国-6
+  - 日本-5
+  - 日本-6
+  - 日本-7
+  - 中国香港-3
   - 美国-7
+  - 日本-8
   - 美国-8
+  - 日本-9
   - 美国-9
   - 美国-10
-  - 中国香港-1
-  - 日本-2
+  - 日本-10
+  - 日本-11
   - 美国-11
-  - 中国香港-2
   - 美国-12
   - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 日本-3
-  - 美国-17
-  - 中国香港-3
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 韩国-2
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -736,41 +752,41 @@ proxy-groups:
   name: 延迟最低-漏网之鱼
   proxies: &id003
   - 中国大陆-1
+  - 中国香港-1
+  - 韩国-1
   - 美国-1
   - 中国大陆-2
-  - 中国大陆-3
-  - 新加坡-1
   - 美国-2
-  - 韩国-1
+  - 韩国-2
+  - 中国大陆-3
   - 日本-1
   - 美国-3
-  - 美国-4
-  - 加拿大-1
+  - 韩国-3
+  - 新加坡-1
   - 中国大陆-4
+  - 中国香港-2
+  - 日本-2
+  - 韩国-4
+  - 美国-4
+  - 日本-3
+  - 日本-4
   - 美国-5
   - 美国-6
+  - 日本-5
+  - 日本-6
+  - 日本-7
+  - 中国香港-3
   - 美国-7
+  - 日本-8
   - 美国-8
+  - 日本-9
   - 美国-9
   - 美国-10
-  - 中国香港-1
-  - 日本-2
+  - 日本-10
+  - 日本-11
   - 美国-11
-  - 中国香港-2
   - 美国-12
   - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 日本-3
-  - 美国-17
-  - 中国香港-3
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 韩国-2
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -789,35 +805,35 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-TIKTOK
   proxies: &id004
-  - 美国-1
-  - 新加坡-1
-  - 美国-2
   - 韩国-1
+  - 美国-1
+  - 美国-2
+  - 韩国-2
   - 日本-1
   - 美国-3
+  - 韩国-3
+  - 新加坡-1
+  - 日本-2
+  - 韩国-4
   - 美国-4
-  - 加拿大-1
+  - 日本-3
+  - 日本-4
   - 美国-5
   - 美国-6
+  - 日本-5
+  - 日本-6
+  - 日本-7
   - 美国-7
+  - 日本-8
   - 美国-8
+  - 日本-9
   - 美国-9
   - 美国-10
-  - 日本-2
+  - 日本-10
+  - 日本-11
   - 美国-11
   - 美国-12
   - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 日本-3
-  - 美国-17
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 韩国-2
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -836,35 +852,35 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-OPENAI
   proxies: &id005
-  - 美国-1
-  - 新加坡-1
-  - 美国-2
   - 韩国-1
+  - 美国-1
+  - 美国-2
+  - 韩国-2
   - 日本-1
   - 美国-3
+  - 韩国-3
+  - 新加坡-1
+  - 日本-2
+  - 韩国-4
   - 美国-4
-  - 加拿大-1
+  - 日本-3
+  - 日本-4
   - 美国-5
   - 美国-6
+  - 日本-5
+  - 日本-6
+  - 日本-7
   - 美国-7
+  - 日本-8
   - 美国-8
+  - 日本-9
   - 美国-9
   - 美国-10
-  - 日本-2
+  - 日本-10
+  - 日本-11
   - 美国-11
   - 美国-12
   - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 日本-3
-  - 美国-17
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 韩国-2
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -883,38 +899,38 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-BINANCE
   proxies: &id006
-  - 美国-1
-  - 新加坡-1
-  - 美国-2
+  - 中国香港-1
   - 韩国-1
+  - 美国-1
+  - 美国-2
+  - 韩国-2
   - 日本-1
   - 美国-3
+  - 韩国-3
+  - 新加坡-1
+  - 中国香港-2
+  - 日本-2
+  - 韩国-4
   - 美国-4
-  - 加拿大-1
+  - 日本-3
+  - 日本-4
   - 美国-5
   - 美国-6
+  - 日本-5
+  - 日本-6
+  - 日本-7
+  - 中国香港-3
   - 美国-7
+  - 日本-8
   - 美国-8
+  - 日本-9
   - 美国-9
   - 美国-10
-  - 中国香港-1
-  - 日本-2
+  - 日本-10
+  - 日本-11
   - 美国-11
-  - 中国香港-2
   - 美国-12
   - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 日本-3
-  - 美国-17
-  - 中国香港-3
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 韩国-2
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -991,6 +1007,6 @@ tun:
   - tcp://any:53
   enable: true
   mtu: 1500
-  stack: system
+  stack: mixed
   strict-route: false
 unified-delay: true
