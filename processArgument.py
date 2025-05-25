@@ -30,6 +30,7 @@ def processArgs(bRequiredExclusive=True):
     createClash.add_argument("--local", action='store_true', help="处理本地配置文件，生成clash配置文件。")
     createClash.add_argument("--download", action='store_true', help="下载公开的订阅文件，生成clash配置文件。")
     createClash.add_argument("--update", action='store_true', help="对所有节点进行延迟测试后，生成配置文件。")
+    createClash.add_argument("--load", action='store_true', help="加载clash配置文件")
 
     args = parser.parse_args()
 

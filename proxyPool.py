@@ -57,10 +57,19 @@ args = processArgs()
 #在clash-verge-rev中的SAFE_PATHS值为clash-verge-rev的配置文件目录
 #因此通过读取clash-verge-rev配置目录下的config.yaml文件来获取最新的port和secret
 if (args.safePath):
-    print("ignore argument：uiPort and secret")
+    print("get safePath. ignore argument：uiPort and secret")
     args.uiPort, args.secret = getPortAndSecret(args, args.safePath)
 
 profile = clashConfig(args)
+
+path = args.safePath if (args.safePath != None) else os.getcwd()
+configPath = f"{path}/{profile.file}"
+
+if (args.load):
+    shutil.copy(profile.file, configPath)
+    profile.clash.loadConfig(configPath, args.retry)
+    os.remove(configPath)
+    sys.exit(0)
 
 if (args.flushFakeip):
     profile.clash.flushFakeIp()
@@ -76,9 +85,6 @@ if (args.noDownload and args.download):
 
 bNoDownload = args.noDownload
 proxies = None
-
-path = args.safePath if (args.safePath != None) else os.getcwd()
-configPath = f"{path}/{profile.file}"
 
 if (args.update and (not args.noCheck) and (not checkNeedUpdate(profile))):
     print("当前配置文件中存在足够多的有效节点，无需更新")
