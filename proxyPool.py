@@ -66,9 +66,11 @@ path = args.safePath if (args.safePath != None) else os.getcwd()
 configPath = f"{path}/{profile.file}"
 
 if (args.load):
-    shutil.copy(profile.file, configPath)
+    if (args.safePath != None):
+        shutil.copy(profile.file, configPath)
     profile.clash.loadConfig(configPath, args.retry)
-    os.remove(configPath)
+    if (args.safePath != None):
+        os.remove(configPath)
     sys.exit(0)
 
 if (args.flushFakeip):
@@ -109,7 +111,9 @@ if (len(proxies) < profile.minInConfig):
 
 proxies = processNodes(proxies)
 bSuccess = profile.creatConfig(proxies)
-shutil.copy(profile.file, configPath)
+
+if (args.safePath != None):
+    shutil.copy(profile.file, configPath)
 
 if (args.update):
     if (bSuccess and profile.clash.loadConfig(configPath, args.retry)): #成功生成配置文件后，在clash中加载生成的配置文件，准备对所有节点进行延迟测试。
@@ -117,7 +121,8 @@ if (args.update):
         proxies = yaml.load(open(profile.file, encoding='utf8').read(), Loader=yaml.FullLoader)["proxies"]
         proxies = removeTimeoutProxy(proxies, profile, profile.maxAfterDelay) #对配置文件中的所有节点进行延迟测试，删除延迟时间不符合要求的节点。
         bSuccess = profile.creatConfig(proxies)
-        shutil.copy(profile.file, configPath)
+        if (args.safePath != None):
+            shutil.copy(profile.file, configPath)
         if (not bSuccess):
             checkoutFile(profile.file) #经过延迟测试后，可能会出现节点数量少于最低要求的情况，这样就需要回退配置文件。
         profile.clash.loadConfig(configPath, args.retry) #延迟测试结束，加载配置文件。
@@ -127,7 +132,8 @@ if (args.update):
     if (not bSuccess):
         print("配置文件更新失败")
 
-os.remove(configPath)
+if (args.safePath != None):
+    os.remove(configPath)
 
 if (bSuccess and args.push):
     pushFile(profile.file, args.retry)
