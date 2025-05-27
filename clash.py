@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class clashAPI:
     def __init__(self, args):
-        self.baseUrl = args.uiUrl
+        self.baseUrl = f"http://{args.uiIP}"
         self.controllerPort = args.uiPort #登录clash web ui的端口
         self.mixedPort = args.mixedPort #http代理端口
 
@@ -127,7 +127,7 @@ class clashAPI:
         print("[{}] {}: {}".format(currentTTime, message["type"], message["payload"]))
 
     def recivelogs(self, level="info"):
-        url = f"{self.baseUrl}:{self.controllerPort}/logs?level={level}"
+        url = f"ws://{self.uiIP}:{self.controllerPort}/logs?level={level}"
         logs = websocket.WebSocketApp(url, header=[f"Authorization: Bearer {self.secret}"], on_data=self.printLogs)
         logs.run_forever()
 

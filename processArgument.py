@@ -8,7 +8,7 @@ def processArgs(bRequiredExclusive=True):
     parser.add_argument("--noDownload", action='store_true', help="不下载公开节点，使用本地配置文件")
     parser.add_argument("--noCheck", action='store_true', help="不检查当前配置文件中节点数量是否满足要求")
 
-    parser.add_argument("--uiUrl", type=str, default="http://127.0.0.1", help="登录clah ui的地址")
+    parser.add_argument("--uiIP", type=str, default="127.0.0.1", help="登录clah ui的IP地址")
     parser.add_argument("--uiPort", type=int, help="登录clah ui的端口")
     parser.add_argument("--secret", type=str, help="登录clah ui所需的密钥")
     parser.add_argument("--safePath", type=str, help="设置SAFE_PATH")
