@@ -98,7 +98,7 @@ def removeTimeoutProxy(proxies, profile, maxProxy):
     print(f"延迟测试url为：{profile.clash.delayUrl}")
     print(f"测试节点总数为：{len(proxies)}")
     try:
-        with ThreadPoolExecutor(max_workers=30) as threadPool:
+        with ThreadPoolExecutor(max_workers=20) as threadPool:
             allTask = [threadPool.submit(profile.clash.queryProxyDelay, proxy) for proxy in proxies]
 
             for index, future in enumerate(as_completed(allTask)):
