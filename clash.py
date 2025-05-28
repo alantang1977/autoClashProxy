@@ -10,7 +10,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class clashAPI:
     def __init__(self, args):
-        self.baseUrl = f"http://{args.uiIP}"
+        self.uiIP = args.uiIP
+        self.baseUrl = f"http://{self.uiIP}"
         self.controllerPort = args.uiPort #登录clash web ui的端口
         self.mixedPort = args.mixedPort #http代理端口
 
