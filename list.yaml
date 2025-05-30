@@ -75,25 +75,10 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  name: 美国-1
+  name: 中国香港-1
   network: ws
-  port: 443
-  server: 160.79.105.89
-  servername: ca.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ca.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 日本-1
-  network: ws
-  port: 29192
-  server: 202.60.191.6
+  port: 7656
+  server: 66.203.144.241
   servername: steep.skyfigure.top
   skip-cert-verify: true
   tls: true
@@ -105,41 +90,10 @@ proxies:
       Host: steep.skyfigure.top
     path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - alterId: 0
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 141.193.213.187
-  servername: cs.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: cs.laoyoutiao.link
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-2
+  name: 美国-1
   network: ws
   port: 8880
-  server: 91.193.58.198
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /telegramu0001f1e8u0001f1f3 @mxlshare @wangcai2 /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-3
-  network: ws
-  port: 8880
-  server: 190.93.245.20
+  server: 140.99.233.20
   servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: false
   tls: false
@@ -150,11 +104,74 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: 中国大陆-1
+  port: 17233
+  server: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+- alterId: 0
+  name: 中国大陆-2
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: true
+  sni: hk-13-568.flztjc.net
+  type: trojan
+- alterId: 0
+  name: 中国大陆-3
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
+  skip-cert-verify: true
+  sni: hk-13-568.flztjc.net
+  type: trojan
+- alterId: 0
+  name: 日本-1
+  password: 3DZwNDRFSa7ZYpYRx2lAZzR4SCncORY7ESYAXyFpaexDA98eljCw6xyCOa534TlCD0xKD
+  port: 18332
+  server: compost.meijireform.com
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  name: 日本-2
+  network: ws
+  port: 8880
+  server: 91.193.58.78
+  servername: cs.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: cs.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 韩国-1
+  network: ws
+  port: 25079
+  server: 121.154.68.40
+  servername: steep.skyfigure.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- alterId: 64
+  cipher: auto
+  name: 中国大陆-4
   network: tcp
-  port: 52182
+  port: 31209
   server: 120.232.153.40
   skip-cert-verify: true
   tls: false
@@ -164,10 +181,19 @@ proxies:
     Host: 120.232.153.40
   ws-path: /
 - alterId: 0
-  name: 美国-4
+  name: 中国大陆-5
+  password: RlzoEILU
+  port: 15624
+  server: 36.156.102.124
+  skip-cert-verify: true
+  sni: 36.156.102.124
+  type: trojan
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-2
   network: ws
   port: 8880
-  server: 108.165.216.20
+  server: 192.200.160.20
   servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: false
   tls: false
@@ -194,37 +220,171 @@ proxies:
       Host: cs.laoyoutiao.link
     path: /Telegram@WangCai2/?ed=2560
 - alterId: 0
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 韩国-2
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  tfo: false
+  type: ss
+- alterId: 0
+  name: 新加坡-1
+  password: 3gSOyqaSBRp9pl73F4DRTSDY92TlCZDu4xYFCS6aeczXZSnC6Fncl8jDIZDRA380a3p2y
+  port: 18332
+  server: morlin.protocolbuffer.com
+  skip-cert-verify: true
+  tfo: false
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: ''
+  flow: ''
   name: 日本-4
   network: ws
   port: 8880
-  server: 91.193.58.78
-  servername: cs.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
+  server: 91.193.58.196
   type: vless
-  udp: true
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
       Host: cs.laoyoutiao.link
     path: /Telegram@WangCai2/?ed=2560
 - alterId: 0
-  name: 日本-5
+  cipher: auto
+  name: 中国大陆-6
+  network: tcp
+  port: 47883
+  server: 120.198.44.126
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.44.126
+  ws-path: /
+- alterId: 0
+  name: 美国-3
   network: ws
-  port: 8880
-  server: 91.193.58.196
-  servername: cs.laoyoutiao.link
+  port: 80
+  server: 104.16.178.238
+  servername: little-bird-a235-ppal03.fosawaw121.workers.dev
+  tls: false
+  type: vless
+  uuid: d4eddaf9-a660-4905-b835-cad98677b380
+  ws-opts:
+    headers:
+      Host: little-bird-a235-ppal03.fosawaw121.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  name: 中国大陆-7
+  password: RlzoEILU
+  port: 28296
+  server: 36.151.251.60
+  skip-cert-verify: true
+  sni: cdn.egvra.cn
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国大陆-8
+  port: 17233
+  server: 2a070f4a-suvds0-tdcdb7-1k27l.cm5.p5pv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
+- alterId: 0
+  name: 新加坡-2
+  network: ws
+  port: 443
+  server: 164.52.2.100
+  servername: steep.skyfigure.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+- alterId: 0
+  name: 美国-4
+  network: ws
+  port: 80
+  server: 104.24.37.192
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
   ws-opts:
     headers:
-      Host: cs.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
+      Host: ppal03.dolobe7975.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-3
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
 - alterId: 0
   name: 美国-5
+  network: ws
+  port: 8880
+  server: 209.46.30.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 美国-6
+  password: awsps0501
+  port: 443
+  server: 34.212.26.32
+  tfo: false
+  type: ss
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-7
+  network: ws
+  port: 80
+  server: 104.16.182.65
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f86586c2-3a4c-49c9-83ec-5ae43786d4f7
+  ws-opts:
+    headers:
+      Host: dark-bonus-0f2f-ppal03.yapeyef825.workers.dev
+    path: /Telegram
+- alterId: 0
+  name: 美国-8
+  network: ws
+  port: 8880
+  server: 216.116.134.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-9
   network: ws
   port: 8880
   server: 167.68.42.20
@@ -239,10 +399,10 @@ proxies:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - alterId: 0
-  name: 韩国-1
+  name: 美国-10
   network: ws
-  port: 22105
-  server: 61.75.93.14
+  port: 443
+  server: 63.141.128.102
   servername: ca.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -251,10 +411,41 @@ proxies:
   uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: ca.bgm2024.dpdns.org
+      Host: ca.bgm2024.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 美国-6
+  name: 美国-11
+  network: ws
+  port: 2052
+  server: 172.67.135.195
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
+  ws-opts:
+    headers:
+      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
+  xudp: true
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 443
+  server: 192.0.54.42
+  servername: ca.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: ca.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-13
   network: ws
   port: 80
   server: 141.193.213.230
@@ -268,85 +459,6 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
     path: /Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560
-- alterId: 0
-  name: 中国大陆-2
-  password: RlzoEILU
-  port: 15624
-  server: 36.156.102.124
-  skip-cert-verify: true
-  sni: 36.156.102.124
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-3
-  network: tcp
-  port: 17233
-  server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b806b388-5f97-11ee-8014-f23c913c8d2b
-  ws-headers:
-    Host: us.freeyyds.dpdns.org
-  ws-path: /rongseven?ed=2048
-- alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 33083
-  server: 182.213.59.227
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-4
-  network: tcp
-  port: 17233
-  server: 50ec05bc-sutj40-tdcdb7-1k27l.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
-  ws-headers:
-    Host: us.freeyyds.dpdns.org
-  ws-path: /rongseven?ed=2048
-- alterId: 0
-  name: 美国-7
-  network: ws
-  port: 8880
-  server: 104.129.166.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-3
-  network: ws
-  port: 25079
-  server: 121.154.68.40
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
 - alterId: 0
   name: 韩国-4
   network: ws
@@ -363,189 +475,66 @@ proxies:
       Host: steep.skyfigure.top
     path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - alterId: 0
-  name: 美国-8
+  name: 美国-14
   network: ws
-  port: 443
-  server: 160.79.104.11
-  servername: ca.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 8880
+  server: 108.165.216.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      host: ca.bgm2024.dpdns.org
+      Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - alterId: 0
-  name: 韩国-5
+  name: 美国-15
   network: ws
-  port: 13783
-  server: 106.240.106.61
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  tls: true
+  port: 8880
+  server: 154.83.2.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: steep.skyfigure.top
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: '0'
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-16
+  network: ws
+  port: 8880
+  server: 104.254.140.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- alterId: 0
   cipher: auto
-  name: 中国大陆-5
-  network: tcp
-  port: '50352'
-  server: 120.232.153.123
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 中国大陆-6
-  password: RlzoEILU
-  port: 13542
-  server: 36.151.251.62
-  skip-cert-verify: true
-  sni: cdn.egvra.cn
-  type: trojan
-- alterId: 0
-  name: 美国-9
-  network: ws
-  port: 53485
-  server: 23.94.208.154
-  servername: ca.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ca.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-6
-  network: ws
-  port: 11002
-  server: 119.205.128.200
-  servername: ca.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: ca.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 美国-10
-  password: Wl3SYj2xzd52NLZEBU4wCN
-  port: 5842
-  server: 35.170.192.169
-  type: ss
-- alterId: 0
-  name: 中国大陆-7
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: 120.233.44.201
-  type: trojan
-- alterId: 0
-  name: 中国大陆-8
-  password: 042b75a6-d3e6-11ee-b308-f23c9164ca5d
-  port: 15229
-  server: d855bbcd-sx15s0-t1l0zq-1qof8.cu.plebai.net
-  skip-cert-verify: true
-  sni: d855bbcd-sx15s0-t1l0zq-1qof8.cu.plebai.net
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 中国香港-1
+  name: 美国-17
   network: ws
   port: 80
-  server: a0ae8f27-sv4n40-sw5wi7-ufc0.hk3.p5pv.com
+  server: www.wn03.cc
   skip-cert-verify: true
-  tfo: false
+  tfo: true
   tls: false
   type: vmess
   udp: true
-  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-9
-  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
-  port: 15229
-  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  skip-cert-verify: false
-  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国大陆-10
-  port: 17233
-  server: 2a070f4a-suvds0-tdcdb7-1k27l.cm5.p5pv.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-11
-  password: 7d7c111e-fbc1-11ef-ab5f-f23c913c8d2b
-  port: 15229
-  server: 9bbb6344-swzb40-sxhurg-1th8j.cu.plebai.net
-  skip-cert-verify: false
-  sni: 9bbb6344-swzb40-sxhurg-1th8j.cu.plebai.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 中国香港-2
-  network: ws
-  port: 8080
-  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 0
-  name: 中国大陆-12
-  network: tcp
-  password: 331cae90-f7e9-11ed-b4e2-f23c913c8d2b
-  port: 15229
-  server: 1792b726-sx15s0-t1krpl-lj7z.cu.plebai.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国大陆-13
-  network: ws
-  port: 12896
-  server: gtm1.ktmwan.net
-  servername: gtm1.ktmwan.net
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 33dc19ee-3c3d-42d1-8f06-17f5e560e7d2
-  ws-opts:
-    headers:
-      Host: gtm1.ktmwan.net
-    path: /
+      Host: us.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
 proxy-groups:
 - name: PROXY
   proxies:
@@ -598,42 +587,42 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-PROXY
   proxies: &id002
+  - 中国香港-1
   - 美国-1
-  - 日本-1
-  - 美国-2
-  - 日本-2
-  - 美国-3
   - 中国大陆-1
-  - 美国-4
-  - 日本-3
-  - 日本-4
-  - 日本-5
-  - 美国-5
-  - 韩国-1
-  - 美国-6
   - 中国大陆-2
   - 中国大陆-3
-  - 韩国-2
+  - 日本-1
+  - 日本-2
+  - 韩国-1
   - 中国大陆-4
-  - 美国-7
-  - 韩国-3
-  - 韩国-4
-  - 美国-8
-  - 韩国-5
   - 中国大陆-5
+  - 美国-2
+  - 日本-3
+  - 韩国-2
+  - 新加坡-1
+  - 日本-4
   - 中国大陆-6
-  - 美国-9
-  - 韩国-6
-  - 美国-10
+  - 美国-3
   - 中国大陆-7
   - 中国大陆-8
-  - 中国香港-1
-  - 中国大陆-9
-  - 中国大陆-10
-  - 中国大陆-11
-  - 中国香港-2
-  - 中国大陆-12
-  - 中国大陆-13
+  - 新加坡-2
+  - 美国-4
+  - 韩国-3
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 美国-8
+  - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 韩国-4
+  - 美国-14
+  - 美国-15
+  - 美国-16
+  - 美国-17
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -652,42 +641,42 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-媒体影音
   proxies: &id003
+  - 中国香港-1
   - 美国-1
-  - 日本-1
-  - 美国-2
-  - 日本-2
-  - 美国-3
   - 中国大陆-1
-  - 美国-4
-  - 日本-3
-  - 日本-4
-  - 日本-5
-  - 美国-5
-  - 韩国-1
-  - 美国-6
   - 中国大陆-2
   - 中国大陆-3
-  - 韩国-2
+  - 日本-1
+  - 日本-2
+  - 韩国-1
   - 中国大陆-4
-  - 美国-7
-  - 韩国-3
-  - 韩国-4
-  - 美国-8
-  - 韩国-5
   - 中国大陆-5
+  - 美国-2
+  - 日本-3
+  - 韩国-2
+  - 新加坡-1
+  - 日本-4
   - 中国大陆-6
-  - 美国-9
-  - 韩国-6
-  - 美国-10
+  - 美国-3
   - 中国大陆-7
   - 中国大陆-8
-  - 中国香港-1
-  - 中国大陆-9
-  - 中国大陆-10
-  - 中国大陆-11
-  - 中国香港-2
-  - 中国大陆-12
-  - 中国大陆-13
+  - 新加坡-2
+  - 美国-4
+  - 韩国-3
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 美国-8
+  - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 韩国-4
+  - 美国-14
+  - 美国-15
+  - 美国-16
+  - 美国-17
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -706,42 +695,42 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-漏网之鱼
   proxies: &id004
+  - 中国香港-1
   - 美国-1
-  - 日本-1
-  - 美国-2
-  - 日本-2
-  - 美国-3
   - 中国大陆-1
-  - 美国-4
-  - 日本-3
-  - 日本-4
-  - 日本-5
-  - 美国-5
-  - 韩国-1
-  - 美国-6
   - 中国大陆-2
   - 中国大陆-3
-  - 韩国-2
+  - 日本-1
+  - 日本-2
+  - 韩国-1
   - 中国大陆-4
-  - 美国-7
-  - 韩国-3
-  - 韩国-4
-  - 美国-8
-  - 韩国-5
   - 中国大陆-5
+  - 美国-2
+  - 日本-3
+  - 韩国-2
+  - 新加坡-1
+  - 日本-4
   - 中国大陆-6
-  - 美国-9
-  - 韩国-6
-  - 美国-10
+  - 美国-3
   - 中国大陆-7
   - 中国大陆-8
-  - 中国香港-1
-  - 中国大陆-9
-  - 中国大陆-10
-  - 中国大陆-11
-  - 中国香港-2
-  - 中国大陆-12
-  - 中国大陆-13
+  - 新加坡-2
+  - 美国-4
+  - 韩国-3
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 美国-8
+  - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 韩国-4
+  - 美国-14
+  - 美国-15
+  - 美国-16
+  - 美国-17
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -762,25 +751,31 @@ proxy-groups:
   proxies: &id005
   - 美国-1
   - 日本-1
-  - 美国-2
   - 日本-2
-  - 美国-3
-  - 美国-4
-  - 日本-3
-  - 日本-4
-  - 日本-5
-  - 美国-5
   - 韩国-1
-  - 美国-6
+  - 美国-2
+  - 日本-3
   - 韩国-2
-  - 美国-7
+  - 新加坡-1
+  - 日本-4
+  - 美国-3
+  - 新加坡-2
+  - 美国-4
   - 韩国-3
-  - 韩国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
   - 美国-8
-  - 韩国-5
   - 美国-9
-  - 韩国-6
   - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 韩国-4
+  - 美国-14
+  - 美国-15
+  - 美国-16
+  - 美国-17
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -801,25 +796,31 @@ proxy-groups:
   proxies: &id006
   - 美国-1
   - 日本-1
-  - 美国-2
   - 日本-2
-  - 美国-3
-  - 美国-4
-  - 日本-3
-  - 日本-4
-  - 日本-5
-  - 美国-5
   - 韩国-1
-  - 美国-6
+  - 美国-2
+  - 日本-3
   - 韩国-2
-  - 美国-7
+  - 新加坡-1
+  - 日本-4
+  - 美国-3
+  - 新加坡-2
+  - 美国-4
   - 韩国-3
-  - 韩国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
   - 美国-8
-  - 韩国-5
   - 美国-9
-  - 韩国-6
   - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 韩国-4
+  - 美国-14
+  - 美国-15
+  - 美国-16
+  - 美国-17
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -838,29 +839,34 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-BINANCE
   proxies: &id007
+  - 中国香港-1
   - 美国-1
   - 日本-1
-  - 美国-2
   - 日本-2
-  - 美国-3
-  - 美国-4
-  - 日本-3
-  - 日本-4
-  - 日本-5
-  - 美国-5
   - 韩国-1
-  - 美国-6
+  - 美国-2
+  - 日本-3
   - 韩国-2
-  - 美国-7
+  - 新加坡-1
+  - 日本-4
+  - 美国-3
+  - 新加坡-2
+  - 美国-4
   - 韩国-3
-  - 韩国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
   - 美国-8
-  - 韩国-5
   - 美国-9
-  - 韩国-6
   - 美国-10
-  - 中国香港-1
-  - 中国香港-2
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 韩国-4
+  - 美国-14
+  - 美国-15
+  - 美国-16
+  - 美国-17
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
