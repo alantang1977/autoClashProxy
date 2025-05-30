@@ -180,6 +180,7 @@ class clashConfig:
     def createGroup(self, name, groupType, proxies):
         allType = ['select', 'load-balance', 'url-test', 'fallback']
         assert(groupType in allType)
+        assert(len(proxies) > 0)
 
         group = {
             "name"     : name,
@@ -193,10 +194,10 @@ class clashConfig:
 
         return group
 
-    def createSpecialGroup(self, proxiesNames, groupName, excludeLocation, minProxy = 8):
+    def createSpecialGroup(self, proxiesNames, groupName, excludeLocation):
         group = []
         proxies = [proxy for proxy in proxiesNames if proxy.split('-')[0] not in excludeLocation]
-        if (len(proxies) >= minProxy):
+        if (len(proxies) > 0):
             select = self.createGroup(groupName, "select", [f"延迟最低-{groupName}", f"故障转移-{groupName}", f"负载均衡-{groupName}", f"手动选择-{groupName}", "DIRECT"])
             group.append(self.createGroup(f"延迟最低-{groupName}", "url-test", proxies))
             group.append(self.createGroup(f"故障转移-{groupName}", "fallback", proxies))
@@ -204,7 +205,7 @@ class clashConfig:
             group.append(self.createGroup(f"手动选择-{groupName}", "select", proxies))
             return True, select, group
         else:
-            print("包含节点数量过少，不满足条件")
+            print(f"{groupName}中符合条件的节点数量为零。不符合配置文件生成条件。")
             return False, None, None
 
     def createLocationProxyGroup(self, proxyPool):
@@ -260,18 +261,18 @@ class clashConfig:
         config['proxy-groups'] = []
 
         needGroups =[
-            ["PROXY",   [], 30],
-            ["媒体影音", [], 30],
-            ["漏网之鱼", [], 30],
-            ["TIKTOK",  ["中国香港", "中国大陆"], 12],
-            ["OPENAI",  ["中国香港", "中国大陆"], 12],
-            ["BINANCE", ["中国大陆"], 15],
+            ["PROXY",   []],
+            ["媒体影音", []],
+            ["漏网之鱼", []],
+            ["TIKTOK",  ["中国香港", "中国大陆"]],
+            ["OPENAI",  ["中国香港", "中国大陆"]],
+            ["BINANCE", ["中国大陆"]],
         ]
 
         bCreateSuccess = True
         allGroup = []
         for i in needGroups:
-            bCreateSuccess, select, group = self.createSpecialGroup(proxiesNames, i[0], i[1], i[2])
+            bCreateSuccess, select, group = self.createSpecialGroup(proxiesNames, i[0], i[1])
             if (not bCreateSuccess):
                 return False
             config['proxy-groups'].append(select)
