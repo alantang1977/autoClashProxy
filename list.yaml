@@ -75,26 +75,25 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-1
+  name: 中国香港-1
   network: ws
-  port: 8880
-  server: 104.129.164.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
+  port: 21698
+  server: 156.251.180.181
+  servername: edmq.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
+      host: edmq.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   name: 韩国-1
   network: ws
-  port: 33083
-  server: 182.213.59.227
+  port: 25079
+  server: 121.154.68.40
   servername: steep.skyfigure.top
   skip-cert-verify: true
   tls: true
@@ -104,32 +103,7 @@ proxies:
   ws-opts:
     headers:
       Host: steep.skyfigure.top
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: 0
-  name: 美国-2
-  network: ws
-  port: 8880
-  server: 108.165.216.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-1
-  port: 43292
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
 - alterId: 0
   name: 韩国-2
   network: ws
@@ -146,16 +120,38 @@ proxies:
       Host: steep.skyfigure.top
     path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - alterId: 0
-  name: 中国大陆-2
-  password: RlzoEILU
-  port: 50723
-  server: 36.156.102.123
+  name: 韩国-3
+  network: ws
+  port: 18888
+  server: 183.106.162.127
+  servername: nz.ylks0033.dpdns.org
   skip-cert-verify: true
-  sni: 36.156.102.123
-  type: trojan
+  tls: true
+  type: vless
   udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
 - alterId: 0
-  name: 美国-3
+  client-fingerprint: chrome
+  name: 美国-1
+  network: ws
+  port: 8880
+  server: 104.129.164.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-2
   network: ws
   port: 8880
   server: 154.83.2.20
@@ -170,10 +166,25 @@ proxies:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - alterId: 0
+  name: 美国-3
+  network: ws
+  port: 8880
+  server: 104.254.140.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- alterId: 0
   name: 美国-4
   network: ws
   port: 8880
-  server: 167.68.42.20
+  server: 140.99.233.20
   servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: false
   tls: false
@@ -202,59 +213,31 @@ proxies:
 - alterId: 0
   name: 美国-6
   network: ws
-  port: 8880
-  server: 104.129.167.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: 160.79.104.117
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
   type: vless
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: reedfree8mahsang2.redorg.ir
+      host: nz.ylks0033.dpdns.org
     path: /?ed=2560
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 中国大陆-3
-  port: 49302
-  server: 183.236.51.38
-  skip-cert-verify: false
+  name: 中国大陆-1
+  network: tcp
+  port: 41491
+  server: 120.232.153.41
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 美国-7
-  network: ws
-  port: 8880
-  server: 140.99.233.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
-  ws-opts:
-    headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
+  ws-headers:
+    Host: 120.232.153.41
+  ws-path: /
 - alterId: 0
   name: 日本-1
   network: ws
@@ -271,113 +254,7 @@ proxies:
       Host: cs.laoyoutiao.link
     path: /Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
-  name: 美国-9
-  network: ws
-  port: 80
-  server: 104.24.37.192
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
-  ws-opts:
-    headers:
-      Host: ppal03.dolobe7975.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 中国香港-1
-  network: ws
-  port: 8880
-  server: 156.238.18.252
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  name: 美国-10
-  network: ws
-  port: 8880
-  server: 209.46.30.20
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-11
-  network: ws
-  port: 80
-  server: 104.16.86.2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /?ed=2560
-- alterId: 0
   name: 日本-2
-  network: ws
-  port: 8880
-  server: 91.193.58.65
-  servername: us.laoyoutiao.link
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- alterId: 0
-  name: 日本-3
-  network: ws
-  port: 29192
-  server: 202.60.191.6
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: 0
-  name: 中国大陆-4
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21102
-  server: 120.233.44.201
-  skip-cert-verify: true
-  sni: 120.233.44.201
-  type: trojan
-- alterId: 0
-  name: 美国-12
-  network: ws
-  port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 日本-4
   network: ws
   port: 8880
   server: 91.193.58.64
@@ -392,53 +269,77 @@ proxies:
       Host: us.laoyoutiao.link
     path: /
 - alterId: 0
-  name: 美国-13
+  name: 美国-7
   network: ws
   port: 8880
-  server: 66.235.200.94
+  server: 167.68.42.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
 - alterId: 0
-  name: 韩国-3
+  name: 美国-8
   network: ws
-  port: 25079
-  server: 121.154.68.40
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  tls: true
+  port: 8880
+  server: 104.129.167.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: steep.skyfigure.top
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-5
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-9
   network: ws
-  port: 22642
-  server: tk.hzlt.tkddns.xyz
+  port: 8880
+  server: 108.165.216.20
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: false
-  tls: true
-  type: vmess
+  tls: false
+  type: vless
   udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: zxjp-b.tkong.cc
+      Host: reedfree8mahsang2.redorg.ir
+    path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-4
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
+- alterId: 0
+  name: 日本-3
+  network: ws
+  port: 8880
+  server: 91.193.58.65
+  servername: us.laoyoutiao.link
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
     path: /
 - alterId: 0
-  name: 日本-5
+  name: 中国香港-2
   network: ws
-  port: 443
-  server: 160.22.79.155
+  port: 59882
+  server: 8.218.194.79
   servername: steep.skyfigure.top
   skip-cert-verify: true
   tls: true
@@ -450,81 +351,229 @@ proxies:
       Host: steep.skyfigure.top
     path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - alterId: 0
+  name: 美国-10
+  network: ws
+  port: 443
+  server: 160.79.104.175
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-11
+  network: ws
+  port: 443
+  server: 69.84.182.53
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 443
+  server: 135.84.76.143
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-13
+  network: ws
+  port: 443
+  server: 192.0.54.134
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-14
+  network: ws
+  port: 443
+  server: 160.79.105.223
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-15
+  network: ws
+  port: 443
+  server: 69.84.182.12
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 日本-4
+  network: ws
+  port: 11300
+  server: 58.188.165.215
+  servername: edmq.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edmq.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 美国-16
+  network: ws
+  port: 443
+  server: 192.0.54.24
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-17
+  network: ws
+  port: 443
+  server: 69.84.182.41
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-18
+  network: ws
+  port: 443
+  server: 160.79.104.6
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
   cipher: auto
-  name: 中国大陆-6
-  port: 17233
-  server: 76c85625-sutj40-t1k53r-1jm8i.cm5.p5pv.com
+  name: 中国大陆-2
+  port: 43292
+  server: 120.232.153.40
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: rc4-md5
-  name: 中国大陆-7
-  password: 26d8vZ
-  port: 5185
-  server: twgame02.graniterapids.com
+  name: 美国-19
+  network: ws
+  port: 443
+  server: 160.79.105.219
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 韩国-5
+  network: ws
+  port: 11481
+  server: 119.197.201.29
+  servername: nz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 日本-5
+  network: ws
+  port: 29192
+  server: 202.60.191.6
+  servername: steep.skyfigure.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  ws-opts:
+    headers:
+      Host: steep.skyfigure.top
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-6
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
   type: ss
 - alterId: 0
   cipher: rc4-md5
-  name: 中国大陆-8
+  name: 中国大陆-3
   password: 26d8vZ
   port: 5185
   server: tw02.graniterapids.com
   type: ss
 - alterId: 0
-  cipher: auto
-  name: 中国大陆-9
-  port: 15229
-  server: f4a6bc09-sva740-tbrhck-1thqb.cm.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4f4c6876-fcf6-11ef-94aa-f23c913c8d2b
-- alterId: 0
-  cipher: rc4-md5
-  name: 中国大陆-10
-  password: URqABv
-  port: 17981
-  server: jp46.ctg.wtf
-  type: ss
-- alpn:
-  - h2.http/1.1
-  alterId: 0
-  name: 中国台湾-1
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-11
-  port: 17233
-  server: 0e8845d1-suk9s0-sve5if-z93q.cm5.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 40639730-e027-11ea-87ad-f23c913c8d2b
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-12
-  port: 17233
-  server: fe15251f-sunz40-tbpkla-1otc2.cm5.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0114339c-488d-11ee-8792-f23c9164ca5d
-- alterId: 0
-  name: 美国-14
+  name: 美国-20
   network: ws
   port: 8880
-  server: 104.254.140.20
+  server: 209.46.30.20
   servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: false
   tls: false
@@ -587,42 +636,42 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-PROXY
   proxies: &id002
-  - 美国-1
+  - 中国香港-1
   - 韩国-1
-  - 美国-2
-  - 中国大陆-1
   - 韩国-2
-  - 中国大陆-2
+  - 韩国-3
+  - 美国-1
+  - 美国-2
   - 美国-3
   - 美国-4
   - 美国-5
   - 美国-6
-  - 中国大陆-3
+  - 中国大陆-1
+  - 日本-1
+  - 日本-2
   - 美国-7
   - 美国-8
-  - 日本-1
   - 美国-9
-  - 中国香港-1
+  - 韩国-4
+  - 日本-3
+  - 中国香港-2
   - 美国-10
   - 美国-11
-  - 日本-2
-  - 日本-3
-  - 中国大陆-4
   - 美国-12
-  - 日本-4
   - 美国-13
-  - 韩国-3
-  - 中国大陆-5
-  - 日本-5
-  - 中国大陆-6
-  - 中国大陆-7
-  - 中国大陆-8
-  - 中国大陆-9
-  - 中国大陆-10
-  - 中国台湾-1
-  - 中国大陆-11
-  - 中国大陆-12
   - 美国-14
+  - 美国-15
+  - 日本-4
+  - 美国-16
+  - 美国-17
+  - 美国-18
+  - 中国大陆-2
+  - 美国-19
+  - 韩国-5
+  - 日本-5
+  - 韩国-6
+  - 中国大陆-3
+  - 美国-20
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -641,42 +690,42 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-媒体影音
   proxies: &id003
-  - 美国-1
+  - 中国香港-1
   - 韩国-1
-  - 美国-2
-  - 中国大陆-1
   - 韩国-2
-  - 中国大陆-2
+  - 韩国-3
+  - 美国-1
+  - 美国-2
   - 美国-3
   - 美国-4
   - 美国-5
   - 美国-6
-  - 中国大陆-3
+  - 中国大陆-1
+  - 日本-1
+  - 日本-2
   - 美国-7
   - 美国-8
-  - 日本-1
   - 美国-9
-  - 中国香港-1
+  - 韩国-4
+  - 日本-3
+  - 中国香港-2
   - 美国-10
   - 美国-11
-  - 日本-2
-  - 日本-3
-  - 中国大陆-4
   - 美国-12
-  - 日本-4
   - 美国-13
-  - 韩国-3
-  - 中国大陆-5
-  - 日本-5
-  - 中国大陆-6
-  - 中国大陆-7
-  - 中国大陆-8
-  - 中国大陆-9
-  - 中国大陆-10
-  - 中国台湾-1
-  - 中国大陆-11
-  - 中国大陆-12
   - 美国-14
+  - 美国-15
+  - 日本-4
+  - 美国-16
+  - 美国-17
+  - 美国-18
+  - 中国大陆-2
+  - 美国-19
+  - 韩国-5
+  - 日本-5
+  - 韩国-6
+  - 中国大陆-3
+  - 美国-20
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -695,42 +744,42 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-漏网之鱼
   proxies: &id004
-  - 美国-1
+  - 中国香港-1
   - 韩国-1
-  - 美国-2
-  - 中国大陆-1
   - 韩国-2
-  - 中国大陆-2
+  - 韩国-3
+  - 美国-1
+  - 美国-2
   - 美国-3
   - 美国-4
   - 美国-5
   - 美国-6
-  - 中国大陆-3
+  - 中国大陆-1
+  - 日本-1
+  - 日本-2
   - 美国-7
   - 美国-8
-  - 日本-1
   - 美国-9
-  - 中国香港-1
+  - 韩国-4
+  - 日本-3
+  - 中国香港-2
   - 美国-10
   - 美国-11
-  - 日本-2
-  - 日本-3
-  - 中国大陆-4
   - 美国-12
-  - 日本-4
   - 美国-13
-  - 韩国-3
-  - 中国大陆-5
-  - 日本-5
-  - 中国大陆-6
-  - 中国大陆-7
-  - 中国大陆-8
-  - 中国大陆-9
-  - 中国大陆-10
-  - 中国台湾-1
-  - 中国大陆-11
-  - 中国大陆-12
   - 美国-14
+  - 美国-15
+  - 日本-4
+  - 美国-16
+  - 美国-17
+  - 美国-18
+  - 中国大陆-2
+  - 美国-19
+  - 韩国-5
+  - 日本-5
+  - 韩国-6
+  - 中国大陆-3
+  - 美国-20
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -749,29 +798,37 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-TIKTOK
   proxies: &id005
-  - 美国-1
   - 韩国-1
-  - 美国-2
   - 韩国-2
+  - 韩国-3
+  - 美国-1
+  - 美国-2
   - 美国-3
   - 美国-4
   - 美国-5
   - 美国-6
+  - 日本-1
+  - 日本-2
   - 美国-7
   - 美国-8
-  - 日本-1
   - 美国-9
+  - 韩国-4
+  - 日本-3
   - 美国-10
   - 美国-11
-  - 日本-2
-  - 日本-3
   - 美国-12
-  - 日本-4
   - 美国-13
-  - 韩国-3
-  - 日本-5
-  - 中国台湾-1
   - 美国-14
+  - 美国-15
+  - 日本-4
+  - 美国-16
+  - 美国-17
+  - 美国-18
+  - 美国-19
+  - 韩国-5
+  - 日本-5
+  - 韩国-6
+  - 美国-20
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -790,29 +847,37 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-OPENAI
   proxies: &id006
-  - 美国-1
   - 韩国-1
-  - 美国-2
   - 韩国-2
+  - 韩国-3
+  - 美国-1
+  - 美国-2
   - 美国-3
   - 美国-4
   - 美国-5
   - 美国-6
+  - 日本-1
+  - 日本-2
   - 美国-7
   - 美国-8
-  - 日本-1
   - 美国-9
+  - 韩国-4
+  - 日本-3
   - 美国-10
   - 美国-11
-  - 日本-2
-  - 日本-3
   - 美国-12
-  - 日本-4
   - 美国-13
-  - 韩国-3
-  - 日本-5
-  - 中国台湾-1
   - 美国-14
+  - 美国-15
+  - 日本-4
+  - 美国-16
+  - 美国-17
+  - 美国-18
+  - 美国-19
+  - 韩国-5
+  - 日本-5
+  - 韩国-6
+  - 美国-20
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -831,30 +896,39 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-BINANCE
   proxies: &id007
-  - 美国-1
+  - 中国香港-1
   - 韩国-1
-  - 美国-2
   - 韩国-2
+  - 韩国-3
+  - 美国-1
+  - 美国-2
   - 美国-3
   - 美国-4
   - 美国-5
   - 美国-6
+  - 日本-1
+  - 日本-2
   - 美国-7
   - 美国-8
-  - 日本-1
   - 美国-9
-  - 中国香港-1
+  - 韩国-4
+  - 日本-3
+  - 中国香港-2
   - 美国-10
   - 美国-11
-  - 日本-2
-  - 日本-3
   - 美国-12
-  - 日本-4
   - 美国-13
-  - 韩国-3
-  - 日本-5
-  - 中国台湾-1
   - 美国-14
+  - 美国-15
+  - 日本-4
+  - 美国-16
+  - 美国-17
+  - 美国-18
+  - 美国-19
+  - 韩国-5
+  - 日本-5
+  - 韩国-6
+  - 美国-20
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
