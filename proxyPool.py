@@ -46,10 +46,6 @@ def checkNeedUpdate(profile):
 
     return True
 
-def getPortAndSecret(args, safePath):
-    clashVergeConfig = yaml.load(open(os.path.join(safePath, "config.yaml"), encoding='utf8').read(), Loader=yaml.FullLoader)
-    return clashVergeConfig["external-controller"].split(":")[1], clashVergeConfig["secret"]
-
 args = processArgs()
 
 #clash-verge-rev更新至v2.2.4-alpha后，这两项设置会随机设置。

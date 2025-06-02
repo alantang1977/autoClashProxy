@@ -1,3 +1,4 @@
+import os
 import sys
 import requests
 import websocket
@@ -7,6 +8,10 @@ import yaml
 import random
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+def getPortAndSecret(args, safePath):
+    clashVergeConfig = yaml.load(open(os.path.join(safePath, "config.yaml"), encoding='utf8').read(), Loader=yaml.FullLoader)
+    return clashVergeConfig["external-controller"].split(":")[1], clashVergeConfig["secret"]
 
 class clashAPI:
     def __init__(self, args):
@@ -292,6 +297,9 @@ if __name__ == "__main__":
     from processArgument import *
 
     args = processArgs(False)
+    if (args.safePath):
+        args.uiPort, args.secret = getPortAndSecret(args, args.safePath)
+
     clash = clashAPI(args)
     #clash.groupProxy("手动选择")
     #clash.groupDelay("手动选择")
