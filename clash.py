@@ -153,7 +153,7 @@ class clashConfig:
             sys.exit(1)
 
     def getPorxyCountry(self, proxy):
-        country = "未知地区"
+        country = "查询未返回结果"
         try:
             ip = proxy['server']
             if (not ip.replace(".", "").isdigit()):
