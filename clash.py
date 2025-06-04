@@ -265,10 +265,11 @@ class clashConfig:
 
         config['proxy-groups'] = []
 
+        config['proxy-groups'].append(self.createGroup(f"AUTO", "select", ["DIRECT", "PROXY"]))
+
         needGroups =[
             ["PROXY",   []],
             ["媒体影音", []],
-            ["漏网之鱼", []],
             ["TIKTOK",  ["中国香港", "中国大陆"]],
             ["OPENAI",  ["中国香港", "中国大陆"]],
             ["BINANCE", ["中国大陆"]],
