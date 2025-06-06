@@ -1,0 +1,3 @@
+payload:
+  - 'www.aloxaf.com'
+  - 'lingualeo.com'
