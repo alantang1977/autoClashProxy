@@ -267,17 +267,20 @@ class clashConfig:
 
         config['proxy-groups'].append(self.createGroup(f"AUTO", "select", ["DIRECT", "PROXY"]))
 
-        needGroups =[
-            ["PROXY",   []],
-            ["媒体影音", []],
-            ["TIKTOK",  ["中国香港", "中国大陆"]],
-            ["AI",  ["中国香港", "中国大陆"]],
-            ["BINANCE", ["中国大陆"]],
+        allGroups =[
+            ["全球互联",  []],
+            ["媒体影音",  []],
+            ["GFW",      []],
+            ["PROXY",    []],
+            ["TELEGRAM", []],
+            ["TIKTOK",   ["中国香港", "中国大陆"]],
+            ["AI",       ["中国香港", "中国大陆"]],
+            ["BINANCE",  ["中国大陆"]],
         ]
 
         bCreateSuccess = True
         allGroup = []
-        for i in needGroups:
+        for i in allGroups:
             bCreateSuccess, select, group = self.createSpecialGroup(proxiesNames, i[0], i[1])
             if (not bCreateSuccess):
                 return False
