@@ -265,14 +265,12 @@ class clashConfig:
 
         config['proxy-groups'] = []
 
-        config['proxy-groups'].append(self.createGroup(f"AUTO", "select", ["DIRECT", "PROXY"]))
+        config['proxy-groups'].append(self.createGroup(f"直连规则", "select", ["DIRECT", "全球互联"]))
+        config['proxy-groups'].append(self.createGroup(f"漏网之鱼", "select", ["DIRECT", "全球互联"]))
+        config['proxy-groups'].append(self.createGroup(f"GAME", "select", ["DIRECT", "全球互联"]))
 
         allGroups =[
             ["全球互联",  []],
-            ["媒体影音",  []],
-            ["GFW",      []],
-            ["PROXY",    []],
-            ["TELEGRAM", []],
             ["TIKTOK",   ["中国香港", "中国大陆"]],
             ["AI",       ["中国香港", "中国大陆"]],
             ["BINANCE",  ["中国大陆"]],
