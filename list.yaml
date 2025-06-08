@@ -55,10 +55,27 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
+  cipher: chacha20-ietf
+  name: 中国香港-1
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
+  udp: true
+- alterId: 0
+  name: 中国大陆-1
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.12
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+  udp: true
+- alterId: 0
   name: 美国-1
   network: ws
   port: 443
-  server: 216.24.57.59
+  server: 69.84.182.89
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -73,7 +90,7 @@ proxies:
   name: 美国-2
   network: ws
   port: 443
-  server: 160.79.104.11
+  server: 192.0.54.42
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -88,7 +105,7 @@ proxies:
   name: 美国-3
   network: ws
   port: 443
-  server: 192.0.54.42
+  server: 192.0.63.243
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -103,7 +120,7 @@ proxies:
   name: 美国-4
   network: ws
   port: 443
-  server: 192.0.63.243
+  server: 63.141.128.12
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -118,7 +135,7 @@ proxies:
   name: 美国-5
   network: ws
   port: 443
-  server: 135.84.76.110
+  server: 160.79.105.45
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -133,7 +150,7 @@ proxies:
   name: 美国-6
   network: ws
   port: 443
-  server: 63.141.128.102
+  server: 160.79.104.115
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -146,36 +163,6 @@ proxies:
     path: /?ed=2560
 - alterId: 0
   name: 美国-7
-  network: ws
-  port: 443
-  server: 160.79.104.79
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 443
-  server: 160.79.105.118
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-9
   network: ws
   port: 8880
   server: 69.84.182.29
@@ -190,10 +177,10 @@ proxies:
       Host: hk.laoyoutiao.link
     path: /
 - alterId: 0
-  name: 美国-10
+  name: 美国-8
   network: ws
   port: 443
-  server: 160.79.105.45
+  server: 160.79.104.11
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -205,135 +192,7 @@ proxies:
       host: cx.bgm2024.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  name: 中国大陆-1
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 113.99.140.184
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-- alterId: 0
-  name: 美国-11
-  network: ws
-  port: 443
-  server: 130.250.137.73
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-12
-  network: ws
-  port: 443
-  server: 160.79.105.89
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-13
-  network: ws
-  port: 443
-  server: 63.141.128.12
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-14
-  network: ws
-  port: 443
-  server: 63.141.128.88
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-15
-  network: ws
-  port: 443
-  server: 192.200.160.14
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-16
-  network: ws
-  port: 443
-  server: 63.141.128.140
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-17
-  network: ws
-  port: 443
-  server: 63.141.128.218
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-18
-  network: ws
-  port: 443
-  server: 160.79.105.76
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-19
+  name: 美国-9
   network: ws
   port: 443
   server: 160.79.105.78
@@ -348,10 +207,171 @@ proxies:
       host: cx.bgm2024.dpdns.org
     path: /?ed=2560
 - alterId: 0
+  name: 美国-10
+  network: ws
+  port: 443
+  server: 63.141.128.88
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-11
+  network: ws
+  port: 80
+  server: 151.101.64.155
+  servername: Aparatay.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 15face3d-979a-40e5-fcbe-62b82a46aed4
+  ws-opts:
+    headers:
+      Host: Aparatay.com
+    path: /tel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel?ed=2048
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 443
+  server: 160.79.105.76
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 中国台湾-1
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- alterId: 0
+  name: 美国-13
+  network: ws
+  port: 443
+  server: 192.200.160.14
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-14
+  network: ws
+  port: 443
+  server: 160.79.104.79
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-15
+  network: ws
+  port: 443
+  server: 160.79.104.102
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-16
+  network: ws
+  port: 443
+  server: 130.250.137.73
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-17
+  network: ws
+  port: 443
+  server: 63.141.128.102
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-18
+  password: 25d55ad283aa400af464c76d713c07ad
+  port: 4990
+  server: 103.232.213.170
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: tqqlqvxj@mayorlogistic.com
+- alterId: 0
+  name: 美国-19
+  network: ws
+  port: 443
+  server: 216.24.57.59
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
   name: 美国-20
   network: ws
   port: 443
-  server: 160.79.104.115
+  server: 160.79.105.89
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -366,7 +386,52 @@ proxies:
   name: 美国-21
   network: ws
   port: 443
-  server: 69.84.182.89
+  server: 160.79.105.118
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-22
+  network: ws
+  port: 443
+  server: 63.141.128.3
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-23
+  network: ws
+  port: 443
+  server: 63.141.128.218
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 中国大陆-2
+  network: ws
+  port: 443
+  server: 103.44.255.81
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -383,7 +448,24 @@ proxies:
   name: 日本-1
   network: ws
   port: 8880
-  server: 91.193.58.184
+  server: 91.193.58.102
+  servername: sk.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sk.laoyoutiao.link
+    path: /
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 日本-2
+  network: ws
+  port: 8880
+  server: 91.193.58.4
   servername: us.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -395,49 +477,10 @@ proxies:
       Host: us.laoyoutiao.link
     path: /
 - alterId: 0
-  name: 美国-22
-  network: ws
-  port: 80
-  server: NUFiLTER.fastly80-2.hosting-ip.com
-  servername: arayeshgaham.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 41ec8f30-6cd7-4703-94e1-95913c1626fa
-  ws-opts:
-    headers:
-      Host: arayeshgaham.com
-    path: /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=80
-- alterId: 0
-  name: 中国大陆-2
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.12
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 美国-23
-  network: ws
-  port: 443
-  server: 63.141.128.193
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
-- alterId: 0
   name: 美国-24
   network: ws
   port: 443
-  server: 63.141.128.209
+  server: 135.84.76.110
   servername: cx.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -447,22 +490,7 @@ proxies:
   ws-opts:
     headers:
       host: cx.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
-- alterId: 0
-  name: 美国-25
-  network: ws
-  port: 443
-  server: 63.141.128.163
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
+    path: /?ed=2560
 - alterId: 0
   name: 中国大陆-3
   password: 85f133142f04dbf6547da33895cfabb3
@@ -473,12 +501,27 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
+  name: 美国-25
+  network: ws
+  port: 443
+  server: 63.141.128.140
+  servername: cx.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: cx.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
   cipher: ''
   flow: ''
-  name: 日本-2
+  name: 日本-3
   network: ws
   port: 8880
-  server: 91.193.58.79
+  server: 91.193.58.65
   servername: us.laoyoutiao.link
   skip-cert-verify: true
   tls: false
@@ -490,59 +533,39 @@ proxies:
       Host: us.laoyoutiao.link
     path: /
 - alterId: 0
-  name: 加拿大-1
-  network: tcp
-  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
-  port: 443
-  server: 146.19.106.154
-  skip-cert-verify: true
-  sni: both-cramp-banjo.stark-industries.solutions
-  type: trojan
-- alterId: 0
-  name: 中国大陆-4
+  cipher: ''
+  flow: ''
+  name: 日本-4
   network: ws
-  port: 443
-  server: 103.44.255.81
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-26
-  network: ws
-  port: 443
-  server: 47.76.218.163
-  servername: steep.skyfigure.top
+  port: 8880
+  server: 91.193.58.64
+  servername: us.laoyoutiao.link
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: steep.skyfigure.top
-    path: /Telegram @pgkj666 /?ed=2560
+      Host: us.laoyoutiao.link
+    path: /
 - alterId: 0
-  name: 美国-27
+  cipher: ''
+  flow: ''
+  name: 日本-5
   network: ws
-  port: 443
-  server: 63.141.128.3
-  servername: cx.bgm2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 8880
+  server: 91.193.58.172
+  servername: us.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      host: cx.bgm2024.dpdns.org
-    path: /?ed=2560
+      Host: us.laoyoutiao.link
+    path: /
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -594,6 +617,8 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-全球互联
   proxies: &id001
+  - 中国香港-1
+  - 中国大陆-1
   - 美国-1
   - 美国-2
   - 美国-3
@@ -604,9 +629,10 @@ proxy-groups:
   - 美国-8
   - 美国-9
   - 美国-10
-  - 中国大陆-1
   - 美国-11
   - 美国-12
+  - 中国台湾-1
+  - 韩国-1
   - 美国-13
   - 美国-14
   - 美国-15
@@ -616,18 +642,17 @@ proxy-groups:
   - 美国-19
   - 美国-20
   - 美国-21
-  - 日本-1
   - 美国-22
-  - 中国大陆-2
   - 美国-23
-  - 美国-24
-  - 美国-25
-  - 中国大陆-3
+  - 中国大陆-2
+  - 日本-1
   - 日本-2
-  - 加拿大-1
-  - 中国大陆-4
-  - 美国-26
-  - 美国-27
+  - 美国-24
+  - 中国大陆-3
+  - 美国-25
+  - 日本-3
+  - 日本-4
+  - 日本-5
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -658,6 +683,8 @@ proxy-groups:
   - 美国-10
   - 美国-11
   - 美国-12
+  - 中国台湾-1
+  - 韩国-1
   - 美国-13
   - 美国-14
   - 美国-15
@@ -667,15 +694,15 @@ proxy-groups:
   - 美国-19
   - 美国-20
   - 美国-21
-  - 日本-1
   - 美国-22
   - 美国-23
+  - 日本-1
+  - 日本-2
   - 美国-24
   - 美国-25
-  - 日本-2
-  - 加拿大-1
-  - 美国-26
-  - 美国-27
+  - 日本-3
+  - 日本-4
+  - 日本-5
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -706,6 +733,8 @@ proxy-groups:
   - 美国-10
   - 美国-11
   - 美国-12
+  - 中国台湾-1
+  - 韩国-1
   - 美国-13
   - 美国-14
   - 美国-15
@@ -715,15 +744,15 @@ proxy-groups:
   - 美国-19
   - 美国-20
   - 美国-21
-  - 日本-1
   - 美国-22
   - 美国-23
+  - 日本-1
+  - 日本-2
   - 美国-24
   - 美国-25
-  - 日本-2
-  - 加拿大-1
-  - 美国-26
-  - 美国-27
+  - 日本-3
+  - 日本-4
+  - 日本-5
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -742,6 +771,7 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-BINANCE
   proxies: &id004
+  - 中国香港-1
   - 美国-1
   - 美国-2
   - 美国-3
@@ -754,6 +784,8 @@ proxy-groups:
   - 美国-10
   - 美国-11
   - 美国-12
+  - 中国台湾-1
+  - 韩国-1
   - 美国-13
   - 美国-14
   - 美国-15
@@ -763,15 +795,15 @@ proxy-groups:
   - 美国-19
   - 美国-20
   - 美国-21
-  - 日本-1
   - 美国-22
   - 美国-23
+  - 日本-1
+  - 日本-2
   - 美国-24
   - 美国-25
-  - 日本-2
-  - 加拿大-1
-  - 美国-26
-  - 美国-27
+  - 日本-3
+  - 日本-4
+  - 日本-5
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
