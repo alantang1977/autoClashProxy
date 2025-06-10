@@ -55,198 +55,22 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  client-fingerprint: chrome
   name: 中国大陆-1
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 125.94.40.221
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-- alterId: 0
-  name: 中国大陆-2
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 113.99.140.184
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  tfo: false
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国香港-1
-  network: ws
-  port: 460
-  server: 9b53711d-sxlj40-szcxa1-dmd8.hkt.east.wctype.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 2058bdd6-1505-11f0-a035-f23c95b6f51d
-  ws-opts:
-    headers:
-      Host: a605477178.m.ctrip.com
-    path: /
-- alterId: 0
-  name: 美国-1
   network: ws
   port: 443
-  server: 47.76.218.163
-  servername: steep.skyfigure.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram @pgkj666 /?ed=2560
-- alterId: 0
-  name: 日本-1
-  network: ws
-  port: 443
-  server: 158.101.77.33
-  servername: 0926.qiang2000.link
+  server: 103.44.255.81
+  servername: oz.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: 0926.qiang2000.link
-    path: /telegram@wangcai2/?ed=2560
-- alterId: 0
-  name: 中国大陆-3
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  tfo: false
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 新加坡-1
-  network: ws
-  port: 443
-  server: 164.52.2.99
-  servername: 0926.qiang2000.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  ws-opts:
-    headers:
-      host: 0926.qiang2000.link
-    path: telegram@wangcai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-4
-  port: 46920
-  server: 183.238.90.8
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 日本-2
-  network: ws
-  port: 443
-  server: 160.22.79.155
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      host: steep.skyfigure.top
-    path: /telegramu0001f1e8u0001f1f3@pgkj666security=tls
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+      host: oz.ylks0033.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 日本-3
-  password: awsps0501
-  port: 443
-  server: 18.183.219.5
-  tfo: false
-  type: ss
-- alterId: 0
-  name: 美国-3
-  network: ws
-  port: 80
-  server: 151.101.64.155
-  servername: Aparatay.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 15face3d-979a-40e5-fcbe-62b82a46aed4
-  ws-opts:
-    headers:
-      Host: Aparatay.com
-    path: /tel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel?ed=2048
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
-  type: ss
-  udp: true
-- alterId: 0
-  name: 日本-4
-  network: ws
-  port: 8880
-  server: 91.193.58.245
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- alterId: 0
-  name: 日本-5
-  network: ws
-  port: 8880
-  server: 91.193.58.79
-  servername: us.laoyoutiao.link
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- alterId: 0
-  name: 美国-4
+  name: 美国-1
   network: ws
   port: 2052
   server: 172.67.135.195
@@ -262,203 +86,144 @@ proxies:
     path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
   xudp: true
 - alterId: 0
-  name: 日本-6
-  network: ws
-  port: 8880
-  server: 91.193.58.78
-  servername: cs.laoyoutiao.link
-  skip-cert-verify: false
+  cipher: auto
+  name: 中国大陆-2
+  port: 49174
+  server: 120.234.102.229
+  skip-cert-verify: true
+  tfo: false
   tls: false
-  type: vless
+  type: vmess
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: cs.laoyoutiao.link
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  name: 美国-5
-  network: ws
-  port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
-  ws-opts:
-    headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 日本-7
-  network: ws
-  port: 8880
-  server: 91.193.58.4
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
+  name: 中国大陆-3
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 113.99.140.184
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  tfo: false
+  type: trojan
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
 - alterId: 0
-  name: 日本-8
-  network: ws
-  port: 8880
-  server: 91.193.58.172
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
+  cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
 - alterId: 0
-  name: 日本-9
-  network: ws
-  port: 8880
-  server: 91.193.58.64
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- alterId: 0
-  name: 中国台湾-1
-  password: 5a5f687803374fa5
-  port: 35002
-  server: w52.pacemakere.com
+  name: 中国大陆-4
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 120.233.128.68
+  skip-cert-verify: true
+  sni: 120.233.128.68
   type: trojan
 - alterId: 0
-  name: 日本-10
+  name: 中国大陆-5
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 125.94.40.221
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  tfo: false
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 美国-2
   network: ws
-  port: 8880
-  server: 91.193.58.108
-  servername: us.laoyoutiao.link
+  port: 80
+  server: 151.101.64.155
+  servername: Aparatay.com
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 15face3d-979a-40e5-fcbe-62b82a46aed4
   ws-opts:
     headers:
-      Host: us.laoyoutiao.link
-    path: /
+      Host: Aparatay.com
+    path: /tel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel?ed=2048
 - alterId: 0
-  name: 日本-11
-  network: ws
-  port: 8880
-  server: 91.193.58.184
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
+  name: 日本-1
+  password: 25d55ad283aa400af464c76d713c07ad
+  port: 8300
+  server: 103.45.246.184
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- alterId: 0
-  name: 日本-12
+  username: tqqlqvxj@mayorlogistic.com
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-6
   network: ws
-  port: 8880
-  server: 91.193.58.65
-  servername: us.laoyoutiao.link
+  port: 30807
+  server: v7.heduian.link
   skip-cert-verify: true
   tls: false
-  type: vless
+  type: vmess
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: us.laoyoutiao.link
-    path: /
+      Host: v7.heduian.link
+    path: /oooo
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-6
-  network: ws
-  port: 8080
-  server: 104.18.56.155
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /
+  name: 美国-3
+  password: 25d55ad283aa400af464c76d713c07ad
+  port: 4999
+  server: 146.71.78.145
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: tqqlqvxj@mayorlogistic.com
 - alterId: 0
-  name: 美国-7
-  network: ws
-  port: 8880
-  server: 66.235.200.94
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
-- alterId: 0
-  name: 中国香港-2
+  name: 美国-4
   network: ws
   port: 443
-  server: 103.127.248.51
-  servername: 0926.qiang2000.link
+  server: wilson.ns.cloudflare.com
+  servername: oz.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: 0926.qiang2000.link
-    path: telegram@wangcai2/?ed=2560
+      host: oz.ylks0033.dpdns.org
+    path: /?ed=2560
 - alterId: 0
-  name: 韩国-2
+  name: 中国大陆-7
+  password: bf36227c-0191-11f0-aee1-f23c91cfbbc9
+  port: 15229
+  server: eebe8fb5-sxlj40-tc2sod-1tizo.cu.plebai.net
+  sni: eebe8fb5-sxlj40-tc2sod-1tizo.cu.plebai.net
+  type: trojan
+- alterId: 0
+  name: 中国大陆-8
+  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  port: 15229
+  server: 99dfcb82-sxhts0-t5qufl-8n27.cu.plebai.net
+  sni: 99dfcb82-sxhts0-t5qufl-8n27.cu.plebai.net
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-9
   network: ws
-  port: 36636
-  server: 14.43.209.58
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
+  port: 30825
+  server: v25.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: steep.skyfigure.top
-    path: /telegram🇨🇳 @pgkj666 /?ed=2560security=tls
+      host: v25.heduian.link
+    path: /oooo
 - alterId: 0
-  name: 日本-13
-  network: ws
-  port: 8880
-  server: 91.193.58.63
-  servername: us.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: /
-- alterId: 0
-  name: 中国台湾-2
+  name: 中国台湾-1
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 1443
   server: twmoon1-cdn-route.couldflare-cdn.com
@@ -467,76 +232,15 @@ proxies:
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - alterId: 0
-  name: 美国-8
-  network: ws
-  port: 80
-  server: 104.24.147.64
-  servername: ppal03-ppal03.letiwe3303.workers.dev
-  tls: false
-  type: vless
-  uuid: 03e4d6fe-f461-499f-b9c6-35c60f192e1a
-  ws-opts:
-    headers:
-      Host: ppal03-ppal03.letiwe3303.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 中国香港-3
-  network: ws
-  port: 7656
-  server: 46.149.203.202
-  servername: steep.skyfigure.top
+  name: 美国-5
+  password: 25d55ad283aa400af464c76d713c07ad
+  port: 8330
+  server: 66.55.65.54
   skip-cert-verify: true
   tls: true
-  type: vless
+  type: http
   udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      host: steep.skyfigure.top
-    path: /telegram🇨🇳 @pgkj666 /?ed=2560security=tls
-- alterId: 0
-  name: 美国-9
-  network: ws
-  port: 80
-  server: 141.193.213.190
-  servername: cs.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: cs.laoyoutiao.link
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-5
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-6
-  network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-c.tkong.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-c.tkong.cc
-    path: /
+  username: tqqlqvxj@mayorlogistic.com
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -589,41 +293,22 @@ proxy-groups:
   name: 延迟最低-全球互联
   proxies: &id001
   - 中国大陆-1
-  - 中国大陆-2
-  - 中国香港-1
   - 美国-1
-  - 日本-1
+  - 中国大陆-2
   - 中国大陆-3
-  - 新加坡-1
-  - 中国大陆-4
-  - 日本-2
-  - 美国-2
-  - 日本-3
-  - 美国-3
   - 韩国-1
-  - 日本-4
-  - 日本-5
-  - 美国-4
-  - 日本-6
-  - 美国-5
-  - 日本-7
-  - 日本-8
-  - 日本-9
-  - 中国台湾-1
-  - 日本-10
-  - 日本-11
-  - 日本-12
-  - 美国-6
-  - 美国-7
-  - 中国香港-2
-  - 韩国-2
-  - 日本-13
-  - 中国台湾-2
-  - 美国-8
-  - 中国香港-3
-  - 美国-9
+  - 中国大陆-4
   - 中国大陆-5
+  - 美国-2
+  - 日本-1
   - 中国大陆-6
+  - 美国-3
+  - 美国-4
+  - 中国大陆-7
+  - 中国大陆-8
+  - 中国大陆-9
+  - 中国台湾-1
+  - 美国-5
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -643,32 +328,13 @@ proxy-groups:
   name: 延迟最低-TIKTOK
   proxies: &id002
   - 美国-1
-  - 日本-1
-  - 新加坡-1
-  - 日本-2
-  - 美国-2
-  - 日本-3
-  - 美国-3
   - 韩国-1
-  - 日本-4
-  - 日本-5
+  - 美国-2
+  - 日本-1
+  - 美国-3
   - 美国-4
-  - 日本-6
-  - 美国-5
-  - 日本-7
-  - 日本-8
-  - 日本-9
   - 中国台湾-1
-  - 日本-10
-  - 日本-11
-  - 日本-12
-  - 美国-6
-  - 美国-7
-  - 韩国-2
-  - 日本-13
-  - 中国台湾-2
-  - 美国-8
-  - 美国-9
+  - 美国-5
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -688,32 +354,13 @@ proxy-groups:
   name: 延迟最低-AI
   proxies: &id003
   - 美国-1
-  - 日本-1
-  - 新加坡-1
-  - 日本-2
-  - 美国-2
-  - 日本-3
-  - 美国-3
   - 韩国-1
-  - 日本-4
-  - 日本-5
+  - 美国-2
+  - 日本-1
+  - 美国-3
   - 美国-4
-  - 日本-6
-  - 美国-5
-  - 日本-7
-  - 日本-8
-  - 日本-9
   - 中国台湾-1
-  - 日本-10
-  - 日本-11
-  - 日本-12
-  - 美国-6
-  - 美国-7
-  - 韩国-2
-  - 日本-13
-  - 中国台湾-2
-  - 美国-8
-  - 美国-9
+  - 美国-5
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -732,36 +379,14 @@ proxy-groups:
 - interval: 360
   name: 延迟最低-BINANCE
   proxies: &id004
-  - 中国香港-1
   - 美国-1
-  - 日本-1
-  - 新加坡-1
-  - 日本-2
-  - 美国-2
-  - 日本-3
-  - 美国-3
   - 韩国-1
-  - 日本-4
-  - 日本-5
+  - 美国-2
+  - 日本-1
+  - 美国-3
   - 美国-4
-  - 日本-6
-  - 美国-5
-  - 日本-7
-  - 日本-8
-  - 日本-9
   - 中国台湾-1
-  - 日本-10
-  - 日本-11
-  - 日本-12
-  - 美国-6
-  - 美国-7
-  - 中国香港-2
-  - 韩国-2
-  - 日本-13
-  - 中国台湾-2
-  - 美国-8
-  - 中国香港-3
-  - 美国-9
+  - 美国-5
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
