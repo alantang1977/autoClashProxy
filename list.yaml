@@ -4,14 +4,7 @@ dns:
   default-nameserver:
   - 119.29.29.29
   - 223.5.5.5
-  enable: true
-  enhanced-mode: fake-ip
-  fake-ip-filter:
-  - geosite:gfw
-  fake-ip-filter-mode: whitelist
-  ipv6: false
-  listen: 0.0.0.0:53
-  nameserver:
+  direct-nameserver: &id001
   - 1.2.4.8
   - 101.226.4.6
   - 114.114.114.114
@@ -26,6 +19,23 @@ dns:
   - 211.137.64.163
   - 218.104.111.114
   - 223.5.5.5
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - geosite:gfw
+  fake-ip-filter-mode: whitelist
+  ipv6: false
+  listen: 0.0.0.0:53
+  nameserver:
+  - https://1.1.1.1/dns-query
+  - https://8.8.8.8/dns-query
+  - https://9.9.9.9/dns-query
+  - https://185.222.222.222/dns-query
+  - https://208.67.222.222/dns-query
+  - https://doh.apad.pro/dns-query
+  nameserver-policy:
+    geosite:cn,connectivity-check,private,category-speedtest@cn: *id001
+    rule-set:direct,apple,icloud: *id001
   prefer-h3: false
   proxy-server-nameserver:
   - 119.29.29.29
@@ -55,125 +65,64 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  name: 中国大陆-1
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 日本-1
-  network: ws
-  port: 443
-  server: 160.22.79.120
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  sni: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: 0
-  name: 中国台湾-1
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: edmx.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edmx.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-2
-  network: ws
-  port: '443'
-  server: 43.206.192.211
-  servername: edmx.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edmx.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
   client-fingerprint: chrome
   name: 中国香港-1
   network: ws
   port: '8880'
-  server: 156.238.18.98
+  server: 156.238.18.166
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-2
+  network: ws
+  port: '8880'
+  server: 156.238.18.132
   servername: jp.laoyoutiao.link
+  skip-cert-verify: false
   tls: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
       Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  cipher: dummy
-  name: 中国大陆-2
-  obfs: plain
-  obfs-param: cbcdc8198.microsoft.com
-  password: mantouyun888
-  port: 44003
-  protocol: auth_chain_a
-  protocol-param: 8198:CsJt8BBrKFOSrjv2
-  server: aieq.mt.mt5888.top
-  type: ssr
-  udp: true
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 新加坡-1
+  name: 中国香港-3
   network: ws
-  port: 443
-  server: 168.138.181.208
-  servername: sgp.rtot.me
-  skip-cert-verify: true
-  tls: true
+  port: '8880'
+  server: 156.238.18.219
+  skip-cert-verify: false
   type: vless
-  udp: true
-  uuid: 0783b1b9-5d8b-4d03-adc3-b050acc71a29
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: sgp.rtot.me
-    path: /bing
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
-  cipher: ''
-  flow: ''
-  name: 美国-1
-  network: ws
-  port: 28983
-  server: 146.235.19.79
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  sni: steep.skyfigure.top
-  tls: true
-  type: vless
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 中国香港-4
+  network: http
+  port: 20332
+  server: 43.247.135.2
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+  uuid: 8037ce00-c860-4213-b888-be5c7ed6ea48
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-2
+  name: 中国香港-5
   network: ws
   port: '8880'
   server: 156.238.18.94
@@ -185,163 +134,54 @@ proxies:
       Host: sg.laoyoutiao.link
     path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
-  name: 新加坡-2
-  network: ws
-  port: 443
-  server: 8.220.134.136
-  servername: az.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: az.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-3
-  network: ws
-  port: '8880'
-  server: 156.238.18.217
-  servername: jp.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-4
-  network: ws
-  port: '8880'
-  server: 156.238.18.199
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-5
-  network: ws
-  port: '8880'
-  server: 156.238.18.122
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 日本-3
-  network: ws
-  port: 443
-  server: 160.22.79.221
-  servername: steep.skyfigure.top
-  skip-cert-verify: true
-  sni: steep.skyfigure.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  ws-opts:
-    headers:
-      Host: steep.skyfigure.top
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
-- alterId: 0
-  name: 美国-2
-  network: ws
-  port: 443
-  server: comicabc.com
-  servername: az.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: az.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
   client-fingerprint: chrome
   name: 中国香港-6
   network: ws
   port: '8880'
-  server: 156.238.18.175
+  server: 156.238.18.153
+  servername: jp.laoyoutiao.link
   skip-cert-verify: false
   tls: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-3
-  network: ws
-  port: '8880'
-  server: ::ffff:156.238.18.84
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  name: 中国台湾-2
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-4
-  network: ws
-  port: '8880'
-  server: ::ffff:156.238.18.232
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  name: 韩国-1
-  network: ws
-  port: '12338'
-  server: 211.57.29.229
-  servername: edmx.ambercc.filegear-sg.me
-  tls: true
-  type: vless
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edmx.ambercc.filegear-sg.me
-    path: /?ed=2560
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
 - alterId: 0
   client-fingerprint: chrome
   name: 中国香港-7
   network: ws
   port: '8880'
-  server: 156.238.18.46
+  server: 156.238.18.125
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-8
+  network: ws
+  port: '8880'
+  server: 156.238.18.66
+  servername: sg.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-9
+  network: ws
+  port: '8880'
+  server: 156.238.18.2
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -351,7 +191,7 @@ proxies:
     path: /Telegram🇨🇳@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-8
+  name: 中国香港-10
   network: ws
   port: '8880'
   server: 156.238.18.168
@@ -365,102 +205,121 @@ proxies:
     path: /Telegram@WangCai2/?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-9
-  network: ws
-  port: '8880'
-  server: 156.238.18.142
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-10
-  network: ws
-  port: '8880'
-  server: 156.238.18.100
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-5
-  network: ws
-  port: '8880'
-  server: ::ffff:156.238.18.175
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-6
-  port: 43292
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-7
-  network: ws
-  port: '8880'
-  server: ::ffff:156.238.18.85
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-8
-  network: ws
-  port: '8880'
-  server: ::ffff:156.238.18.172
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-9
-  network: ws
-  port: '8880'
-  server: ::ffff:156.238.18.203
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
   name: 中国香港-11
   network: ws
   port: '8880'
-  server: 156.238.18.172
+  server: 156.238.18.217
+  servername: jp.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-12
+  network: ws
+  port: '8880'
+  server: 156.238.18.88
+  servername: sg.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-13
+  network: ws
+  port: '8880'
+  server: 156.238.18.199
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-14
+  network: ws
+  port: '8880'
+  server: 156.238.18.46
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-15
+  network: ws
+  port: '8880'
+  server: 156.238.18.191
+  servername: sg.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-16
+  network: ws
+  port: '8880'
+  server: 156.238.18.190
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-17
+  network: ws
+  port: '8880'
+  server: 156.238.18.78
+  servername: sg.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-18
+  network: ws
+  port: '8880'
+  server: 156.238.18.89
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-19
+  network: ws
+  port: '8880'
+  server: 156.238.18.167
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -470,11 +329,177 @@ proxies:
     path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国大陆-10
+  name: 中国香港-20
   network: ws
   port: '8880'
-  server: ::ffff:156.238.18.89
+  server: 156.238.18.203
   servername: sg.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-21
+  network: ws
+  port: '8880'
+  server: 156.238.18.255
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-22
+  network: ws
+  port: '8880'
+  server: 156.238.18.54
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-23
+  network: ws
+  port: '8880'
+  server: 156.238.18.226
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-24
+  network: ws
+  port: '8880'
+  server: 156.238.18.169
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-25
+  network: ws
+  port: '8880'
+  server: 156.238.18.86
+  servername: jp.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-26
+  network: ws
+  port: '8880'
+  server: 156.238.18.20
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-27
+  network: ws
+  port: '8880'
+  server: 156.238.18.93
+  servername: jp.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: jp.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-28
+  network: ws
+  port: '8880'
+  server: 156.238.18.176
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-29
+  network: ws
+  port: '8880'
+  server: 156.238.18.58
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  name: 美国-1
+  network: ws
+  port: 16031
+  server: 152.70.101.24
+  servername: edmx.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edmx.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-30
+  network: ws
+  port: '8880'
+  server: 156.238.18.179
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-31
+  network: ws
+  port: '8880'
+  server: 156.238.18.70
+  servername: sg.laoyoutiao.link
+  skip-cert-verify: false
   tls: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -484,12 +509,11 @@ proxies:
     path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国大陆-11
+  name: 中国香港-32
   network: ws
   port: '8880'
-  server: ::ffff:156.238.18.7
-  servername: sg.laoyoutiao.link
-  tls: false
+  server: 156.238.18.148
+  skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
@@ -497,13 +521,27 @@ proxies:
       Host: sg.laoyoutiao.link
     path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
+  name: 日本-1
+  network: ws
+  port: 50003
+  server: 168.138.213.1
+  servername: edmx.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edmx.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
   client-fingerprint: chrome
-  name: 中国大陆-12
+  name: 中国香港-33
   network: ws
   port: '8880'
-  server: ::ffff:156.238.18.58
-  servername: sg.laoyoutiao.link
-  tls: false
+  server: 156.238.18.85
+  skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
@@ -511,47 +549,20 @@ proxies:
       Host: sg.laoyoutiao.link
     path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-13
+  name: 中国香港-34
   network: ws
-  port: '8880'
-  server: ::ffff:156.238.18.160
-  servername: sg.laoyoutiao.link
-  tls: false
+  port: 587
+  server: 8.210.213.159
+  servername: edmx.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-14
-  network: ws
-  port: '8880'
-  server: ::ffff:156.238.18.176
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-15
-  network: ws
-  port: '8880'
-  server: ::ffff:156.238.18.46
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
+      host: edmx.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -602,160 +613,171 @@ proxy-groups:
   type: select
 - interval: 360
   name: 延迟最低-全球互联
-  proxies: &id001
-  - 中国大陆-1
-  - 日本-1
-  - 中国台湾-1
-  - 日本-2
+  proxies: &id002
   - 中国香港-1
-  - 中国大陆-2
-  - 新加坡-1
-  - 美国-1
   - 中国香港-2
-  - 新加坡-2
   - 中国香港-3
   - 中国香港-4
   - 中国香港-5
-  - 日本-3
-  - 美国-2
   - 中国香港-6
-  - 中国大陆-3
-  - 中国台湾-2
-  - 中国大陆-4
-  - 韩国-1
   - 中国香港-7
   - 中国香港-8
   - 中国香港-9
   - 中国香港-10
-  - 中国大陆-5
-  - 中国大陆-6
-  - 中国大陆-7
-  - 中国大陆-8
-  - 中国大陆-9
   - 中国香港-11
-  - 中国大陆-10
-  - 中国大陆-11
-  - 中国大陆-12
-  - 中国大陆-13
-  - 中国大陆-14
-  - 中国大陆-15
+  - 中国香港-12
+  - 中国香港-13
+  - 中国香港-14
+  - 中国香港-15
+  - 中国香港-16
+  - 中国香港-17
+  - 中国香港-18
+  - 中国香港-19
+  - 中国香港-20
+  - 中国香港-21
+  - 中国香港-22
+  - 中国香港-23
+  - 中国香港-24
+  - 中国香港-25
+  - 中国香港-26
+  - 中国香港-27
+  - 中国香港-28
+  - 中国香港-29
+  - 美国-1
+  - 中国香港-30
+  - 中国香港-31
+  - 中国香港-32
+  - 日本-1
+  - 中国香港-33
+  - 中国香港-34
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
   name: 故障转移-全球互联
-  proxies: *id001
+  proxies: *id002
   type: fallback
   url: https://www.youtube.com/generate_204
 - interval: 360
   name: 负载均衡-全球互联
-  proxies: *id001
+  proxies: *id002
   type: load-balance
   url: https://www.youtube.com/generate_204
 - name: 手动选择-全球互联
-  proxies: *id001
+  proxies: *id002
   type: select
 - interval: 360
   name: 延迟最低-TIKTOK
-  proxies: &id002
-  - 日本-1
-  - 中国台湾-1
-  - 日本-2
-  - 新加坡-1
+  proxies: &id003
   - 美国-1
-  - 新加坡-2
-  - 日本-3
-  - 美国-2
-  - 中国台湾-2
-  - 韩国-1
+  - 日本-1
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
   name: 故障转移-TIKTOK
-  proxies: *id002
+  proxies: *id003
   type: fallback
   url: https://www.youtube.com/generate_204
 - interval: 360
   name: 负载均衡-TIKTOK
-  proxies: *id002
+  proxies: *id003
   type: load-balance
   url: https://www.youtube.com/generate_204
 - name: 手动选择-TIKTOK
-  proxies: *id002
+  proxies: *id003
   type: select
 - interval: 360
   name: 延迟最低-AI
-  proxies: &id003
-  - 日本-1
-  - 中国台湾-1
-  - 日本-2
-  - 新加坡-1
+  proxies: &id004
   - 美国-1
-  - 新加坡-2
-  - 日本-3
-  - 美国-2
-  - 中国台湾-2
-  - 韩国-1
+  - 日本-1
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
   name: 故障转移-AI
-  proxies: *id003
+  proxies: *id004
   type: fallback
   url: https://www.youtube.com/generate_204
 - interval: 360
   name: 负载均衡-AI
-  proxies: *id003
+  proxies: *id004
   type: load-balance
   url: https://www.youtube.com/generate_204
 - name: 手动选择-AI
-  proxies: *id003
+  proxies: *id004
   type: select
 - interval: 360
   name: 延迟最低-BINANCE
-  proxies: &id004
-  - 日本-1
-  - 中国台湾-1
-  - 日本-2
+  proxies: &id005
   - 中国香港-1
-  - 新加坡-1
-  - 美国-1
   - 中国香港-2
-  - 新加坡-2
   - 中国香港-3
   - 中国香港-4
   - 中国香港-5
-  - 日本-3
-  - 美国-2
   - 中国香港-6
-  - 中国台湾-2
-  - 韩国-1
   - 中国香港-7
   - 中国香港-8
   - 中国香港-9
   - 中国香港-10
   - 中国香港-11
+  - 中国香港-12
+  - 中国香港-13
+  - 中国香港-14
+  - 中国香港-15
+  - 中国香港-16
+  - 中国香港-17
+  - 中国香港-18
+  - 中国香港-19
+  - 中国香港-20
+  - 中国香港-21
+  - 中国香港-22
+  - 中国香港-23
+  - 中国香港-24
+  - 中国香港-25
+  - 中国香港-26
+  - 中国香港-27
+  - 中国香港-28
+  - 中国香港-29
+  - 美国-1
+  - 中国香港-30
+  - 中国香港-31
+  - 中国香港-32
+  - 日本-1
+  - 中国香港-33
+  - 中国香港-34
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
   name: 故障转移-BINANCE
-  proxies: *id004
+  proxies: *id005
   type: fallback
   url: https://www.youtube.com/generate_204
 - interval: 360
   name: 负载均衡-BINANCE
-  proxies: *id004
+  proxies: *id005
   type: load-balance
   url: https://www.youtube.com/generate_204
 - name: 手动选择-BINANCE
-  proxies: *id004
+  proxies: *id005
   type: select
 rule-providers:
+  apple:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/apple.txt
+    type: http
+    url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt
   direct:
     behavior: domain
     interval: 14400
     path: ./ruleset/direct.txt
     type: http
     url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt
+  icloud:
+    behavior: domain
+    interval: 14400
+    path: ./ruleset/icloud.txt
+    type: http
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt
   proxy:
     behavior: domain
     interval: 14400
@@ -766,7 +788,10 @@ rules:
 - RULE-SET,direct,直连规则
 - GEOSITE,cn,直连规则
 - GEOSITE,connectivity-check,直连规则
-- GEOSITE,apple-cn,直连规则
+- RULE-SET,apple,直连规则
+- RULE-SET,icloud,直连规则
+- GEOSITE,private,直连规则
+- GEOSITE,category-speedtest@cn,直连规则
 - GEOIP,CN,直连规则,no-resolve
 - GEOSITE,category-games-!cn,GAME
 - GEOSITE,binance,BINANCE
