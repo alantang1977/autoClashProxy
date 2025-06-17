@@ -222,7 +222,7 @@ class clashConfig:
 
             proxies = []
             countryProxyCount = dict()
-            allowCountry = ["美国", "韩国", "日本", "新加坡", "加拿大", "中国大陆", "中国香港", "中国台湾", "中国澳门"] #只保留这些地方的节点
+            allowCountry = ["美国", "韩国", "日本", "新加坡", "加拿大", "中国大陆", "中国香港"] #只保留这些地方的节点
             for index, future in enumerate(as_completed(allTask)):
                 proxy, country, message = future.result()
                 print(f"节点{index + 1}: {message}", end=" ")
@@ -271,9 +271,7 @@ class clashConfig:
 
         allGroups =[
             ["全球互联",  []],
-            ["TIKTOK",   ["中国香港", "中国大陆"]],
-            ["AI",       ["中国香港", "中国大陆"]],
-            ["BINANCE",  ["中国大陆"]],
+            ["国外节点",   ["中国香港", "中国大陆"]],
         ]
 
         bCreateSuccess = True
