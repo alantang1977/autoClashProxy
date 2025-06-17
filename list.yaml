@@ -62,8 +62,9 @@ proxies:
   name: 中国香港-1
   network: ws
   port: '8880'
-  server: 156.238.18.94
+  server: 156.238.18.244
   skip-cert-verify: false
+  tls: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
@@ -75,22 +76,20 @@ proxies:
   name: 中国香港-2
   network: ws
   port: '8880'
-  server: 156.238.18.86
-  servername: jp.laoyoutiao.link
+  server: 156.238.18.122
   skip-cert-verify: false
-  tls: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
   name: 中国香港-3
   network: ws
   port: '8880'
-  server: 156.238.18.123
+  server: 156.238.18.125
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -103,20 +102,20 @@ proxies:
   name: 中国香港-4
   network: ws
   port: '8880'
-  server: 156.238.18.190
+  server: 156.238.18.255
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
       Host: sg.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2048
+    path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
   name: 中国香港-5
   network: ws
   port: '8880'
-  server: 156.238.18.11
+  server: 156.238.18.177
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -129,20 +128,21 @@ proxies:
   name: 中国香港-6
   network: ws
   port: '8880'
-  server: 156.238.18.2
+  server: 156.238.18.123
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
       Host: sg.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2048
+    path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
   name: 中国香港-7
   network: ws
   port: '8880'
-  server: 156.238.18.244
+  server: 156.238.18.66
+  servername: sg.laoyoutiao.link
   skip-cert-verify: false
   tls: false
   type: vless
@@ -156,21 +156,7 @@ proxies:
   name: 中国香港-8
   network: ws
   port: '8880'
-  server: 156.238.18.168
-  servername: jp.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-9
-  network: ws
-  port: '8880'
-  server: 156.238.18.20
+  server: 156.238.18.166
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -178,6 +164,19 @@ proxies:
     headers:
       Host: sg.laoyoutiao.link
     path: /Telegram🇨🇳@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-9
+  network: ws
+  port: '8880'
+  server: 156.238.18.11
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
   name: 中国香港-10
@@ -196,9 +195,8 @@ proxies:
   name: 中国香港-11
   network: ws
   port: '8880'
-  server: 156.238.18.119
+  server: 156.238.18.217
   servername: jp.laoyoutiao.link
-  skip-cert-verify: false
   tls: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -211,7 +209,88 @@ proxies:
   name: 中国香港-12
   network: ws
   port: '8880'
-  server: 156.238.18.122
+  server: 156.238.18.58
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  name: 中国大陆-1
+  network: ws
+  port: 443
+  server: 103.44.255.81
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-13
+  network: ws
+  port: '8880'
+  server: 156.238.18.167
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2048
+- alterId: 0
+  name: 美国-1
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.1
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-14
+  network: ws
+  port: '8880'
+  server: 156.238.18.20
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-15
+  network: ws
+  port: '8880'
+  server: 156.238.18.2
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: sg.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2048
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-16
+  network: ws
+  port: '8880'
+  server: 156.238.18.179
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -221,7 +300,7 @@ proxies:
     path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-13
+  name: 中国香港-17
   network: ws
   port: '8880'
   server: 156.238.18.191
@@ -236,62 +315,10 @@ proxies:
     path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-14
-  network: ws
-  port: '8880'
-  server: 156.238.18.179
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-15
-  network: ws
-  port: '8880'
-  server: 156.238.18.255
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-16
-  network: ws
-  port: '8880'
-  server: 156.238.18.177
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-17
-  network: ws
-  port: '8880'
-  server: 156.238.18.176
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
   name: 中国香港-18
   network: ws
   port: '8880'
-  server: 156.238.18.125
+  server: 156.238.18.94
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -304,33 +331,7 @@ proxies:
   name: 中国香港-19
   network: ws
   port: '8880'
-  server: 156.238.18.84
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-20
-  network: ws
-  port: '8880'
-  server: 156.238.18.167
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-21
-  network: ws
-  port: '8880'
-  server: 156.238.18.166
+  server: 156.238.18.190
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -340,40 +341,10 @@ proxies:
     path: /Telegram🇨🇳@WangCai2/?ed=2048
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-22
+  name: 中国香港-20
   network: ws
   port: '8880'
-  server: 156.238.18.203
-  servername: sg.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-23
-  network: ws
-  port: '8880'
-  server: 156.238.18.226
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-24
-  network: ws
-  port: '8880'
-  server: 156.238.18.58
+  server: 156.238.18.148
   skip-cert-verify: false
   type: vless
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
@@ -382,178 +353,388 @@ proxies:
       Host: sg.laoyoutiao.link
     path: /Telegram@WangCai2/?ed=2048
 - alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-25
+  name: 美国-2
   network: ws
-  port: '8880'
-  server: 156.238.18.132
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-26
-  network: ws
-  port: '8880'
-  server: 156.238.18.78
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-27
-  network: ws
-  port: '8880'
-  server: 156.238.18.66
-  servername: sg.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-28
-  network: ws
-  port: '8880'
-  server: 156.238.18.153
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-29
-  network: ws
-  port: '8880'
-  server: 156.238.18.89
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-30
-  network: ws
-  port: '8880'
-  server: 156.238.18.212
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-31
-  network: ws
-  port: '8880'
-  server: 156.238.18.145
-  servername: jp.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-32
-  network: ws
-  port: '8880'
-  server: 156.238.18.93
-  servername: jp.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-33
-  network: ws
-  port: '8880'
-  server: 156.238.18.7
-  servername: sg.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-34
-  network: ws
-  port: '8880'
-  server: 156.238.18.136
-  skip-cert-verify: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2048
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-35
-  network: ws
-  port: '8880'
-  server: 156.238.18.217
-  servername: jp.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国大陆-1
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: '39001'
-  server: 116.31.75.150
-  skip-cert-verify: true
+  password: ttfang
+  port: 443
+  server: 198.41.221.11
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
   type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-3
+  network: ws
+  port: 443
+  server: bestcf.030101.xyz
+  servername: edmi.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edmi.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 美国-4
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.7
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-5
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.4
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-6
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.10
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-7
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.14
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-8
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.12
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-9
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.8
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-10
+  network: ws
+  port: 443
+  server: 162.159.152.11
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-11
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.0
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-12
+  network: ws
+  port: 443
+  server: 162.159.153.194
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-13
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.16
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-14
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.9
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-15
+  network: ws
+  port: 443
+  server: 162.159.152.81
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-16
+  network: ws
+  port: 443
+  server: 162.159.153.212
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-17
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.2
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-18
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.6
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-19
+  network: ws
+  port: 443
+  server: 162.159.153.239
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-20
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.3
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-21
+  network: ws
+  port: 443
+  server: 162.159.153.144
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-22
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.5
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-23
+  network: ws
+  port: 443
+  server: 162.159.153.170
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-24
+  network: ws
+  port: 443
+  server: 162.159.152.155
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-25
+  network: ws
+  password: ttfang
+  port: 443
+  server: 198.41.221.13
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
+- alterId: 0
+  name: 美国-26
+  network: ws
+  port: 443
+  server: 162.159.153.184
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 新加坡-1
+  network: ws
+  port: 443
+  server: 8.220.134.136
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   client-fingerprint: firefox
-  name: 中国香港-36
+  name: 日本-1
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
     short-id: e8ab71d0
-  server: 103.12.77.78
+  server: 160.250.65.132
   servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
   skip-cert-verify: false
   tls: true
@@ -561,119 +742,95 @@ proxies:
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-1
+  name: 美国-27
   network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
+  password: ttfang
+  port: 443
+  server: 198.41.221.15
+  servername: ttfang.fange.me
+  skip-cert-verify: null
+  sni: ttfang.fange.me
+  type: trojan
   ws-opts:
     headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
+      Host: ttfang.fange.me
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560
 - alterId: 0
-  name: 中国大陆-2
-  network: ws
-  port: '443'
-  server: 103.44.255.81
-  servername: rz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: rz.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 新加坡-1
+  name: 日本-2
   network: ws
   port: 443
-  server: 168.138.181.208
-  servername: sgp.rtot.me
+  server: 168.138.46.67
+  servername: ls.bgm2024.dpdns.org
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 0783b1b9-5d8b-4d03-adc3-b050acc71a29
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      Host: sgp.rtot.me
-    path: /bing
-- alterId: '0'
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国大陆-3
-  network: tcp
-  port: '60066'
-  server: hk0067.alibabaokz.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 38571ca6-6692-4559-b901-0bc5826b7661
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
 - alterId: 0
-  name: 中国大陆-4
-  password: FpQhGpIr
-  port: 38632
-  server: 36.151.251.62
+  name: 日本-3
+  network: ws
+  password: ttfang
+  port: 443
+  server: 160.22.79.191
   skip-cert-verify: true
-  sni: 36.151.251.62
+  sni: ttfang.fange.me
+  tfo: false
   type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- alterId: 0
+  name: 美国-28
+  network: ws
+  port: 443
+  server: 104.18.94.238
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-29
+  network: ws
+  port: 443
+  server: 155.248.176.145
+  servername: edmi.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edmi.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-2
+  name: 美国-30
   network: ws
-  port: 8880
-  server: 130.250.137.213
-  servername: jp.laoyoutiao.link
+  port: '80'
+  server: 154.83.2.235
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   ws-opts:
     headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
+      Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz
+    path: /Telegram:@ShadowProxy66/?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-3
-  network: ws
-  port: 8880
-  server: 69.84.182.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-4
-  network: ws
-  port: 8880
-  server: 198.62.62.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-5
+  name: 美国-31
   network: ws
   port: 80
   server: 172.67.168.60
@@ -686,184 +843,120 @@ proxies:
       Host: workerr.johnstoner.workers.dev
     path: /?ed=2048
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-6
+  client-fingerprint: firefox
+  name: 中国香港-21
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 103.12.77.78
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- alterId: 0
+  cipher: auto
+  name: 美国-32
   network: ws
-  port: 8880
-  server: 159.112.235.213
-  servername: jp.laoyoutiao.link
+  port: 8443
+  server: 104.18.42.62
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 48469ac3-9fe7-4fb3-9320-6c8b0494c4f7
+  ws-opts:
+    headers:
+      Host: hk2.huaweiwuu5.xyz
+    path: /
+- alterId: 0
+  name: 美国-33
+  network: ws
+  port: 443
+  server: 104.19.144.212
+  servername: ls.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      host: ls.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 日本-4
+  network: ws
+  port: 443
+  server: 141.147.181.23
+  servername: edmi.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edmi.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 美国-34
+  network: ws
+  port: 80
+  server: 104.16.0.113
+  servername: barayeiran.nastaranh.dpdns.org
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0
   ws-opts:
     headers:
-      Host: jp.laoyoutiao.link
+      Host: barayeiran.nastaranh.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-7
+  cipher: auto
+  name: 中国大陆-2
+  network: tcp
+  port: 25024
+  server: onecat-us.03ezhg0qsa.download
+  type: vmess
+  uuid: 1489b070-b44c-3d27-8282-3ee2f778c965
+- alterId: 0
+  name: 韩国-1
   network: ws
-  port: 8880
-  server: 141.193.27.213
-  servername: jp.laoyoutiao.link
+  port: 10042
+  server: 211.38.90.108
+  servername: edmi.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edmi.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-35
+  network: ws
+  port: '80'
+  server: 104.24.56.187
   skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
   ws-opts:
     headers:
-      Host: jp.laoyoutiao.link
+      Host: a1.ghormehsabzi.dpdns.org
     path: /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-8
-  network: ws
-  port: 8880
-  server: 167.68.11.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 8880
-  server: 167.68.42.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-10
-  network: ws
-  port: 8880
-  server: 63.141.128.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-11
-  network: ws
-  port: 8880
-  server: 192.200.160.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-12
-  network: ws
-  port: 8880
-  server: 184.174.80.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-13
-  network: ws
-  port: 8880
-  server: 199.34.229.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-37
-  network: ws
-  port: 8880
-  server: 154.197.88.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-14
-  network: ws
-  port: 8880
-  server: 216.24.57.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-38
-  network: ws
-  port: 8880
-  server: 156.238.19.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-15
+  name: 美国-36
   network: ws
   port: '8880'
   server: 154.85.99.20
@@ -876,114 +969,11 @@ proxies:
       Host: ip.langmanshanxi.top
     path: /Telegram@WangCai2/?ed=2560
 - alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-39
-  network: ws
-  port: 8880
-  server: 156.243.246.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-16
-  network: ws
-  port: 8880
-  server: 160.79.104.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-1
-  network: ws
-  port: 8880
-  server: 103.245.229.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-40
-  network: ws
-  port: 8880
-  server: 154.197.108.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
   client-fingerprint: chrome
   name: 加拿大-1
   network: ws
   port: 8880
-  server: 74.49.214.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-17
-  network: ws
-  port: 8880
-  server: 168.100.6.213
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: jp.laoyoutiao.link
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-18
-  network: ws
-  port: 8880
-  server: 104.129.167.213
+  server: 74.49.215.213
   servername: jp.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -1057,7 +1047,9 @@ proxy-groups:
   - 中国香港-10
   - 中国香港-11
   - 中国香港-12
+  - 中国大陆-1
   - 中国香港-13
+  - 美国-1
   - 中国香港-14
   - 中国香港-15
   - 中国香港-16
@@ -1065,28 +1057,6 @@ proxy-groups:
   - 中国香港-18
   - 中国香港-19
   - 中国香港-20
-  - 中国香港-21
-  - 中国香港-22
-  - 中国香港-23
-  - 中国香港-24
-  - 中国香港-25
-  - 中国香港-26
-  - 中国香港-27
-  - 中国香港-28
-  - 中国香港-29
-  - 中国香港-30
-  - 中国香港-31
-  - 中国香港-32
-  - 中国香港-33
-  - 中国香港-34
-  - 中国香港-35
-  - 中国大陆-1
-  - 中国香港-36
-  - 美国-1
-  - 中国大陆-2
-  - 新加坡-1
-  - 中国大陆-3
-  - 中国大陆-4
   - 美国-2
   - 美国-3
   - 美国-4
@@ -1099,18 +1069,38 @@ proxy-groups:
   - 美国-11
   - 美国-12
   - 美国-13
-  - 中国香港-37
   - 美国-14
-  - 中国香港-38
   - 美国-15
-  - 韩国-1
-  - 中国香港-39
   - 美国-16
-  - 日本-1
-  - 中国香港-40
-  - 加拿大-1
   - 美国-17
   - 美国-18
+  - 美国-19
+  - 美国-20
+  - 美国-21
+  - 美国-22
+  - 美国-23
+  - 美国-24
+  - 美国-25
+  - 美国-26
+  - 新加坡-1
+  - 日本-1
+  - 美国-27
+  - 日本-2
+  - 日本-3
+  - 美国-28
+  - 美国-29
+  - 美国-30
+  - 美国-31
+  - 中国香港-21
+  - 美国-32
+  - 美国-33
+  - 日本-4
+  - 美国-34
+  - 中国大陆-2
+  - 韩国-1
+  - 美国-35
+  - 美国-36
+  - 加拿大-1
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -1130,7 +1120,6 @@ proxy-groups:
   name: 延迟最低-TIKTOK
   proxies: &id004
   - 美国-1
-  - 新加坡-1
   - 美国-2
   - 美国-3
   - 美国-4
@@ -1145,12 +1134,34 @@ proxy-groups:
   - 美国-13
   - 美国-14
   - 美国-15
-  - 韩国-1
   - 美国-16
-  - 日本-1
-  - 加拿大-1
   - 美国-17
   - 美国-18
+  - 美国-19
+  - 美国-20
+  - 美国-21
+  - 美国-22
+  - 美国-23
+  - 美国-24
+  - 美国-25
+  - 美国-26
+  - 新加坡-1
+  - 日本-1
+  - 美国-27
+  - 日本-2
+  - 日本-3
+  - 美国-28
+  - 美国-29
+  - 美国-30
+  - 美国-31
+  - 美国-32
+  - 美国-33
+  - 日本-4
+  - 美国-34
+  - 韩国-1
+  - 美国-35
+  - 美国-36
+  - 加拿大-1
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -1170,7 +1181,6 @@ proxy-groups:
   name: 延迟最低-AI
   proxies: &id005
   - 美国-1
-  - 新加坡-1
   - 美国-2
   - 美国-3
   - 美国-4
@@ -1185,12 +1195,34 @@ proxy-groups:
   - 美国-13
   - 美国-14
   - 美国-15
-  - 韩国-1
   - 美国-16
-  - 日本-1
-  - 加拿大-1
   - 美国-17
   - 美国-18
+  - 美国-19
+  - 美国-20
+  - 美国-21
+  - 美国-22
+  - 美国-23
+  - 美国-24
+  - 美国-25
+  - 美国-26
+  - 新加坡-1
+  - 日本-1
+  - 美国-27
+  - 日本-2
+  - 日本-3
+  - 美国-28
+  - 美国-29
+  - 美国-30
+  - 美国-31
+  - 美国-32
+  - 美国-33
+  - 日本-4
+  - 美国-34
+  - 韩国-1
+  - 美国-35
+  - 美国-36
+  - 加拿大-1
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -1222,6 +1254,7 @@ proxy-groups:
   - 中国香港-11
   - 中国香港-12
   - 中国香港-13
+  - 美国-1
   - 中国香港-14
   - 中国香港-15
   - 中国香港-16
@@ -1229,24 +1262,6 @@ proxy-groups:
   - 中国香港-18
   - 中国香港-19
   - 中国香港-20
-  - 中国香港-21
-  - 中国香港-22
-  - 中国香港-23
-  - 中国香港-24
-  - 中国香港-25
-  - 中国香港-26
-  - 中国香港-27
-  - 中国香港-28
-  - 中国香港-29
-  - 中国香港-30
-  - 中国香港-31
-  - 中国香港-32
-  - 中国香港-33
-  - 中国香港-34
-  - 中国香港-35
-  - 中国香港-36
-  - 美国-1
-  - 新加坡-1
   - 美国-2
   - 美国-3
   - 美国-4
@@ -1259,18 +1274,37 @@ proxy-groups:
   - 美国-11
   - 美国-12
   - 美国-13
-  - 中国香港-37
   - 美国-14
-  - 中国香港-38
   - 美国-15
-  - 韩国-1
-  - 中国香港-39
   - 美国-16
-  - 日本-1
-  - 中国香港-40
-  - 加拿大-1
   - 美国-17
   - 美国-18
+  - 美国-19
+  - 美国-20
+  - 美国-21
+  - 美国-22
+  - 美国-23
+  - 美国-24
+  - 美国-25
+  - 美国-26
+  - 新加坡-1
+  - 日本-1
+  - 美国-27
+  - 日本-2
+  - 日本-3
+  - 美国-28
+  - 美国-29
+  - 美国-30
+  - 美国-31
+  - 中国香港-21
+  - 美国-32
+  - 美国-33
+  - 日本-4
+  - 美国-34
+  - 韩国-1
+  - 美国-35
+  - 美国-36
+  - 加拿大-1
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
