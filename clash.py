@@ -217,6 +217,7 @@ class clashConfig:
         print("按照ip地址查询节点所属地区")
         print("利用查询获得的地址给节点重新命名，同时删除不符合要求的节点")
 
+        allCountryCount = dict()
         with ThreadPoolExecutor(max_workers=20) as threadPool:
             allTask = [threadPool.submit(self.getPorxyCountry, proxy) for proxy in proxyPool]
 
@@ -226,6 +227,7 @@ class clashConfig:
             for index, future in enumerate(as_completed(allTask)):
                 proxy, country, message = future.result()
                 print(f"节点{index + 1}: {message}", end=" ")
+                allCountryCount[country] = 1 if country not in allCountryCount.keys() else allCountryCount[country] + 1
                 if (country in allowCountry):
                     print("归属地符合要求")
                     countryProxyCount[country] = 1 if country not in countryProxyCount.keys() else countryProxyCount[country] + 1
@@ -234,6 +236,10 @@ class clashConfig:
                 else:
                     print("归属地不符合要求，删除")
 
+        print("节点归属地统计：")
+        allCountryCount = sorted(allCountryCount.items(), key=lambda x: x[1])
+        for country in allCountryCount:
+            print('{}: {}'.format(country[0], country[1]))
         print(f"after createLocationProxyGroup, 剩余节点数量{len(proxies)}")
         return proxies
 
