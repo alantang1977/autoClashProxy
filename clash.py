@@ -182,16 +182,21 @@ class clashConfig:
         message = f"{proxy['server']} {country}"
         return (proxy, country, message)
 
-    def createGroup(self, name, groupType, proxies):
+    def createGroup(self, name, groupType, proxies, bIsProviderGroup = False):
         allType = ['select', 'load-balance', 'url-test', 'fallback']
+
         assert(groupType in allType)
         assert(len(proxies) > 0)
 
         group = {
             "name"     : name,
             "type"     : groupType,
-            "proxies"  : proxies,
         }
+
+        if (bIsProviderGroup):
+            group['use'] = proxies
+        else:
+            group['proxies'] = proxies
 
         if(groupType != "select"):
             group['url'] = self.clash.delayUrl
@@ -203,11 +208,11 @@ class clashConfig:
         group = []
         proxies = [proxy for proxy in proxiesNames if proxy.split('-')[0] not in excludeLocation]
         if (len(proxies) > 0):
-            select = self.createGroup(groupName, "select", [f"延迟最低-{groupName}", f"故障转移-{groupName}", f"负载均衡-{groupName}", f"手动选择-{groupName}", "DIRECT"])
-            group.append(self.createGroup(f"延迟最低-{groupName}", "url-test", proxies))
-            group.append(self.createGroup(f"故障转移-{groupName}", "fallback", proxies))
-            group.append(self.createGroup(f"负载均衡-{groupName}", "load-balance", proxies))
-            group.append(self.createGroup(f"手动选择-{groupName}", "select", proxies))
+            select = self.createGroup(groupName, "select", [f"{groupName}-延迟最低", f"{groupName}-故障转移", f"{groupName}-负载均衡", f"{groupName}-手动选择", "DIRECT"])
+            group.append(self.createGroup(f"{groupName}-延迟最低", "url-test", proxies))
+            group.append(self.createGroup(f"{groupName}-故障转移", "fallback", proxies))
+            group.append(self.createGroup(f"{groupName}-负载均衡", "load-balance", proxies))
+            group.append(self.createGroup(f"{groupName}-手动选择", "select", proxies))
             return True, select, group
         else:
             print(f"{groupName}中符合条件的节点数量为零。不符合配置文件生成条件。")
@@ -271,13 +276,30 @@ class clashConfig:
 
         config['proxy-groups'] = []
 
-        config['proxy-groups'].append(self.createGroup(f"直连规则", "select", ["DIRECT", "全球互联"]))
-        config['proxy-groups'].append(self.createGroup(f"漏网之鱼", "select", ["DIRECT", "全球互联"]))
-        config['proxy-groups'].append(self.createGroup(f"GAME", "select", ["DIRECT", "全球互联"]))
+        #导入自己购买的机场
+        privateGroup = []
+        privateGroupName = []
+        if (len(config['proxy-providers'].keys()) == 1):
+            privateGroup.append(self.createGroup(f"私有节点", "select", list(config['proxy-providers'].keys()), True))
+            privateGroupName.append("私有节点")
+        else:
+            for group in config['proxy-providers'].keys():
+                privateGroupName.append(f"私有节点_{group}")
+                privateGroup.append(self.createGroup(f"私有节点_{group}", "select", [group], True))
+
+        config['proxy-groups'].append(self.createGroup(f"直连规则", "select", ["DIRECT", "全球互联", "私有节点"]))
+        config['proxy-groups'].append(self.createGroup(f"漏网之鱼", "select", ["DIRECT", "全球互联", "私有节点"]))
+        config['proxy-groups'].append(self.createGroup(f"全球互联", "select", ["共享节点", "私有节点", "DIRECT"]))
+        config['proxy-groups'].append(self.createGroup(f"特殊应用", "select", ["全球互联", "私有节点", "国外节点", "DIRECT"]))
+        config['proxy-groups'].append(self.createGroup(f"GAME",    "select", ["DIRECT", "全球互联", "私有节点"]))
+        if (len(privateGroup) > 1):
+            config['proxy-groups'].append(self.createGroup(f"私有节点", "select", privateGroupName))
+        config['proxy-groups'] += privateGroup
 
         allGroups =[
-            ["全球互联",  []],
-            ["国外节点",   ["中国香港", "中国大陆"]],
+            #groupName,  排除指定归属地的节点
+            ["共享节点",  []],
+            ["国外节点",  ["中国香港", "中国大陆"]],
         ]
 
         bCreateSuccess = True
