@@ -287,14 +287,17 @@ class clashConfig:
                 privateGroupName.append(f"私有节点_{group}")
                 privateGroup.append(self.createGroup(f"私有节点_{group}", "select", [group], True))
 
-        config['proxy-groups'].append(self.createGroup(f"直连规则", "select", ["DIRECT", "全球互联", "私有节点"]))
-        config['proxy-groups'].append(self.createGroup(f"漏网之鱼", "select", ["DIRECT", "全球互联", "私有节点"]))
+        config['proxy-groups'].append(self.createGroup(f"直连规则", "select", ["DIRECT", "全球互联"]))
+        config['proxy-groups'].append(self.createGroup(f"漏网之鱼", "select", ["DIRECT", "全球互联"]))
         config['proxy-groups'].append(self.createGroup(f"全球互联", "select", ["共享节点", "私有节点", "DIRECT"]))
-        config['proxy-groups'].append(self.createGroup(f"特殊应用", "select", ["全球互联", "私有节点", "国外节点", "DIRECT"]))
-        config['proxy-groups'].append(self.createGroup(f"GAME",    "select", ["DIRECT", "全球互联", "私有节点"]))
+
         if (len(privateGroup) > 1):
             config['proxy-groups'].append(self.createGroup(f"私有节点", "select", privateGroupName))
         config['proxy-groups'] += privateGroup
+
+        spicailGroup = ["TWITTER", "YOUTUBE", "TIKTOK", "FORUMS", "GITHUB", "TELEGRAM", "GFW", "DNS", "AI", "GAME"]
+        for name in spicailGroup:
+            config['proxy-groups'].append(self.createGroup(name, "select", ["共享节点", "私有节点", "国外节点", "DIRECT"]))
 
         allGroups =[
             #groupName,  排除指定归属地的节点
