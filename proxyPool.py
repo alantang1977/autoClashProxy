@@ -30,7 +30,7 @@ def checkNeedUpdate(profile):
     print("开始检测是否需要更新节点：")
     clash = profile.clash
 
-    checkGroupName = "手动选择-全球互联"
+    checkGroupName = "共享节点-手动选择"
     allProxy = clash.groupProxy(checkGroupName)
 
     if ("all" in allProxy):
