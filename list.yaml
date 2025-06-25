@@ -58,21 +58,23 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
+  cipher: ''
   client-fingerprint: chrome
-  name: 日本-1
+  flow: ''
+  name: 美国-1
   network: ws
   port: 8880
-  server: 103.245.229.254
+  server: 172.64.147.6
   servername: Telegram-channel-WangCai2
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vless
-  udp: true
-  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: yg.bantony199.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      Host: tw.laoyoutiao.link
+    path: Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   name: 中国大陆-1
   password: 85f133142f04dbf6547da33895cfabb3
@@ -81,25 +83,49 @@ proxies:
   skip-cert-verify: true
   sni: 120.233.128.68
   type: trojan
+- alterId: 0
+  cipher: ''
+  client-fingerprint: chrome
+  flow: ''
+  name: 美国-2
+  network: ws
+  port: 8880
+  server: 172.64.147.0
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: tw.laoyoutiao.link
+    path: Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 64
   cipher: auto
   name: 中国大陆-2
-  port: 31209
-  server: 120.232.153.40
-  skip-cert-verify: true
-  tfo: false
+  port: 40175
+  server: 120.198.71.214
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: 2022-blake3-aes-128-gcm
-  client-fingerprint: chrome
-  name: 中国大陆-3
-  password: di3YDVupSCsXSe2NbYlw5A==
-  port: '58436'
-  server: 183.240.180.48
-  type: ss
+  client-fingerprint: random
+  name: 美国-3
+  network: ws
+  port: '80'
+  server: 172.67.67.92
+  servername: delam.ahaysiahzangi.dpdns.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
+  ws-opts:
+    headers:
+      Host: delam.ahaysiahzangi.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   client-fingerprint: firefox
   name: 中国香港-1
@@ -114,34 +140,128 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-4
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
 - alterId: 0
+  cipher: ''
   client-fingerprint: chrome
-  name: 日本-2
+  flow: ''
+  name: 美国-4
   network: ws
   port: 8880
-  server: 103.245.228.254
+  server: 172.64.147.1
   servername: Telegram-channel-WangCai2
   skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: tw.laoyoutiao.link
+    path: Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: ''
+  client-fingerprint: chrome
+  flow: ''
+  name: 美国-5
+  network: ws
+  port: 8880
+  server: 172.64.147.5
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: tw.laoyoutiao.link
+    path: Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  name: 美国-6
+  network: ws
+  port: 80
+  server: 172.67.11.138
+  servername: kssepa.sabzipolobamahi.dpdns.org
+  skip-cert-verify: true
   tls: false
   type: vless
   udp: true
-  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+  uuid: b55ec078-3b17-4ed1-a697-71f464cdcaaa
   ws-opts:
     headers:
-      Host: yg.bantony199.top
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+      Host: kssepa.sabzipolobamahi.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 美国-7
+  network: ws
+  port: 80
+  server: 104.16.100.188
+  servername: entezar.loseyourself.dpdns.org
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
+  ws-opts:
+    headers:
+      Host: entezar.loseyourself.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国大陆-3
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: '39001'
+  server: 113.99.140.184
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-8
+  network: ws
+  port: '80'
+  server: 172.67.136.116
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
+  ws-opts:
+    headers:
+      Host: entezar.loseyourself.dpdns.org
+    path: /?ed=2570
+- alterId: 0
+  client-fingerprint: random
+  name: 美国-9
+  network: ws
+  port: '80'
+  server: 172.67.9.145
+  servername: kssepa.sabzipolobamahi.dpdns.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: b55ec078-3b17-4ed1-a697-71f464cdcaaa
+  ws-opts:
+    headers:
+      Host: kssepa.sabzipolobamahi.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 美国-10
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 104.192.226.106
+  type: ssr
+- alterId: 0
+  name: 中国大陆-4
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21179
+  server: 120.233.44.201
+  sni: k30.tudou211.com
+  type: trojan
 - alterId: 2
   cipher: auto
   name: 中国大陆-5
@@ -154,27 +274,19 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     path: /oooo
-- alterId: 0
-  cipher: dummy
+- alterId: 64
+  cipher: auto
   name: 中国大陆-6
-  obfs: plain
-  obfs-param: cbcdc8198.microsoft.com
-  password: mantouyun888
-  port: 41114
-  protocol: auth_chain_a
-  protocol-param: 8198:CsJt8BBrKFOSrjv2
-  server: y66.ffd.mt5888.top
-  type: ssr
+  port: 31209
+  server: 120.232.153.40
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
-  cipher: aes-256-gcm
   name: 中国大陆-7
-  password: dwz1GtF7
-  port: 30015
-  server: 120.233.128.98
-  type: ss
-- alterId: 0
-  name: 中国大陆-8
   password: a25ed269-105b-4f15-bee2-bc2785d38912
   port: 42765
   server: wb.kaiqsz.com
@@ -182,32 +294,87 @@ proxies:
   sni: wb.kaiqsz.com
   type: trojan
 - alterId: 0
-  name: 中国大陆-9
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21603
-  server: 36.156.184.33
+  client-fingerprint: chrome
+  name: 美国-11
+  network: ws
+  port: '80'
+  server: 172.66.212.68
   skip-cert-verify: false
-  sni: k61.tudou211.com
+  tls: false
+  type: vless
+  uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
+  ws-opts:
+    headers:
+      Host: entezar.loseyourself.dpdns.org
+    path: /?ed=2570
+- alterId: 0
+  client-fingerprint: random
+  name: 美国-12
+  network: ws
+  port: '80'
+  server: 104.24.135.83
+  servername: delam.ahaysiahzangi.dpdns.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
+  ws-opts:
+    headers:
+      Host: delam.ahaysiahzangi.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  name: 中国大陆-8
+  password: 1b4c16925f934c57b954a9f0f23dea33
+  port: 8842
+  server: 42.240.152.238
+  skip-cert-verify: true
+  sni: brwx.spvpv.com
   type: trojan
-- alterId: 64
+- alterId: 0
+  name: 中国大陆-9
+  password: bcc58e88-e147-11ec-b286-f23c91cfbbc9
+  port: 21233
+  server: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
+  skip-cert-verify: true
+  sni: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 美国-13
+  network: ws
+  port: 80
+  server: 104.24.34.94
+  servername: kssepa.sabzipolobamahi.dpdns.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: b55ec078-3b17-4ed1-a697-71f464cdcaaa
+  ws-opts:
+    headers:
+      Host: kssepa.sabzipolobamahi.dpdns.org
+    path: /?ed=2571
+- alterId: 2
   cipher: auto
   name: 中国大陆-10
-  network: tcp
-  port: 41174
-  server: 120.234.102.229
-  skip-cert-verify: true
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.234.102.229
-  ws-path: /
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - alterId: 2
   cipher: auto
   name: 中国大陆-11
   network: ws
-  port: 30807
-  server: v7.heduian.link
+  port: 30829
+  server: v29.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
@@ -215,13 +382,81 @@ proxies:
       host: ocbc.com
     path: /oooo
 - alterId: 0
+  client-fingerprint: random
+  name: 美国-14
+  network: ws
+  port: '80'
+  server: 172.67.56.112
+  servername: entezar.loseyourself.dpdns.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
+  ws-opts:
+    headers:
+      Host: entezar.loseyourself.dpdns.org
+    path: /BaRAyeIran?ed=2560
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 美国-15
+  password: E95HYLF806NPZ1B3
+  port: 20036
+  server: 185.237.185.77
+  type: ss
+- alterId: '0'
+  cipher: auto
+  name: 美国-16
+  network: ws
+  port: '80'
+  server: sssccvfbgh.4444926.xyz
+  type: vmess
+  uuid: f898ffcb-6417-4373-9640-0b66091e8206
+  ws-opts:
+    headers:
+      host: sssccvfbgh.4444926.xyz
+    path: /GnJ3bBxV91uFkYtuzXyJ5XNeH1R1
+- alterId: 0
+  client-fingerprint: random
+  name: 美国-17
+  network: ws
+  port: '80'
+  server: 172.67.194.241
+  servername: delam.ahaysiahzangi.dpdns.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
+  ws-opts:
+    headers:
+      Host: delam.ahaysiahzangi.dpdns.org
+    path: /?ed=2560
+- alterId: 2
+  cipher: auto
   name: 中国大陆-12
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21603
-  server: xd-js.timiwc.com
+  network: ws
+  port: 30804
+  server: v4.heduian.link
   skip-cert-verify: true
-  sni: k61.tudou211.com
-  type: trojan
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: '0'
+  cipher: auto
+  name: 美国-18
+  network: ws
+  port: '443'
+  server: wWWwwWWw2.444652.XYz
+  tls: true
+  type: vmess
+  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
+  ws-opts:
+    headers:
+      host: wwwwwwww2.444652.xyz
+    path: /9dZlJLjHHrL0VwSolbqFpg
 - alterId: 2
   cipher: auto
   name: 中国大陆-13
@@ -237,153 +472,18 @@ proxies:
     headers:
       Host: v35.heduian.link
     path: /oooo
-- alterId: 2
+- alterId: '0'
   cipher: auto
-  name: 中国大陆-14
+  name: 美国-19
   network: ws
-  port: 30836
-  server: v36.heduian.link
-  skip-cert-verify: false
-  tls: false
+  port: '80'
+  server: xxcccvbnmko0.4444926.xyz
   type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: f898ffcb-6417-4373-9640-0b66091e8206
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-15
-  port: 15002
-  server: 15002.kuaiyin02.top
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-16
-  network: ws
-  port: 30825
-  server: v25.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v25.heduian.link
-    path: /oooo
-- alterId: 0
-  name: 中国香港-2
-  network: ws
-  port: 443
-  server: 47.57.233.126
-  servername: bv1.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: bv1.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 中国大陆-17
-  network: tcp
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  port: 21179
-  server: 120.233.44.201
-  sni: k30.tudou211.com
-  type: trojan
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-18
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-19
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-20
-  network: ws
-  port: 30828
-  server: v28.heduian.link
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 美国-1
-  obfs: plain
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  protocol: origin
-  server: 104.192.226.106
-  type: ssr
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-21
-  network: ws
-  port: 30830
-  server: v30.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v30.heduian.link
-    path: /oooo
-- alterId: 0
-  name: 中国大陆-22
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 116.31.75.150
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-23
-  port: 15002
-  server: 15002.vpdnss.top
-  tls: false
-  type: vmess
-  uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6
+      host: xxcccvbnmko0.4444926.xyz
+    path: /GnJ3bBxV91uFkYtuzXyJ5XNeH1R1
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -494,34 +594,39 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id003
-  - 日本-1
+  - 美国-1
   - 中国大陆-1
+  - 美国-2
   - 中国大陆-2
-  - 中国大陆-3
+  - 美国-3
   - 中国香港-1
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 中国大陆-3
+  - 美国-8
+  - 美国-9
+  - 美国-10
   - 中国大陆-4
-  - 日本-2
   - 中国大陆-5
   - 中国大陆-6
   - 中国大陆-7
+  - 美国-11
+  - 美国-12
   - 中国大陆-8
   - 中国大陆-9
+  - 美国-13
   - 中国大陆-10
   - 中国大陆-11
+  - 美国-14
+  - 美国-15
+  - 美国-16
+  - 美国-17
   - 中国大陆-12
+  - 美国-18
   - 中国大陆-13
-  - 中国大陆-14
-  - 中国大陆-15
-  - 中国大陆-16
-  - 中国香港-2
-  - 中国大陆-17
-  - 中国大陆-18
-  - 中国大陆-19
-  - 中国大陆-20
-  - 美国-1
-  - 中国大陆-21
-  - 中国大陆-22
-  - 中国大陆-23
+  - 美国-19
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -540,9 +645,25 @@ proxy-groups:
 - interval: 360
   name: 国外节点-延迟最低
   proxies: &id004
-  - 日本-1
-  - 日本-2
   - 美国-1
+  - 美国-2
+  - 美国-3
+  - 美国-4
+  - 美国-5
+  - 美国-6
+  - 美国-7
+  - 美国-8
+  - 美国-9
+  - 美国-10
+  - 美国-11
+  - 美国-12
+  - 美国-13
+  - 美国-14
+  - 美国-15
+  - 美国-16
+  - 美国-17
+  - 美国-18
+  - 美国-19
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
