@@ -58,185 +58,293 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
+  cipher: 2022-blake3-aes-128-gcm
+  name: 中国大陆-1
+  password: MDhhMTdjZDI0MjI2ZWRlNg==:ZDJjZmMxNDgtZDJjNi00MA==
+  port: 44014
+  server: hzhz2.sssyun.xyz
+  type: ss
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 50345
+  server: 221.150.109.20
+  type: ss
+- alterId: 0
+  cipher: 2022-blake3-aes-128-gcm
+  name: 中国大陆-2
+  password: 12xGRmcEy3TVETzE47MreA==
+  port: 34664
+  server: 183.240.187.198
+  type: ss
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 中国大陆-3
+  password: LFZ4KEMFJY6BNFNI
+  port: 15009
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf
+  name: 中国大陆-4
+  obfs: http_simple
+  obfs-param: dfde699935.microsoft.com
+  password: ygUo3W
+  port: 9041
+  protocol: auth_aes128_md5
+  protocol-param: 99935:vb3TTF
+  server: cnamepc02-d2zdrzg6ilecsynk.bestdosas.com
+  type: ssr
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 中国大陆-5
+  password: 6H42J3T2RI4TZOB2
+  port: 15011
+  server: qh62onjn.slashdevslashnetslashtun.net
+  type: ss
+- alterId: '64'
+  cipher: auto
+  name: 中国大陆-6
+  port: '52152'
+  server: 120.232.153.40
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  client-fingerprint: random
+  fingerprint: ''
   name: 美国-1
   network: ws
-  port: 443
-  server: 162.159.152.31
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.16.1.106
+  servername: delam.ahaysiahzangi.dpdns.org
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  udp: false
+  uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      host: delam.ahaysiahzangi.dpdns.org
     path: /?ed=2560
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 中国大陆-7
+  obfs: plain
+  obfs-param: 0f2a3502.ikea.com
+  password: hrkycyiepu
+  port: 31501
+  protocol: auth_aes128_sha1
+  protocol-param: 502:DzrH8M
+  server: pro-twa.ginkgolink.me
+  type: ssr
+- alterId: 64
+  cipher: auto
+  name: 中国大陆-8
+  port: 43491
+  server: 120.232.153.41
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 中国大陆-9
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.12
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+- alterId: 0
+  cipher: chacha20-ietf
+  name: 中国大陆-10
+  obfs: http_simple
+  obfs-param: dfde699935.microsoft.com
+  password: ygUo3W
+  port: 9031
+  protocol: auth_aes128_md5
+  protocol-param: 99935:vb3TTF
+  server: cnamelm-dwzksl7kzye3rdby.bestbrocciu.com
+  type: ssr
 - alterId: 0
   name: 美国-2
   network: ws
-  port: 443
-  server: 162.159.153.212
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.16.76.55
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 5d8bc42a-d345-4bd3-a844-4b90afc44670
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      Host: patient-shadow-baf1-ppal03.hohel98085.workers.dev
     path: /?ed=2560
 - alterId: 0
   name: 美国-3
   network: ws
-  port: 443
-  server: 162.159.153.217
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.16.171.121
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
     path: /?ed=2560
 - alterId: 0
+  cipher: aes-256-gcm
+  name: 中国大陆-11
+  password: 46JF0V0KLENHKC06
+  port: 15008
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  type: ss
+- alterId: 0
+  client-fingerprint: random
+  fingerprint: ''
   name: 美国-4
   network: ws
-  port: 443
-  server: 162.159.153.42
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 172.67.56.112
+  servername: entezar.loseyourself.dpdns.org
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  udp: false
+  uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      host: entezar.loseyourself.dpdns.org
+    path: /BaRAyeIran?ed=2560
 - alterId: 0
   name: 美国-5
   network: ws
-  port: 443
-  server: 162.159.152.69
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.24.37.192
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      Host: ppal03.dolobe7975.workers.dev
     path: /?ed=2560
 - alterId: 0
   name: 美国-6
   network: ws
-  port: 443
-  server: 162.159.153.209
-  servername: dt.vs2024.dpdns.org
+  port: 80
+  server: 104.16.100.188
+  servername: entezar.loseyourself.dpdns.org
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
+      Host: entezar.loseyourself.dpdns.org
     path: /?ed=2560
 - alterId: 0
   name: 美国-7
   network: ws
-  port: 443
-  server: 162.159.152.53
-  servername: dt.vs2024.dpdns.org
+  port: 2052
+  server: 172.67.135.195
   skip-cert-verify: true
-  tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
+  xudp: true
 - alterId: 0
+  client-fingerprint: chrome
   name: 美国-8
   network: ws
-  port: 443
-  server: 162.159.153.239
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.16.86.2
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
+      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
     path: /?ed=2560
 - alterId: 0
+  client-fingerprint: randomized
+  fingerprint: ''
   name: 美国-9
   network: ws
-  port: 443
-  server: 162.159.153.170
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
+  port: 2083
+  server: 172.67.145.189
+  servername: FrEEdoM.pAnOtOSU.sTORe
   tls: true
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  udp: false
+  uuid: ec7a6b6d-94b6-45df-9d62-491f53a508be
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: FrEEdoM.pAnOtOSU.sTORe
+    path: /6fqYRq6DD1shcFIO/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
 - alterId: 0
+  client-fingerprint: chrome
   name: 美国-10
   network: ws
-  port: 443
-  server: 162.159.153.72
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 104.24.167.96
+  skip-cert-verify: false
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ec1bb388-649c-4deb-9eb1-a096b784e0d3
   ws-opts:
     headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+      Host: round-truth-4e97-ppal03.vegasow726.workers.dev
+    path: /telegram
 - alterId: 0
+  client-fingerprint: random
+  fingerprint: ''
   name: 美国-11
   network: ws
-  port: 443
-  server: 162.159.152.205
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: 172.67.194.241
+  servername: delam.ahaysiahzangi.dpdns.org
+  tls: false
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  udp: false
+  uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: delam.ahaysiahzangi.dpdns.org
+    path: /
 - alterId: 0
   name: 美国-12
+  password: dongtaiwang.com
+  port: '31180'
+  server: 51.159.111.32
+  skip-cert-verify: true
+  sni: apple.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 美国-13
   network: ws
   port: 443
-  server: 162.159.153.144
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
+  server: 172.67.218.209
+  servername: pPP0.89890604.xYZ
   tls: true
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  udp: false
+  uuid: fa050497-fc2a-45ee-89c0-96670c4ecb65
   ws-opts:
     headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
+      host: pPP0.89890604.xYZ
+    path: /0USILhLWoWgQPuXTwt
 - alterId: 0
   client-fingerprint: firefox
   name: 中国香港-1
@@ -252,374 +360,36 @@ proxies:
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 50345
-  server: 221.150.109.20
-  type: ss
-- alterId: 0
-  name: 美国-13
-  network: ws
-  port: 443
-  server: 162.159.152.155
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 中国大陆-1
-  network: ws
-  port: 23023
-  server: 43.165.191.25
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 日本-1
-  network: ws
-  port: 2053
-  server: 140.238.58.181
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
   name: 美国-14
-  network: ws
-  port: 443
-  server: 162.159.152.81
-  servername: dt.vs2024.dpdns.org
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: '47262'
+  server: 40.233.73.221
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
+  sni: www.bing.com
+  tfo: false
+  type: hysteria2
 - alterId: 0
-  name: 美国-15
-  network: ws
-  port: 80
-  server: 104.16.100.188
-  servername: entezar.loseyourself.dpdns.org
+  cipher: chacha20-ietf
+  name: 中国大陆-12
+  obfs: http_simple
+  obfs-param: dfde699935.microsoft.com
+  password: ygUo3W
+  port: 9061
+  protocol: auth_aes128_md5
+  protocol-param: 99935:vb3TTF
+  server: cname04b-srmkx6ffsizssmjw.bestruisleipa.com
+  type: ssr
+- alterId: 0
+  name: 中国大陆-13
+  password: 1b4c16925f934c57b954a9f0f23dea33
+  port: 8842
+  server: 42.240.152.238
   skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
-  ws-opts:
-    headers:
-      Host: entezar.loseyourself.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: random
-  fingerprint: ''
-  name: 美国-16
-  network: ws
-  port: 80
-  server: 104.16.99.37
-  servername: barayeiran.nastaranh.dpdns.org
-  tls: false
-  type: vless
-  udp: false
-  uuid: bbd2882a-c158-4ae6-b53a-5ae6be8dbcb0
-  ws-opts:
-    headers:
-      host: barayeiran.nastaranh.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-17
-  network: ws
-  port: 443
-  server: 104.18.147.201
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-18
-  network: ws
-  port: 443
-  server: 162.159.152.225
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-19
-  network: ws
-  port: 443
-  server: 104.19.150.163
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-20
-  network: ws
-  port: 8880
-  server: 162.120.94.3
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- alterId: 0
-  client-fingerprint: random
-  fingerprint: ''
-  name: 美国-21
-  network: ws
-  port: 80
-  server: 104.24.135.83
-  servername: delam.ahaysiahzangi.dpdns.org
-  tls: false
-  type: vless
-  udp: false
-  uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
-  ws-opts:
-    headers:
-      host: delam.ahaysiahzangi.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-22
-  network: ws
-  port: 443
-  server: 104.18.82.55
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-23
-  network: ws
-  port: 8880
-  server: 104.129.164.3
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  client-fingerprint: random
-  fingerprint: ''
-  name: 美国-24
-  network: ws
-  port: 80
-  server: 172.67.194.241
-  servername: delam.ahaysiahzangi.dpdns.org
-  tls: false
-  type: vless
-  udp: false
-  uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
-  ws-opts:
-    headers:
-      host: delam.ahaysiahzangi.dpdns.org
-    path: /
-- alterId: 0
-  name: 美国-25
-  network: ws
-  port: 443
-  server: icook.hk
-  servername: kc1.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: kc1.vs2024.dpdns.org
-    path: /?ed=2560&prot_type=vless
-- alterId: 0
-  name: 美国-26
-  network: ws
-  port: 443
-  server: 104.16.242.72
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 443
-  server: 132.145.94.80
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: randomized
-  fingerprint: ''
-  name: 美国-27
-  network: ws
-  port: 443
-  server: 104.17.147.22
-  servername: TITanTabLOmaNAHaMRaH.IR
-  tls: true
-  type: vless
-  udp: false
-  uuid: 4d91916f-a7fd-419b-8b90-640bb8d1b9f4
-  ws-opts:
-    headers:
-      host: TITanTabLOmaNAHaMRaH.IR
-    path: /Telegram@Filter_breaker/?ed=2560
-- alterId: 0
-  name: 韩国-3
-  network: ws
-  port: 14534
-  server: 211.114.180.156
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-28
-  network: ws
-  port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 中国大陆-2
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: '39001'
-  server: 113.99.140.184
-  skip-cert-verify: true
-  sni: www.yrtok.com
+  sni: brwx.spvpv.com
   type: trojan
-  udp: true
 - alterId: 2
   cipher: auto
-  name: 中国大陆-3
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v7.heduian.link
-    path: /oooo
-- alterId: 0
-  name: 美国-29
-  network: ws
-  port: 443
-  server: 104.18.93.7
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-4
-  network: ws
-  port: 11111
-  server: 112.173.102.47
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-4
+  name: 中国大陆-14
   network: ws
   port: 30829
   server: 111.26.109.79
@@ -627,39 +397,82 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     path: /oooo
-- alterId: 0
-  name: 美国-30
-  network: ws
-  port: 443
-  server: 104.18.83.92
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-31
-  network: ws
-  port: 443
-  server: 104.17.219.208
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
 - alterId: 2
   cipher: auto
-  name: 中国大陆-5
+  name: 中国大陆-15
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v25.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: dummy
+  name: 中国大陆-16
+  obfs: plain
+  obfs-param: cbcdc8198.microsoft.com
+  password: mantouyun888
+  port: 41114
+  protocol: auth_chain_a
+  protocol-param: 8198:CsJt8BBrKFOSrjv2
+  server: y66.ffd.mt5888.top
+  type: ssr
+- alterId: 0
+  name: 美国-15
+  network: ws
+  port: 8880
+  server: 66.235.200.94
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
+  ws-opts:
+    headers:
+      Host: channel-falcunargo.efa180b5d7.workers.Dev
+    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
+- alterId: 0
+  name: 中国大陆-17
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21332
+  server: xd-js.timiwc.com
+  sni: k65.tudou211.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-18
+  network: ws
+  port: 30804
+  server: v4.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-19
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-20
   network: ws
   port: 30835
   server: v35.heduian.link
@@ -671,315 +484,6 @@ proxies:
     headers:
       host: v35.heduian.link
     path: /oooo
-- alterId: 0
-  client-fingerprint: random
-  fingerprint: ''
-  name: 美国-32
-  network: ws
-  port: 80
-  server: 172.67.56.112
-  servername: entezar.loseyourself.dpdns.org
-  tls: false
-  type: vless
-  udp: false
-  uuid: 148709e4-402b-48dd-8892-ed39b55ea45c
-  ws-opts:
-    headers:
-      host: entezar.loseyourself.dpdns.org
-    path: /BaRAyeIran?ed=2560
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 中国香港-2
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- alterId: 0
-  name: 美国-33
-  network: ws
-  port: 2053
-  server: 129.159.132.0
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: random
-  fingerprint: ''
-  name: 美国-34
-  network: ws
-  port: 80
-  server: 104.16.1.106
-  servername: delam.ahaysiahzangi.dpdns.org
-  tls: false
-  type: vless
-  udp: false
-  uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d
-  ws-opts:
-    headers:
-      host: delam.ahaysiahzangi.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 中国大陆-6
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.12
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
-- alterId: 0
-  name: 美国-35
-  network: ws
-  port: 443
-  server: 104.17.104.243
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-36
-  network: ws
-  port: 38712
-  server: 108.174.61.161
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-7
-  network: ws
-  port: 30836
-  server: v36.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- alterId: 0
-  name: 中国大陆-8
-  password: 1b4c16925f934c57b954a9f0f23dea33
-  port: 8842
-  server: 42.240.152.238
-  skip-cert-verify: true
-  sni: brwx.spvpv.com
-  type: trojan
-- alterId: 0
-  name: 美国-37
-  network: ws
-  port: 443
-  server: 104.17.210.171
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-38
-  network: ws
-  port: 443
-  server: 129.213.130.70
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-39
-  network: ws
-  port: 443
-  server: 104.19.145.14
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 美国-40
-  network: ws
-  port: 2082
-  server: 104.18.185.26
-  servername: 100-47-213-116.s5.db-link01.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: c7820065-fa05-36d6-ab77-56e4b03c5881
-  ws-opts:
-    headers:
-      HOST: 100-47-213-116.s5.db-link01.top
-    path: /dabai.in104.20.64.217
-- alterId: 0
-  name: 美国-41
-  network: ws
-  port: 443
-  server: 104.19.144.212
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-9
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 0
-  name: 美国-42
-  network: ws
-  port: 443
-  server: 104.17.189.171
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  fingerprint: ''
-  name: 美国-43
-  network: ws
-  port: 443
-  server: cleanv2itech1.freesdns.info
-  servername: m1.freesdns.info.
-  tls: true
-  type: vless
-  udp: false
-  uuid: 329d8863-42ce-4015-b9b9-8417499cc174
-  ws-opts:
-    headers:
-      host: m1.freesdns.info.
-    path: /
-- alterId: 0
-  name: 美国-44
-  network: ws
-  port: 8443
-  server: 129.151.198.3
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-45
-  network: ws
-  port: 443
-  server: 104.18.94.238
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-46
-  network: ws
-  port: 443
-  server: 129.213.136.180
-  servername: dt.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: dt.vs2024.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-47
-  network: ws
-  port: 8880
-  server: 141.101.114.3
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382
-  ws-opts:
-    headers:
-      Host: bitget1.asdasd.click
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-48
-  network: ws
-  port: 443
-  server: 104.16.249.115
-  servername: tx.vs2024.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: tx.vs2024.dpdns.org
-    path: /?ed=2560
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -1090,9 +594,21 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id003
+  - 中国大陆-1
+  - 韩国-1
+  - 中国大陆-2
+  - 中国大陆-3
+  - 中国大陆-4
+  - 中国大陆-5
+  - 中国大陆-6
   - 美国-1
+  - 中国大陆-7
+  - 中国大陆-8
+  - 中国大陆-9
+  - 中国大陆-10
   - 美国-2
   - 美国-3
+  - 中国大陆-11
   - 美国-4
   - 美国-5
   - 美国-6
@@ -1102,58 +618,19 @@ proxy-groups:
   - 美国-10
   - 美国-11
   - 美国-12
-  - 中国香港-1
-  - 韩国-1
   - 美国-13
-  - 中国大陆-1
-  - 日本-1
+  - 中国香港-1
   - 美国-14
+  - 中国大陆-12
+  - 中国大陆-13
+  - 中国大陆-14
+  - 中国大陆-15
+  - 中国大陆-16
   - 美国-15
-  - 美国-16
-  - 美国-17
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 韩国-2
-  - 美国-27
-  - 韩国-3
-  - 美国-28
-  - 中国大陆-2
-  - 中国大陆-3
-  - 美国-29
-  - 韩国-4
-  - 中国大陆-4
-  - 美国-30
-  - 美国-31
-  - 中国大陆-5
-  - 美国-32
-  - 中国香港-2
-  - 美国-33
-  - 美国-34
-  - 中国大陆-6
-  - 美国-35
-  - 美国-36
-  - 中国大陆-7
-  - 中国大陆-8
-  - 美国-37
-  - 美国-38
-  - 美国-39
-  - 美国-40
-  - 美国-41
-  - 中国大陆-9
-  - 美国-42
-  - 美国-43
-  - 美国-44
-  - 美国-45
-  - 美国-46
-  - 美国-47
-  - 美国-48
+  - 中国大陆-17
+  - 中国大陆-18
+  - 中国大陆-19
+  - 中国大陆-20
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -1172,6 +649,7 @@ proxy-groups:
 - interval: 360
   name: 国外节点-延迟最低
   proxies: &id004
+  - 韩国-1
   - 美国-1
   - 美国-2
   - 美国-3
@@ -1184,47 +662,9 @@ proxy-groups:
   - 美国-10
   - 美国-11
   - 美国-12
-  - 韩国-1
   - 美国-13
-  - 日本-1
   - 美国-14
   - 美国-15
-  - 美国-16
-  - 美国-17
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 韩国-2
-  - 美国-27
-  - 韩国-3
-  - 美国-28
-  - 美国-29
-  - 韩国-4
-  - 美国-30
-  - 美国-31
-  - 美国-32
-  - 美国-33
-  - 美国-34
-  - 美国-35
-  - 美国-36
-  - 美国-37
-  - 美国-38
-  - 美国-39
-  - 美国-40
-  - 美国-41
-  - 美国-42
-  - 美国-43
-  - 美国-44
-  - 美国-45
-  - 美国-46
-  - 美国-47
-  - 美国-48
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
