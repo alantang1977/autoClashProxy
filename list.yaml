@@ -60,34 +60,10 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 新加坡-1
-  password: VQzTHumV767vaCqDGSFsXb0XTMU
-  port: 4881
-  server: 13.228.25.14
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
   name: 日本-1
   password: THySbYJ9A198OxWz2HLK6Kpaw
   port: 30673
   server: 13.230.223.36
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-2
-  password: JhsNcC589qqPqdRob3CIgwqjbc
-  port: 14257
-  server: 18.181.173.54
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -105,80 +81,18 @@ proxies:
   auth: ''
   fast-open: false
   name: 美国-1
-  password: J4MF5gYLAejSsZA1b0T3djeNGoI
-  port: 16523
-  server: 44.243.233.105
+  password: hfWoFliBzz7DzJ4AhSrCpNsiw
+  port: 21779
+  server: 34.221.171.77
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-2
-  password: RKrGw4dSUwK3YAvqdQI8tcqNl0
-  port: 34060
-  server: 35.94.124.236
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-3
-  password: YidTdI17j06K1PFBUWdzWDVZXc
-  port: 33562
-  server: 52.14.165.55
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-3
-  password: Wo9rLCYw6gzcfTgIu11mhBVciVs
-  port: 29282
-  server: 47.74.34.102
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-4
-  password: vlJbyJEtcNjHvV6dnkZ1Z4VjpI
-  port: 10264
-  server: 13.212.75.22
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  http-opts:
-    headers:
-      Host:
-      - tgju.org
-    path:
-    - /
-  name: 美国-5
-  network: http
-  port: '9091'
-  server: 38.180.105.218
-  skip-cert-verify: false
-  type: vless
-  uuid: 62237966-b2c6-4bf9-a269-3717e1773c99
 - alterId: 0
   cipher: ''
   flow: ''
-  name: 新加坡-2
+  name: 新加坡-1
   network: ws
   port: 443
   server: 8.222.131.225
@@ -195,44 +109,10 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 美国-6
-  password: 9TItIjHPMopRBvBQpeTKTNJf2k
-  port: 26533
-  server: 54.166.221.95
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-7
-  network: ws
-  port: '443'
-  server: 162.159.9.55
-  servername: rayan-fg-4.sahel.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: ee06e485-f3d1-46c0-97f4-e98040b828ed
-  ws-opts:
-    headers:
-      Host: rayan-fg-4.sahel.filegear-sg.me
-    path: /?ed=2560
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-8
-  password: hfWoFliBzz7DzJ4AhSrCpNsiw
-  port: 21779
-  server: 34.221.171.77
+  name: 日本-2
+  password: JhsNcC589qqPqdRob3CIgwqjbc
+  port: 14257
+  server: 18.181.173.54
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -240,75 +120,7 @@ proxies:
   type: hysteria2
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: 8880
-  server: 192.0.63.13
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0
-  ws-opts:
-    headers:
-      Host: c.82313369.xyz
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 美国-10
-  network: ws
-  port: 8443
-  server: 1751187741.tencentapp.cn
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ffad2ef2-7b55-4f71-bc81-de5e0f769adc
-  ws-opts:
-    headers:
-      Host: 1751188131.speed.nlb.cccp.freefly.pp.ua
-    path: /
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 美国-11
-  network: ws
-  port: 443
-  server: 154.17.225.73
-  servername: usb.rtot.me
-  skip-cert-verify: true
-  sni: usb.rtot.me
-  tls: true
-  type: vless
-  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
-  ws-opts:
-    headers:
-      Host: usb.rtot.me
-    path: /bing
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-12
-  password: 65a43b6e-19c5-4fab-b960-d110a07d66a4
-  port: '3234'
-  server: 209.141.47.127
-  skip-cert-verify: true
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-  name: 美国-13
-  password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-  port: '10086'
-  server: aus.pagate.top
-  skip-cert-verify: true
-  sni: aus.pagate.top
-  type: hysteria2
-  udp: true
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-4
+  name: 日本-3
   port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
@@ -321,64 +133,9 @@ proxies:
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - alterId: 0
-  cipher: dummy
-  name: 中国大陆-2
-  obfs: plain
-  obfs-param: cbcdc8198.microsoft.com
-  password: mantouyun888
-  port: 41114
-  protocol: auth_chain_a
-  protocol-param: 8198:CsJt8BBrKFOSrjv2
-  server: y66.ffd.mt5888.top
-  type: ssr
-  udp: true
-- alterId: 0
-  client-fingerprint: firefox
-  name: 中国香港-1
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 103.12.77.78
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国香港-2
-  port: 443
-  reality-opts:
-    public-key: MFsbnsNQsSpZwP-_Ohzako6aHpfK4-rbssxhr3eywWw
-    short-id: 4476a3
-  server: 62.60.233.250
-  servername: images.apple.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fd0cdd44-2361-11f0-9970-45e1d80c4039
-- alterId: 0
-  name: 美国-14
-  network: ws
-  port: '443'
-  server: 172.67.53.233
-  servername: di.dibdibini.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4179c595-08ca-45cd-b555-91b6f1faeadc
-  ws-opts:
-    headers:
-      Host: di.dibdibini.dpdns.org
-    path: /BaRAyeIran?ed=2560
-- alterId: 0
   cipher: ''
   flow: ''
-  name: 美国-15
+  name: 美国-2
   network: ws
   port: 443
   server: 3.101.30.61
@@ -393,7 +150,31 @@ proxies:
       Host: usa.rtot.me
     path: /bing
 - alterId: 0
-  name: 美国-16
+  auth: ''
+  fast-open: false
+  name: 美国-3
+  password: RKrGw4dSUwK3YAvqdQI8tcqNl0
+  port: 34060
+  server: 35.94.124.236
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-4
+  password: J4MF5gYLAejSsZA1b0T3djeNGoI
+  port: 16523
+  server: 44.243.233.105
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  name: 美国-5
   network: ws
   port: '8880'
   server: 104.129.164.39
@@ -406,24 +187,189 @@ proxies:
       Host: ip.langmanshanxi.top
     path: /Telegram🇮🇷@ShadowProxy66 /?ed=2560
 - alterId: 0
-  name: 中国大陆-3
-  password: bcc58e88-e147-11ec-b286-f23c91cfbbc9
-  port: '21233'
-  server: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
+  auth: ''
+  fast-open: false
+  name: 新加坡-2
+  password: VQzTHumV767vaCqDGSFsXb0XTMU
+  port: 4881
+  server: 13.228.25.14
+  servername: bing.com
   skip-cert-verify: true
-  sni: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
-  type: trojan
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
   udp: true
 - alterId: 0
-  auth: fbeeb445-ea8e-4519-8b0e-edb67ff75ad4
-  name: 美国-17
-  password: fbeeb445-ea8e-4519-8b0e-edb67ff75ad4
-  port: '27300'
-  server: diwu694426.di5ji.lat
+  auth: ''
+  fast-open: false
+  name: 美国-6
+  password: YidTdI17j06K1PFBUWdzWDVZXc
+  port: 33562
+  server: 52.14.165.55
+  servername: bing.com
   skip-cert-verify: true
-  sni: diwu694426.di5ji.lat
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-7
+  password: 9TItIjHPMopRBvBQpeTKTNJf2k
+  port: 26533
+  server: 54.166.221.95
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 日本-4
+  password: Wo9rLCYw6gzcfTgIu11mhBVciVs
+  port: 29282
+  server: 47.74.34.102
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  name: 日本-5
+  network: ws
+  port: '8880'
+  server: 91.193.58.14
+  skip-cert-verify: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: tw.laoyoutiao.link
+    path: /Telegram🇨🇳@WangCai2/?ed=2048
+- alterId: 0
+  http-opts:
+    headers:
+      Host:
+      - tgju.org
+    path:
+    - /
+  name: 美国-8
+  network: http
+  port: '9091'
+  server: 38.180.105.218
+  skip-cert-verify: false
+  type: vless
+  uuid: 62237966-b2c6-4bf9-a269-3717e1773c99
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 美国-9
+  network: ws
+  port: 443
+  server: 154.17.225.73
+  servername: usb.rtot.me
+  skip-cert-verify: true
+  sni: usb.rtot.me
+  tls: true
+  type: vless
+  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
+  ws-opts:
+    headers:
+      Host: usb.rtot.me
+    path: /bing
+- alterId: 0
+  http-opts:
+    headers:
+      Host:
+      - cloud.ir
+    method: GET
+    path:
+    - /
+  name: 中国香港-1
+  network: http
+  port: 16924
+  server: 62.60.177.156
+  servername: cloud.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 079291d7-2d5a-4dcc-b2a9-514cda7eb9f9
+- alterId: 0
+  cipher: dummy
+  name: 中国大陆-2
+  obfs: plain
+  obfs-param: cbcdc8198.microsoft.com
+  password: mantouyun888
+  port: 41114
+  protocol: auth_chain_a
+  protocol-param: 8198:CsJt8BBrKFOSrjv2
+  server: y66.ffd.mt5888.top
+  type: ssr
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 韩国-2
+  password: 1ad90a422096
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kr6v1.dashengjs.net
+    mode: websocket
+    mux: true
+    path: /jwuctcuhriiw
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 43.226.17.8
+  type: ss
+  udp: true
+- alterId: 0
+  auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  name: 美国-10
+  password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  port: '10086'
+  server: aus.pagate.top
+  skip-cert-verify: true
+  sni: aus.pagate.top
   type: hysteria2
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-3
+  network: ws
+  port: 30835
+  server: v35.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v35.heduian.link
+    path: /oooo
+- alterId: 0
+  client-fingerprint: firefox
+  name: 中国香港-2
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 103.12.77.78
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -534,35 +480,30 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id003
-  - 新加坡-1
   - 日本-1
-  - 日本-2
   - 中国大陆-1
   - 美国-1
+  - 新加坡-1
+  - 日本-2
+  - 日本-3
   - 美国-2
   - 美国-3
-  - 日本-3
   - 美国-4
   - 美国-5
   - 新加坡-2
-  - 美国-6
   - 韩国-1
+  - 美国-6
   - 美国-7
+  - 日本-4
+  - 日本-5
   - 美国-8
   - 美国-9
-  - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 日本-4
-  - 中国大陆-2
   - 中国香港-1
-  - 中国香港-2
-  - 美国-14
-  - 美国-15
-  - 美国-16
+  - 中国大陆-2
+  - 韩国-2
+  - 美国-10
   - 中国大陆-3
-  - 美国-17
+  - 中国香港-2
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -581,30 +522,25 @@ proxy-groups:
 - interval: 360
   name: 国外节点-延迟最低
   proxies: &id004
-  - 新加坡-1
   - 日本-1
-  - 日本-2
   - 美国-1
+  - 新加坡-1
+  - 日本-2
+  - 日本-3
   - 美国-2
   - 美国-3
-  - 日本-3
   - 美国-4
   - 美国-5
   - 新加坡-2
-  - 美国-6
   - 韩国-1
+  - 美国-6
   - 美国-7
+  - 日本-4
+  - 日本-5
   - 美国-8
   - 美国-9
+  - 韩国-2
   - 美国-10
-  - 美国-11
-  - 美国-12
-  - 美国-13
-  - 日本-4
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
