@@ -66,111 +66,9 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  name: 美国-1
-  network: ws
-  port: 443
-  server: 162.159.153.144
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
   auth: ''
   fast-open: false
   name: 日本-1
-  password: THySbYJ9A198OxWz2HLK6Kpaw
-  port: 30673
-  server: 13.230.223.36
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-2
-  network: ws
-  port: 443
-  server: 162.159.152.81
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-3
-  network: ws
-  port: 443
-  server: 162.159.152.155
-  servername: xb.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xb.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-4
-  network: ws
-  port: 8443
-  server: 162.159.129.67
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-5
-  network: ws
-  port: 443
-  server: 162.159.153.184
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-6
-  network: ws
-  port: 443
-  server: 162.159.133.85
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-2
   password: Wo9rLCYw6gzcfTgIu11mhBVciVs
   port: 29282
   server: 47.74.34.102
@@ -180,139 +78,19 @@ proxies:
   tfo: false
   type: hysteria2
 - alterId: 0
-  name: 美国-7
-  network: ws
-  port: 443
-  server: 162.159.152.225
-  servername: xb.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xb.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 443
-  server: 162.159.153.212
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
   auth: ''
   fast-open: false
-  name: 新加坡-1
-  password: VQzTHumV767vaCqDGSFsXb0XTMU
-  port: 4881
-  server: 13.228.25.14
+  name: 日本-2
+  password: JhsNcC589qqPqdRob3CIgwqjbc
+  port: 14257
+  server: 18.181.173.54
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
 - alterId: 0
-  name: 美国-9
-  network: ws
-  port: 443
-  server: 162.159.153.170
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-10
-  network: ws
-  port: 443
-  server: 162.159.153.42
-  servername: xb.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xb.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 64
-  cipher: auto
-  name: 中国大陆-2
-  network: tcp
-  port: 55112
-  server: 183.236.51.37
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 183.236.51.37
-  ws-path: /
-- alterId: 0
-  name: 日本-3
-  network: ws
-  port: 443
-  server: 168.138.212.80
-  servername: xb.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xb.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 日本-4
-  network: ws
-  port: 443
-  server: 168.138.46.67
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 中国香港-1
-  password: 0b191076d18f
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /ugiibpkbca
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 156.251.179.136
-  tfo: false
-  type: ss
-- alterId: 0
-  name: 美国-11
+  name: 美国-1
   network: ws
   port: 443
   server: 162.159.153.72
@@ -327,8 +105,61 @@ proxies:
       host: xb.ylks0033.dpdns.org
     path: /?ed=2560
 - alterId: 0
+  client-fingerprint: firefox
+  name: 中国香港-1
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 103.12.77.78
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- alterId: 0
+  name: 美国-2
+  network: ws
+  port: '8880'
+  server: 104.129.164.39
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇮🇷@ShadowProxy66 /?ed=2560
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-3
+  password: vlJbyJEtcNjHvV6dnkZ1Z4VjpI
+  port: 10264
+  server: 13.212.75.22
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  client-fingerprint: chrome
+  name: 日本-3
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 160.250.65.124
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- alterId: 0
   cipher: dummy
-  name: 中国大陆-3
+  name: 中国大陆-2
   obfs: plain
   obfs-param: cbcdc8198.microsoft.com
   password: mantouyun888
@@ -338,13 +169,21 @@ proxies:
   server: y66.ffd.mt5888.top
   type: ssr
   udp: true
+- alterId: 64
+  cipher: auto
+  name: 中国大陆-3
+  port: 58882
+  server: 120.198.71.217
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 日本-5
-  password: JhsNcC589qqPqdRob3CIgwqjbc
-  port: 14257
-  server: 18.181.173.54
+  name: 新加坡-1
+  password: VQzTHumV767vaCqDGSFsXb0XTMU
+  port: 4881
+  server: 13.228.25.14
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -358,19 +197,162 @@ proxies:
   server: 125.141.31.72
   type: ss
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-12
+  cipher: aes-256-gcm
+  name: 中国大陆-4
+  password: dwz1GtF7
+  port: 30015
+  server: 120.233.128.98
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 日本-4
+  password: THySbYJ9A198OxWz2HLK6Kpaw
+  port: 30673
+  server: 13.230.223.36
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 韩国-2
+  password: 08f0c77ed619
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: xwkr1v1.dsjsapi.net
+    mode: websocket
+    mux: true
+    path: /yjriebtdvghs
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 43.226.17.54
+  tfo: false
+  type: ss
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-4
+  password: YidTdI17j06K1PFBUWdzWDVZXc
+  port: 33562
+  server: 52.14.165.55
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-5
+  password: hfWoFliBzz7DzJ4AhSrCpNsiw
+  port: 21779
+  server: 34.221.171.77
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-6
+  password: J4MF5gYLAejSsZA1b0T3djeNGoI
+  port: 16523
+  server: 44.243.233.105
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-7
+  password: 9TItIjHPMopRBvBQpeTKTNJf2k
+  port: 26533
+  server: 54.166.221.95
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-8
+  password: RKrGw4dSUwK3YAvqdQI8tcqNl0
+  port: 34060
+  server: 35.94.124.236
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  name: 美国-9
   network: ws
-  port: 80
-  server: 104.16.182.65
+  port: '443'
+  server: 172.67.53.233
+  servername: di.dibdibini.dpdns.org
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
-  uuid: f86586c2-3a4c-49c9-83ec-5ae43786d4f7
+  uuid: 4179c595-08ca-45cd-b555-91b6f1faeadc
   ws-opts:
     headers:
-      Host: dark-bonus-0f2f-ppal03.yapeyef825.workers.dev
-    path: /Telegram
+      Host: di.dibdibini.dpdns.org
+    path: /BaRAyeIran?ed=2560
+- alterId: 0
+  name: 美国-10
+  network: ws
+  port: 443
+  server: 162.159.153.144
+  servername: xc.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: xc.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  http-opts:
+    headers:
+      Host:
+      - tgju.org
+    path:
+    - /
+  name: 美国-11
+  network: http
+  port: '9091'
+  server: 38.180.105.218
+  skip-cert-verify: false
+  type: vless
+  uuid: 62237966-b2c6-4bf9-a269-3717e1773c99
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 韩国-3
+  password: 1ad90a422096
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kr6v1.dashengjs.net
+    mode: websocket
+    mux: true
+    path: /jwuctcuhriiw
+    skip-cert-verify: false
+    tls: true
+  port: 636
+  server: 43.226.17.8
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: ''
   flow: ''
@@ -389,620 +371,76 @@ proxies:
       Host: sgp.rtot.me
     path: /bing
 - alterId: 0
-  name: 美国-13
-  network: ws
-  port: 443
-  server: 104.19.144.212
-  servername: xb.ylks0033.dpdns.org
+  cipher: auto
+  name: 中国大陆-5
+  network: tcp
+  port: 19490
+  server: fiwejniavzoj.xn--fiqs8sjz2bull.com
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xb.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-14
-  password: vlJbyJEtcNjHvV6dnkZ1Z4VjpI
-  port: 10264
-  server: 13.212.75.22
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-15
-  network: ws
-  port: 443
-  server: toy-people.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-16
-  network: ws
-  port: 443
-  server: 131.186.17.132
-  servername: xb.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xb.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-17
-  network: ws
-  port: 443
-  server: dnschecker.org
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 18064
-  server: 112.163.91.67
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-18
-  network: ws
-  port: 443
-  server: 172.67.79.211
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-19
-  network: ws
-  port: 443
-  server: www.glassdoor.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-20
-  network: ws
-  port: 443
-  server: www.ipchicken.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-21
-  network: ws
-  port: 443
-  server: www.ddwhm.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-22
-  network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
-  ws-opts:
-    headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
-- alterId: 0
-  name: 美国-23
-  network: ws
-  port: 443
-  server: iplocation.io
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-24
-  password: RKrGw4dSUwK3YAvqdQI8tcqNl0
-  port: 34060
-  server: 35.94.124.236
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-25
-  password: J4MF5gYLAejSsZA1b0T3djeNGoI
-  port: 16523
-  server: 44.243.233.105
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-26
-  network: ws
-  port: 443
-  server: www.digitalocean.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-27
-  network: ws
-  port: 443
-  server: www.whatismyip.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-28
-  network: ws
-  port: 443
-  server: comicabc.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-29
-  network: ws
-  port: 443
-  server: icook.hk
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-30
-  network: ws
-  port: 443
-  server: 104.17.71.31
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-31
-  network: ws
-  port: 443
-  server: 104.18.147.201
-  servername: xb.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xb.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 韩国-3
-  network: ws
-  port: 12486
-  server: 121.140.60.17
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-32
-  network: ws
-  port: 443
-  server: 162.159.152.31
-  servername: xb.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xb.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  http-opts:
-    headers:
-      Host:
-      - tgju.org
-    path:
-    - /
-  name: 美国-33
-  network: http
-  port: '9091'
-  server: 38.180.105.218
-  skip-cert-verify: false
-  type: vless
-  uuid: 62237966-b2c6-4bf9-a269-3717e1773c99
-- alterId: 0
-  name: 美国-34
-  network: ws
-  port: 443
-  server: tasteatlas.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-35
-  network: ws
-  port: 443
-  server: shopify.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-36
-  network: ws
-  port: 443
-  server: 198.62.62.156
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-37
-  network: ws
-  port: 443
-  server: 198.62.62.4
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-38
-  network: ws
-  port: 443
-  server: www.hugedomains.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-39
-  password: hfWoFliBzz7DzJ4AhSrCpNsiw
-  port: 21779
-  server: 34.221.171.77
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-40
-  network: ws
-  port: 443
-  server: whatismyipaddress.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-41
-  network: ws
-  port: 443
-  server: www.pcmag.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-42
-  network: ws
-  port: 8880
-  server: 66.235.200.94
-  skip-cert-verify: false
   tls: false
-  type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
-  ws-opts:
-    headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
+  type: vmess
+  uuid: fc7b534b-9188-4d81-b804-55b4eb91cd6e
+  ws-headers:
+    Host: fiwejniavzoj.xn--fiqs8sjz2bull.com
+  ws-path: /
 - alterId: 0
-  name: 美国-43
-  network: ws
-  port: 443
-  server: steamdb.info
-  servername: xc.ylks0033.dpdns.org
+  name: 中国大陆-6
+  password: bcc58e88-e147-11ec-b286-f23c91cfbbc9
+  port: '21233'
+  server: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
+  type: trojan
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-44
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-7
   network: ws
-  port: 443
-  server: ipinfo.in
-  servername: xc.ylks0033.dpdns.org
+  port: 30835
+  server: v35.heduian.link
   skip-cert-verify: true
-  tls: true
-  type: vless
+  tls: false
+  type: vmess
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-45
+      Host: v35.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-8
   network: ws
-  port: 443
-  server: uriah.ns.cloudflare.com
-  servername: xc.ylks0033.dpdns.org
+  port: 30808
+  server: v8.heduian.link
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
+      host: baidu.com
+    path: /oooo
 - alterId: 0
-  name: 美国-46
-  network: ws
-  port: '443'
-  server: 172.67.53.233
-  servername: di.dibdibini.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 4179c595-08ca-45cd-b555-91b6f1faeadc
-  ws-opts:
-    headers:
-      Host: di.dibdibini.dpdns.org
-    path: /BaRAyeIran?ed=2560
-- alterId: 0
-  name: 美国-47
-  network: ws
-  port: 443
-  server: www.udemy.com
-  servername: xc.ylks0033.dpdns.org
+  auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  name: 美国-12
+  password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  port: '10086'
+  server: aus.pagate.top
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: aus.pagate.top
+  type: hysteria2
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
 - alterId: 0
-  name: 美国-48
-  network: ws
-  port: 443
-  server: pranab.ns.cloudflare.com
-  servername: xc.ylks0033.dpdns.org
+  auth: fbeeb445-ea8e-4519-8b0e-edb67ff75ad4
+  name: 美国-13
+  password: fbeeb445-ea8e-4519-8b0e-edb67ff75ad4
+  port: '27300'
+  server: diwu694426.di5ji.lat
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: diwu694426.di5ji.lat
+  type: hysteria2
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-49
-  network: ws
-  port: 443
-  server: craig.ns.cloudflare.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-50
-  network: ws
-  port: 443
-  server: abdullah.ns.cloudflare.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-51
-  network: ws
-  port: 443
-  server: sullivan.ns.cloudflare.com
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-52
-  network: ws
-  port: 443
-  server: www.4chan.org
-  servername: xc.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: xc.ylks0033.dpdns.org
-    path: /?ed=2560
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -1114,71 +552,36 @@ proxy-groups:
   name: 共享节点-延迟最低
   proxies: &id003
   - 中国大陆-1
-  - 美国-1
   - 日本-1
+  - 日本-2
+  - 美国-1
+  - 中国香港-1
   - 美国-2
   - 美国-3
+  - 日本-3
+  - 中国大陆-2
+  - 中国大陆-3
+  - 新加坡-1
+  - 韩国-1
+  - 中国大陆-4
+  - 日本-4
+  - 韩国-2
   - 美国-4
   - 美国-5
   - 美国-6
-  - 日本-2
   - 美国-7
   - 美国-8
-  - 新加坡-1
   - 美国-9
   - 美国-10
-  - 中国大陆-2
-  - 日本-3
-  - 日本-4
-  - 中国香港-1
   - 美国-11
-  - 中国大陆-3
-  - 日本-5
-  - 韩国-1
-  - 美国-12
-  - 新加坡-2
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 韩国-2
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 美国-27
-  - 美国-28
-  - 美国-29
-  - 美国-30
-  - 美国-31
   - 韩国-3
-  - 美国-32
-  - 美国-33
-  - 美国-34
-  - 美国-35
-  - 美国-36
-  - 美国-37
-  - 美国-38
-  - 美国-39
-  - 美国-40
-  - 美国-41
-  - 美国-42
-  - 美国-43
-  - 美国-44
-  - 美国-45
-  - 美国-46
-  - 美国-47
-  - 美国-48
-  - 美国-49
-  - 美国-50
-  - 美国-51
-  - 美国-52
+  - 新加坡-2
+  - 中国大陆-5
+  - 中国大陆-6
+  - 中国大陆-7
+  - 中国大陆-8
+  - 美国-12
+  - 美国-13
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -1197,68 +600,28 @@ proxy-groups:
 - interval: 360
   name: 国外节点-延迟最低
   proxies: &id004
-  - 美国-1
   - 日本-1
+  - 日本-2
+  - 美国-1
   - 美国-2
   - 美国-3
+  - 日本-3
+  - 新加坡-1
+  - 韩国-1
+  - 日本-4
+  - 韩国-2
   - 美国-4
   - 美国-5
   - 美国-6
-  - 日本-2
   - 美国-7
   - 美国-8
-  - 新加坡-1
   - 美国-9
   - 美国-10
-  - 日本-3
-  - 日本-4
   - 美国-11
-  - 日本-5
-  - 韩国-1
-  - 美国-12
-  - 新加坡-2
-  - 美国-13
-  - 美国-14
-  - 美国-15
-  - 美国-16
-  - 美国-17
-  - 韩国-2
-  - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 美国-27
-  - 美国-28
-  - 美国-29
-  - 美国-30
-  - 美国-31
   - 韩国-3
-  - 美国-32
-  - 美国-33
-  - 美国-34
-  - 美国-35
-  - 美国-36
-  - 美国-37
-  - 美国-38
-  - 美国-39
-  - 美国-40
-  - 美国-41
-  - 美国-42
-  - 美国-43
-  - 美国-44
-  - 美国-45
-  - 美国-46
-  - 美国-47
-  - 美国-48
-  - 美国-49
-  - 美国-50
-  - 美国-51
-  - 美国-52
+  - 新加坡-2
+  - 美国-12
+  - 美国-13
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
