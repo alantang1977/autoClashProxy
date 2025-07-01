@@ -60,51 +60,7 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 新加坡-1
-  password: VQzTHumV767vaCqDGSFsXb0XTMU
-  port: 4881
-  server: 13.229.107.18
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
   name: 日本-1
-  password: t87f6wVKWF4s97u40tEgQtAs
-  port: 6410
-  server: 43.207.86.235
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  cipher: 2022-blake3-aes-128-gcm
-  client-fingerprint: chrome
-  name: 中国大陆-1
-  password: 12xGRmcEy3TVETzE47MreA==
-  port: '34664'
-  server: 183.240.187.198
-  type: ss
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-2
-  password: kIKFMf0EbDYYTnUYTSWsrZO2CgI
-  port: 24801
-  server: 13.230.97.153
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-3
   password: JhsNcC589qqPqdRob3CIgwqjbc
   port: 14257
   server: 3.112.174.186
@@ -114,26 +70,12 @@ proxies:
   tfo: false
   type: hysteria2
 - alterId: 0
-  client-fingerprint: firefox
-  name: 中国香港-1
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 103.12.77.78
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- alterId: 0
   auth: ''
   fast-open: false
-  name: 美国-1
-  password: hfWoFliBzz7DzJ4AhSrCpNsiw
-  port: 21779
-  server: 34.221.171.77
+  name: 日本-2
+  password: t87f6wVKWF4s97u40tEgQtAs
+  port: 6410
+  server: 43.207.86.235
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -142,7 +84,7 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 日本-4
+  name: 日本-3
   password: THySbYJ9A198OxWz2HLK6Kpaw
   port: 30673
   server: 18.183.135.74
@@ -152,9 +94,50 @@ proxies:
   tfo: false
   type: hysteria2
 - alterId: 0
+  cipher: dummy
+  name: 中国大陆-1
+  obfs: plain
+  obfs-param: cbcdc8198.microsoft.com
+  password: mantouyun888
+  port: '44003'
+  protocol: auth_chain_a
+  protocol-param: 8198:CsJt8BBrKFOSrjv2
+  server: aieq.mt.mt5888.top
+  type: ssr
+  udp: true
+- alterId: 0
   auth: ''
   fast-open: false
+  name: 日本-4
+  password: Rw8RlIbymBVZ0r1wK3R3U6c
+  port: 28100
+  server: 18.181.213.212
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  cipher: aes-256-cfb
   name: 日本-5
+  password: awsps0501
+  port: 443
+  server: 43.207.76.238
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-2
+  port: 19223
+  server: jy-hk.07wi0kka34.download
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b1a385d-4b74-3791-8986-2986c0c50473
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 日本-6
   password: OytKAxFES3iXc4Xo0SWZg2ceuDo
   port: 15513
   server: 3.113.25.208
@@ -164,21 +147,50 @@ proxies:
   tfo: false
   type: hysteria2
 - alterId: 0
-  auth: ''
-  fast-open: false
+  client-fingerprint: chrome
+  name: 美国-1
+  network: ws
+  port: 8880
+  server: 198.62.62.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
   name: 美国-2
-  password: 9TItIjHPMopRBvBQpeTKTNJf2k
-  port: 26533
-  server: 54.166.221.95
-  servername: bing.com
+  network: ws
+  port: 443
+  server: 162.159.153.72
+  servername: vk.ylka.dpdns.org
   skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vk.ylka.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-3
+  port: 19220
+  server: jy-tw.07wi0kka34.download
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b1a385d-4b74-3791-8986-2986c0c50473
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 新加坡-2
+  name: 新加坡-1
   password: vlJbyJEtcNjHvV6dnkZ1Z4VjpI
   port: 10264
   server: 52.221.255.180
@@ -188,46 +200,80 @@ proxies:
   tfo: false
   type: hysteria2
 - alterId: 0
-  client-fingerprint: chrome
+  auth: ''
+  fast-open: false
+  name: 新加坡-2
+  password: VQzTHumV767vaCqDGSFsXb0XTMU
+  port: 4881
+  server: 13.229.107.18
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  auth: 2f34b1b0-fa1f-4fd2-bf30-d013c902d8a3
+  down: '150'
   name: 美国-3
+  password: 2f34b1b0-fa1f-4fd2-bf30-d013c902d8a3
+  port: '50000'
+  server: ali.xiao666666.site
+  skip-cert-verify: true
+  sni: ali.xiao666666.site
+  type: hysteria2
+  udp: true
+  up: '150'
+- alterId: 0
+  cipher: 2022-blake3-aes-128-gcm
+  client-fingerprint: chrome
+  name: 中国大陆-4
+  password: 12xGRmcEy3TVETzE47MreA==
+  port: '34664'
+  server: 183.240.187.198
+  type: ss
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 日本-7
+  password: kIKFMf0EbDYYTnUYTSWsrZO2CgI
+  port: 24801
+  server: 13.230.97.153
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  cipher: dummy
+  name: 中国大陆-5
+  obfs: plain
+  obfs-param: cbcdc8198.microsoft.com
+  password: mantouyun888
+  port: 44003
+  protocol: auth_chain_a
+  protocol-param: 8198:CsJt8BBrKFOSrjv2
+  server: 9988.mt.mt5888.top
+  type: ssr
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-4
   network: ws
-  port: 80
-  server: 104.16.86.2
+  port: 8880
+  server: 190.93.245.177
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-4
-  password: RKrGw4dSUwK3YAvqdQI8tcqNl0
-  port: 34060
-  server: 35.94.124.236
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 新加坡-3
-  password: meDixlXwWLtMK7KYGlxBjyxxCws
-  port: 31506
-  server: 54.151.205.10
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: '0'
   cipher: auto
-  name: 中国大陆-2
+  name: 中国大陆-6
   network: ws
   port: '29709'
   server: ovhsg.v4.ewddns.net
@@ -244,6 +290,272 @@ proxies:
   client-fingerprint: chrome
   name: 美国-5
   network: ws
+  port: 8880
+  server: 160.79.104.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: aes-256-gcm
+  name: 中国大陆-7
+  password: dwz1GtF7
+  port: '30015'
+  server: 120.233.128.98
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-8
+  port: 19241
+  server: jy-jp.07wi0kka34.download
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b1a385d-4b74-3791-8986-2986c0c50473
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-1
+  network: ws
+  port: 8880
+  server: 156.238.19.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-6
+  network: ws
+  port: 8880
+  server: 160.79.105.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: firefox
+  name: 中国香港-2
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 103.12.77.48
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-7
+  network: ws
+  port: 8880
+  server: 135.84.74.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 新加坡-3
+  password: meDixlXwWLtMK7KYGlxBjyxxCws
+  port: 31506
+  server: 54.151.205.10
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-8
+  network: ws
+  port: 8880
+  server: 135.84.79.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-9
+  network: ws
+  port: 8880
+  server: 130.250.137.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-10
+  network: ws
+  port: 8880
+  server: 159.112.235.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-11
+  network: ws
+  port: 8880
+  server: 192.0.54.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-12
+  network: ws
+  port: 8880
+  server: 192.200.160.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-13
+  network: ws
+  port: 8880
+  server: 104.129.166.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-14
+  network: ws
+  port: 8880
+  server: 155.46.167.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-15
+  network: ws
+  port: 8880
+  server: 66.81.247.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  name: 美国-16
+  network: ws
+  port: 8880
+  server: 192.0.63.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-17
+  network: ws
+  port: 8880
+  server: 167.68.4.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-18
+  network: ws
   port: '8880'
   server: 154.85.99.20
   servername: ip.langmanshanxi.top
@@ -255,100 +567,88 @@ proxies:
       Host: ip.langmanshanxi.top
     path: /Telegram@WangCai2/?ed=2560
 - alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-6
-  password: J4MF5gYLAejSsZA1b0T3djeNGoI
-  port: 16523
-  server: 44.243.233.105
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: '56780'
-  server: 222.112.15.140
-  type: ss
-- alterId: 0
-  cipher: dummy
-  name: 中国大陆-3
-  obfs: plain
-  obfs-param: cbcdc8198.microsoft.com
-  password: mantouyun888
-  port: 41114
-  protocol: auth_chain_a
-  protocol-param: 8198:CsJt8BBrKFOSrjv2
-  server: y66.ffd.mt5888.top
-  type: ssr
+  client-fingerprint: chrome
+  name: 日本-8
+  network: ws
+  port: 8880
+  server: 103.116.7.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-6
-  password: Rw8RlIbymBVZ0r1wK3R3U6c
-  port: 28100
-  server: 18.181.213.212
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-7
-  network: ws
-  port: 80
-  server: 104.16.171.121
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: a3875c94-e968-404c-b62d-5a292d20e6d8
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: polished-limit-deb9-ppal03.latopi8673.workers.dev
-    path: /?ed=2560
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-8
-  password: sysadmin.sysadmin
-  port: '444'
-  server: 165.1.76.128
-  skip-cert-verify: true
-  sni: mg1.wtn.wang
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-9
+  name: 美国-19
   network: ws
-  port: 80
-  server: 104.24.37.192
+  port: 8880
+  server: 63.141.128.177
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: ppal03.dolobe7975.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  name: 美国-10
-  network: ws
-  port: 80
-  server: 104.21.24.112
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 65b3cbba-e6ac-485a-9481-976a0415eab9
-  ws-opts:
-    headers:
-      Host: bLue-sNoW-a243.GeleNE5962.wOrKeRS.dEV
-    path: /Fvy0Y7NJ7uucUDha?ed=2560
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-11
+  name: 美国-20
+  network: ws
+  port: 8880
+  server: 154.83.2.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-21
+  network: ws
+  port: 8880
+  server: 66.235.200.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-22
+  network: ws
+  port: 8880
+  server: 162.120.94.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-23
   network: ws
   port: '8880'
   server: 104.129.164.39
@@ -361,390 +661,344 @@ proxies:
       Host: ip.langmanshanxi.top
     path: /Telegram🇮🇷@ShadowProxy66 /?ed=2560
 - alterId: 0
-  auth: 2f34b1b0-fa1f-4fd2-bf30-d013c902d8a3
-  down: '150'
-  name: 美国-12
-  password: 2f34b1b0-fa1f-4fd2-bf30-d013c902d8a3
-  port: '50000'
-  server: ali.xiao666666.site
-  skip-cert-verify: true
-  sni: ali.xiao666666.site
-  type: hysteria2
-  udp: true
-  up: '150'
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-13
-  password: YidTdI17j06K1PFBUWdzWDVZXc
-  port: 33562
-  server: 52.14.165.55
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-4
-  network: tcp
-  port: 37775
-  server: 120.232.153.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.63
-  ws-path: /
-- alterId: 0
-  name: 美国-14
+  client-fingerprint: chrome
+  name: 美国-24
   network: ws
   port: 8880
-  server: 66.235.200.94
+  server: 168.100.6.177
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
   type: vless
-  uuid: 5faa94c6-ea27-4ea0-9e39-2de3d6ea9be1
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: channel-falcunargo.efa180b5d7.workers.Dev
-    path: /✦❰+𝗝𝗼𝗶𝗻+➪+
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
-  cipher: aes-256-gcm
-  name: 中国大陆-5
-  password: dwz1GtF7
-  port: 30015
-  server: 120.233.128.98
+  cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: '15098'
+  server: 125.141.31.72
   type: ss
 - alterId: 0
-  name: 美国-15
-  network: ws
-  port: 2052
-  server: 172.67.135.195
-  skip-cert-verify: true
-  type: vless
-  udp: true
-  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
-  ws-opts:
-    headers:
-      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.63 Safari/537.36
-    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
-  xudp: true
-- alterId: 0
   client-fingerprint: chrome
-  name: 美国-16
-  network: ws
-  port: 8080
-  server: 104.18.56.155
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: 9f0eae34-97c1-4c07-8a55-438379981334
-  ws-opts:
-    headers:
-      Host: snowy-bush-4df8-ppal03.toxebex651.workers.dev
-    path: /
-- alterId: 0
-  name: 美国-17
-  password: c2b58ae0-d21c-11ef-b414-f23c91cfbbc9
-  port: '8443'
-  server: 638bb563-sw3ts0-swwcfg-1eijl.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: 638bb563-sw3ts0-swwcfg-1eijl.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-18
-  network: ws
-  port: 80
-  server: 104.16.1.47
-  servername: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-  tls: false
-  type: vless
-  uuid: b550a101-63fe-4862-bfd3-8b87bb4168dd
-  ws-opts:
-    headers:
-      Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
-    path: /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-19
-  network: ws
-  port: 80
-  server: 104.24.167.96
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  uuid: ec1bb388-649c-4deb-9eb1-a096b784e0d3
-  ws-opts:
-    headers:
-      Host: round-truth-4e97-ppal03.vegasow726.workers.dev
-    path: /telegram
-- alterId: 0
-  name: 美国-20
-  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
-  port: '8443'
-  server: ccb2a204-sw1z40-sx7hbg-1mmbp.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: ccb2a204-sw1z40-sx7hbg-1mmbp.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-21
-  password: e8a960d8-14f5-11ec-a0fc-f23c913c8d2b
-  port: '8443'
-  server: ed8e1d3b-sw3ts0-szt6ky-1bonh.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: ed8e1d3b-sw3ts0-szt6ky-1bonh.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-22
-  password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b
-  port: '8443'
-  server: 3e8cbc42-svwf40-sw0dp4-3z3v.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: 3e8cbc42-svwf40-sw0dp4-3z3v.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-  client-fingerprint: chrome
-  name: 美国-23
-  password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-  port: '10086'
-  server: aus.pagate.top
-  skip-cert-verify: true
-  sni: aus.pagate.top
-  type: hysteria2
-  udp: true
-- alterId: '64'
-  cipher: auto
-  name: 中国大陆-6
-  port: '46759'
-  server: 120.198.71.217
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 美国-24
-  password: 607d365e-7ea1-11ee-95e9-f23c913c8d2b
-  port: '8443'
-  server: 69ad0675-sw5og0-sx7hbg-1mmbp.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: 69ad0675-sw5og0-sx7hbg-1mmbp.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
   name: 美国-25
-  password: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
-  port: '8443'
-  server: d5d8af9a-svlb40-sxf56z-1f596.hy2.gotochinatown.net
+  network: ws
+  port: 8880
+  server: 139.64.235.177
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: false
-  sni: d5d8af9a-svlb40-sxf56z-1f596.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 日本-9
+  network: ws
+  port: 8880
+  server: 103.245.229.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  cipher: dummy
+  name: 中国大陆-9
+  obfs: plain
+  obfs-param: cbcdc8198.microsoft.com
+  password: mantouyun888
+  port: 41114
+  protocol: auth_chain_a
+  protocol-param: 8198:CsJt8BBrKFOSrjv2
+  server: y66.ffd.mt5888.top
+  type: ssr
+  udp: true
 - alterId: 0
   client-fingerprint: chrome
   name: 美国-26
-  password: dongtaiwang.com
-  port: '31180'
-  server: 51.159.111.32
-  skip-cert-verify: true
-  sni: apple.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-27
   network: ws
-  password: c7cdf323-25d4-4c82-ad35-0aca769041c2
-  port: 443
-  server: 162.159.152.69
-  skip-cert-verify: true
-  sni: trojans1.114514660.xyz
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 美国-28
-  password: 1b9c460e-f026-11ef-b737-f23c91cfbbc9
-  port: '8443'
-  server: 2e7bc2e9-sw04g0-swsmkh-1s0a7.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: 2e7bc2e9-sw04g0-swsmkh-1s0a7.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-29
-  password: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
-  port: '8443'
-  server: ce8ae4b9-svn5s0-swbt02-g3b3.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: ce8ae4b9-svn5s0-swbt02-g3b3.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-7
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 160.250.65.124
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 美国-30
-  network: ws
-  port: 443
-  server: 66.112.216.70
-  servername: usa.rtot.me
-  skip-cert-verify: true
-  sni: usa.rtot.me
-  tls: true
-  type: vless
-  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
-  ws-opts:
-    headers:
-      Host: usa.rtot.me
-    path: /bing
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-31
-  password: Z5cdtfPHAPbFHC40PClBeD0hEzY
-  port: 18551
-  server: 18.156.80.195
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-7
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v7.heduian.link
-    path: /oooo
-- alterId: 0
-  name: 美国-32
-  password: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
-  port: '8443'
-  server: 1ec1d0fd-sw3ts0-swdpud-duku.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: 1ec1d0fd-sw3ts0-swdpud-duku.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 中国大陆-8
-  password: 7905a32b-012c-4711-89e2-73b6713eca75
-  port: 40030
-  server: pr.fastsoonlink.com
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 韩国-2
-  password: 08f0c77ed619
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: xwkr1v1.dsjsapi.net
-    mode: websocket
-    mux: true
-    path: /yjriebtdvghs
-    skip-cert-verify: false
-    tls: true
-  port: 636
-  server: 43.226.17.54
-  tfo: false
-  type: ss
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国香港-2
-  port: 443
-  reality-opts:
-    public-key: MFsbnsNQsSpZwP-_Ohzako6aHpfK4-rbssxhr3eywWw
-    short-id: 4476a3
-  server: 62.60.233.250
-  servername: images.apple.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fd0cdd44-2361-11f0-9970-45e1d80c4039
-- alterId: 0
-  cipher: auto
-  name: 中国香港-3
-  network: ws
-  port: 8080
-  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
+  port: 8880
+  server: 66.45.118.177
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
-  type: vmess
+  type: vless
   udp: true
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-9
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-10
-  network: ws
-  port: 30804
-  server: v4.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
-  auth: ''
-  fast-open: false
+  client-fingerprint: chrome
+  name: 美国-27
+  network: ws
+  port: 8880
+  server: 209.46.30.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-28
+  network: ws
+  port: 8880
+  server: 140.99.233.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-29
+  network: ws
+  port: 8880
+  server: 184.174.80.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-30
+  network: ws
+  port: 8880
+  server: 167.68.5.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 日本-10
+  network: ws
+  port: 8880
+  server: 103.245.228.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-31
+  network: ws
+  port: 8880
+  server: 170.114.46.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-3
+  network: ws
+  port: 8880
+  server: 103.160.204.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-32
+  network: ws
+  port: 8880
+  server: 108.165.216.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
   name: 美国-33
-  password: wVoVOR9RQFqB05p2Tmf5zK61plU
-  port: 3520
-  server: 38.179.64.162
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
+  network: ws
+  port: 8880
+  server: 167.68.42.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-34
+  network: ws
+  port: 8880
+  server: 216.24.57.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-35
+  network: ws
+  port: 8880
+  server: 199.181.197.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-36
+  network: ws
+  port: 8880
+  server: 162.251.82.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-37
+  network: ws
+  port: 8880
+  server: 170.114.45.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-38
+  network: ws
+  port: 8880
+  server: 159.242.242.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 加拿大-1
+  network: ws
+  port: 8880
+  server: 74.49.214.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-39
+  network: ws
+  port: 8880
+  server: 167.68.11.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -855,64 +1109,72 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id003
-  - 新加坡-1
   - 日本-1
-  - 中国大陆-1
   - 日本-2
   - 日本-3
-  - 中国香港-1
-  - 美国-1
+  - 中国大陆-1
   - 日本-4
   - 日本-5
+  - 中国大陆-2
+  - 日本-6
+  - 美国-1
   - 美国-2
+  - 中国大陆-3
+  - 新加坡-1
   - 新加坡-2
   - 美国-3
+  - 中国大陆-4
+  - 日本-7
+  - 中国大陆-5
   - 美国-4
-  - 新加坡-3
-  - 中国大陆-2
+  - 中国大陆-6
   - 美国-5
+  - 中国大陆-7
+  - 中国大陆-8
+  - 中国香港-1
   - 美国-6
-  - 韩国-1
-  - 中国大陆-3
-  - 日本-6
+  - 中国香港-2
   - 美国-7
+  - 新加坡-3
   - 美国-8
   - 美国-9
   - 美国-10
   - 美国-11
   - 美国-12
   - 美国-13
-  - 中国大陆-4
   - 美国-14
-  - 中国大陆-5
   - 美国-15
   - 美国-16
   - 美国-17
   - 美国-18
+  - 日本-8
   - 美国-19
   - 美国-20
   - 美国-21
   - 美国-22
   - 美国-23
-  - 中国大陆-6
   - 美国-24
+  - 韩国-1
   - 美国-25
+  - 日本-9
+  - 中国大陆-9
   - 美国-26
   - 美国-27
   - 美国-28
   - 美国-29
-  - 日本-7
   - 美国-30
+  - 日本-10
   - 美国-31
-  - 中国大陆-7
-  - 美国-32
-  - 中国大陆-8
-  - 韩国-2
-  - 中国香港-2
   - 中国香港-3
-  - 中国大陆-9
-  - 中国大陆-10
+  - 美国-32
   - 美国-33
+  - 美国-34
+  - 美国-35
+  - 美国-36
+  - 美国-37
+  - 美国-38
+  - 加拿大-1
+  - 美国-39
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -931,23 +1193,23 @@ proxy-groups:
 - interval: 360
   name: 国外节点-延迟最低
   proxies: &id004
-  - 新加坡-1
   - 日本-1
   - 日本-2
   - 日本-3
-  - 美国-1
   - 日本-4
   - 日本-5
+  - 日本-6
+  - 美国-1
   - 美国-2
+  - 新加坡-1
   - 新加坡-2
   - 美国-3
+  - 日本-7
   - 美国-4
-  - 新加坡-3
   - 美国-5
   - 美国-6
-  - 韩国-1
-  - 日本-6
   - 美国-7
+  - 新加坡-3
   - 美国-8
   - 美国-9
   - 美国-10
@@ -959,23 +1221,32 @@ proxy-groups:
   - 美国-16
   - 美国-17
   - 美国-18
+  - 日本-8
   - 美国-19
   - 美国-20
   - 美国-21
   - 美国-22
   - 美国-23
   - 美国-24
+  - 韩国-1
   - 美国-25
+  - 日本-9
   - 美国-26
   - 美国-27
   - 美国-28
   - 美国-29
-  - 日本-7
   - 美国-30
+  - 日本-10
   - 美国-31
   - 美国-32
-  - 韩国-2
   - 美国-33
+  - 美国-34
+  - 美国-35
+  - 美国-36
+  - 美国-37
+  - 美国-38
+  - 加拿大-1
+  - 美国-39
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
