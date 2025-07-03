@@ -60,36 +60,209 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 日本-1
-  password: kIKFMf0EbDYYTnUYTSWsrZO2CgI
-  port: 24801
-  server: 13.230.97.153
+  name: 新加坡-1
+  password: vlJbyJEtcNjHvV6dnkZ1Z4VjpI
+  port: 10264
+  server: 52.221.255.180
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-1
+  password: sysadmin.sysadmin
+  port: '443'
+  server: 107.172.5.215
+  skip-cert-verify: true
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  name: 中国大陆-1
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 51083
+  server: 36.151.192.58
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- alterId: 0
+  cipher: 2022-blake3-aes-128-gcm
+  client-fingerprint: chrome
+  name: 中国大陆-2
+  password: 12xGRmcEy3TVETzE47MreA==
+  port: '34664'
+  server: 183.240.187.198
+  type: ss
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 美国-1
-  password: RKrGw4dSUwK3YAvqdQI8tcqNl0
-  port: 34060
-  server: 35.94.124.236
+  name: 新加坡-2
+  password: VQzTHumV767vaCqDGSFsXb0XTMU
+  port: 4881
+  server: 13.229.107.18
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
 - alterId: 0
+  client-fingerprint: chrome
+  name: 美国-2
+  network: ws
+  port: 8880
+  server: 160.79.104.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-3
+  network: ws
+  port: '443'
+  server: 162.159.152.155
+  servername: zv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: zv.bgm2024.dpdns.org
+    path: /?ed=2560
+- alterId: 64
+  cipher: auto
+  name: 中国大陆-3
+  port: 58882
+  server: 120.198.71.217
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 中国大陆-4
+  port: 44491
+  server: 120.232.153.41
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  name: 美国-4
+  network: ws
+  port: 80
+  server: 104.24.37.192
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: 9a2680ff-c5d5-410a-9108-8d6b10e4ea1e
+  ws-opts:
+    headers:
+      Host: ppal03.dolobe7975.workers.dev
+    path: /?ed=2560
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 新加坡-3
+  password: meDixlXwWLtMK7KYGlxBjyxxCws
+  port: 31506
+  server: 54.151.205.10
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  name: 美国-5
+  network: ws
+  port: 80
+  server: 104.18.26.94
+  servername: esetsecuritylicense.wixel67553.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 097e2594-dbbb-4a36-a5c7-6b8c8893c611
+  ws-opts:
+    headers:
+      Host: esetsecuritylicense.wixel67553.workers.dev
+    path: /JOIN-FILTERK0SH/?ed=2048
+- alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 中国大陆-1
+  name: 中国大陆-5
   password: dwz1GtF7
   port: 30015
   server: 120.233.128.98
   tfo: false
   type: ss
+- alterId: 0
+  name: 美国-6
+  network: ws
+  port: 2052
+  server: 172.67.135.195
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: 0d710c53-876d-401f-97f0-6bd1a8db941a
+  ws-opts:
+    headers:
+      Host: sWEeT-DIsK-b69d.TUdTudtrUHtRU.wOrkERS.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /J61hhknxUXEwJZLq/MTU5LjY5LjE1My4xMTQ=?ed=2560
+  xudp: true
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-7
+  network: ws
+  port: 8880
+  server: 104.129.166.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 日本-1
+  password: Rw8RlIbymBVZ0r1wK3R3U6c
+  port: 28100
+  server: 18.181.213.212
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-8
+  network: ws
+  port: 8880
+  server: 159.242.242.177
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    headers:
+      Host: ip.langmanshanxi.top
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   auth: ''
   fast-open: false
@@ -105,111 +278,7 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 新加坡-1
-  password: vlJbyJEtcNjHvV6dnkZ1Z4VjpI
-  port: 10264
-  server: 52.221.255.180
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 新加坡-2
-  password: VQzTHumV767vaCqDGSFsXb0XTMU
-  port: 4881
-  server: 13.229.107.18
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
   name: 日本-3
-  password: Rw8RlIbymBVZ0r1wK3R3U6c
-  port: 28100
-  server: 18.181.213.212
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-2
-  password: J4MF5gYLAejSsZA1b0T3djeNGoI
-  port: 16523
-  server: 44.243.233.105
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 中国大陆-2
-  password: zcaarradsfasgfdcxx
-  port: 3551
-  server: nstku8v.ns.p36958.xyz
-  tfo: false
-  type: ss
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 新加坡-3
-  password: meDixlXwWLtMK7KYGlxBjyxxCws
-  port: 31506
-  server: 54.151.205.10
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  cipher: 2022-blake3-aes-128-gcm
-  client-fingerprint: chrome
-  name: 中国大陆-3
-  password: 12xGRmcEy3TVETzE47MreA==
-  port: '34664'
-  server: 183.240.187.198
-  type: ss
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-3
-  password: hfWoFliBzz7DzJ4AhSrCpNsiw
-  port: 21779
-  server: 34.221.171.77
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 中国大陆-4
-  port: 44491
-  server: 120.232.153.41
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  name: 中国大陆-5
-  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
-  port: 27231
-  server: 931e2678-sx4v40-sy3dhh-1rnrp.cm5.cnkuaishou.com
-  sni: 931e2678-sx4v40-sy3dhh-1rnrp.cm5.cnkuaishou.com
-  type: trojan
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-4
   password: THySbYJ9A198OxWz2HLK6Kpaw
   port: 30673
   server: 18.183.135.74
@@ -219,66 +288,8 @@ proxies:
   tfo: false
   type: hysteria2
 - alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-4
-  password: YidTdI17j06K1PFBUWdzWDVZXc
-  port: 33562
-  server: 52.14.165.55
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: 94610fa2-7e11-427b-830b-d801bfc85497
-  down: '100'
-  name: 中国香港-1
-  password: 94610fa2-7e11-427b-830b-d801bfc85497
-  port: '51001'
-  server: hkbn.xiao666666.site
-  skip-cert-verify: true
-  sni: hkbn.xiao666666.site
-  type: hysteria2
-  udp: true
-  up: '100'
-- alterId: 0
-  cipher: aes-256-cfb
-  name: 韩国-1
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-- alterId: 0
   client-fingerprint: chrome
-  name: 美国-5
-  password: dongtaiwang.com
-  port: '31180'
-  server: 51.159.111.32
-  skip-cert-verify: true
-  sni: apple.com
-  tfo: false
-  type: hysteria2
-- alterId: 64
-  cipher: auto
-  name: 中国大陆-6
-  port: 58882
-  server: 120.198.71.217
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-6
-  password: sysadmin.sysadmin
-  port: '443'
-  server: 107.172.5.215
-  skip-cert-verify: true
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-7
+  name: 美国-9
   network: ws
   port: '8880'
   server: 184.174.80.177
@@ -291,63 +302,70 @@ proxies:
       Host: ip.langmanshanxi.top
     path: /
 - alterId: 0
+  cipher: aes-256-cfb
+  name: 韩国-1
+  password: qwerREWQ@@
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+- alterId: 0
   auth: ''
   fast-open: false
-  name: 美国-8
-  password: 9TItIjHPMopRBvBQpeTKTNJf2k
-  port: 26533
-  server: 54.166.221.95
+  name: 美国-10
+  password: RKrGw4dSUwK3YAvqdQI8tcqNl0
+  port: 34060
+  server: 35.94.124.236
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
 - alterId: 0
-  client-fingerprint: random
-  fingerprint: ''
-  name: 美国-9
+  client-fingerprint: chrome
+  name: 美国-11
   network: ws
-  port: 443
-  server: 104.18.8.175
-  servername: a1.ghormehsabzi.dpdns.org
+  port: '443'
+  server: 104.24.170.151
+  servername: bv.bgm2024.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
-  udp: false
-  uuid: e6236ebc-7334-4bed-977f-0c20bcdfcc00
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
     headers:
-      host: a1.ghormehsabzi.dpdns.org
+      Host: bv.bgm2024.dpdns.org
     path: /?ed=2560
 - alterId: 0
-  auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-  client-fingerprint: chrome
-  name: 美国-10
-  password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
-  port: '10086'
-  server: aus.pagate.top
-  skip-cert-verify: true
-  sni: aus.pagate.top
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: f7d95364-607b-11ee-93af-f23c91369f2d
-  name: 美国-11
-  password: f7d95364-607b-11ee-93af-f23c91369f2d
-  port: '8443'
-  server: 7f9699e6-sytz40-t9p7yj-1ijh5.hy2.gotochinatown.net
-  sni: 7f9699e6-sytz40-t9p7yj-1ijh5.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- alterId: 0
-  client-fingerprint: chrome
+  auth: ''
+  fast-open: false
   name: 美国-12
-  password: e3975a05-b89e-11ec-a50d-f23c91cfbbc9
-  port: '8443'
-  server: d5d8af9a-svlb40-sxf56z-1f596.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: d5d8af9a-svlb40-sxf56z-1f596.hy2.gotochinatown.net
+  password: hfWoFliBzz7DzJ4AhSrCpNsiw
+  port: 21779
+  server: 34.221.171.77
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
   tfo: false
   type: hysteria2
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-13
+  password: dongtaiwang.com
+  port: '31180'
+  server: 51.159.111.32
+  skip-cert-verify: true
+  sni: apple.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  name: 中国大陆-6
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 5975
+  server: 36.151.251.56
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: aes-256-gcm
   name: 中国大陆-7
@@ -359,7 +377,19 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 美国-13
+  name: 日本-4
+  password: kIKFMf0EbDYYTnUYTSWsrZO2CgI
+  port: 24801
+  server: 13.230.97.153
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-14
   password: Z5cdtfPHAPbFHC40PClBeD0hEzY
   port: 18551
   server: 18.156.80.195
@@ -369,16 +399,62 @@ proxies:
   tfo: false
   type: hysteria2
 - alterId: 0
-  auth: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  name: 美国-14
-  password: 3437f34e-1b77-11eb-8684-f23c913c8d2b
-  port: '8443'
-  server: 99bdee08-sytz40-tlm64c-xm0q.hy2.gotochinatown.net
-  sni: 99bdee08-sytz40-tlm64c-xm0q.hy2.gotochinatown.net
+  auth: ''
+  fast-open: false
+  name: 美国-15
+  password: 9TItIjHPMopRBvBQpeTKTNJf2k
+  port: 26533
+  server: 54.166.221.95
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
   type: hysteria2
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 日本-5
+  password: Wo9rLCYw6gzcfTgIu11mhBVciVs
+  port: 29282
+  server: 47.74.34.102
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-16
+  network: ws
+  port: '443'
+  server: 104.16.242.72
+  servername: bv.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  ws-opts:
+    headers:
+      Host: bv.bgm2024.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   name: 中国大陆-8
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  port: 14234
+  server: f01b2667-sytz40-szptnz-1kcpe.cm5.cnkuaishou.com
+  skip-cert-verify: true
+  sni: f01b2667-sytz40-szptnz-1kcpe.cm5.cnkuaishou.com
+  type: trojan
+- alterId: 0
+  name: 中国大陆-9
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  port: 27231
+  server: 931e2678-sx4v40-sy3dhh-1rnrp.cm5.cnkuaishou.com
+  sni: 931e2678-sx4v40-sy3dhh-1rnrp.cm5.cnkuaishou.com
+  type: trojan
+- alterId: 0
+  name: 中国大陆-10
   network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -386,36 +462,15 @@ proxies:
   sni: hk-13-568.flztjc.net
   type: trojan
 - alterId: 0
-  auth: e2d8b574-e089-11ef-9cc7-f23c9164ca5d
-  name: 美国-15
-  password: e2d8b574-e089-11ef-9cc7-f23c9164ca5d
-  port: '8443'
-  server: 2b9e6c8f-sytz40-szfhww-1ta58.hy2.gotochinatown.net
-  sni: 2b9e6c8f-sytz40-szfhww-1ta58.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 美国-16
-  password: e8a960d8-14f5-11ec-a0fc-f23c913c8d2b
-  port: '8443'
-  server: ed8e1d3b-sw3ts0-szt6ky-1bonh.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: ed8e1d3b-sw3ts0-szt6ky-1bonh.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: 0a335fd6-be0b-11ec-8dfa-f23c91cfbbc9
-  client-fingerprint: chrome
-  name: 美国-17
-  password: 0a335fd6-be0b-11ec-8dfa-f23c91cfbbc9
-  port: '8443'
-  server: 9b3fe771-sytz40-sz5tbu-17z95.hy2.gotochinatown.net
-  sni: 9b3fe771-sytz40-sz5tbu-17z95.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
+  name: 中国大陆-11
+  password: bcc58e88-e147-11ec-b286-f23c91cfbbc9
+  port: 21233
+  server: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
+  sni: 83242d49-sy41s0-szh3gf-ggww.cm5.cnkuaishou.com
+  type: trojan
 - alterId: 2
   cipher: auto
-  name: 中国大陆-9
+  name: 中国大陆-12
   network: ws
   port: 30807
   server: v7.heduian.link
@@ -429,127 +484,40 @@ proxies:
       Host: v7.heduian.link
     path: /oooo
 - alterId: 0
+  auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
   client-fingerprint: chrome
-  name: 美国-18
-  password: c2b58ae0-d21c-11ef-b414-f23c91cfbbc9
-  port: '8443'
-  server: 638bb563-sw3ts0-swwcfg-1eijl.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: 638bb563-sw3ts0-swwcfg-1eijl.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-10
-  network: ws
-  port: 30835
-  server: v35.heduian.link
+  name: 美国-17
+  password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1
+  port: '10086'
+  server: aus.pagate.top
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: aus.pagate.top
+  type: hysteria2
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 中国大陆-13
+  password: 7905a32b-012c-4711-89e2-73b6713eca75
+  port: 40030
+  server: pr.fastsoonlink.com
+  type: ss
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  fingerprint: ''
+  name: 美国-18
+  network: ws
+  port: 443
+  server: bestcf.030101.xyz
+  servername: xv6.jpmj.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 897a4bec-26b8-11e8-94be-00505695472c
   ws-opts:
     headers:
-      Host: v35.heduian.link
-    path: /oooo
-- alterId: 0
-  auth: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
-  client-fingerprint: chrome
-  name: 美国-19
-  password: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b
-  port: '8443'
-  server: 73e0413f-sytz40-syy93u-n09f.hy2.gotochinatown.net
-  sni: 73e0413f-sytz40-syy93u-n09f.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
-  client-fingerprint: chrome
-  name: 美国-20
-  password: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
-  port: '8443'
-  server: 75ded81d-sytz40-t61ki5-1smhu.hy2.gotochinatown.net
-  sni: 75ded81d-sytz40-t61ki5-1smhu.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 中国大陆-11
-  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  port: 14234
-  server: f01b2667-sytz40-szptnz-1kcpe.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  sni: f01b2667-sytz40-szptnz-1kcpe.cm5.cnkuaishou.com
-  type: trojan
-- alterId: 0
-  name: 美国-21
-  password: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
-  port: '8443'
-  server: ce8ae4b9-svn5s0-swbt02-g3b3.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: ce8ae4b9-svn5s0-swbt02-g3b3.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 美国-22
-  password: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
-  port: '8443'
-  server: 1ec1d0fd-sw3ts0-swdpud-duku.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: 1ec1d0fd-sw3ts0-swdpud-duku.hy2.gotochinatown.net
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  auth: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
-  client-fingerprint: chrome
-  name: 美国-23
-  password: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
-  port: '8443'
-  server: 105754ff-sytz40-szx1uy-1p1b.hy2.gotochinatown.net
-  sni: 105754ff-sytz40-szx1uy-1p1b.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 中国大陆-12
-  password: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
-  port: 27235
-  server: 1dde7ddd-sytz40-tbpu76-1thmd.cm5.cnkuaishou.com
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  name: 中国大陆-13
-  password: 225d1cca-d744-11ef-b790-f23c91cfbbc9
-  port: 27235
-  server: 0a7a80dc-sytz40-szxh9w-46gc.cm5.cnkuaishou.com
-  skip-cert-verify: false
-  type: trojan
-- alterId: 0
-  auth: de003c72-0157-11ef-86da-f23c91cfbbc9
-  client-fingerprint: chrome
-  name: 美国-24
-  password: de003c72-0157-11ef-86da-f23c91cfbbc9
-  port: '8443'
-  server: 7f92cf19-sytz40-t35wl0-1r9dt.hy2.gotochinatown.net
-  sni: 7f92cf19-sytz40-t35wl0-1r9dt.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
-  client-fingerprint: chrome
-  name: 美国-25
-  password: 96c798f6-4645-11ee-b8a1-f23c9164ca5d
-  port: '8443'
-  server: 6fbe3624-sytz40-th9kx9-1os43.hy2.gotochinatown.net
-  sni: 6fbe3624-sytz40-th9kx9-1os43.hy2.gotochinatown.net
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 中国大陆-14
-  password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
-  port: 27235
-  server: c3fe9cc6-sytz40-thv9l4-1jbj0.cm5.cnkuaishou.com
-  skip-cert-verify: false
-  type: trojan
+      host: xv6.jpmj.dpdns.org
+    path: /bbs?ed=2048
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -660,54 +628,46 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id003
-  - 日本-1
+  - 新加坡-1
   - 美国-1
   - 中国大陆-1
-  - 日本-2
-  - 新加坡-1
-  - 新加坡-2
-  - 日本-3
-  - 美国-2
   - 中国大陆-2
-  - 新加坡-3
-  - 中国大陆-3
+  - 新加坡-2
+  - 美国-2
   - 美国-3
+  - 中国大陆-3
   - 中国大陆-4
-  - 中国大陆-5
-  - 日本-4
   - 美国-4
-  - 中国香港-1
-  - 韩国-1
+  - 新加坡-3
   - 美国-5
-  - 中国大陆-6
+  - 中国大陆-5
   - 美国-6
   - 美国-7
+  - 日本-1
   - 美国-8
+  - 日本-2
+  - 日本-3
   - 美国-9
+  - 韩国-1
   - 美国-10
   - 美国-11
   - 美国-12
-  - 中国大陆-7
   - 美国-13
+  - 中国大陆-6
+  - 中国大陆-7
+  - 日本-4
   - 美国-14
-  - 中国大陆-8
   - 美国-15
+  - 日本-5
   - 美国-16
-  - 美国-17
+  - 中国大陆-8
   - 中国大陆-9
-  - 美国-18
   - 中国大陆-10
-  - 美国-19
-  - 美国-20
   - 中国大陆-11
-  - 美国-21
-  - 美国-22
-  - 美国-23
   - 中国大陆-12
+  - 美国-17
   - 中国大陆-13
-  - 美国-24
-  - 美国-25
-  - 中国大陆-14
+  - 美国-18
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
@@ -726,39 +686,33 @@ proxy-groups:
 - interval: 360
   name: 国外节点-延迟最低
   proxies: &id004
-  - 日本-1
-  - 美国-1
-  - 日本-2
   - 新加坡-1
+  - 美国-1
   - 新加坡-2
-  - 日本-3
   - 美国-2
-  - 新加坡-3
   - 美国-3
-  - 日本-4
   - 美国-4
-  - 韩国-1
+  - 新加坡-3
   - 美国-5
   - 美国-6
   - 美国-7
+  - 日本-1
   - 美国-8
+  - 日本-2
+  - 日本-3
   - 美国-9
+  - 韩国-1
   - 美国-10
   - 美国-11
   - 美国-12
   - 美国-13
+  - 日本-4
   - 美国-14
   - 美国-15
+  - 日本-5
   - 美国-16
   - 美国-17
   - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
-  - 美国-24
-  - 美国-25
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
