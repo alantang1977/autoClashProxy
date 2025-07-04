@@ -295,14 +295,9 @@ class clashConfig:
             config['proxy-groups'].append(self.createGroup(f"私有节点", "select", privateGroupName))
         config['proxy-groups'] += privateGroup
 
-        spicailGroup = ["TWITTER", "YOUTUBE", "TIKTOK", "FORUMS", "GITHUB", "TELEGRAM", "GFW", "DNS", "AI", "GAME"]
-        for name in spicailGroup:
-            config['proxy-groups'].append(self.createGroup(name, "select", ["共享节点", "私有节点", "国外节点", "DIRECT"]))
-
         allGroups =[
             #groupName,  排除指定归属地的节点
             ["共享节点",  []],
-            ["国外节点",  ["中国香港", "中国大陆"]],
         ]
 
         bCreateSuccess = True
@@ -313,6 +308,11 @@ class clashConfig:
                 return False
             config['proxy-groups'].append(select)
             allGroup += group
+
+        spicailGroup = ["TWITTER", "YOUTUBE", "TIKTOK", "FORUMS", "GITHUB", "TELEGRAM", "GFW", "DNS", "AI", "GAME"]
+        for name in spicailGroup:
+            config['proxy-groups'].append(self.createGroup(name, "select", ["共享节点", "私有节点", "DIRECT"]))
+
         config['proxy-groups'] += allGroup
 
         with open(self.file, 'w', encoding='utf-8') as file:
