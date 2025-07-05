@@ -62,7 +62,7 @@ proxies:
   name: 日本-1
   network: ws
   port: 8880
-  server: 91.193.58.213
+  server: 91.193.58.130
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -78,7 +78,7 @@ proxies:
   name: 日本-2
   network: ws
   port: 8880
-  server: 91.193.58.149
+  server: 91.193.58.28
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -94,7 +94,7 @@ proxies:
   name: 日本-3
   network: ws
   port: 8880
-  server: 91.193.58.91
+  server: 91.193.58.249
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -110,7 +110,7 @@ proxies:
   name: 日本-4
   network: ws
   port: 8880
-  server: 91.193.58.130
+  server: 91.193.58.124
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -126,7 +126,7 @@ proxies:
   name: 日本-5
   network: ws
   port: 8880
-  server: 91.193.58.234
+  server: 91.193.58.184
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -142,7 +142,7 @@ proxies:
   name: 日本-6
   network: ws
   port: 8880
-  server: 91.193.58.202
+  server: 91.193.58.11
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -158,7 +158,7 @@ proxies:
   name: 日本-7
   network: ws
   port: 8880
-  server: 91.193.58.210
+  server: 91.193.58.62
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -174,7 +174,7 @@ proxies:
   name: 日本-8
   network: ws
   port: 8880
-  server: 91.193.58.218
+  server: 91.193.58.63
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -190,7 +190,7 @@ proxies:
   name: 日本-9
   network: ws
   port: 8880
-  server: 91.193.58.242
+  server: 91.193.58.46
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -206,7 +206,7 @@ proxies:
   name: 日本-10
   network: ws
   port: 8880
-  server: 91.193.58.127
+  server: 91.193.58.101
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -222,7 +222,7 @@ proxies:
   name: 日本-11
   network: ws
   port: 8880
-  server: 91.193.58.107
+  server: 91.193.58.247
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -238,7 +238,7 @@ proxies:
   name: 日本-12
   network: ws
   port: 8880
-  server: 91.193.58.174
+  server: 91.193.58.7
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -254,7 +254,7 @@ proxies:
   name: 日本-13
   network: ws
   port: 8880
-  server: 91.193.58.250
+  server: 91.193.58.99
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -270,7 +270,7 @@ proxies:
   name: 日本-14
   network: ws
   port: 8880
-  server: 91.193.58.63
+  server: 91.193.58.122
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -286,7 +286,7 @@ proxies:
   name: 日本-15
   network: ws
   port: 8880
-  server: 91.193.58.109
+  server: 91.193.58.157
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -302,7 +302,7 @@ proxies:
   name: 日本-16
   network: ws
   port: 8880
-  server: 91.193.58.157
+  server: 91.193.58.111
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -318,7 +318,7 @@ proxies:
   name: 日本-17
   network: ws
   port: 8880
-  server: 91.193.58.253
+  server: 91.193.58.126
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -334,7 +334,7 @@ proxies:
   name: 日本-18
   network: ws
   port: 8880
-  server: 91.193.58.113
+  server: 91.193.58.115
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -350,7 +350,7 @@ proxies:
   name: 日本-19
   network: ws
   port: 8880
-  server: 91.193.58.182
+  server: 91.193.58.220
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -366,7 +366,7 @@ proxies:
   name: 日本-20
   network: ws
   port: 8880
-  server: 91.193.58.247
+  server: 91.193.58.22
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -382,7 +382,7 @@ proxies:
   name: 日本-21
   network: ws
   port: 8880
-  server: 91.193.58.171
+  server: 91.193.58.226
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -398,7 +398,7 @@ proxies:
   name: 日本-22
   network: ws
   port: 8880
-  server: 91.193.58.216
+  server: 91.193.58.91
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -414,7 +414,7 @@ proxies:
   name: 日本-23
   network: ws
   port: 8880
-  server: 91.193.58.148
+  server: 91.193.58.116
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -430,7 +430,7 @@ proxies:
   name: 日本-24
   network: ws
   port: 8880
-  server: 91.193.58.11
+  server: 91.193.58.182
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -446,7 +446,7 @@ proxies:
   name: 日本-25
   network: ws
   port: 8880
-  server: 91.193.58.93
+  server: 91.193.58.174
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -462,7 +462,7 @@ proxies:
   name: 日本-26
   network: ws
   port: 8880
-  server: 91.193.58.132
+  server: 91.193.58.228
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -478,7 +478,7 @@ proxies:
   name: 日本-27
   network: ws
   port: 8880
-  server: 91.193.58.117
+  server: 91.193.58.250
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -494,7 +494,7 @@ proxies:
   name: 日本-28
   network: ws
   port: 8880
-  server: 91.193.58.245
+  server: 91.193.58.109
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -510,7 +510,7 @@ proxies:
   name: 日本-29
   network: ws
   port: 8880
-  server: 91.193.58.184
+  server: 91.193.58.223
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -526,7 +526,7 @@ proxies:
   name: 日本-30
   network: ws
   port: 8880
-  server: 91.193.58.79
+  server: 91.193.58.148
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -542,7 +542,7 @@ proxies:
   name: 日本-31
   network: ws
   port: 8880
-  server: 91.193.58.219
+  server: 91.193.58.55
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -558,7 +558,7 @@ proxies:
   name: 日本-32
   network: ws
   port: 8880
-  server: 91.193.58.166
+  server: 91.193.58.216
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -574,7 +574,7 @@ proxies:
   name: 日本-33
   network: ws
   port: 8880
-  server: 91.193.58.28
+  server: 91.193.58.35
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -590,7 +590,7 @@ proxies:
   name: 日本-34
   network: ws
   port: 8880
-  server: 91.193.58.144
+  server: 91.193.58.64
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -606,7 +606,7 @@ proxies:
   name: 日本-35
   network: ws
   port: 8880
-  server: 91.193.58.215
+  server: 91.193.58.70
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -622,7 +622,7 @@ proxies:
   name: 日本-36
   network: ws
   port: 8880
-  server: 91.193.58.73
+  server: 91.193.58.219
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -638,7 +638,7 @@ proxies:
   name: 日本-37
   network: ws
   port: 8880
-  server: 91.193.58.22
+  server: 91.193.58.215
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -654,7 +654,7 @@ proxies:
   name: 日本-38
   network: ws
   port: 8880
-  server: 91.193.58.90
+  server: 91.193.58.108
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -670,7 +670,7 @@ proxies:
   name: 日本-39
   network: ws
   port: 8880
-  server: 91.193.58.101
+  server: 91.193.58.248
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -686,7 +686,7 @@ proxies:
   name: 日本-40
   network: ws
   port: 8880
-  server: 91.193.58.206
+  server: 91.193.58.34
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -702,7 +702,7 @@ proxies:
   name: 日本-41
   network: ws
   port: 8880
-  server: 91.193.58.82
+  server: 91.193.58.245
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -718,7 +718,7 @@ proxies:
   name: 日本-42
   network: ws
   port: 8880
-  server: 91.193.58.62
+  server: 91.193.58.38
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -734,7 +734,7 @@ proxies:
   name: 日本-43
   network: ws
   port: 8880
-  server: 91.193.58.55
+  server: 91.193.58.218
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -750,7 +750,7 @@ proxies:
   name: 日本-44
   network: ws
   port: 8880
-  server: 91.193.58.200
+  server: 91.193.58.231
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -766,7 +766,7 @@ proxies:
   name: 日本-45
   network: ws
   port: 8880
-  server: 91.193.58.2
+  server: 91.193.58.196
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -782,7 +782,7 @@ proxies:
   name: 日本-46
   network: ws
   port: 8880
-  server: 91.193.58.65
+  server: 91.193.58.127
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -814,7 +814,7 @@ proxies:
   name: 日本-48
   network: ws
   port: 8880
-  server: 91.193.58.111
+  server: 91.193.58.68
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -830,7 +830,7 @@ proxies:
   name: 日本-49
   network: ws
   port: 8880
-  server: 91.193.58.64
+  server: 91.193.58.54
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -846,7 +846,7 @@ proxies:
   name: 日本-50
   network: ws
   port: 8880
-  server: 91.193.58.239
+  server: 91.193.58.107
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -862,7 +862,7 @@ proxies:
   name: 日本-51
   network: ws
   port: 8880
-  server: 91.193.58.248
+  server: 91.193.58.90
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -878,7 +878,7 @@ proxies:
   name: 日本-52
   network: ws
   port: 8880
-  server: 91.193.58.241
+  server: 91.193.58.93
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -894,7 +894,7 @@ proxies:
   name: 日本-53
   network: ws
   port: 8880
-  server: 91.193.58.108
+  server: 91.193.58.2
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -910,7 +910,7 @@ proxies:
   name: 日本-54
   network: ws
   port: 8880
-  server: 91.193.58.231
+  server: 91.193.58.13
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -926,7 +926,7 @@ proxies:
   name: 日本-55
   network: ws
   port: 8880
-  server: 91.193.58.18
+  server: 91.193.58.239
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -942,7 +942,7 @@ proxies:
   name: 日本-56
   network: ws
   port: 8880
-  server: 91.193.58.110
+  server: 91.193.58.242
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -958,7 +958,7 @@ proxies:
   name: 日本-57
   network: ws
   port: 8880
-  server: 91.193.58.158
+  server: 91.193.58.117
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -974,7 +974,7 @@ proxies:
   name: 日本-58
   network: ws
   port: 8880
-  server: 91.193.58.98
+  server: 91.193.58.210
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -990,7 +990,7 @@ proxies:
   name: 日本-59
   network: ws
   port: 8880
-  server: 91.193.58.35
+  server: 91.193.58.200
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -1006,7 +1006,7 @@ proxies:
   name: 日本-60
   network: ws
   port: 8880
-  server: 91.193.58.99
+  server: 91.193.58.246
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -1022,7 +1022,7 @@ proxies:
   name: 日本-61
   network: ws
   port: 8880
-  server: 91.193.58.177
+  server: 91.193.58.113
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -1038,7 +1038,7 @@ proxies:
   name: 日本-62
   network: ws
   port: 8880
-  server: 91.193.58.122
+  server: 91.193.58.202
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -1066,11 +1066,12 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
+  client-fingerprint: chrome
   name: 日本-64
   network: ws
   port: 8880
-  server: 91.193.58.69
-  servername: cs.laoyoutiao.link
+  server: 91.193.58.208
+  servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
   type: vless
@@ -1078,14 +1079,14 @@ proxies:
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
-      Host: cs.laoyoutiao.link
-    path: /
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
   name: 日本-65
   network: ws
   port: 8880
-  server: 91.193.58.115
+  server: 91.193.58.0
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -1101,7 +1102,7 @@ proxies:
   name: 日本-66
   network: ws
   port: 8880
-  server: 91.193.58.223
+  server: 91.193.58.240
   servername: Telegram-channel-WangCai2
   skip-cert-verify: true
   tls: false
@@ -1342,6 +1343,7 @@ rules:
 - RULE-SET,icloud,直连规则
 - GEOSITE,private,直连规则
 - GEOSITE,category-speedtest@cn,直连规则
+- GEOSITE,category-ntp-cn,直连规则
 - GEOIP,CN,直连规则,no-resolve
 - GEOSITE,twitter,TWITTER
 - GEOSITE,youtube,YOUTUBE
