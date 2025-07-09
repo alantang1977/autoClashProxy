@@ -62,52 +62,10 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  client-fingerprint: chrome
   name: 日本-1
   network: ws
-  port: 8880
-  server: 91.193.58.253
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-2
-  network: ws
   port: '8880'
-  server: 91.193.58.228
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-3
-  network: ws
-  port: '8880'
-  server: 91.193.58.234
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  name: 日本-4
-  network: ws
-  port: '8880'
-  server: 91.193.58.49
+  server: 91.193.58.254
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -116,27 +74,14 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-5
-  network: ws
-  port: '8880'
-  server: 91.193.58.24
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 日本-6
+  name: 日本-2
   network: ws
   port: 8880
-  server: 91.193.58.36
+  server: 91.193.58.99
   servername: Telegram-channel-WangCai2
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vless
   udp: true
@@ -146,10 +91,10 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
-  name: 日本-7
+  name: 日本-3
   network: ws
   port: '8880'
-  server: 91.193.58.225
+  server: 91.193.58.161
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -159,67 +104,7 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram @WangCai2 /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  name: 日本-8
-  network: ws
-  port: 8880
-  server: 91.193.58.250
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 中国香港-1
-  network: ws
-  port: '8880'
-  server: 156.238.18.138
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-9
-  network: ws
-  port: 8880
-  server: 91.193.58.226
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-10
-  network: ws
-  port: 8880
-  server: 91.193.58.182
-  servername: kjgx.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  name: 日本-11
+  name: 日本-4
   network: ws
   port: '8880'
   server: 91.193.58.64
@@ -232,10 +117,39 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram @WangCai2 /?ed=2560
 - alterId: 0
-  name: 日本-12
+  client-fingerprint: chrome
+  name: 日本-5
+  network: ws
+  port: 8880
+  server: 91.193.58.247
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-6
   network: ws
   port: '8880'
-  server: 91.193.58.173
+  server: 91.193.58.175
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 日本-7
+  network: ws
+  port: '8880'
+  server: 91.193.58.126
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -244,37 +158,81 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-8
+  network: ws
+  port: '8880'
+  server: 91.193.58.118
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 日本-9
+  network: ws
+  port: '8880'
+  server: 91.193.58.53
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 日本-10
+  network: ws
+  port: '8880'
+  server: 91.193.58.198
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 日本-11
+  network: ws
+  port: 8880
+  server: 91.193.58.68
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 日本-12
+  network: ws
+  port: 8880
+  server: 91.193.58.174
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - alterId: 0
   name: 日本-13
   network: ws
   port: '8880'
-  server: 91.193.58.241
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-14
-  network: ws
-  port: '8880'
-  server: 91.193.58.15
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-15
-  network: ws
-  port: '8880'
-  server: 91.193.58.85
+  server: 91.193.58.34
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -285,7 +243,7 @@ proxies:
     path: /Telegram @WangCai2 /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 日本-16
+  name: 日本-14
   network: ws
   port: 8880
   server: 91.193.58.115
@@ -301,10 +259,10 @@ proxies:
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 日本-17
+  name: 日本-15
   network: ws
   port: 8880
-  server: 91.193.58.174
+  server: 91.193.58.210
   servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
@@ -316,241 +274,8 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - alterId: 0
-  name: 日本-18
-  network: ws
-  port: '8880'
-  server: 91.193.58.204
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-19
-  network: ws
-  port: '8880'
-  server: 91.193.58.9
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 中国香港-2
-  network: ws
-  port: '8880'
-  server: 156.238.18.81
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-20
-  network: ws
-  port: '8880'
-  server: 91.193.58.34
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-21
-  network: ws
-  port: '8880'
-  server: 91.193.58.161
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-22
-  password: Y9vRstWcTHECGcKnayA2VYiUXs
-  port: 8484
-  server: 13.112.101.203
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-- alterId: 0
-  name: 日本-23
-  network: ws
-  port: '8880'
-  server: 91.193.58.28
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-24
-  network: ws
-  port: '8880'
-  server: 91.193.58.21
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-25
-  network: ws
-  port: '8880'
-  server: 91.193.58.29
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  name: 日本-26
-  network: ws
-  port: '8880'
-  server: 91.193.58.118
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  name: 中国香港-3
-  network: ws
-  port: '8880'
-  server: 156.238.18.63
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-27
-  network: ws
-  port: '8880'
-  server: 91.193.58.94
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-28
-  network: ws
-  port: '8880'
-  server: 91.193.58.160
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-29
-  network: ws
-  port: '8880'
-  server: 91.193.58.19
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 中国香港-4
-  network: ws
-  port: '8880'
-  server: 156.238.18.14
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 中国香港-5
-  network: ws
-  port: '8880'
-  server: 156.238.18.48
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-30
-  network: ws
-  port: '8880'
-  server: 91.193.58.126
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 中国香港-6
-  network: ws
-  port: '8880'
-  server: 156.238.18.19
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
   client-fingerprint: chrome
-  name: 日本-31
+  name: 日本-16
   network: ws
   port: 8880
   server: 91.193.58.184
@@ -565,23 +290,10 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
-  name: 日本-32
+  name: 日本-17
   network: ws
   port: '8880'
-  server: 91.193.58.22
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 中国香港-7
-  network: ws
-  port: '8880'
-  server: 156.238.18.60
+  server: 91.193.58.85
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -592,12 +304,12 @@ proxies:
     path: /Telegram @WangCai2 /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 日本-33
+  name: 日本-18
   network: ws
   port: 8880
-  server: 91.193.58.195
+  server: 91.193.58.253
   servername: Telegram-channel-WangCai2
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vless
   udp: true
@@ -605,113 +317,9 @@ proxies:
   ws-opts:
     headers:
       Host: kjgx.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - alterId: 0
-  name: 中国香港-8
-  network: ws
-  port: '8880'
-  server: 156.238.18.92
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-34
-  network: ws
-  port: '8880'
-  server: 91.193.58.2
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 中国香港-9
-  network: ws
-  port: '8880'
-  server: 156.238.18.88
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-35
-  network: ws
-  port: '8880'
-  server: 91.193.58.239
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-36
-  network: ws
-  port: '8880'
-  server: 91.193.58.0
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-37
-  network: ws
-  port: '8880'
-  server: 91.193.58.185
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-38
-  network: ws
-  port: '8880'
-  server: 91.193.58.66
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-39
-  network: ws
-  port: '8880'
-  server: 91.193.58.70
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-40
+  name: 日本-19
   network: ws
   port: '8880'
   server: 91.193.58.1
@@ -724,10 +332,51 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram @WangCai2 /?ed=2560
 - alterId: 0
-  name: 中国香港-10
+  name: 日本-20
   network: ws
   port: '8880'
-  server: 156.238.18.221
+  server: 91.193.58.29
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 日本-21
+  network: ws
+  port: '8880'
+  server: 91.193.58.74
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 日本-22
+  network: ws
+  port: 8880
+  server: 91.193.58.182
+  servername: kjgx.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 日本-23
+  network: ws
+  port: '8880'
+  server: 91.193.58.157
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -737,7 +386,224 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram @WangCai2 /?ed=2560
 - alterId: 0
-  name: 日本-41
+  name: 日本-24
+  network: ws
+  port: '8880'
+  server: 91.193.58.28
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-25
+  network: ws
+  port: '8880'
+  server: 91.193.58.230
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-26
+  network: ws
+  port: '8880'
+  server: 91.193.58.57
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 日本-27
+  network: ws
+  port: 8880
+  server: 91.193.58.226
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+- alterId: 0
+  name: 中国香港-1
+  network: ws
+  port: '8880'
+  server: 156.238.18.63
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-28
+  network: ws
+  port: '8880'
+  server: 91.193.58.173
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 中国香港-2
+  network: ws
+  port: '8880'
+  server: 156.238.18.14
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 中国香港-3
+  network: ws
+  port: '8880'
+  server: 156.238.18.136
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-29
+  network: ws
+  port: '8880'
+  server: 91.193.58.76
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 日本-30
+  network: ws
+  port: '8880'
+  server: 91.193.58.15
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 中国香港-4
+  network: ws
+  port: '8880'
+  server: 156.238.18.73
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 中国香港-5
+  network: ws
+  port: '8880'
+  server: 156.238.18.100
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 日本-31
+  network: ws
+  port: 8880
+  server: 91.193.58.36
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-32
+  network: ws
+  port: '8880'
+  server: 91.193.58.204
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-33
+  network: ws
+  port: '8880'
+  server: 91.193.58.92
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 日本-34
+  network: ws
+  port: 8880
+  server: 91.193.58.238
+  servername: Telegram-channel-WangCai2
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-35
   network: ws
   port: '8880'
   server: 91.193.58.14
@@ -749,10 +615,49 @@ proxies:
       Host: tw.laoyoutiao.link
     path: /Telegram🇨🇳@WangCai2/?ed=2048
 - alterId: 0
-  name: 日本-42
+  name: 日本-36
   network: ws
   port: '8880'
-  server: 91.193.58.179
+  server: 91.193.58.87
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-37
+  network: ws
+  port: '8880'
+  server: 91.193.58.20
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-38
+  network: ws
+  port: '8880'
+  server: 91.193.58.24
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 日本-39
+  network: ws
+  port: '8880'
+  server: 91.193.58.52
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -763,36 +668,7 @@ proxies:
     path: /Telegram@WangCai2/?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 日本-43
-  network: ws
-  port: 8880
-  server: 91.193.58.99
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 日本-44
-  network: ws
-  port: '8880'
-  server: 91.193.58.198
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-45
+  name: 日本-40
   network: ws
   port: 8880
   server: 91.193.58.7
@@ -807,10 +683,62 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - alterId: 0
-  name: 中国香港-11
+  name: 日本-41
   network: ws
   port: '8880'
-  server: 156.238.18.73
+  server: 91.193.58.0
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-42
+  network: ws
+  port: '8880'
+  server: 91.193.58.152
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-43
+  network: ws
+  port: '8880'
+  server: 91.193.58.225
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-44
+  network: ws
+  port: '8880'
+  server: 91.193.58.241
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-45
+  network: ws
+  port: '8880'
+  server: 91.193.58.2
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -823,7 +751,20 @@ proxies:
   name: 日本-46
   network: ws
   port: '8880'
-  server: 91.193.58.74
+  server: 91.193.58.154
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-47
+  network: ws
+  port: '8880'
+  server: 91.193.58.234
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -833,10 +774,10 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram@WangCai2/?ed=2560
 - alterId: 0
-  name: 日本-47
+  name: 中国香港-6
   network: ws
   port: '8880'
-  server: 91.193.58.211
+  server: 156.238.18.92
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -844,7 +785,7 @@ proxies:
   ws-opts:
     headers:
       Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
+    path: /Telegram @WangCai2 /?ed=2560
 - alterId: 0
   name: 日本-48
   network: ws
@@ -859,10 +800,23 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram @WangCai2 /?ed=2560
 - alterId: 0
+  name: 中国香港-7
+  network: ws
+  port: '8880'
+  server: 156.238.18.88
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
   name: 日本-49
   network: ws
   port: '8880'
-  server: 91.193.58.77
+  server: 91.193.58.19
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -875,20 +829,7 @@ proxies:
   name: 日本-50
   network: ws
   port: '8880'
-  server: 91.193.58.55
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram @WangCai2 /?ed=2560
-- alterId: 0
-  name: 中国香港-12
-  network: ws
-  port: '8880'
-  server: 156.238.18.137
+  server: 91.193.58.21
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -901,7 +842,7 @@ proxies:
   name: 日本-51
   network: ws
   port: '8880'
-  server: 91.193.58.209
+  server: 91.193.58.66
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -914,7 +855,7 @@ proxies:
   name: 日本-52
   network: ws
   port: '8880'
-  server: 91.193.58.57
+  server: 91.193.58.160
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -924,10 +865,30 @@ proxies:
       Host: kjgx.laoyoutiao.link
     path: /Telegram @WangCai2 /?ed=2560
 - alterId: 0
+  cipher: 2022-blake3-aes-128-gcm
+  name: 中国大陆-1
+  password: 12xGRmcEy3TVETzE47MreA==
+  port: '34664'
+  server: 183.240.187.198
+  type: ss
+- alterId: 0
   name: 日本-53
   network: ws
   port: '8880'
-  server: 91.193.58.254
+  server: 91.193.58.167
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 中国香港-8
+  network: ws
+  port: '8880'
+  server: 156.238.18.137
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -940,7 +901,46 @@ proxies:
   name: 日本-54
   network: ws
   port: '8880'
-  server: 91.193.58.48
+  server: 91.193.58.43
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 中国香港-9
+  network: ws
+  port: '8880'
+  server: 156.238.18.80
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-55
+  network: ws
+  port: '8880'
+  server: 91.193.58.16
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram @WangCai2 /?ed=2560
+- alterId: 0
+  name: 日本-56
+  network: ws
+  port: '8880'
+  server: 91.193.58.239
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -1049,7 +1049,6 @@ proxy-groups:
   - 日本-6
   - 日本-7
   - 日本-8
-  - 中国香港-1
   - 日本-9
   - 日本-10
   - 日本-11
@@ -1061,7 +1060,6 @@ proxy-groups:
   - 日本-17
   - 日本-18
   - 日本-19
-  - 中国香港-2
   - 日本-20
   - 日本-21
   - 日本-22
@@ -1069,44 +1067,46 @@ proxy-groups:
   - 日本-24
   - 日本-25
   - 日本-26
-  - 中国香港-3
   - 日本-27
+  - 中国香港-1
   - 日本-28
+  - 中国香港-2
+  - 中国香港-3
   - 日本-29
+  - 日本-30
   - 中国香港-4
   - 中国香港-5
-  - 日本-30
-  - 中国香港-6
   - 日本-31
   - 日本-32
-  - 中国香港-7
   - 日本-33
-  - 中国香港-8
   - 日本-34
-  - 中国香港-9
   - 日本-35
   - 日本-36
   - 日本-37
   - 日本-38
   - 日本-39
   - 日本-40
-  - 中国香港-10
   - 日本-41
   - 日本-42
   - 日本-43
   - 日本-44
   - 日本-45
-  - 中国香港-11
   - 日本-46
   - 日本-47
+  - 中国香港-6
   - 日本-48
+  - 中国香港-7
   - 日本-49
   - 日本-50
-  - 中国香港-12
   - 日本-51
   - 日本-52
+  - 中国大陆-1
   - 日本-53
+  - 中国香港-8
   - 日本-54
+  - 中国香港-9
+  - 日本-55
+  - 日本-56
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
