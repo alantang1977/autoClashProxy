@@ -309,7 +309,7 @@ class clashConfig:
             config['proxy-groups'].append(select)
             allGroup += group
 
-        spicailGroup = ["TWITTER", "YOUTUBE", "TIKTOK", "FORUMS", "GITHUB", "TELEGRAM", "GFW", "DNS", "AI", "GAME"]
+        spicailGroup = ["MYPROXY", "TWITTER", "YOUTUBE", "GITHUB", "TELEGRAM", "AI", "GAME", "FORUMS", "ENTERTAINMENT", "GFW", "GEOLOCATON-!CN", "TLD-!CN", "PROXY", "DNS",]
         for name in spicailGroup:
             config['proxy-groups'].append(self.createGroup(name, "select", ["共享节点", "私有节点", "DIRECT"]))
 
