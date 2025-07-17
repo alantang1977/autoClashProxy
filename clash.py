@@ -204,15 +204,15 @@ class clashConfig:
 
         return group
 
-    def createSpecialGroup(self, proxiesNames, groupName, excludeLocation):
+    def createSpecialGroup(self, groupName, proxiesNames, excludeLocation, bIsProviderGroup = False):
         group = []
         proxies = [proxy for proxy in proxiesNames if proxy.split('-')[0] not in excludeLocation]
         if (len(proxies) > 0):
             select = self.createGroup(groupName, "select", [f"{groupName}-延迟最低", f"{groupName}-故障转移", f"{groupName}-负载均衡", f"{groupName}-手动选择", "DIRECT"])
-            group.append(self.createGroup(f"{groupName}-延迟最低", "url-test", proxies))
-            group.append(self.createGroup(f"{groupName}-故障转移", "fallback", proxies))
-            group.append(self.createGroup(f"{groupName}-负载均衡", "load-balance", proxies))
-            group.append(self.createGroup(f"{groupName}-手动选择", "select", proxies))
+            group.append(self.createGroup(f"{groupName}-延迟最低", "url-test", proxies, bIsProviderGroup))
+            group.append(self.createGroup(f"{groupName}-故障转移", "fallback", proxies, bIsProviderGroup))
+            group.append(self.createGroup(f"{groupName}-负载均衡", "load-balance", proxies, bIsProviderGroup))
+            group.append(self.createGroup(f"{groupName}-手动选择", "select", proxies, bIsProviderGroup))
             return True, select, group
         else:
             print(f"{groupName}中符合条件的节点数量为零。不符合配置文件生成条件。")
@@ -277,35 +277,28 @@ class clashConfig:
         config['proxy-groups'] = []
 
         #导入自己购买的机场
-        privateGroup = []
-        privateGroupName = []
-        if (len(config['proxy-providers'].keys()) == 1):
-            privateGroup.append(self.createGroup(f"私有节点", "select", list(config['proxy-providers'].keys()), True))
-            privateGroupName.append("私有节点")
-        else:
-            for group in config['proxy-providers'].keys():
-                privateGroupName.append(f"私有节点_{group}")
-                privateGroup.append(self.createGroup(f"私有节点_{group}", "select", [group], True))
+        privateGroupName = list(config['proxy-providers'].keys())
 
         config['proxy-groups'].append(self.createGroup(f"直连规则", "select", ["DIRECT", "全球互联"]))
         config['proxy-groups'].append(self.createGroup(f"漏网之鱼", "select", ["DIRECT", "全球互联"]))
         config['proxy-groups'].append(self.createGroup(f"全球互联", "select", ["共享节点", "私有节点", "DIRECT"]))
 
-        if (len(privateGroup) > 1):
-            config['proxy-groups'].append(self.createGroup(f"私有节点", "select", privateGroupName))
-        config['proxy-groups'] += privateGroup
-
-        allGroups =[
-            #groupName,  排除指定归属地的节点
-            ["共享节点",  []],
-        ]
+        allGroups =[]
+        if (len(privateGroupName) > 1):
+            config['proxy-groups'].append(self.createGroup(f"私有节点", "select", [f"私有-{name}" for name in privateGroupName]))
+            for name in privateGroupName:
+                allGroups.append([f"私有-{name}", [name], [], True])
+        else:
+            allGroups.append(["私有节点", privateGroupName, [], True])
+        allGroups.append(["共享节点", proxiesNames, [], False])
 
         bCreateSuccess = True
         allGroup = []
         for i in allGroups:
-            bCreateSuccess, select, group = self.createSpecialGroup(proxiesNames, i[0], i[1])
+            bCreateSuccess, select, group = self.createSpecialGroup(i[0], i[1], i[2], i[3])
             if (not bCreateSuccess):
                 return False
+
             config['proxy-groups'].append(select)
             allGroup += group
 
