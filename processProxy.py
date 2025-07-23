@@ -46,7 +46,7 @@ def removeNotSupportNode(proxyPool): #删除clash不支持的节点
 
 def addMisskeyNode(proxyPool): #增加缺失的字段
     needKey = {
-        "alterId": 0
+        "alterId": 0,
     }
 
     proxies = []
@@ -55,6 +55,19 @@ def addMisskeyNode(proxyPool): #增加缺失的字段
             if (key not in proxy ):
                 print(f"miss key:",key,  proxy)
                 proxy[key] = needKey[key]
+        proxies.append(proxy)
+
+    return proxies
+
+def overrideParams(proxyPool): #改写节点的一些配置参数
+    params = {
+        "udp": True
+    }
+
+    proxies = []
+    for proxy in proxyPool:
+        for key in params.keys():
+            proxy[key] = params[key]
         proxies.append(proxy)
 
     return proxies
@@ -87,6 +100,7 @@ def processNodes(proxyPool):
     proxies = removeErrorProxy(proxies)
     proxies = setTLSForVmess(proxies)
     proxies = addMisskeyNode(proxies)
+    proxies = overrideParams(proxies)
 
     return proxies
 

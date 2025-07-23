@@ -237,7 +237,6 @@ class clashConfig:
                     print("归属地符合要求")
                     countryProxyCount[country] = 1 if country not in countryProxyCount.keys() else countryProxyCount[country] + 1
                     proxy['name'] = f"{country}-{countryProxyCount[country]}"
-                    proxy['udp'] = True
                     proxies.append(proxy)
                 else:
                     print("归属地不符合要求，删除")
