@@ -1,6 +1,7 @@
 import yaml
 import os
 import shutil
+import datetime
 
 import sys
 sys.path.append('.')
@@ -11,6 +12,7 @@ from clash import *
 from processArgument import *
 
 def parserSourceUrl(sourceFile):
+    now = datetime.datetime.now()
     print(f"从{sourceFile}解析出以下有效的url:")
     allUrls = open(sourceFile, encoding='utf8').read().strip().splitlines()
     allUrl = []
@@ -19,6 +21,7 @@ def parserSourceUrl(sourceFile):
             continue
         if (url.isspace() or len(url) == 0): #删除空行
             continue
+        url = url.format(year=now.year, month=now.month, day=now.day)
         if (url not in allUrl): #删除重复url
             allUrl.append(url)
             print(url)

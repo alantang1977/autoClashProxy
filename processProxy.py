@@ -8,17 +8,22 @@ from operator import itemgetter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def removeDuplicateNode(proxyPool): #删除重复节点
-    checkLists = ["name", "server"]
+    checkLists = [["server", "port"], "name"]
 
     allProxy = proxyPool
     for item in checkLists:
         proxiesItem  = []
         proxies = []
         for proxy in allProxy:
-            if(proxy[item] in proxiesItem):
-                continue
+            check = None
+            if (type(item) == list):
+                check = [proxy[x] for x in item]
+            else:
+                check = proxy[item]
+            if(check in proxiesItem):
+                    continue
             proxies.append(proxy)
-            proxiesItem.append(proxy[item])
+            proxiesItem.append(check)
         allProxy = proxies
 
         print(f"after removeDuplicate_{item}, 剩余节点数量{len(allProxy)}")
