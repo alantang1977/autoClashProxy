@@ -63,7 +63,57 @@ profile:
 proxies:
 - alterId: 0
   client-fingerprint: chrome
+  name: 日本-1
+  network: ws
+  port: '8880'
+  server: 91.193.58.255
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
   name: 中国香港-1
+  network: ws
+  port: '8880'
+  server: 156.238.18.28
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-2
+  network: ws
+  port: '8880'
+  server: 156.238.18.66
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: jp.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram🇨🇳@WangCai2/
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-3
   network: ws
   port: '8880'
   server: 156.238.18.89
@@ -79,56 +129,21 @@ proxies:
     max-early-data: '2048'
     path: /Telegram@freecodes/
 - alterId: 0
-  client-fingerprint: chrome
-  name: 日本-1
+  name: 中国香港-4
   network: ws
   port: '8880'
-  server: 91.193.58.207
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-2
-  network: ws
-  port: '8880'
-  server: 156.238.18.237
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-3
-  network: ws
-  port: '8880'
-  server: 156.238.18.200
+  server: 156.238.18.210
   servername: sg.laoyoutiao.link
-  tls: false
   type: vless
   udp: true
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
       Host: sg.laoyoutiao.link
-    max-early-data: '2048'
-    path: /Telegram@freecodes/
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /Telegram@freecodes/?ed=2048
+  xudp: true
 - alterId: 0
   client-fingerprint: chrome
   name: 日本-2
@@ -148,10 +163,10 @@ proxies:
     path: /Telegram @freecodes /
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-4
+  name: 中国香港-5
   network: ws
   port: '8880'
-  server: 156.238.18.80
+  server: 156.238.18.244
   servername: sg.laoyoutiao.link
   tls: false
   type: vless
@@ -165,10 +180,11 @@ proxies:
     path: /Telegram@freecodes/
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-5
+  name: 中国香港-6
   network: ws
   port: '8880'
-  server: 156.238.18.66
+  server: 156.238.18.166
+  servername: sg.laoyoutiao.link
   tls: false
   type: vless
   udp: true
@@ -176,15 +192,83 @@ proxies:
   ws-opts:
     early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: jp.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram🇨🇳@WangCai2/
+      Host: sg.laoyoutiao.link
+    max-early-data: '2048'
+    path: /Telegram@freecodes/
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-6
+  name: 中国香港-7
   network: ws
   port: '8880'
-  server: 156.238.18.83
+  server: 156.238.18.71
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-8
+  network: ws
+  port: '8880'
+  server: 156.238.18.237
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-9
+  network: ws
+  port: '8880'
+  server: 156.238.18.157
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-10
+  network: ws
+  port: '8880'
+  server: 156.238.18.215
+  servername: us.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: us.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @MxlShare @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-11
+  network: ws
+  port: '8880'
+  server: 156.238.18.150
   servername: yd.laoyoutiao.link
   tls: false
   type: vless
@@ -198,7 +282,41 @@ proxies:
     path: /Telegram @MxlShare @freecodes /
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-7
+  name: 中国香港-12
+  network: ws
+  port: '8880'
+  server: 156.238.18.37
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram🇨🇳@WangCai2/
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-13
+  network: ws
+  port: '8880'
+  server: 156.238.18.2
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-14
   network: ws
   port: '8880'
   server: 156.238.18.169
@@ -232,41 +350,7 @@ proxies:
     path: /Telegram @freecodes /
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-8
-  network: ws
-  port: '8880'
-  server: 156.238.18.28
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-4
-  network: ws
-  port: '8880'
-  server: 91.193.58.255
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-9
+  name: 中国香港-15
   network: ws
   port: '8880'
   server: 156.238.18.113
@@ -283,256 +367,24 @@ proxies:
     path: /Telegram@freecodes/
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-10
-  network: ws
-  port: '8880'
-  server: 156.238.18.166
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: sg.laoyoutiao.link
-    max-early-data: '2048'
-    path: /Telegram@freecodes/
-- alterId: 0
-  name: 日本-5
-  network: ws
-  port: '8880'
-  server: 91.193.58.211
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-11
-  network: ws
-  port: '8880'
-  server: 156.238.18.136
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram@CoinTech2U2/
-- alterId: 0
-  name: 中国香港-12
-  network: ws
-  port: 8880
-  server: 156.238.18.106
-  servername: yd.laoyoutiao.link
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: yd.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-13
-  network: ws
-  port: '8880'
-  server: 156.238.18.179
-  servername: sg.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: sg.laoyoutiao.link
-    max-early-data: '2048'
-    path: /Telegram@freecodes/
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-14
-  network: ws
-  port: '8880'
-  server: 156.238.18.138
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  name: 日本-6
-  network: ws
-  port: '8880'
-  server: 91.193.58.84
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  name: 中国香港-15
-  network: ws
-  port: '8880'
-  server: 156.238.18.210
-  servername: sg.laoyoutiao.link
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: sg.laoyoutiao.link
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /Telegram@freecodes/?ed=2048
-  xudp: true
-- alterId: 0
-  client-fingerprint: chrome
   name: 中国香港-16
   network: ws
   port: '8880'
-  server: 156.238.18.157
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-17
-  network: ws
-  port: '8880'
-  server: 156.238.18.69
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-18
-  network: ws
-  port: '8880'
-  server: 156.238.18.63
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-7
-  network: ws
-  port: '8880'
-  server: 91.193.58.232
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-19
-  network: ws
-  port: '8880'
-  server: 156.238.18.31
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  name: 中国香港-20
-  network: ws
-  port: '8880'
-  server: 156.238.18.239
+  server: 156.238.18.83
   servername: yd.laoyoutiao.link
+  tls: false
   type: vless
   udp: true
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
       Host: yd.laoyoutiao.link
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-21
-  network: ws
-  port: '8880'
-  server: 156.238.18.215
-  servername: us.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: us.laoyoutiao.link
     max-early-data: '2560'
     path: /Telegram @MxlShare @freecodes /
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-22
+  name: 中国香港-17
   network: ws
   port: '8880'
   server: 156.238.18.222
@@ -549,10 +401,10 @@ proxies:
     path: /Telegram @MxlShare @freecodes /
 - alterId: 0
   client-fingerprint: chrome
-  name: 中国香港-23
+  name: 中国香港-18
   network: ws
   port: '8880'
-  server: 156.238.18.2
+  server: 156.238.18.69
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -564,6 +416,136 @@ proxies:
       Host: kjgx.laoyoutiao.link
     max-early-data: '2560'
     path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-19
+  network: ws
+  port: '8880'
+  server: 156.238.18.179
+  servername: sg.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sg.laoyoutiao.link
+    max-early-data: '2048'
+    path: /Telegram@freecodes/
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-20
+  network: ws
+  port: '8880'
+  server: 156.238.18.136
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram@CoinTech2U2/
+- alterId: 0
+  client-fingerprint: chrome
+  name: 日本-4
+  network: ws
+  port: '8880'
+  server: 91.193.58.35
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  name: 日本-5
+  network: ws
+  port: '8880'
+  server: 91.193.58.84
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  name: 中国香港-21
+  network: ws
+  port: 8880
+  server: 156.238.18.106
+  servername: yd.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: yd.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-22
+  network: ws
+  port: '8880'
+  server: 156.238.18.139
+  servername: yd.laoyoutiao.link
+  skip-cert-verify: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: yd.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-23
+  network: ws
+  port: '8880'
+  server: 156.238.18.80
+  servername: sg.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sg.laoyoutiao.link
+    max-early-data: '2048'
+    path: /Telegram@freecodes/
+- alterId: 0
+  name: 日本-6
+  network: ws
+  port: '8880'
+  server: 91.193.58.211
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram@freecodes/
 - alterId: 0
   name: 中国香港-24
   network: ws
@@ -583,10 +565,10 @@ proxies:
   xudp: true
 - alterId: 0
   client-fingerprint: chrome
-  name: 日本-8
+  name: 日本-7
   network: ws
   port: '8880'
-  server: 91.193.58.35
+  server: 91.193.58.207
   servername: kjgx.laoyoutiao.link
   tls: false
   type: vless
@@ -597,40 +579,47 @@ proxies:
     headers:
       Host: kjgx.laoyoutiao.link
     max-early-data: '2560'
-    path: /Telegram @freecodes /
+    path: /Telegram@freecodes/
 - alterId: 0
   client-fingerprint: chrome
+  name: 日本-8
+  network: ws
+  port: '8880'
+  server: 91.193.58.232
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram@freecodes/
+- alterId: 0
   name: 中国香港-25
   network: ws
   port: '8880'
-  server: 156.238.18.139
+  server: 156.238.18.1
   servername: yd.laoyoutiao.link
-  skip-cert-verify: false
   type: vless
   udp: true
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     headers:
       Host: yd.laoyoutiao.link
-    path: /TelegramU0001F1E8U0001F1F3
-- alterId: 0
-  auth: fWydUhyG3woKe4a0kcKKKdx78
-  client-fingerprint: chrome
-  name: 新加坡-1
-  password: fWydUhyG3woKe4a0kcKKKdx78
-  port: '6467'
-  server: 8.219.232.60
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+    path: /
+  xudp: true
 - alterId: 0
   client-fingerprint: chrome
   name: 中国香港-26
   network: ws
   port: '8880'
-  server: 156.238.18.71
-  servername: kjgx.laoyoutiao.link
+  server: 156.238.18.200
+  servername: sg.laoyoutiao.link
   tls: false
   type: vless
   udp: true
@@ -638,46 +627,14 @@ proxies:
   ws-opts:
     early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
+      Host: sg.laoyoutiao.link
+    max-early-data: '2048'
+    path: /Telegram@freecodes/
 - alterId: 0
   name: 中国香港-27
   network: ws
-  port: 443
-  server: 8.212.27.131
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  client-fingerprint: chrome
-  name: 中国香港-28
-  network: ws
-  port: '8880'
-  server: 156.238.18.25
-  servername: us.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: us.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @MxlShare @freecodes /
-- alterId: 0
-  name: 中国香港-29
-  network: ws
   port: 8880
-  server: 156.238.18.160
+  server: 156.238.18.139
   servername: yd.laoyoutiao.link
   skip-cert-verify: false
   tls: false
@@ -688,6 +645,35 @@ proxies:
     headers:
       Host: yd.laoyoutiao.link
     path: /TelegramU0001F1E8U0001F1F3
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-1
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 中国香港-28
+  network: ws
+  port: '8880'
+  server: 156.238.18.239
+  servername: yd.laoyoutiao.link
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: yd.laoyoutiao.link
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /
+  xudp: true
 - alterId: 0
   name: 日本-9
   network: ws
@@ -705,87 +691,12 @@ proxies:
     path: freecodesfreecodes
   xudp: true
 - alterId: 0
-  name: 美国-1
-  network: ws
-  port: 443
-  server: 47.76.218.163
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-2
-  network: ws
-  port: 443
-  server: 47.239.183.154
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-3
-  network: ws
-  port: 12220
-  server: 154.37.216.159
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-4
-  network: ws
-  port: 8843
-  server: 47.79.90.82
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 美国-5
-  network: ws
-  port: 11563
-  server: 206.237.1.59
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
   auth: ''
   fast-open: false
-  name: 新加坡-2
-  password: lPK6OZ9ouqyXrCghO6ohUbbN5g
-  port: 33131
-  server: 8.222.183.55
+  name: 中国香港-29
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -793,35 +704,39 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-6
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: 2428
-  server: 47.239.220.214
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
+  name: 中国香港-30
+  network: ws
+  port: 8880
+  server: 156.238.18.160
+  servername: yd.laoyoutiao.link
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: yd.laoyoutiao.link
+    path: /TelegramU0001F1E8U0001F1F3
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-31
+  network: ws
+  port: '8880'
+  server: 156.238.18.31
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
 - alterId: 0
   name: 日本-10
-  network: ws
-  port: 8443
-  server: 185.184.223.85
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 日本-11
   network: ws
   port: 443
   server: 158.101.77.33
@@ -836,63 +751,24 @@ proxies:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  name: 新加坡-3
+  client-fingerprint: chrome
+  name: 中国香港-32
   network: ws
-  port: 443
-  server: 43.156.181.203
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
+  port: '8880'
+  server: 156.238.18.25
+  servername: us.laoyoutiao.link
+  tls: false
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
+      Host: us.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @MxlShare @freecodes /
 - alterId: 0
-  auth: ''
-  fast-open: false
-  name: 新加坡-4
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 52.221.210.182
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 日本-12
-  network: ws
-  port: 443
-  server: 141.147.176.157
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-13
-  password: qq4Wc9UakExypzw4Jd00fWqrDTY
-  port: 22712
-  server: 8.209.223.212
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 日本-14
+  name: 日本-11
   network: ws
   port: 2096
   server: 150.230.196.57
@@ -907,72 +783,188 @@ proxies:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  name: 韩国-1
-  network: ws
-  port: 12526
-  server: 118.38.245.243
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 50000
-  server: 49.169.7.86
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-7
-  password: L60nS04NhsoMpN2DDGbnMqLP8DY
-  port: 11243
-  server: 47.76.83.25
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
   client-fingerprint: chrome
-  name: 韩国-3
+  name: 中国香港-33
   network: ws
-  port: '12105'
-  server: 121.149.121.84
-  servername: jp.laoyoutiao.link
-  tls: true
+  port: '8880'
+  server: 156.238.18.41
+  servername: kjgx.laoyoutiao.link
+  tls: false
   type: vless
   udp: true
   uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: jp.laoyoutiao.link
+      Host: kjgx.laoyoutiao.link
     max-early-data: '2560'
     path: /Telegram @freecodes /
 - alterId: 0
+  name: 美国-2
+  network: ws
+  port: 8843
+  server: 47.79.90.82
+  servername: edge.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edge.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 中国香港-34
+  network: ws
+  port: 8880
+  server: 156.238.18.211
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: us.laoyoutiao.link
+    path: Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-35
+  network: ws
+  port: '8880'
+  server: 156.238.18.63
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-36
+  network: ws
+  port: '8880'
+  server: 156.238.18.138
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 中国香港-37
+  password: 0b191076d18f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /ugiibpkbca
+    tls: true
+  port: '636'
+  server: 156.251.179.136
+  type: ss
+  udp: true
+- alterId: 0
+  name: 美国-3
+  network: ws
+  port: 11563
+  server: 206.237.1.59
+  servername: edge.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edge.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  name: 韩国-1
+  network: ws
+  port: 12270
+  server: 119.200.48.55
+  servername: edge.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edge.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-4
+  network: ws
+  port: '8880'
+  server: 66.81.247.168
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-5
+  network: ws
+  port: '8880'
+  server: 216.205.52.168
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-6
+  network: ws
+  port: '8880'
+  server: 161.145.150.156
+  servername: Telegram-channel-freecodes
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /TelegramU0001F1E8U0001F1F3@freecodes/
+- alterId: 0
   auth: ''
   fast-open: false
-  name: 美国-8
-  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: 22509
-  server: 47.129.224.62
+  name: 新加坡-1
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 52.221.210.182
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
@@ -980,41 +972,7 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-9
-  network: ws
-  port: '8880'
-  server: 209.46.30.168
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-10
-  network: ws
-  port: '8880'
-  server: 216.24.57.168
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  name: 韩国-4
+  name: 韩国-2
   network: ws
   port: 19443
   server: 112.173.231.254
@@ -1029,120 +987,7 @@ proxies:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-11
-  network: ws
-  port: '8880'
-  server: 66.45.118.143
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: yg.bantony199.top
-    max-early-data: '2560'
-    path: /Telegram🇨🇳 @WangCai2 /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-12
-  network: ws
-  port: '8880'
-  server: 170.114.46.168
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-13
-  network: ws
-  port: '8880'
-  server: 66.81.247.20
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: us.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @MxlShare @WangCai2 /
-- alterId: 0
-  name: 美国-14
-  network: ws
-  port: 80
-  server: 141.193.213.213
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      Host: us.laoyoutiao.link
-    path: Telegram🇨🇳 @MxlShare+@WangCai2+/?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-15
-  network: ws
-  port: '8880'
-  server: 103.116.7.168
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  name: 美国-15
-  network: ws
-  port: '8880'
-  server: 141.193.27.63
-  servername: jp.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: jp.laoyoutiao.link
-    max-early-data: '2560'
-    path: /TelegramU0001F1E8U0001F1F3 @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-16
-  network: ws
-  port: '8880'
-  server: 159.246.55.251
-  servername: cf.d3z.net
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: cf.d3z.net
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  name: 韩国-5
+  name: 韩国-3
   network: ws
   port: 16013
   server: 218.148.210.150
@@ -1158,73 +1003,7 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-17
-  network: ws
-  port: '8880'
-  server: 104.129.167.177
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-18
-  network: ws
-  port: '8880'
-  server: 135.84.79.177
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-19
-  network: ws
-  port: '8880'
-  server: 167.68.5.177
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  name: 美国-20
-  network: ws
-  port: 16010
-  server: 152.70.101.24
-  servername: edge.esslh.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edge.esslh.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-21
+  name: 美国-7
   network: ws
   port: '8880'
   server: 66.235.200.168
@@ -1240,23 +1019,7 @@ proxies:
     max-early-data: '2560'
     path: /Telegram @freecodes /
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-22
-  network: ws
-  port: '80'
-  server: 141.193.213.52
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: us.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram🇨🇳 @MxlShare @WangCai2 /
-- alterId: 0
-  name: 韩国-6
+  name: 韩国-4
   network: ws
   port: 50000
   server: 14.42.206.205
@@ -1271,39 +1034,39 @@ proxies:
       host: edge.esslh.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
-  name: 美国-23
+  name: 美国-8
   network: ws
   port: 8880
-  server: 159.112.235.186
+  server: 147.185.161.251
   servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
+      Host: cf.d3z.net
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-24
+  name: 韩国-5
   network: ws
-  port: '8880'
-  server: 167.68.42.177
-  servername: Telegram-channel-freecodes
-  tls: false
+  port: '12105'
+  server: 121.149.121.84
+  servername: jp.laoyoutiao.link
+  tls: true
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
   ws-opts:
     early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ip.langmanshanxi.top
+      Host: jp.laoyoutiao.link
     max-early-data: '2560'
     path: /Telegram @freecodes /
 - alterId: 0
-  name: 美国-25
+  name: 美国-9
   network: ws
   port: 8443
   server: 154.17.225.203
@@ -1319,10 +1082,126 @@ proxies:
     path: /?ed=2560&proxyip=ts.hpc.tw
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-26
+  name: 加拿大-1
   network: ws
   port: '8880'
-  server: 104.129.165.177
+  server: 205.233.181.168
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-10
+  network: ws
+  port: '80'
+  server: 141.193.213.16
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: us.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram🇨🇳 @MxlShare @WangCai2 /
+- alterId: 0
+  name: 韩国-6
+  network: ws
+  port: 50000
+  server: 49.169.7.86
+  servername: edge.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edge.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-11
+  network: ws
+  port: '8880'
+  server: 147.185.161.251
+  servername: Telegram-channel- CoinTech2U2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: cf.d3z.net
+    max-early-data: '2560'
+    path: /Telegram @ CoinTech2U2 /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-12
+  network: ws
+  port: '8880'
+  server: 167.68.4.168
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram@freecodes/
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-13
+  network: ws
+  port: '8880'
+  server: 160.79.105.143
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: yg.bantony199.top
+    max-early-data: '2560'
+    path: /Telegram🇨🇳 @WangCai2 /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-14
+  network: ws
+  port: '8880'
+  server: 108.165.216.168
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-15
+  network: ws
+  port: '8880'
+  server: 104.129.164.39
   servername: ip.langmanshanxi.top
   tls: false
   type: vless
@@ -1333,13 +1212,65 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     max-early-data: '2560'
-    path: /TelegramU0001F1E8U0001F1F3 @freecodes /
+    path: /Telegram @MxlShare @freecodes /
 - alterId: 0
-  name: 美国-27
+  client-fingerprint: chrome
+  name: 美国-16
   network: ws
   port: '8880'
-  server: 104.254.140.177
-  servername: Telegram-channel-freecodes
+  server: 147.185.161.168
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-17
+  network: ws
+  port: '8880'
+  server: 199.181.197.63
+  servername: jp.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: jp.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram@freecodes/
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-38
+  network: ws
+  port: '8880'
+  server: 156.238.19.213
+  servername: jp.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: jp.laoyoutiao.link
+    max-early-data: '2560'
+    path: /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-18
+  network: ws
+  port: '8880'
+  server: 108.165.216.188
+  servername: Telegram-channel-WangCai2
   tls: false
   type: vless
   udp: true
@@ -1349,10 +1280,55 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
     max-early-data: '2560'
-    path: /Telegram@freecodes/
+    path: /Telegram🇨🇳 @WangCai2 /
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-19
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: 22509
+  server: 47.129.224.62
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-28
+  name: 美国-20
+  network: ws
+  port: '8880'
+  server: 167.68.5.143
+  servername: Telegram-channel-WangCai2
+  tls: false
+  type: vless
+  udp: true
+  uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: yg.bantony199.top
+    max-early-data: '2560'
+    path: /Telegram🇨🇳 @WangCai2 /
+- alterId: 0
+  name: 韩国-7
+  network: ws
+  port: 50000
+  server: 121.130.68.136
+  servername: edge.esslh.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edge.esslh.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-21
   network: ws
   port: '8880'
   server: 159.246.55.168
@@ -1369,26 +1345,10 @@ proxies:
     path: /Telegram@freecodes/
 - alterId: 0
   client-fingerprint: chrome
-  name: 美国-29
-  network: ws
-  port: '8880'
-  server: 159.112.235.168
-  servername: kjgx.laoyoutiao.link
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  name: 美国-30
+  name: 新加坡-2
   network: ws
   port: 8880
-  server: 147.185.161.251
+  server: 114.129.43.251
   servername: Telegram-channel-WangCai2
   skip-cert-verify: false
   tls: false
@@ -1401,7 +1361,87 @@ proxies:
     path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
 - alterId: 0
   client-fingerprint: chrome
-  name: 加拿大-1
+  name: 美国-22
+  network: ws
+  port: '8880'
+  server: 167.68.42.168
+  servername: kjgx.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: kjgx.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram@freecodes/
+- alterId: 0
+  client-fingerprint: chrome
+  name: 中国香港-39
+  network: ws
+  port: '8880'
+  server: 45.194.53.215
+  servername: ld.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: ld.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-23
+  network: ws
+  port: '8880'
+  server: 104.129.165.177
+  servername: ip.langmanshanxi.top
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: ip.langmanshanxi.top
+    max-early-data: '2560'
+    path: /TelegramU0001F1E8U0001F1F3 @freecodes /
+- alterId: 0
+  name: 美国-24
+  network: ws
+  port: 8880
+  server: 167.68.42.168
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    headers:
+      Host: kjgx.laoyoutiao.link
+    path: /Telegram@WangCai2/?ed=2560
+- alterId: 0
+  name: 中国香港-40
+  network: ws
+  port: '8880'
+  server: 45.194.53.178
+  servername: ld.laoyoutiao.link
+  tls: false
+  type: vless
+  udp: true
+  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: ld.laoyoutiao.link
+    max-early-data: '2560'
+    path: /Telegram @freecodes /
+- alterId: 0
+  client-fingerprint: chrome
+  name: 加拿大-2
   network: ws
   port: 8880
   server: 74.49.214.63
@@ -1416,52 +1456,36 @@ proxies:
       Host: jp.laoyoutiao.link
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  name: 日本-16
-  network: ws
-  port: '8880'
-  server: 103.245.229.251
-  servername: cf.d3z.net
-  tls: false
-  type: vless
+  cipher: aes-256-gcm
+  name: 中国香港-41
+  password: 23d03aa704c7
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: cmihk3v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /grqhyifio
+    tls: true
+  port: 636
+  server: 156.251.179.181
+  type: ss
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: cf.d3z.net
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
 - alterId: 0
-  client-fingerprint: chrome
-  name: 加拿大-2
+  client-fingerprint: random
+  fingerprint: ''
+  name: 美国-25
   network: ws
-  port: '8880'
-  server: 74.49.215.168
-  servername: kjgx.laoyoutiao.link
-  tls: false
+  port: 2087
+  server: www.visa.com.sg
+  servername: vl.hongkong6.qzz.io
+  tls: true
   type: vless
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: kjgx.laoyoutiao.link
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  name: 美国-31
-  network: ws
-  port: 8880
-  server: 167.68.42.168
-  tls: false
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
+  uuid: 90c7ad5e-cd15-4314-b39b-aeabd397d592
   ws-opts:
     headers:
-      Host: kjgx.laoyoutiao.link
-    path: /Telegram@WangCai2/?ed=2560
+      host: vl.hongkong6.qzz.io
+    path: /?ed=2560
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -1601,94 +1625,94 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id004
-  - 中国香港-1
   - 日本-1
+  - 中国香港-1
   - 中国香港-2
   - 中国香港-3
-  - 日本-2
   - 中国香港-4
+  - 日本-2
   - 中国香港-5
   - 中国香港-6
   - 中国香港-7
-  - 日本-3
   - 中国香港-8
-  - 日本-4
   - 中国香港-9
   - 中国香港-10
-  - 日本-5
   - 中国香港-11
   - 中国香港-12
   - 中国香港-13
   - 中国香港-14
-  - 日本-6
+  - 日本-3
   - 中国香港-15
   - 中国香港-16
   - 中国香港-17
   - 中国香港-18
-  - 日本-7
   - 中国香港-19
   - 中国香港-20
+  - 日本-4
+  - 日本-5
   - 中国香港-21
   - 中国香港-22
   - 中国香港-23
+  - 日本-6
   - 中国香港-24
+  - 日本-7
   - 日本-8
   - 中国香港-25
-  - 新加坡-1
   - 中国香港-26
   - 中国香港-27
-  - 中国香港-28
-  - 中国香港-29
-  - 日本-9
   - 美国-1
+  - 中国香港-28
+  - 日本-9
+  - 中国香港-29
+  - 中国香港-30
+  - 中国香港-31
+  - 日本-10
+  - 中国香港-32
+  - 日本-11
+  - 中国香港-33
   - 美国-2
+  - 中国香港-34
+  - 中国香港-35
+  - 中国香港-36
+  - 中国香港-37
   - 美国-3
+  - 韩国-1
   - 美国-4
   - 美国-5
-  - 新加坡-2
   - 美国-6
-  - 日本-10
-  - 日本-11
-  - 新加坡-3
-  - 新加坡-4
-  - 日本-12
-  - 日本-13
-  - 日本-14
-  - 韩国-1
+  - 新加坡-1
   - 韩国-2
-  - 美国-7
   - 韩国-3
-  - 美国-8
-  - 美国-9
-  - 美国-10
+  - 美国-7
   - 韩国-4
+  - 美国-8
+  - 韩国-5
+  - 美国-9
+  - 加拿大-1
+  - 美国-10
+  - 韩国-6
   - 美国-11
   - 美国-12
   - 美国-13
   - 美国-14
-  - 日本-15
   - 美国-15
   - 美国-16
-  - 韩国-5
   - 美国-17
+  - 中国香港-38
   - 美国-18
   - 美国-19
   - 美国-20
+  - 韩国-7
   - 美国-21
+  - 新加坡-2
   - 美国-22
-  - 韩国-6
+  - 中国香港-39
   - 美国-23
   - 美国-24
-  - 美国-25
-  - 美国-26
-  - 美国-27
-  - 美国-28
-  - 美国-29
-  - 美国-30
-  - 加拿大-1
-  - 日本-16
+  - 中国香港-40
   - 加拿大-2
-  - 美国-31
+  - 中国香港-41
+  - 美国-25
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
