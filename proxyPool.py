@@ -76,6 +76,10 @@ if (args.flushFakeip):
     profile.clash.flushFakeIp()
     sys.exit(0)
 
+if (args.flushDNSCache):
+    profile.clash.flushDNSCache()
+    sys.exit(0)
+
 if (args.noDownload and args.local):
     print("error: argument --noDownload: not allowed with argument --local")
     sys.exit(1)

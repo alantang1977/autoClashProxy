@@ -112,6 +112,15 @@ class clashAPI:
             print(message)
             print("执行flush fakeip命令失败")
 
+    def flushDNSCache(self):
+        url = f"{self.baseUrl}:{self.controllerPort}/cache/dns/flush"
+        message = requests.post(url, headers=self.authorization)
+        if (message.status_code == 204):
+            print("成功执行flush dns命令")
+        else:
+            print(message)
+            print("执行flush dns命令失败")
+
     def groupDelay(self, groupName):
         url = f"{self.baseUrl}:{self.controllerPort}/group/{groupName}/delay"
         params = {"timeout": self.timeout, "url": self.delayUrl}

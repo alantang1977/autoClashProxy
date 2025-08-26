@@ -23,6 +23,7 @@ def processArgs(bRequiredExclusive=True):
     parser.add_argument("--maxProxyAfterDelay", type=int, default=36, help="经过延迟测试后，允许输出的最大节点数量")
     parser.add_argument("--interval", type=int, default=360, help="clash代理组节点检测时间间隔")
     parser.add_argument("--flushFakeip", action='store_true', help="删除fakeip缓存")
+    parser.add_argument("--flushDNSCache", action='store_true', help="删除dns缓存")
     parser.add_argument("--log", type=str, default="", choices=["debug", "info", "warning", "error", "silent"])
     parser.add_argument("--tunStack", type=str, default="mixed", choices=["system", "gvisor", "mixed"])
 
