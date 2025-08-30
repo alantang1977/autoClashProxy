@@ -61,103 +61,47 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
+- alterId: '0'
+  cipher: auto
+  name: 美国-1
+  network: ws
+  port: '80'
+  server: 104.18.14.54
+  type: vmess
+  udp: true
+  uuid: bd8f4c3a-b55a-4a55-a4be-d2ead4a4c66a
+  ws-opts:
+    headers:
+      host: 845296302850992025082820102725073.s15.chibaba.filegear-sg.me
+    path: /index.html?ed=2048
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-2
+  password: L60nS04NhsoMpN2DDGbnMqLP8DY
+  port: 11243
+  server: 47.76.83.25
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
 - alterId: 0
   auth: ''
   fast-open: false
   name: 新加坡-1
-  password: fWydUhyG3woKe4a0kcKKKdx78
-  port: 6467
-  server: 8.219.232.60
+  password: lPK6OZ9ouqyXrCghO6ohUbbN5g
+  port: 33131
+  server: 8.222.183.55
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
   udp: true
-- alterId: 0
-  name: 美国-1
-  password: dongtaiwang.com
-  port: '5355'
-  server: 51.159.111.32
-  skip-cert-verify: true
-  sni: www.bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-1
-  password: w8d4aXhYp2wKG7oeCTieeQXkqc
-  port: 24613
-  server: 47.74.23.137
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  client-fingerprint: random
-  name: 韩国-1
-  network: ws
-  port: 50000
-  server: 1.177.49.132
-  servername: test1.testspeed.sbs
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 689e5c9c-3c97-4eaf-9716-287dffa6afe0
-  ws-opts:
-    headers:
-      Host: test1.testspeed.sbs
-    path: /proxyip=1.177.49.132:50000
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-2
-  password: qq4Wc9UakExypzw4Jd00fWqrDTY
-  port: 22712
-  server: 8.209.223.212
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 美国-2
-  network: ws
-  port: 80
-  server: 63.141.128.22
-  servername: f.jOin.zEdMoDeOn.oNl.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: ff0d9e6c-6b4c-40c2-9254-f602b21aa836
-  ws-opts:
-    headers:
-      Host: f.jOin.zEdMoDeOn.oNl.
-    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
 - alterId: 0
   name: 美国-3
-  network: ws
-  port: 8080
-  server: 63.141.128.2
-  servername: b.jOin.zEdMoDeOn.oNl.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 78927eda-79c3-40d1-bb55-f0671939089b
-  ws-opts:
-    headers:
-      Host: b.jOin.zEdMoDeOn.oNl.
-    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-- alterId: 0
-  name: 美国-4
   password: L60nS04NhsoMpN2DDGbnMqLP8DY
   port: '11243'
   server: 47.76.83.25
@@ -180,6 +124,77 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
+  name: 新加坡-3
+  password: fWydUhyG3woKe4a0kcKKKdx78
+  port: 6467
+  server: 8.219.232.60
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 日本-1
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 美国-4
+  password: dongtaiwang.com
+  port: '5355'
+  server: 51.159.111.32
+  skip-cert-verify: true
+  sni: www.bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-1
+  network: ws
+  port: 30836
+  server: v36.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- alpn:
+  - http/1.1
+  alterId: 0
+  client-fingerprint: chrome
+  name: 美国-5
+  network: ws
+  port: '443'
+  server: 104.21.71.83
+  servername: a32e1893-496a-5d3e-d34f-a8674b22b993.777162.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c2f5010-bc17-46d7-a5d3-7489f3a8dded
+  ws-opts:
+    headers:
+      Host: a32e1893-496a-5d3e-d34f-a8674b22b993.777162.xyz
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /GJuqYfsZSA3HxKLVmdalbjJm7kb1B
+  xudp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
   name: 中国香港-1
   password: XK52yierGckONMJWbJnuskD3unI
   port: 12854
@@ -190,116 +205,9 @@ proxies:
   tfo: false
   type: hysteria2
   udp: true
-- alterId: 0
-  name: 美国-5
-  network: ws
-  port: '80'
-  server: 63.141.128.22
-  type: vless
-  udp: true
-  uuid: ff0d9e6c-6b4c-40c2-9254-f602b21aa836
-  ws-opts:
-    headers:
-      Host: f.jOin.zEdMoDeOn.oNl.
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
-    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  xudp: true
-- alterId: 0
-  name: 美国-6
-  network: ws
-  port: '80'
-  server: 172.67.188.18
-  type: vless
-  udp: true
-  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
-  ws-opts:
-    headers:
-      Host: aio.loophole.Biz.iD
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.101 Safari/537.36
-    path: /aioproxybot/8.215.59.6-443
-  xudp: true
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 美国-7
-  network: ws
-  port: 443
-  server: 172.64.152.55
-  servername: usb.rtot.me
-  skip-cert-verify: true
-  sni: usb.rtot.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
-  ws-opts:
-    headers:
-      Host: usb.rtot.me
-    path: /bing
-- alterId: 0
-  name: 美国-8
-  network: ws
-  port: 8080
-  server: 63.141.128.14
-  servername: a.joIn.zEdMoDeOn.oNl.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e68bc33e-7222-4125-b064-8209d71f29d9
-  ws-opts:
-    headers:
-      Host: a.joIn.zEdMoDeOn.oNl.
-    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-9
-  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: 22509
-  server: 47.129.224.62
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 美国-10
-  network: ws
-  port: 443
-  server: 104.21.77.149
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 20e89a95-cedf-4fe3-9421-517ce66be170
-  ws-opts:
-    headers:
-      Host: dddcccvghyu.999834.xyz
-    path: /SHToRcqfiraYkzOdf
-- alterId: 0
-  name: 美国-11
-  network: ws
-  port: '8080'
-  server: 172.67.72.39
-  type: vless
-  udp: true
-  uuid: dc947c58-c4d7-445a-fede-6642abfd3e30
-  ws-opts:
-    headers:
-      Host: bia-to-unlimiteddev.unlimiteddev-service.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.99 Safari/537.36
-    path: /@unlimiteddev----@unlimiteddev-----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimitedev----@unlimitedev----@unlimiteddev----@unlimiteddev?ed=2480
-  xudp: true
 - alterId: 2
   cipher: auto
-  name: 中国大陆-1
+  name: 中国大陆-2
   network: ws
   port: 30804
   server: v4.heduian.link
@@ -312,45 +220,30 @@ proxies:
     headers:
       host: ocbc.com
     path: /oooo
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-12
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 美国-6
   network: ws
-  port: '8443'
-  server: 104.16.53.11
-  servername: hetzner-9.cfuk.name.ng
+  port: '443'
+  server: 172.67.209.79
+  servername: ggggbbhyuuui.999834.xyz
+  skip-cert-verify: false
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: ccbe6b7c-9264-40c4-8bc1-ef8f6205d7a4
+  uuid: 91362cdb-81f8-4fd3-9b9f-2b24a8146a25
   ws-opts:
     headers:
-      Host: hetzner-9.cfuk.name.ng
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
+      Host: ggggbbhyuuui.999834.xyz
+    path: /ODznTT5fgkUw3VH0GJ
   xudp: true
 - alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-13
-  password: L60nS04NhsoMpN2DDGbnMqLP8DY
-  port: 11243
-  server: 47.76.83.25
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-14
-  password: peEduuHzbExjK7UQHzazXwqgA
-  port: 27704
-  server: 166.88.164.9
-  servername: bing.com
+  name: 美国-7
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: '22509'
+  server: 47.129.224.62
   skip-cert-verify: true
   sni: bing.com
   tfo: false
@@ -358,166 +251,74 @@ proxies:
   udp: true
 - alterId: '0'
   cipher: auto
-  name: 美国-15
+  name: 美国-8
   network: ws
-  port: '443'
-  server: 104.21.77.149
-  tls: true
+  port: '8880'
+  server: 66.235.200.223
   type: vmess
   udp: true
-  uuid: 20e89a95-cedf-4fe3-9421-517ce66be170
+  uuid: 372fe606-3e78-3b22-93cc-00ecc8d6c429
   ws-opts:
     headers:
-      host: dddcccvghyu.999834.xyz
-    path: /SHToRcqfiraYkzOdf
+      host: TG.WangCai2.s4.db-link02.top
+    path: /dabai&TelegramğŸ‡¨ğŸ‡³@WangCai2/?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-16
-  network: ws
-  port: '443'
-  server: 172.66.40.99
-  servername: 2free2.aparatir.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: b4705d70-6252-494c-b26c-c39cbeafd216
-  ws-opts:
-    headers:
-      Host: 2free2.aparatir.xyz
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /admin
-  xudp: true
-- alterId: 0
-  name: 美国-17
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: '35200'
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
+  auth: ''
+  fast-open: false
+  name: 日本-2
+  password: yD0mxkCA18WgPD1uVGd3Eu1dc
+  port: 27789
+  server: 47.245.0.72
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
   tfo: false
   type: hysteria2
   udp: true
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-18
-  network: ws
-  port: 443
-  server: ico.org.uk
-  servername: hiddifyreplace2.safavidempire.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: fc264e2f-753b-43fd-878c-c8f82b4bc502
-  ws-opts:
-    headers:
-      Host: hiddifyreplace2.safavidempire.org
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/50.0.2661.94 Safari/537.36
-    path: /76fe1f74-5804-4a5a-8b9d-5f877d90a9c6
-  xudp: true
-- alterId: 0
-  http-opts:
-    headers:
-      Host:
-      - zhaket.com
-    method: GET
-    path:
-    - /
-  name: 美国-19
-  network: http
-  port: 625
-  server: uk.hotspoto.news
-  servername: zhaket.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 6c8f15df-cd15-4002-abfd-3902ceffb5b9
-- alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-20
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 35000
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-21
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 35200
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  delay: 1888
-  name: 美国-22
-  network: ws
-  port: 443
-  server: backus1.dh03.shop
-  servername: backus1.dh03.shop
+  auth: ''
+  fast-open: false
+  name: 新加坡-4
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 52.221.210.182
+  servername: bing.com
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: bing.com
+  tfo: false
+  type: hysteria2
   udp: true
-  uuid: 71504eaf-29ac-4190-89d1-dd9ce2c9ee14
-  ws-opts:
-    headers:
-      Host: backus1.dh03.shop
-    path: /higate
-- alterId: 0
-  name: 美国-23
+- alpn:
+  - http/1.1
+  alterId: 0
+  client-fingerprint: chrome
+  name: 美国-9
   network: ws
-  port: '80'
-  server: tgju.org
-  servername: SeRvER02.VtNEt.InFO
-  type: vless
+  password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51
+  port: '443'
+  server: 172.67.135.23
+  skip-cert-verify: false
+  sni: ZZzzzZZ.890601.XYZ
+  type: trojan
   udp: true
-  uuid: 2b277eea-66b2-4f3a-b934-46225c1f5e6f
   ws-opts:
     headers:
-      Host: SeRvER02.VtNEt.InFO
       User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
         Slackware/Chrome/12.0.742.100 Safari/534.30
-    path: /
-  xudp: true
+    path: /l96MZ8se5Kl2p8BiMhP42l
 - alterId: 0
-  auth: dd1e4ade-746b-4ab6-88ee-744336fabf7a
-  name: 美国-24
-  password: dd1e4ade-746b-4ab6-88ee-744336fabf7a
-  port: '14558'
-  server: us3.xilucloud.top
+  name: 新加坡-5
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: '17193'
+  server: 52.221.210.182
   skip-cert-verify: true
-  sni: us3.xilucloud.top
+  sni: bing.com
+  tfo: false
   type: hysteria2
   udp: true
 - alterId: 0
   auth: Yet-Another-Public-Config-1
-  name: 美国-25
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: '36300'
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: true
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-26
+  name: 美国-10
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
   password: Yet-Another-Public-Config-1
@@ -527,25 +328,22 @@ proxies:
   sni: YAPC-1.afshin.ir
   type: hysteria2
   udp: true
-- alterId: '2'
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国香港-2
-  network: ws
-  port: '80'
-  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
-  tls: false
-  type: vmess
+- alterId: 0
+  name: 美国-11
+  obfs: salamander
+  obfs-password: Telegram-->@Ln2Ray
+  password: Telegram-->@Ln2Ray
+  port: '45000'
+  server: gavazn.lnmarketplace.net
+  skip-cert-verify: true
+  sni: gavazn.55994421.xyz
+  tfo: false
+  type: hysteria2
   udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 中国香港-3
+  name: 中国香港-2
   network: ws
   port: 80
   server: hkt.gotochinatown.net
@@ -560,25 +358,46 @@ proxies:
       Host: hkt.gotochinatown.net
     path: /
 - alterId: 0
-  name: 美国-27
-  network: ws
-  port: '8080'
-  server: numberland.ir
-  type: vless
+  auth: Yet-Another-Public-Config-1
+  name: 美国-12
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 36300
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
   udp: true
-  uuid: dc947c58-c4d7-445a-fede-6642abfd3e30
-  ws-opts:
-    headers:
-      Host: bia-to-unlimiteddev.unlimiteddev-service.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /@unlimiteddev----@unlimiteddev-----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimitedev----@unlimitedev----@unlimiteddev----@unlimiteddev?ed=2480
-  xudp: true
+- alterId: 0
+  name: 美国-13
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: '35200'
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-14
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 35000
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 美国-28
+  name: 美国-15
   network: ws
   port: 443
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
@@ -591,6 +410,53 @@ proxies:
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
+- alterId: 0
+  name: 美国-16
+  network: ws
+  port: '80'
+  server: tgju.org
+  servername: SeRvER12.VtNEt.InFO
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2b277eea-66b2-4f3a-b934-46225c1f5e6f
+  ws-opts:
+    headers:
+      Host: SeRvER12.VtNEt.InFO
+    path: /
+- alterId: 0
+  name: 美国-17
+  network: ws
+  port: 443
+  server: registry.cyou
+  servername: 0unrad.a6ycpr7hed7.0yli.tbqrrk.6hb8.ekq.ogob6qr.j4dktqgdoc4.j4pj1i.2f8icdps9.qw07.uwt.ftr4tf.85nswz.5n0kb5kois.euqzb3w5362v.np85.s3sd1a.fgfgioi.dw9ani.rxug8sgrimhma9yalzyzlqj7150o8gj2hoj49cmlij91gdyjq9uhw41d.nudt.edu.kg
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      host: 0unrad.a6ycpr7hed7.0yli.tbqrrk.6hb8.ekq.ogob6qr.j4dktqgdoc4.j4pj1i.2f8icdps9.qw07.uwt.ftr4tf.85nswz.5n0kb5kois.euqzb3w5362v.np85.s3sd1a.fgfgioi.dw9ani.rxug8sgrimhma9yalzyzlqj7150o8gj2hoj49cmlij91gdyjq9uhw41d.nudt.edu.kg
+    path: /snippets?ip=proxyip:port(443)&nat64=6to4
+- alterId: 0
+  client-fingerprint: chrome
+  name: 美国-18
+  network: ws
+  port: '443'
+  server: us23.998998.best
+  servername: server7-30.99887766.best
+  tls: true
+  type: vless
+  udp: true
+  uuid: b3d99d13-61e1-4120-94a1-c066efb975bc
+  ws-opts:
+    headers:
+      Host: server7-30.99887766.best
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /esdryhwerty4wryrtehujdfg
+  xudp: true
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -730,24 +596,28 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id004
-  - 新加坡-1
   - 美国-1
-  - 日本-1
-  - 韩国-1
-  - 日本-2
   - 美国-2
+  - 新加坡-1
   - 美国-3
-  - 美国-4
   - 新加坡-2
-  - 中国香港-1
+  - 新加坡-3
+  - 日本-1
+  - 美国-4
+  - 中国大陆-1
   - 美国-5
+  - 中国香港-1
+  - 中国大陆-2
   - 美国-6
   - 美国-7
   - 美国-8
+  - 日本-2
+  - 新加坡-4
   - 美国-9
+  - 新加坡-5
   - 美国-10
   - 美国-11
-  - 中国大陆-1
+  - 中国香港-2
   - 美国-12
   - 美国-13
   - 美国-14
@@ -755,18 +625,6 @@ proxy-groups:
   - 美国-16
   - 美国-17
   - 美国-18
-  - 美国-19
-  - 美国-20
-  - 美国-21
-  - 美国-22
-  - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 中国香港-2
-  - 中国香港-3
-  - 美国-27
-  - 美国-28
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
