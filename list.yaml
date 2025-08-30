@@ -62,9 +62,80 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
+  auth: fWydUhyG3woKe4a0kcKKKdx78
+  client-fingerprint: chrome
+  name: 新加坡-1
+  password: fWydUhyG3woKe4a0kcKKKdx78
+  port: '6467'
+  server: 8.219.232.60
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 新加坡-2
+  password: lPK6OZ9ouqyXrCghO6ohUbbN5g
+  port: '33131'
+  server: 8.222.183.55
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 日本-1
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 52.195.211.157
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 新加坡-3
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 18.141.8.173
+  skip-cert-verify: true
+  sni: baidu.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 新加坡-4
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 18.141.8.173
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 日本-2
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 52.195.211.157
+  type: ss
+  udp: true
+- alterId: 0
+  client-fingerprint: random
+  name: 韩国-1
+  network: ws
+  port: 50000
+  server: 1.177.49.132
+  servername: test1.testspeed.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 689e5c9c-3c97-4eaf-9716-287dffa6afe0
+  ws-opts:
+    headers:
+      Host: test1.testspeed.sbs
+    path: /proxyip=1.177.49.132:50000
+- alterId: 0
   auth: ''
   fast-open: false
-  name: 日本-1
+  name: 日本-3
   password: qq4Wc9UakExypzw4Jd00fWqrDTY
   port: 22712
   server: 8.209.223.212
@@ -75,29 +146,9 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  name: 中国大陆-1
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4397
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 中国大陆-2
-  password: 253bc477d4e43c209f2d427272968280
-  port: 40950
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   auth: ''
   fast-open: false
-  name: 日本-2
+  name: 日本-4
   password: w8d4aXhYp2wKG7oeCTieeQXkqc
   port: 24613
   server: 47.74.23.137
@@ -108,44 +159,50 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  name: 中国大陆-3
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1546
-  server: 36.150.215.188
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  delay: 1932
-  name: 日本-3
+  name: 日本-5
   password: yD0mxkCA18WgPD1uVGd3Eu1dc
-  port: 27789
+  port: '27789'
   server: 47.245.0.72
   skip-cert-verify: true
+  sni: bing.com
   tfo: false
   type: hysteria2
   udp: true
 - alterId: 0
-  name: 中国大陆-4
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3043
-  server: 36.150.215.203
+  auth: ''
+  fast-open: false
+  name: 新加坡-5
+  password: fWydUhyG3woKe4a0kcKKKdx78
+  port: 6467
+  server: 8.219.232.60
+  servername: bing.com
   skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
+  sni: bing.com
+  tfo: false
+  type: hysteria2
   udp: true
 - alterId: 0
-  name: 中国大陆-5
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3270
-  server: 36.150.215.203
+  name: 新加坡-6
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: '17193'
+  server: 52.221.210.182
   skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 新加坡-7
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 52.221.210.182
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
   udp: true
 - alterId: 0
   auth: ''
@@ -161,242 +218,32 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  auth: ''
-  fast-open: false
-  name: 新加坡-1
-  password: fWydUhyG3woKe4a0kcKKKdx78
-  port: 6467
-  server: 8.219.232.60
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 中国大陆-6
-  password: c8960ca4a0add435fc34
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: '45913'
-  server: jp029.jd.kunlunpx.com
-  type: ss
-  udp: true
-- alterId: 0
-  auth: ''
-  fast-open: false
   name: 美国-2
-  password: L60nS04NhsoMpN2DDGbnMqLP8DY
-  port: 11243
-  server: 47.76.83.25
-  servername: bing.com
+  password: peEduuHzbExjK7UQHzazXwqgA
+  port: '27704'
+  server: 166.88.164.9
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
-  udp: true
-- alterId: 0
-  auth: fWydUhyG3woKe4a0kcKKKdx78
-  client-fingerprint: chrome
-  name: 新加坡-2
-  password: fWydUhyG3woKe4a0kcKKKdx78
-  port: '6467'
-  server: 8.219.232.60
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 中国大陆-7
-  password: 253bc477d4e43c209f2d427272968280
-  port: 6928
-  server: 223.111.144.13
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
   udp: true
 - alterId: 0
   name: 美国-3
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: '2428'
-  server: 47.239.220.214
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 中国大陆-8
-  password: d7577ca6729babe0790f
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: '45921'
-  server: kr037.jd.kunlunpx.com
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 中国大陆-9
-  password: d7577ca6729babe0790f
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45921
-  server: kr037.jd.kunlunpx.com
-  type: ss
-  udp: true
-- alterId: 0
-  name: 日本-4
-  password: yD0mxkCA18WgPD1uVGd3Eu1dc
-  port: '27789'
-  server: 47.245.0.72
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 加拿大-1
-  network: tcp
-  port: 443
-  server: 38.60.134.249
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: beb28159-7f4c-4c09-9313-6283515f150b
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 中国大陆-10
-  password: c1ee5895686790a383fb
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: '45922'
-  server: us038.jd.kunlunpx.com
-  type: ss
-  udp: true
-- alterId: 0
-  name: 美国-4
-  password: L60nS04NhsoMpN2DDGbnMqLP8DY
-  port: '11243'
-  server: 47.76.83.25
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 美国-5
-  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: '22509'
-  server: 47.129.224.62
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  delay: 1048
-  name: 美国-6
   network: ws
   port: 80
-  server: 104.21.7.229
+  server: 63.141.128.22
+  servername: f.jOin.zEdMoDeOn.oNl.
+  skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
+  uuid: ff0d9e6c-6b4c-40c2-9254-f602b21aa836
   ws-opts:
     headers:
-      Host: aio.loophole.Biz.iD
-    path: /aioproxybot/8.215.59.6-443
+      Host: f.jOin.zEdMoDeOn.oNl.
+    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
 - alterId: 0
-  auth: ''
-  fast-open: false
-  name: 新加坡-3
-  password: 5OiuCsPmULZ0lJwts89fegLJE
-  port: 17193
-  server: 52.221.210.182
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 中国大陆-11
-  password: 253bc477d4e43c209f2d427272968280
-  port: 7177
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: www.baidu.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: 中国大陆-12
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4801
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: 36.156.102.116
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-7
-  password: peEduuHzbExjK7UQHzazXwqgA
-  port: 27704
-  server: 166.88.164.9
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 美国-8
-  network: tcp
-  port: 443
-  server: 38.54.59.237
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: 5ac807d5-42c9-4b97-9567-478e61dab696
-- alterId: 0
-  cipher: ''
-  flow: ''
-  name: 美国-9
-  network: ws
-  port: 443
-  server: 172.64.152.55
-  servername: usb.rtot.me
-  skip-cert-verify: true
-  sni: usb.rtot.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
-  ws-opts:
-    headers:
-      Host: usb.rtot.me
-    path: /bing
-- alterId: 0
-  name: 美国-10
+  name: 美国-4
   password: dongtaiwang.com
   port: '5355'
   server: 51.159.111.32
@@ -408,51 +255,69 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 中国香港-1
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
+  name: 美国-5
+  password: L60nS04NhsoMpN2DDGbnMqLP8DY
+  port: 11243
+  server: 47.76.83.25
   servername: bing.com
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-13
-  network: ws
-  port: 30836
-  server: v36.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-14
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
 - alterId: 0
-  name: 美国-11
-  password: peEduuHzbExjK7UQHzazXwqgA
-  port: '27704'
-  server: 166.88.164.9
+  name: 美国-6
+  network: ws
+  port: 80
+  server: 63.141.128.16
+  servername: e.jOin.zEdMoDeOn.oNl.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 15f2b73d-9790-4092-bb4b-e38a4feb1b56
+  ws-opts:
+    headers:
+      Host: e.jOin.zEdMoDeOn.oNl.
+    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 美国-7
+  network: ws
+  port: 443
+  server: 104.18.13.145
+  servername: usa.rtot.me
+  skip-cert-verify: true
+  sni: usa.rtot.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: f19ed531-81cb-433e-8746-1a69e009f9df
+  ws-opts:
+    headers:
+      Host: usa.rtot.me
+    path: /bing
+- alterId: 0
+  name: 美国-8
+  network: ws
+  port: 8080
+  server: 63.141.128.2
+  servername: b.jOin.zEdMoDeOn.oNl.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 78927eda-79c3-40d1-bb55-f0671939089b
+  ws-opts:
+    headers:
+      Host: b.jOin.zEdMoDeOn.oNl.
+    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+- alterId: 0
+  name: 中国香港-1
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: '12854'
+  server: 47.242.195.121
   skip-cert-verify: true
   sni: bing.com
   tfo: false
@@ -460,7 +325,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 中国大陆-15
+  name: 中国大陆-1
   network: ws
   port: 30804
   server: v4.heduian.link
@@ -474,48 +339,57 @@ proxies:
       host: ocbc.com
     path: /oooo
 - alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-12
-  password: NjEkAYYNqFKUbrksyW1COBtdpU
-  port: 2428
-  server: 47.239.220.214
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-13
+  name: 美国-9
   password: 3hszBhqVsUhqOOFWJlev6k6Tkc
-  port: 22509
+  port: '22509'
   server: 47.129.224.62
-  servername: bing.com
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
   udp: true
 - alterId: 0
-  name: 美国-14
+  name: 美国-10
   network: ws
-  port: '2086'
-  server: www.speedtest.net
+  port: 8080
+  server: 63.141.128.14
+  servername: a.joIn.zEdMoDeOn.oNl.
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 000aab6e-553b-4de8-93ef-cca2878f7cec
+  uuid: e68bc33e-7222-4125-b064-8209d71f29d9
   ws-opts:
     headers:
-      Host: mahan.mmadvip8563.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.112 Safari/537.36
-    path: /@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--
-  xudp: true
+      Host: a.joIn.zEdMoDeOn.oNl.
+    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
 - alterId: 0
-  name: 美国-15
+  auth: ''
+  fast-open: false
+  name: 美国-11
+  password: peEduuHzbExjK7UQHzazXwqgA
+  port: 27704
+  server: 166.88.164.9
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-12
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 35000
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 美国-13
   obfs: salamander
   obfs-password: Telegram-->@Ln2Ray
   password: Telegram-->@Ln2Ray
@@ -527,32 +401,8 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  name: 美国-16
-  network: ws
-  port: '80'
-  server: tgju.org
-  servername: SeRvER12.VtNEt.InFO
-  tls: false
-  type: vless
-  udp: true
-  uuid: 2b277eea-66b2-4f3a-b934-46225c1f5e6f
-  ws-opts:
-    headers:
-      Host: SeRvER12.VtNEt.InFO
-    path: /
-- alterId: 0
-  auth: dd1e4ade-746b-4ab6-88ee-744336fabf7a
-  name: 美国-17
-  password: dd1e4ade-746b-4ab6-88ee-744336fabf7a
-  port: '14558'
-  server: us3.xilucloud.top
-  skip-cert-verify: true
-  sni: us3.xilucloud.top
-  type: hysteria2
-  udp: true
-- alterId: 0
   auth: Yet-Another-Public-Config-1
-  name: 美国-18
+  name: 美国-14
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
   password: Yet-Another-Public-Config-1
@@ -563,32 +413,84 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-19
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 35000
-  server: yapc-1.adamhayward.co.uk
+  http-opts:
+    headers:
+      Host:
+      - zhaket.com
+    method: GET
+    path:
+    - /
+  name: 美国-15
+  network: http
+  port: 625
+  server: uk.hotspoto.news
+  servername: zhaket.com
   skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
+  tls: false
+  type: vless
   udp: true
+  uuid: 6c8f15df-cd15-4002-abfd-3902ceffb5b9
 - alterId: 0
-  name: 美国-20
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: '35200'
-  server: yapc-1.adamhayward.co.uk
+  cipher: auto
+  name: 美国-16
+  network: ws
+  port: 80
+  server: GgGgGGgGggggGg.222769.XYZ
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  ws-opts:
+    headers:
+      Host: gggggggggggggg.222769.xyz
+    path: /f6taOMcOSZb9TPR
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国香港-2
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
   skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
   tfo: false
-  type: hysteria2
+  tls: false
+  type: vmess
   udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
 - alterId: 0
   auth: Yet-Another-Public-Config-1
-  name: 美国-21
+  name: 美国-17
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 36600
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: '2'
+  cipher: auto
+  client-fingerprint: chrome
+  name: 中国香港-3
+  network: ws
+  port: '80'
+  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-18
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
   password: Yet-Another-Public-Config-1
@@ -602,7 +504,7 @@ proxies:
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 美国-22
+  name: 美国-19
   network: ws
   port: 443
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
@@ -615,6 +517,20 @@ proxies:
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
+- alterId: 0
+  name: 美国-20
+  network: ws
+  port: '80'
+  server: tgju.org
+  servername: SeRvER12.VtNEt.InFO
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2b277eea-66b2-4f3a-b934-46225c1f5e6f
+  ws-opts:
+    headers:
+      Host: SeRvER12.VtNEt.InFO
+    path: /
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -754,52 +670,43 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id004
-  - 日本-1
-  - 中国大陆-1
-  - 中国大陆-2
-  - 日本-2
-  - 中国大陆-3
-  - 日本-3
-  - 中国大陆-4
-  - 中国大陆-5
-  - 美国-1
   - 新加坡-1
-  - 中国大陆-6
-  - 美国-2
   - 新加坡-2
-  - 中国大陆-7
-  - 美国-3
-  - 中国大陆-8
-  - 中国大陆-9
+  - 日本-1
+  - 新加坡-3
+  - 新加坡-4
+  - 日本-2
+  - 韩国-1
+  - 日本-3
   - 日本-4
-  - 加拿大-1
-  - 中国大陆-10
+  - 日本-5
+  - 新加坡-5
+  - 新加坡-6
+  - 新加坡-7
+  - 美国-1
+  - 美国-2
+  - 美国-3
   - 美国-4
   - 美国-5
   - 美国-6
-  - 新加坡-3
-  - 中国大陆-11
-  - 中国大陆-12
   - 美国-7
   - 美国-8
+  - 中国香港-1
+  - 中国大陆-1
   - 美国-9
   - 美国-10
-  - 中国香港-1
-  - 中国大陆-13
-  - 中国大陆-14
   - 美国-11
-  - 中国大陆-15
   - 美国-12
   - 美国-13
   - 美国-14
   - 美国-15
   - 美国-16
+  - 中国香港-2
   - 美国-17
+  - 中国香港-3
   - 美国-18
   - 美国-19
   - 美国-20
-  - 美国-21
-  - 美国-22
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
