@@ -62,35 +62,42 @@ profile:
   store-selected: true
 proxies:
 - alterId: 0
-  auth: fWydUhyG3woKe4a0kcKKKdx78
-  client-fingerprint: chrome
-  name: 新加坡-1
-  password: fWydUhyG3woKe4a0kcKKKdx78
-  port: '6467'
-  server: 8.219.232.60
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 韩国-1
-  network: ws
-  port: 12307
-  server: 118.45.113.48
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: jp.laoyoutiao.link
-    path: telegram @freecodes /?ed=2560
-- alterId: 0
   auth: ''
   fast-open: false
   name: 日本-1
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 中国大陆-1
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4397
+  server: 36.150.215.203
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 中国大陆-2
+  password: 253bc477d4e43c209f2d427272968280
+  port: 40950
+  server: 36.150.215.203
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 日本-2
   password: w8d4aXhYp2wKG7oeCTieeQXkqc
   port: 24613
   server: 47.74.23.137
@@ -101,73 +108,62 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  name: 韩国-2
-  network: ws
-  port: 19567
-  server: 129.154.54.67
-  servername: jp.laoyoutiao.link
+  name: 中国大陆-3
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1546
+  server: 36.150.215.188
   skip-cert-verify: true
+  sni: www.baidu.com
   tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: jp.laoyoutiao.link
-    path: telegram @freecodes /?ed=2560
 - alterId: 0
-  name: 美国-1
-  network: ws
-  port: 11655
-  server: 131.186.63.89
-  servername: jp.laoyoutiao.link
+  delay: 1932
+  name: 日本-3
+  password: yD0mxkCA18WgPD1uVGd3Eu1dc
+  port: 27789
+  server: 47.245.0.72
   skip-cert-verify: true
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 中国大陆-4
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3043
+  server: 36.150.215.203
+  skip-cert-verify: true
+  sni: www.baidu.com
   tls: true
-  type: vless
+  type: trojan
   udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: jp.laoyoutiao.link
-    path: telegram @freecodes /?ed=2560
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-2
-  network: ws
-  port: '8880'
-  server: 104.129.167.177
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
+  name: 中国大陆-5
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3270
+  server: 36.150.215.203
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-3
-  network: ws
-  port: '8880'
-  server: 108.165.216.188
-  servername: Telegram-channel-WangCai2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram🇨🇳 @WangCai2 /
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 新加坡-2
+  name: 美国-1
+  password: KYIFgW1don6L8TaDBJHynafxZ0
+  port: 4763
+  server: 47.237.23.83
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 新加坡-1
   password: fWydUhyG3woKe4a0kcKKKdx78
   port: 6467
   server: 8.219.232.60
@@ -178,38 +174,237 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  name: 美国-4
-  network: ws
-  port: '8880'
-  server: 159.246.55.251
-  servername: Telegram-channel-WangCai2
-  type: vless
+  cipher: aes-128-gcm
+  name: 中国大陆-6
+  password: c8960ca4a0add435fc34
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: '45913'
+  server: jp029.jd.kunlunpx.com
+  type: ss
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1713 Build/MRA58K) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /Telegram
-  xudp: true
 - alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-2
+  password: L60nS04NhsoMpN2DDGbnMqLP8DY
+  port: 11243
+  server: 47.76.83.25
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: fWydUhyG3woKe4a0kcKKKdx78
   client-fingerprint: chrome
+  name: 新加坡-2
+  password: fWydUhyG3woKe4a0kcKKKdx78
+  port: '6467'
+  server: 8.219.232.60
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 中国大陆-7
+  password: 253bc477d4e43c209f2d427272968280
+  port: 6928
+  server: 223.111.144.13
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 美国-3
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: '2428'
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 中国大陆-8
+  password: d7577ca6729babe0790f
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: '45921'
+  server: kr037.jd.kunlunpx.com
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 中国大陆-9
+  password: d7577ca6729babe0790f
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: 45921
+  server: kr037.jd.kunlunpx.com
+  type: ss
+  udp: true
+- alterId: 0
+  name: 日本-4
+  password: yD0mxkCA18WgPD1uVGd3Eu1dc
+  port: '27789'
+  server: 47.245.0.72
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 加拿大-1
+  network: tcp
+  port: 443
+  server: 38.60.134.249
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: beb28159-7f4c-4c09-9313-6283515f150b
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 中国大陆-10
+  password: c1ee5895686790a383fb
+  plugin: obfs
+  plugin-opts:
+    host: 215996dd9f1c3db1e54b.microsoft.com
+    mode: http
+  port: '45922'
+  server: us038.jd.kunlunpx.com
+  type: ss
+  udp: true
+- alterId: 0
+  name: 美国-4
+  password: L60nS04NhsoMpN2DDGbnMqLP8DY
+  port: '11243'
+  server: 47.76.83.25
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
   name: 美国-5
+  password: 3hszBhqVsUhqOOFWJlev6k6Tkc
+  port: '22509'
+  server: 47.129.224.62
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  delay: 1048
+  name: 美国-6
   network: ws
-  port: '8880'
-  server: 135.84.79.177
-  servername: Telegram-channel-freecodes
+  port: 80
+  server: 104.21.7.229
   tls: false
   type: vless
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
+      Host: aio.loophole.Biz.iD
+    path: /aioproxybot/8.215.59.6-443
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 新加坡-3
+  password: 5OiuCsPmULZ0lJwts89fegLJE
+  port: 17193
+  server: 52.221.210.182
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 中国大陆-11
+  password: 253bc477d4e43c209f2d427272968280
+  port: 7177
+  server: 36.150.215.203
+  skip-cert-verify: true
+  sni: www.baidu.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: 中国大陆-12
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4801
+  server: 36.150.215.203
+  skip-cert-verify: true
+  sni: 36.156.102.116
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-7
+  password: peEduuHzbExjK7UQHzazXwqgA
+  port: 27704
+  server: 166.88.164.9
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 美国-8
+  network: tcp
+  port: 443
+  server: 38.54.59.237
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: 5ac807d5-42c9-4b97-9567-478e61dab696
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 美国-9
+  network: ws
+  port: 443
+  server: 172.64.152.55
+  servername: usb.rtot.me
+  skip-cert-verify: true
+  sni: usb.rtot.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
+  ws-opts:
+    headers:
+      Host: usb.rtot.me
+    path: /bing
+- alterId: 0
+  name: 美国-10
+  password: dongtaiwang.com
+  port: '5355'
+  server: 51.159.111.32
+  skip-cert-verify: true
+  sni: www.bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
 - alterId: 0
   auth: ''
   fast-open: false
@@ -223,167 +418,78 @@ proxies:
   tfo: false
   type: hysteria2
   udp: true
-- alterId: 0
-  client-fingerprint: chrome
-  name: 新加坡-3
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-13
   network: ws
-  port: 8880
-  server: 114.129.43.251
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
+  port: 30836
+  server: v36.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: cf.d3z.net
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-6
+      host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-14
   network: ws
-  port: '8880'
-  server: 104.254.140.177
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  name: 美国-7
-  network: ws
-  port: 8880
-  server: 104.129.164.39
-  servername: ip.langmanshanxi.top
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /Telegram🇨🇳
+      host: baidu.com
+    path: /oooo
 - alterId: 0
-  name: 美国-8
-  network: ws
-  port: '8880'
-  server: 160.79.104.177
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  name: 美国-9
-  network: ws
-  port: 8880
-  server: 147.185.161.251
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-10
-  network: ws
-  port: '8880'
-  server: 170.114.46.186
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed
-- alterId: 0
-  client-fingerprint: chrome
   name: 美国-11
-  network: ws
-  port: '8880'
-  server: 104.129.164.39
-  servername: ip.langmanshanxi.top
-  tls: false
-  type: vless
+  password: peEduuHzbExjK7UQHzazXwqgA
+  port: '27704'
+  server: 166.88.164.9
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram @MxlShare @freecodes /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-12
+- alterId: 2
+  cipher: auto
+  name: 中国大陆-15
   network: ws
-  port: '8880'
-  server: 170.114.46.177
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  type: vless
+  port: 30804
+  server: v4.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
   udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-13
-  network: ws
-  port: '8880'
-  server: 167.68.5.177
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram@freecodes/
-- alterId: 0
-  name: 美国-14
-  network: ws
-  port: 8880
-  server: 159.112.235.186
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
+      host: ocbc.com
+    path: /oooo
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 美国-15
+  name: 美国-12
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-13
   password: 3hszBhqVsUhqOOFWJlev6k6Tkc
   port: 22509
   server: 47.129.224.62
@@ -394,808 +500,109 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  name: 美国-16
+  name: 美国-14
   network: ws
-  port: 8880
-  server: 159.246.55.251
-  servername: cf.d3z.net
-  skip-cert-verify: false
-  tls: false
+  port: '2086'
+  server: www.speedtest.net
   type: vless
   udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
+  uuid: 000aab6e-553b-4de8-93ef-cca2878f7cec
   ws-opts:
     headers:
-      Host: cf.d3z.net
-    path: /Telegram
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-17
-  network: ws
-  port: '8880'
-  server: 167.68.42.177
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 新加坡-4
-  password: lPK6OZ9ouqyXrCghO6ohUbbN5g
-  port: 33131
-  server: 8.222.183.55
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 美国-18
-  network: ws
-  port: 8880
-  server: 199.181.197.186
-  servername: Telegram-channel-WangCai2
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- alterId: 0
-  name: 美国-19
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.105.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-20
-  network: ws
-  port: '8880'
-  server: 104.129.165.177
-  servername: ip.langmanshanxi.top
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: ip.langmanshanxi.top
-    max-early-data: '2560'
-    path: /TelegramU0001F1E8U0001F1F3 @freecodes /
-- alterId: 0
-  name: 美国-21
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 199.34.229.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-22
-  network: ws
-  port: '8880'
-  server: 63.141.128.188
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /
-- alterId: 0
-  name: 美国-23
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 192.200.160.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-24
-  network: ws
-  port: '8880'
-  server: 160.79.105.177
-  servername: Telegram-channel-freecodes
-  tls: false
-  type: vless
-  udp: true
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  ws-opts:
-    headers:
-      Host: ip.langmanshanxi.top
-    path: /
-- alterId: 0
-  name: 美国-25
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.108.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-26
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.106.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-27
-  network: ws
-  port: '2095'
-  server: 162.159.153.4
-  type: vless
-  udp: true
-  uuid: 5c9d0b1b-4075-40d0-baf0-85cb03722586
-  ws-opts:
-    headers:
-      Host: rAyAn-cOnFiG-TeLeGrAm-cLuB-1.RaYaN-1.ClOuDnS.ClUb
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.76 Safari/537.36
-    path: '@Rayan_Config'
-  xudp: true
-- alterId: 0
-  name: 美国-28
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.71.232.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-29
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.177.57.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-30
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 184.174.80.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-31
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 166.62.104.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-32
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 192.0.63.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-33
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 199.68.156.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-34
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.71.233.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 加拿大-1
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 205.233.181.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-35
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 167.68.5.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  delay: 1928
-  name: 中国香港-2
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 103.160.204.194
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
-- alterId: 0
-  name: 美国-36
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 167.68.11.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-37
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 167.68.42.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-38
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 204.93.210.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 新加坡-5
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 185.18.184.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  client-fingerprint: chrome
-  name: 加拿大-2
-  network: ws
-  port: '8880'
-  server: 205.233.181.251
-  servername: cf.d3z.net
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    headers:
-      Host: cf.d3z.net
-    path: / [By EbraSha]
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-39
-  password: L60nS04NhsoMpN2DDGbnMqLP8DY
-  port: 11243
-  server: 47.76.83.25
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 美国-40
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.62.62.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-41
-  network: ws
-  port: '80'
-  server: 104.21.42.42
-  type: vless
-  udp: true
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  ws-opts:
-    headers:
-      Host: aio.zipzap.biz.id
+      Host: mahan.mmadvip8563.ir
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.87 Safari/537.36
-    path: /aioproxybot/146.190.192.43-80
+        like Gecko) Chrome/49.0.2623.112 Safari/537.36
+    path: /@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--@ZedBaz_vpn--
   xudp: true
 - alterId: 0
-  name: 美国-42
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.71.189.194
+  name: 美国-15
+  obfs: salamander
+  obfs-password: Telegram-->@Ln2Ray
+  password: Telegram-->@Ln2Ray
+  port: '45000'
+  server: gavazn.lnmarketplace.net
   skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
+  sni: gavazn.55994421.xyz
+  tfo: false
+  type: hysteria2
   udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
 - alterId: 0
-  name: 美国-43
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.12.145.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-44
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 192.169.221.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-45
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 192.0.54.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-46
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 199.34.230.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: '0'
-  cipher: auto
-  name: 美国-47
-  network: ws
-  port: '8880'
-  server: 140.99.233.223
-  type: vmess
-  udp: true
-  uuid: 761310d9-538d-3b2a-8874-1cc47a23498e
-  ws-opts:
-    headers:
-      host: TG.WangCai2.s4.db-link02.top
-    path: /dabai&TelegramğŸ‡¨ğŸ‡³@WangCai2/?ed=2560
-- alterId: 0
-  name: 美国-48
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.12.144.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-49
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 192.169.223.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-50
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 63.141.128.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: ttfang.fange.me
-    path: /Telegram
-- alterId: 0
-  name: 美国-51
-  network: ws
-  port: 443
-  server: 172.67.149.202
-  servername: LlLLLlLLLLLkjh.222560.xyZ
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ce921385-2b31-45fe-84c5-1843e8ae845b
-  ws-opts:
-    headers:
-      host: LlLLLlLLLLLkjh.222560.xyZ
-    path: /1xrOld7e5RpK3I98dxLkez
-- alterId: 0
-  name: 美国-52
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 209.46.30.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-53
-  network: ws
-  port: '8880'
-  server: 147.185.161.251
-  servername: Telegram-channel- CoinTech2U2
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: cf.d3z.net
-    max-early-data: '2560'
-    path: /Telegram @ CoinTech2U2 /
-- alterId: 0
-  name: 韩国-3
-  network: ws
-  port: 50000
-  server: 106.255.89.151
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: jp.laoyoutiao.link
-    path: telegram@freecodes/?ed=2560
-- alterId: 0
-  name: 美国-54
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 170.114.45.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: '0'
-  cipher: auto
-  name: 美国-55
-  network: ws
-  port: '80'
-  server: 172.66.3.211
-  type: vmess
-  udp: true
-  uuid: bd8f4c3a-b55a-4a55-a4be-d2ead4a4c66a
-  ws-opts:
-    headers:
-      host: 331612932360382025082820102757744.s15.chibaba.filegear-sg.me
-    path: /index.html?ed=2048
-- alterId: 0
-  name: 美国-56
-  network: ws
-  port: 443
-  server: freexxx.ndeso.xyz
-  servername: freexxx.ndeso.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-  ws-opts:
-    headers:
-      host: freexxx.ndeso.xyz
-    path: /Free-CF-Proxy-US530
-- alterId: 0
-  name: 美国-57
+  name: 美国-16
   network: ws
   port: '80'
   server: tgju.org
+  servername: SeRvER12.VtNEt.InFO
+  tls: false
   type: vless
   udp: true
   uuid: 2b277eea-66b2-4f3a-b934-46225c1f5e6f
   ws-opts:
     headers:
-      Host: SeRvER07.VtNEt.InFO
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /?ed=2048
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: zero
-  name: 美国-58
-  network: ws
-  port: '443'
-  server: aio.unlimited.biz.id
-  servername: aio.unlimited.biz.id
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f282b878-8711-45a1-8c69-5564172123c1
-  ws-opts:
-    headers:
-      Host: aio.unlimited.biz.id
-    path: /aioproxybot/129.150.49.58-18650
-  xudp: true
-- alterId: '2'
-  cipher: auto
-  client-fingerprint: chrome
-  name: 中国香港-3
-  network: ws
-  port: '80'
-  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: SeRvER12.VtNEt.InFO
     path: /
 - alterId: 0
-  name: 美国-59
-  network: ws
-  port: 443
-  server: cache.netflix.com.unlimited.spauu.web.id
-  servername: cache.netflix.com.unlimited.spauu.web.id
+  auth: dd1e4ade-746b-4ab6-88ee-744336fabf7a
+  name: 美国-17
+  password: dd1e4ade-746b-4ab6-88ee-744336fabf7a
+  port: '14558'
+  server: us3.xilucloud.top
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: us3.xilucloud.top
+  type: hysteria2
   udp: true
-  uuid: 532cc91d-e878-410d-9e09-b58d51b5e052
-  ws-opts:
-    headers:
-      host: cache.netflix.com.unlimited.spauu.web.id
-    path: /vl=129.150.58.86=57621
 - alterId: 0
-  name: 美国-60
-  network: ws
-  port: 443
-  server: web.ndeso.xyz
-  servername: web.ndeso.xyz
+  auth: Yet-Another-Public-Config-1
+  name: 美国-18
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 35200
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-19
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 35000
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 美国-20
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: '35200'
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-21
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: '36300'
+  server: yapc-1.adamhayward.co.uk
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
   udp: true
-  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-  ws-opts:
-    headers:
-      host: web.ndeso.xyz
-    path: /Free-CF-Proxy-AE11
-- alterId: 0
-  name: 韩国-4
-  network: ws
-  port: 10008
-  server: 14.32.12.235
-  servername: jp.laoyoutiao.link
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf
-  ws-opts:
-    headers:
-      host: jp.laoyoutiao.link
-    path: Telegram@freecodes/?ed=2560
-- alterId: 0
-  name: 美国-61
-  network: ws
-  password: ttfang
-  port: 2096
-  server: 198.202.211.194
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: Telegram🇨🇳
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-62
-  network: ws
-  port: '443'
-  server: mybb.com
-  servername: rAyAn-cOnFiG-09.rAyAn-iIi.dNs-dYnAmIc.nEt
-  tls: true
-  type: vless
-  udp: true
-  uuid: a0ac9cf5-f8c8-43cf-a09b-908455fb2b4b
-  ws-opts:
-    headers:
-      Host: rayan-config-09.rayan-iii.dns-dynamic.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /@Rayan_Config
-  xudp: true
 - alterId: 0
   cipher: auto
   h2-opts: {}
   http-opts: {}
-  name: 美国-63
+  name: 美国-22
   network: ws
   port: 443
   server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
@@ -1208,155 +615,6 @@ proxies:
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
     path: /azumase.ren
-- alterId: 0
-  client-fingerprint: chrome
-  name: 日本-2
-  network: ws
-  port: '8880'
-  server: 103.245.229.251
-  servername: cf.d3z.net
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0132166f-e702-48ed-a9e7-b07af768faf8
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: cf.d3z.net
-    max-early-data: '2560'
-    path: /Telegram @freecodes /
-- alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-64
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 35200
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 美国-65
-  network: ws
-  port: 443
-  server: freevpn.ndeso.xyz
-  servername: freevpn.ndeso.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-  ws-opts:
-    headers:
-      host: freevpn.ndeso.xyz
-    path: /Free-CF-Proxy-AU10
-- alterId: 0
-  name: 美国-66
-  network: ws
-  port: 443
-  server: freevpn.ndeso.web.id
-  servername: freevpn.ndeso.web.id
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
-  ws-opts:
-    headers:
-      host: freevpn.ndeso.web.id
-    path: /Free-CF-Proxy-AU3?-VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY-
-- alterId: 0
-  cipher: auto
-  name: 美国-67
-  network: ws
-  port: 443
-  server: cloudgetservice.mcloudservice.site
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b
-  ws-opts:
-    headers:
-      Host: Fra-Vp-123.BLaZECLOUD.Site
-    path: /linvkws
-- alterId: 0
-  name: 美国-68
-  network: ws
-  port: 443
-  server: cache.netflix.com.spauu.web.id
-  servername: cache.netflix.com.spauu.web.id
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2bc40013-44c2-4d92-90e9-617893f7f6ed
-  ws-opts:
-    headers:
-      host: cache.netflix.com.spauu.web.id
-    path: /sggreen
-- alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-69
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36600
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 美国-70
-  network: ws
-  port: 443
-  server: unlimited.spauu.web.id
-  servername: unlimited.spauu.web.id
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b921362-35a7-4bd5-8323-338de6f7f8bb
-  ws-opts:
-    headers:
-      host: unlimited.spauu.web.id
-    path: /
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-71
-  network: ws
-  port: '443'
-  server: cloudgetservice.mcloudservice.site
-  servername: maxnetvipap-cloud76.netkh3.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1b368bf6-5aac-413c-a77c-229fb984d5ae
-  ws-opts:
-    headers:
-      Host: maxnetvipap-cloud76.netkh3.site
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /linkws
-  xudp: true
-- alterId: '0'
-  cipher: auto
-  name: 美国-72
-  network: ws
-  port: '2083'
-  server: rak1ding.89060004.xyz
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 75d96365-1229-4fc4-dbda-855717f876cf
-  ws-opts:
-    headers:
-      host: rak1d3.988988.shop
-    path: /
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -1496,94 +754,52 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id004
-  - 新加坡-1
-  - 韩国-1
   - 日本-1
-  - 韩国-2
+  - 中国大陆-1
+  - 中国大陆-2
+  - 日本-2
+  - 中国大陆-3
+  - 日本-3
+  - 中国大陆-4
+  - 中国大陆-5
   - 美国-1
+  - 新加坡-1
+  - 中国大陆-6
   - 美国-2
-  - 美国-3
   - 新加坡-2
+  - 中国大陆-7
+  - 美国-3
+  - 中国大陆-8
+  - 中国大陆-9
+  - 日本-4
+  - 加拿大-1
+  - 中国大陆-10
   - 美国-4
   - 美国-5
-  - 中国香港-1
-  - 新加坡-3
   - 美国-6
+  - 新加坡-3
+  - 中国大陆-11
+  - 中国大陆-12
   - 美国-7
   - 美国-8
   - 美国-9
   - 美国-10
+  - 中国香港-1
+  - 中国大陆-13
+  - 中国大陆-14
   - 美国-11
+  - 中国大陆-15
   - 美国-12
   - 美国-13
   - 美国-14
   - 美国-15
   - 美国-16
   - 美国-17
-  - 新加坡-4
   - 美国-18
   - 美国-19
   - 美国-20
   - 美国-21
   - 美国-22
-  - 美国-23
-  - 美国-24
-  - 美国-25
-  - 美国-26
-  - 美国-27
-  - 美国-28
-  - 美国-29
-  - 美国-30
-  - 美国-31
-  - 美国-32
-  - 美国-33
-  - 美国-34
-  - 加拿大-1
-  - 美国-35
-  - 中国香港-2
-  - 美国-36
-  - 美国-37
-  - 美国-38
-  - 新加坡-5
-  - 加拿大-2
-  - 美国-39
-  - 美国-40
-  - 美国-41
-  - 美国-42
-  - 美国-43
-  - 美国-44
-  - 美国-45
-  - 美国-46
-  - 美国-47
-  - 美国-48
-  - 美国-49
-  - 美国-50
-  - 美国-51
-  - 美国-52
-  - 美国-53
-  - 韩国-3
-  - 美国-54
-  - 美国-55
-  - 美国-56
-  - 美国-57
-  - 美国-58
-  - 中国香港-3
-  - 美国-59
-  - 美国-60
-  - 韩国-4
-  - 美国-61
-  - 美国-62
-  - 美国-63
-  - 日本-2
-  - 美国-64
-  - 美国-65
-  - 美国-66
-  - 美国-67
-  - 美国-68
-  - 美国-69
-  - 美国-70
-  - 美国-71
-  - 美国-72
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
