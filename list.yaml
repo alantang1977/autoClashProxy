@@ -61,29 +61,60 @@ profile:
   store-fake-ip: true
   store-selected: true
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 美国-1
-  network: ws
-  port: '443'
-  server: 172.67.209.79
-  servername: ggggbbhyuuui.999834.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 91362cdb-81f8-4fd3-9b9f-2b24a8146a25
-  ws-opts:
-    headers:
-      Host: ggggbbhyuuui.999834.xyz
-    path: /ODznTT5fgkUw3VH0GJ
-  xudp: true
 - alterId: 0
   auth: ''
   fast-open: false
+  name: 日本-1
+  password: qq4Wc9UakExypzw4Jd00fWqrDTY
+  port: 22712
+  server: 8.209.223.212
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 美国-1
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: 2428
+  server: 47.239.220.214
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: fWydUhyG3woKe4a0kcKKKdx78
+  client-fingerprint: chrome
   name: 新加坡-1
+  password: fWydUhyG3woKe4a0kcKKKdx78
+  port: '6467'
+  server: 8.219.232.60
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 新加坡-2
+  password: lPK6OZ9ouqyXrCghO6ohUbbN5g
+  port: 33131
+  server: 8.222.183.55
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 新加坡-3
   password: fWydUhyG3woKe4a0kcKKKdx78
   port: 6467
   server: 8.219.232.60
@@ -94,28 +125,68 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  auth: fWydUhyG3woKe4a0kcKKKdx78
-  client-fingerprint: chrome
-  name: 新加坡-2
-  password: fWydUhyG3woKe4a0kcKKKdx78
-  port: '6467'
-  server: 8.219.232.60
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 美国-2
-  password: L60nS04NhsoMpN2DDGbnMqLP8DY
-  port: '11243'
-  server: 47.76.83.25
+  name: 中国香港-1
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: '12854'
+  server: 47.242.195.121
   skip-cert-verify: true
   sni: bing.com
   tfo: false
   type: hysteria2
   udp: true
 - alterId: 0
+  name: 新加坡-4
+  password: lPK6OZ9ouqyXrCghO6ohUbbN5g
+  port: '33131'
+  server: 8.222.183.55
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: ''
+  fast-open: false
+  name: 中国香港-2
+  password: XK52yierGckONMJWbJnuskD3unI
+  port: 12854
+  server: 47.242.195.121
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  cipher: ''
+  flow: ''
+  name: 美国-2
+  network: ws
+  port: 443
+  server: 172.64.152.55
+  servername: usb.rtot.me
+  skip-cert-verify: true
+  sni: usb.rtot.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14c8603b-f036-4ebe-800b-ce6add99cd50
+  ws-opts:
+    headers:
+      Host: usb.rtot.me
+    path: /bing
+- alterId: 0
   name: 美国-3
+  password: NjEkAYYNqFKUbrksyW1COBtdpU
+  port: '2428'
+  server: 47.239.220.214
+  skip-cert-verify: true
+  sni: bing.com
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  name: 美国-4
   password: dongtaiwang.com
   port: '5355'
   server: 51.159.111.32
@@ -127,119 +198,7 @@ proxies:
 - alterId: 0
   auth: ''
   fast-open: false
-  name: 美国-4
-  password: KYIFgW1don6L8TaDBJHynafxZ0
-  port: 4763
-  server: 47.237.23.83
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  name: 日本-1
-  password: yD0mxkCA18WgPD1uVGd3Eu1dc
-  port: '27789'
-  server: 47.245.0.72
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alpn:
-  - http/1.1
-  alterId: 0
-  client-fingerprint: chrome
   name: 美国-5
-  network: ws
-  port: '443'
-  server: 104.21.71.83
-  servername: a32e1893-496a-5d3e-d34f-a8674b22b993.777162.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3c2f5010-bc17-46d7-a5d3-7489f3a8dded
-  ws-opts:
-    headers:
-      Host: a32e1893-496a-5d3e-d34f-a8674b22b993.777162.xyz
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /GJuqYfsZSA3HxKLVmdalbjJm7kb1B
-  xudp: true
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 中国香港-1
-  password: XK52yierGckONMJWbJnuskD3unI
-  port: 12854
-  server: 47.242.195.121
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 日本-2
-  password: qq4Wc9UakExypzw4Jd00fWqrDTY
-  port: 22712
-  server: 8.209.223.212
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  alterId: 0
-  client-fingerprint: chrome
-  name: 美国-6
-  network: ws
-  port: '2087'
-  server: 172.67.177.22
-  servername: interimrita.shividpolo.store
-  tls: true
-  type: vless
-  udp: true
-  uuid: cd7f3c2f-8d6d-4ad8-98eb-fb10e0f6da9e
-  ws-opts:
-    headers:
-      Host: interimrita.shividpolo.store
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
-    path: /downloader?ed=2048
-  xudp: true
-- alterId: 0
-  name: 美国-7
-  password: peEduuHzbExjK7UQHzazXwqgA
-  port: '27704'
-  server: 166.88.164.9
-  skip-cert-verify: true
-  sni: bing.com
-  tfo: false
-  type: hysteria2
-  udp: true
-- alterId: 0
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 中国大陆-1
-  port: 35000
-  server: gzyd.cg.xxality.cn
-  servername: cggb.hysality.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c1bf6a3-d378-45c8-b1fa-f94a256380cf
-- alterId: 0
-  auth: ''
-  fast-open: false
-  name: 美国-8
   password: peEduuHzbExjK7UQHzazXwqgA
   port: 27704
   server: 166.88.164.9
@@ -250,38 +209,87 @@ proxies:
   type: hysteria2
   udp: true
 - alterId: 0
-  name: 美国-9
-  obfs: salamander
-  obfs-password: Telegram-->@Ln2Ray
-  password: Telegram-->@Ln2Ray
-  port: '45000'
-  server: gavazn.lnmarketplace.net
+  name: 美国-6
+  password: peEduuHzbExjK7UQHzazXwqgA
+  port: '27704'
+  server: 166.88.164.9
   skip-cert-verify: true
-  sni: gavazn.55994421.xyz
+  sni: bing.com
   tfo: false
   type: hysteria2
   udp: true
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  alterId: '0'
+- alterId: 0
+  name: 美国-7
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: '35200'
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  tfo: false
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-8
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 36300
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国-9
+  network: tcp
+  port: '8443'
+  reality-opts:
+    public-key: kHtBu5SWzLuz79nw0LkDkH4luWft_A-M6MNq4LA-RB4
+    short-id: ''
+  server: uuk5v.tok8888.com
+  servername: www.apple.com.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: b807c5f7-98b4-4a91-9e1e-98865d949a51
+  xudp: true
+- alterId: 0
   cipher: auto
+  h2-opts: {}
+  http-opts: {}
   name: 美国-10
   network: ws
-  port: '2053'
-  server: Losv6cdn.bM04.xYz
-  servername: losv6cdn.bm04.xyz
-  skip-cert-verify: false
+  port: 443
+  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: 94cf288d-f764-4ce9-a547-a7228144f056
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
   ws-opts:
     headers:
-      Host: losv6cdn.bm04.xyz
-    path: /dashboard/realtime/
-  xudp: true
+      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+    path: /azumase.ren
+- alterId: 0
+  name: 中国大陆-1
+  network: ws
+  port: 443
+  server: hk3.kaipi.link
+  servername: hk3.kaipi.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8665d45-8103-46e9-9cb7-8902bb7559b4
+  ws-opts:
+    headers:
+      host: hk3.kaipi.link
+    path: /texaws
 - alterId: 0
   name: 美国-11
   network: ws
@@ -296,13 +304,39 @@ proxies:
     headers:
       Host: SeRvER12.VtNEt.InFO
     path: /
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-12
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 35000
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-13
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 36600
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
 - alterId: 2
   cipher: auto
-  name: 中国香港-2
+  client-fingerprint: chrome
+  name: 中国香港-3
   network: ws
   port: 80
   server: hkt.gotochinatown.net
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   udp: true
@@ -314,7 +348,7 @@ proxies:
 - alterId: 0
   client-fingerprint: randomized
   fingerprint: ''
-  name: 美国-12
+  name: 美国-14
   network: ws
   port: 443
   server: openai.com
@@ -328,21 +362,35 @@ proxies:
       host: nkAnG2rEpLACE.airlineSHoma.Com
     path: /?ed=2560
 - alterId: 0
-  name: 美国-13
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: '35200'
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  tfo: false
+  auth: 1c90ba9c-05ec-4fc1-9d2c-3d5459bef2af
+  name: 美国-15
+  password: 1c90ba9c-05ec-4fc1-9d2c-3d5459bef2af
+  port: 27015
+  server: us.hyleet.news
+  skip-cert-verify: true
+  sni: us.hyleet.news
   type: hysteria2
   udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 美国-16
+  network: tcp
+  port: '8443'
+  reality-opts:
+    public-key: yDkCTYl7Ap0XeU9PNv_kBY9BwQrgYZPIov-MXvpf7R8
+    short-id: ''
+  server: uuk4v.tok8888.com
+  servername: www.apple.com.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: b807c5f7-98b4-4a91-9e1e-98865d949a51
+  xudp: true
 - alterId: '2'
   cipher: auto
   client-fingerprint: chrome
-  name: 中国香港-3
+  name: 中国香港-4
   network: ws
   port: '80'
   server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
@@ -355,76 +403,48 @@ proxies:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-14
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36300
-  server: yapc-1.adamhayward.co.uk
+  http-opts:
+    headers:
+      Host:
+      - zhaket.com
+    method: GET
+    path:
+    - /
+  name: 美国-17
+  network: http
+  port: 625
+  server: uk.hotspoto.news
+  servername: zhaket.com
   skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6c8f15df-cd15-4002-abfd-3902ceffb5b9
+- alterId: 0
+  auth: dd1e4ade-746b-4ab6-88ee-744336fabf7a
+  name: 美国-18
+  password: dd1e4ade-746b-4ab6-88ee-744336fabf7a
+  port: '14558'
+  server: us3.xilucloud.top
+  skip-cert-verify: true
+  sni: us3.xilucloud.top
   type: hysteria2
   udp: true
 - alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-15
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 35000
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- alterId: 0
-  client-fingerprint: chrome
-  name: 美国-16
+  name: 美国-19
   network: ws
-  port: '443'
-  server: us23.998998.best
-  servername: server7-30.99887766.best
+  port: 443
+  server: registry.cyou
+  servername: 0unrad.a6ycpr7hed7.0yli.tbqrrk.6hb8.ekq.ogob6qr.j4dktqgdoc4.j4pj1i.2f8icdps9.qw07.uwt.ftr4tf.85nswz.5n0kb5kois.euqzb3w5362v.np85.s3sd1a.fgfgioi.dw9ani.rxug8sgrimhma9yalzyzlqj7150o8gj2hoj49cmlij91gdyjq9uhw41d.nudt.edu.kg
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: b3d99d13-61e1-4120-94a1-c066efb975bc
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   ws-opts:
     headers:
-      Host: server7-30.99887766.best
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /esdryhwerty4wryrtehujdfg
-  xudp: true
-- alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-17
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36600
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- alterId: 0
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 美国-18
-  network: ws
-  port: 443
-  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  ws-opts:
-    headers:
-      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-    path: /azumase.ren
+      host: 0unrad.a6ycpr7hed7.0yli.tbqrrk.6hb8.ekq.ogob6qr.j4dktqgdoc4.j4pj1i.2f8icdps9.qw07.uwt.ftr4tf.85nswz.5n0kb5kois.euqzb3w5362v.np85.s3sd1a.fgfgioi.dw9ani.rxug8sgrimhma9yalzyzlqj7150o8gj2hoj49cmlij91gdyjq9uhw41d.nudt.edu.kg
+    path: /snippets?ip=proxyip:port(443)&nat64=6to4
 proxy-groups:
 - name: 直连规则
   proxies:
@@ -564,32 +584,35 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id004
+  - 日本-1
   - 美国-1
   - 新加坡-1
   - 新加坡-2
+  - 新加坡-3
+  - 中国香港-1
+  - 新加坡-4
+  - 中国香港-2
   - 美国-2
   - 美国-3
   - 美国-4
-  - 日本-1
   - 美国-5
-  - 中国香港-1
-  - 日本-2
   - 美国-6
   - 美国-7
-  - 中国大陆-1
   - 美国-8
   - 美国-9
   - 美国-10
+  - 中国大陆-1
   - 美国-11
-  - 中国香港-2
   - 美国-12
   - 美国-13
   - 中国香港-3
   - 美国-14
   - 美国-15
   - 美国-16
+  - 中国香港-4
   - 美国-17
   - 美国-18
+  - 美国-19
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
