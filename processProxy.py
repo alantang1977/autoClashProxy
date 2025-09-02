@@ -92,6 +92,8 @@ def setTLSForVmess(proxyPool):
 def removeErrorProxy(proxyPool):
     proxies = []
     for proxy in proxyPool:
+        if (proxy['type'] == "hysteria2" and "obfs-password" not in proxy):
+            continue
         if (str(proxy['port']).isdigit()): #节点的port不为数字，就不添加至最终的节点中
             proxies.append(proxy)
 
