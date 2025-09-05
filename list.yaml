@@ -66,19 +66,6 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 199.68.156.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- alterId: 0
-  name: 美国-2
-  network: ws
-  password: slch2024
-  port: 2096
   server: 190.93.244.195
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -88,20 +75,7 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3
 - alterId: 0
-  name: 加拿大-1
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 205.233.181.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3
-- alterId: 0
-  name: 美国-3
+  name: 美国-2
   network: ws
   password: slch2024
   port: 2096
@@ -114,20 +88,7 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3
 - alterId: 0
-  name: 美国-4
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.34.230.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3
-- alterId: 0
-  name: 美国-5
+  name: 美国-3
   network: ws
   password: slch2024
   port: 2096
@@ -140,11 +101,24 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3
 - alterId: 0
-  name: 美国-6
+  name: 美国-4
   network: ws
   password: slch2024
   port: 2096
-  server: 192.0.54.195
+  server: 199.68.156.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- alterId: 0
+  name: 美国-5
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.181.197.195
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
@@ -153,11 +127,11 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3
 - alterId: 0
-  name: 新加坡-1
+  name: 美国-6
   network: ws
   password: slch2024
   port: 2096
-  server: 185.18.184.195
+  server: 209.46.30.195
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
@@ -179,33 +153,20 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3
 - alterId: 0
+  name: 加拿大-1
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 205.233.181.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3
+- alterId: 0
   name: 美国-8
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 209.46.30.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3
-- alterId: 0
-  name: 美国-9
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.62.62.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3
-- alterId: 0
-  name: 美国-10
   network: ws
   password: slch2024
   port: 2096
@@ -218,11 +179,11 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
 - alterId: 0
-  name: 美国-11
+  name: 美国-9
   network: ws
   password: slch2024
   port: 2096
-  server: 199.181.197.195
+  server: 192.0.54.195
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
@@ -231,11 +192,37 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram%F0%9F%87%A8%F0%9F%87%B3
 - alterId: 0
-  name: 美国-12
+  name: 美国-10
   network: ws
   password: slch2024
   port: 2096
-  server: 190.93.245.195
+  server: 199.34.230.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3
+- alterId: 0
+  name: 新加坡-1
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.18.184.195
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3
+- alterId: 0
+  name: 美国-11
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.62.62.195
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
@@ -384,18 +371,17 @@ proxy-groups:
   proxies: &id004
   - 美国-1
   - 美国-2
-  - 加拿大-1
   - 美国-3
   - 美国-4
   - 美国-5
   - 美国-6
-  - 新加坡-1
   - 美国-7
+  - 加拿大-1
   - 美国-8
   - 美国-9
   - 美国-10
+  - 新加坡-1
   - 美国-11
-  - 美国-12
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
