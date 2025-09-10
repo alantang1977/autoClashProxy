@@ -64,56 +64,6 @@ proxies:
 - alterId: 0
   cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 中国香港-1
-  password: amazongreatvpn
-  port: 16888
-  server: 43.199.230.110
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  client-fingerprint: chrome
-  name: 新加坡-1
-  network: ws
-  port: 80
-  server: 185.18.184.66
-  servername: hello.96xckkzx.workers.dev
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: hello.96xckkzx.workers.dev
-    path: /?ed=2048
-- alterId: 0
-  cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 中国大陆-1
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509031722041-UO2JxEthna.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 中国香港-2
-  password: 68trvOEgMDYiNg2n543Bbk
-  port: 28484
-  server: 8.210.134.227
-  tfo: false
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 美国-1
   password: amazongreatvpn
   port: 16888
@@ -122,16 +72,48 @@ proxies:
   type: ss
   udp: true
 - alterId: 0
-  cipher: rc4-md5
+  name: 中国大陆-1
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1924
+  server: 36.156.102.77
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 中国大陆-2
-  password: efanccyun
-  plugin: obfs
+  name: 中国香港-1
+  password: 2b5fad3874e5
+  plugin: v2ray-plugin
   plugin-opts:
-    host: 202509031722041-UO2JxEthna.download.microsoft.com
-    mode: http
-  port: 8774
-  server: cn01.efan8867801.xyz
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /aqwshiog
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 156.251.179.135
+  tfo: false
+  type: ss
+  udp: true
+- alterId: 0
+  name: 中国香港-2
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2282
+  server: 43.198.184.150
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 中国香港-3
+  password: 68trvOEgMDYiNg2n543Bbk
+  port: 28484
+  server: 8.210.134.227
   tfo: false
   type: ss
   udp: true
@@ -139,20 +121,10 @@ proxies:
   name: 韩国-1
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6688
-  server: 43.203.222.204
+  server: 3.39.249.249
   skip-cert-verify: true
   sni: baidu.com
   type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 中国大陆-3
-  password: LcmwtQRzICXGQLioSolzi7
-  port: 2055
-  server: 106.15.224.42
-  tfo: false
-  type: ss
   udp: true
 - alterId: 0
   name: 美国-2
@@ -170,49 +142,6 @@ proxies:
 - alterId: 0
   name: 美国-3
   network: ws
-  password: slch2024
-  port: 2096
-  server: 216.24.57.195
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- alterId: 0
-  name: 美国-4
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 190.93.244.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- alterId: 2
-  cipher: auto
-  flow: ''
-  name: 中国大陆-4
-  network: ws
-  port: 30806
-  server: v6.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- alterId: 0
-  name: 美国-5
-  network: ws
   port: 50641
   server: 45.78.17.19
   servername: sg.alice.cloudns.pro
@@ -229,27 +158,28 @@ proxies:
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
 - alterId: 0
-  client-fingerprint: chrome
-  name: 美国-6
-  network: ws
-  password: slch2024
-  port: '2096'
-  server: 216.205.52.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
+  cipher: chacha20-ietf
+  name: 中国香港-4
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
+  type: ss
+  udp: true
+- alterId: 0
+  name: 日本-1
+  password: 253bc477d4e43c209f2d427272968280
+  port: 18233
+  server: 13.231.37.82
+  skip-cert-verify: true
+  sni: 23.45.86.28
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-        (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
-    path: Telegram🇨🇳
 - alterId: 0
-  name: 美国-7
+  name: 美国-4
   network: ws
   password: slch2024
   port: 2096
-  server: 190.93.245.87
+  server: 190.93.244.87
   skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -259,63 +189,7 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - alterId: 0
-  name: 美国-8
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.68.156.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- alterId: 0
-  name: 美国-9
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.181.197.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-10
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 216.24.57.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-11
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.34.229.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- alterId: 0
-  name: 美国-12
+  name: 美国-5
   network: ws
   port: 47051
   server: 154.17.10.111
@@ -333,180 +207,16 @@ proxies:
     v2ray-http-upgrade: true
     v2ray-http-upgrade-fast-open: true
 - alterId: 0
-  name: 美国-13
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 209.46.30.87
+  name: 日本-2
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6688
+  server: 13.113.45.176
   skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
+  sni: baidu.com
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
 - alterId: 0
-  cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 中国香港-3
-  password: 2b5fad3874e5
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /aqwshiog
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 156.251.179.135
-  tfo: false
-  type: ss
-  udp: true
-- alterId: '2'
-  cipher: auto
-  name: 中国大陆-5
-  network: ws
-  port: '30835'
-  server: v35.heduian.link
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v35.heduian.link
-    path: /oooo
-- alterId: 0
-  auth: 80747420-96c4-4a2f-83e6-eea4e46beb09
-  name: 美国-14
-  obfs: salamander
-  obfs-password: U1wBrYQyFm
-  password: 80747420-96c4-4a2f-83e6-eea4e46beb09
-  port: 20335
-  server: 70.34.215.221
-  skip-cert-verify: false
-  sni: drhystuichdfy.samanidempire.org
-  type: hysteria2
-  udp: true
-- alterId: '2'
-  cipher: auto
-  name: 中国大陆-6
-  network: ws
-  port: '30829'
-  server: v29.heduian.link
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v29.heduian.link
-    path: /oooo
-- alterId: 0
-  name: 美国-15
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.34.230.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-16
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.0.54.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- alterId: 0
-  name: 美国-17
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.0.54.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-18
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.0.63.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-19
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.0.63.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- alterId: 0
-  name: 美国-20
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.200.160.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- alterId: 0
-  client-fingerprint: qq
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 美国-21
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: oRDRYCRgGMbdf0Vw2qxYZm65qED5k8sFjLxAisMU6W8
-    short-id: 7487b1
-  server: 24.199.120.9
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f2fdcc30-a0c1-434d-94a7-dc8fc2c11a45
-  xudp: true
-- alterId: 0
-  name: 美国-22
+  name: 美国-6
   network: ws
   password: slch2024
   port: 2096
@@ -520,35 +230,7 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - alterId: 0
-  name: 美国-23
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.34.230.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- alterId: 0
-  name: 美国-24
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 198.62.62.87
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: Telegram🇨🇳
-- alterId: 0
-  name: 美国-25
+  name: 美国-7
   network: ws
   password: slch2024
   port: 2096
@@ -562,19 +244,53 @@ proxies:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
 - alterId: 0
-  name: 美国-26
+  name: 美国-8
   network: ws
   password: slch2024
   port: 2096
-  server: 192.200.160.195
-  skip-cert-verify: false
+  server: 199.34.230.87
+  skip-cert-verify: true
   sni: ocost-dy.wmlefl.cc
   type: trojan
   udp: true
   ws-opts:
     headers:
       Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-9
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 199.181.197.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 中国香港-5
+  network: tcp
+  port: '1443'
+  reality-opts:
+    public-key: Tv-cNH4ADnhrcIc_JIHdTCz2PJ3b4jkmLNAJ4OVKuzY
+    short-id: ''
+  server: 45.88.13.10
+  servername: speed.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c7a1227-5383-3a19-7084-76624ec8f84f
+  xudp: true
 - alterId: 0
   name: 加拿大-1
   network: ws
@@ -589,37 +305,190 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: Telegram🇨🇳
-- alterId: 2
-  cipher: auto
-  name: 中国大陆-7
+- alterId: 0
+  name: 美国-10
   network: ws
-  port: '30809'
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  password: slch2024
+  port: 2096
+  server: 190.93.245.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: baidu.com
-    path: /oooo
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-11
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 216.24.57.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-12
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 198.62.62.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  client-fingerprint: chrome
+  name: 新加坡-1
+  network: ws
+  password: slch2024
+  port: '2096'
+  server: 185.18.184.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/43.0.2357.65 Safari/537.36
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-13
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 209.46.30.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-14
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.0.63.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 美国-15
+  network: tcp
+  port: '1443'
+  reality-opts:
+    public-key: k2H2V0FZ-PLNohkcv2v2py6Cmz7o6oeJbBXn70JEkQc
+    short-id: ''
+  server: 193.202.8.10
+  servername: speed.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c7a1227-5383-3a19-7084-76624ec8f84f
+  xudp: true
+- alterId: 0
+  name: 美国-16
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.0.54.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: Telegram🇨🇳
+- alterId: 0
+  name: 美国-17
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 192.200.160.87
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
 - alterId: 0
   auth: 80747420-96c4-4a2f-83e6-eea4e46beb09
-  name: 美国-27
+  name: 美国-18
   obfs: salamander
   obfs-password: U1wBrYQyFm
   password: 80747420-96c4-4a2f-83e6-eea4e46beb09
   port: 20335
-  server: drhystuichdfy.samanidempire.org
+  server: 70.34.215.221
   skip-cert-verify: false
   sni: drhystuichdfy.samanidempire.org
   type: hysteria2
   udp: true
+- alterId: 0
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 美国-19
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: BqPcbcS0agCOmW5xem5nQldi_2oGariVJdJZ6Q57810
+    short-id: ''
+  server: 193.202.12.10
+  servername: speed.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c7a1227-5383-3a19-7084-76624ec8f84f
+  xudp: true
 - alterId: 2
   cipher: auto
-  name: 中国香港-4
+  name: 中国香港-6
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-headers:
+    Host: hkt.gotochinatown.net
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 中国香港-7
   network: ws
   port: '80'
   server: hkt.gotochinatown.net
@@ -634,80 +503,55 @@ proxies:
       Host: hkt.gotochinatown.net
     path: /
 - alterId: 0
+  auth: 80747420-96c4-4a2f-83e6-eea4e46beb09
+  name: 美国-20
+  obfs: salamander
+  obfs-password: U1wBrYQyFm
+  password: 80747420-96c4-4a2f-83e6-eea4e46beb09
+  port: 20335
+  server: drhystuichdfy.samanidempire.org
+  skip-cert-verify: false
+  sni: drhystuichdfy.samanidempire.org
+  type: hysteria2
+  udp: true
+- alterId: 0
   cipher: aes-128-gcm
-  name: 中国香港-5
+  name: 中国香港-8
   password: 01721e43-5389-4f97-b21c-900abb2bda9e
   port: 12020
   server: awes35lesl.blhao0o.dpdns.org
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 中国香港-6
-  network: ws
-  port: 30807
-  server: v10.heduian.link
-  servername: baidu.com
+- alterId: '0'
+  cipher: aes-128-gcm
+  name: 中国香港-9
+  password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  port: '12031'
+  server: awes35lesl.blhao0o.dpdns.org
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: awes35lesl.blhao0o.dpdns.org
+  tls: true
+  type: ss
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v10.heduian.link
-    path: /oooo
 - alterId: 0
   cipher: aes-128-gcm
-  name: 中国香港-7
+  name: 中国香港-10
+  password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  port: 12008
+  server: awes35lesl.blhao0o.dpdns.org
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 中国香港-11
   password: 01721e43-5389-4f97-b21c-900abb2bda9e
   port: 12006
   server: awes35lesl.blhao0o.dpdns.org
   type: ss
   udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: 中国香港-8
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12023
-  server: awes35lesl.blhao0o.dpdns.org
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 中国香港-9
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12011
-  server: awes35lesl.blhao0o.dpdns.org
-  type: ss
-  udp: true
-- alterId: 0
   auth: Yet-Another-Public-Config-1
-  name: 美国-28
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 35200
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-29
-  obfs: salamander
-  obfs-password: Yet-Another-Public-Config-1
-  password: Yet-Another-Public-Config-1
-  port: 36400
-  server: yapc-1.adamhayward.co.uk
-  skip-cert-verify: false
-  sni: YAPC-1.afshin.ir
-  type: hysteria2
-  udp: true
-- alterId: 0
-  auth: Yet-Another-Public-Config-1
-  name: 美国-30
+  name: 美国-21
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
   password: Yet-Another-Public-Config-1
@@ -719,7 +563,7 @@ proxies:
   udp: true
 - alterId: 0
   auth: Yet-Another-Public-Config-1
-  name: 美国-31
+  name: 美国-22
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
   password: Yet-Another-Public-Config-1
@@ -731,7 +575,31 @@ proxies:
   udp: true
 - alterId: 0
   auth: Yet-Another-Public-Config-1
-  name: 美国-32
+  name: 美国-23
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 35200
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-24
+  obfs: salamander
+  obfs-password: Yet-Another-Public-Config-1
+  password: Yet-Another-Public-Config-1
+  port: 36400
+  server: yapc-1.adamhayward.co.uk
+  skip-cert-verify: false
+  sni: YAPC-1.afshin.ir
+  type: hysteria2
+  udp: true
+- alterId: 0
+  auth: Yet-Another-Public-Config-1
+  name: 美国-25
   obfs: salamander
   obfs-password: Yet-Another-Public-Config-1
   password: Yet-Another-Public-Config-1
@@ -880,57 +748,48 @@ proxy-groups:
 - interval: 360
   name: 共享节点-延迟最低
   proxies: &id004
-  - 中国香港-1
-  - 新加坡-1
-  - 中国大陆-1
-  - 中国香港-2
   - 美国-1
-  - 中国大陆-2
+  - 中国大陆-1
+  - 中国香港-1
+  - 中国香港-2
+  - 中国香港-3
   - 韩国-1
-  - 中国大陆-3
   - 美国-2
   - 美国-3
+  - 中国香港-4
+  - 日本-1
   - 美国-4
-  - 中国大陆-4
   - 美国-5
+  - 日本-2
   - 美国-6
   - 美国-7
   - 美国-8
   - 美国-9
+  - 中国香港-5
+  - 加拿大-1
   - 美国-10
   - 美国-11
   - 美国-12
+  - 新加坡-1
   - 美国-13
-  - 中国香港-3
-  - 中国大陆-5
   - 美国-14
-  - 中国大陆-6
   - 美国-15
   - 美国-16
   - 美国-17
   - 美国-18
   - 美国-19
+  - 中国香港-6
+  - 中国香港-7
   - 美国-20
+  - 中国香港-8
+  - 中国香港-9
+  - 中国香港-10
+  - 中国香港-11
   - 美国-21
   - 美国-22
   - 美国-23
   - 美国-24
   - 美国-25
-  - 美国-26
-  - 加拿大-1
-  - 中国大陆-7
-  - 美国-27
-  - 中国香港-4
-  - 中国香港-5
-  - 中国香港-6
-  - 中国香港-7
-  - 中国香港-8
-  - 中国香港-9
-  - 美国-28
-  - 美国-29
-  - 美国-30
-  - 美国-31
-  - 美国-32
   type: url-test
   url: https://www.youtube.com/generate_204
 - interval: 360
